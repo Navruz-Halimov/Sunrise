@@ -1,8 +1,67 @@
-amenties{
+.amenties{
   &__heading{
-    border-bottom:1px solid #ffb612;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    color: rgb(68,68,68);
+    &::after{
+      content: '';
+      position: absolute;
+      width: 90px;
+      height: 2px;
+      background-color: #ffb612;
+      display: block;
+      left:50%;
+      bottom: -5px;
+      transform: translate(-50%,-50%);
+    }
   }
-  .amenties__heading{
-    color:red;
+  &__header{
+    color:rgb(68,68,68);
+    margin-top: 40px;
+    ul{
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      border-bottom:1px solid #ccc;
+      padding-bottom: 20px;
+    }
+    li{
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #2e5cdd;
+      position: relative;
+      &::before{
+        content:"";
+        position: absolute;
+        height: 5px;
+        width: 5px;
+        background-color: red;
+        display: block;
+        border-radius:50%;
+        top: 8px;
+        left:-10px;
+      }
+    }
+  }
+  .outdoor__list {
+    list-style: none;
+
+    .outdoor__item{
+      &-heading{
+        font-size: 16px;
+        color:#000;
+      }
+      &-icon{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('../assets/images/amenties/park.svg');
+      }
+
+      position: relative;
+      font-size: 15px;
+      color:rgb(68,68,68);
+    }
   }
 }
