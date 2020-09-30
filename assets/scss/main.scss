@@ -1,7 +1,12 @@
+
+// Abstracts
+@import 'abstract/fonts';
 @import 'abstract/variables';
+// Base
+@import 'base/base';
+@import 'abstract/animate';
+// Components
 @import 'components/navbar';
 @import 'components/footer';
-@import 'abstract/animate';
-@import 'abstract/fonts';
-@import 'base/base';
+// Pages
 

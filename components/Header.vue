@@ -52,9 +52,9 @@
               <b-dropdown-item href="#">CHINESE</b-dropdown-item>
             </b-nav-item-dropdown>
 
-            <b-nav-item-dropdown >
+            <b-nav-item-dropdown class="user__join">
               <!-- Using 'button-content' slot -->
-              <template v-slot:button-content>
+              <template v-slot:button-content  >
                 <span class="sign__header"
                   ><font-awesome-icon :icon="['fas', 'user']" />Sign in</span
                 >

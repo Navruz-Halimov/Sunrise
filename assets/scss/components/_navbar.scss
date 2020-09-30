@@ -161,7 +161,7 @@
     }
   }
   &-btn {
-    background-color: #4961ff;
+    background-color: #ffb612;
     padding-left: 25px;
     padding-right: 25px;
     display: block;
@@ -170,28 +170,41 @@
     &:focus,
     &:hover {
       border: 1px solid transparent;
-      background-color: #4961ff;
-      box-shadow: 0 2px 30px rgba(62, 174, 255, 0.3);
+      background-color: #ffb612;
+      box-shadow: 0 2px 30pxrgba (255, 182, 18, 0.7);
     }
   }
   .lang__list-wrapper {
-    .dropdown-toggle {
-      padding-top: 2px !important;
-      padding-bottom: 2px !important;
-    }
+    margin-right: 20px;
+    text-align: center;
+    width: 126px;
+
     & > a {
-      border: 1px solid #17206a;
+      border: 1px solid #ffb612;
       padding-left: 20px !important;
       padding-right: 20px !important;
       border-radius: 30px;
       color: white !important;
+      transition: all 0.3s ease;
       &:focus {
         outline: none;
       }
+      &:hover {
+        background-color: #ffb612;
+        border: 1px solid #ffb612;
+      }
+         &::after {
+        border: none;
+        background-image: url('../images/down-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: right center;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+         }
     }
     .dropdown-menu-right {
-      left: -40px;
-      top: 40px;
+      left: 40px !important;
       max-width: 100px !important;
       .dropdown-item {
         padding-left: 0;
@@ -217,4 +230,55 @@
     flex-direction: row;
     align-items: center;
   }
+  span + .dropdown-menu {
+    left: -40px !important;
+  }
+  .user__join {
+    border: 1px solid #ffb612;
+    color: white !important;
+    border-radius: 30px;
+    &>a{
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      display: block;
+      font-size: 14px;
+      &::after {
+        border: none;
+        background-image: url('../images/down-arrow.svg');
+        vertical-align: middle !important;
+        background-repeat: no-repeat;
+        background-position: right center;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  //back to top
+  .vue-back-to-top {
+    right: 50px !important;
+  }
+  .btn-to-top {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
