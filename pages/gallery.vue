@@ -1,7 +1,13 @@
 <template>
   <div id="app">
     <b-container>
-      <Test :thumbnail="images[2]" :images="images" />
+      <b-row class="gallery">
+        <div class="gallery__title">
+          <i><img src="../assets/images/picture.svg" alt=""></i>
+          <h2>Gallery</h2>
+        </div>
+      </b-row>
+      <Test :images="images" />
     </b-container>
   </div>
 </template>

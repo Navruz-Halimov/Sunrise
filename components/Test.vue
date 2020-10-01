@@ -2,48 +2,9 @@
   <div class="gallery">
     <b-container>
       <b-row class="gallery__content">
-        <div class="gallery__title">
-          <i><img src="../assets/images/picture.svg" alt=""></i>
-          <h2>Gallery</h2>
-        </div>
-        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
-          <div class="photo" @click.prevent="show">
-            <img class="photo__img"  :src="thumbnail" alt="">
-          </div>
-        </b-col>
-        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
-          <div class="photo" @click.prevent="show">
-            <img class="photo__img"  :src="thumbnail" alt="">
-          </div>
-        </b-col>
-        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
-          <div class="photo" @click.prevent="show">
-            <img class="photo__img"  :src="thumbnail" alt="">
-          </div>
-        </b-col>
-        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
-          <div class="photo" @click.prevent="show">
-            <img class="photo__img"  :src="thumbnail" alt="">
-          </div>
-        </b-col>
-        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
-          <div class="photo" @click.prevent="show">
-            <img class="photo__img"  :src="thumbnail" alt="">
-          </div>
-        </b-col>
-        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
-          <div class="photo" @click.prevent="show">
-            <img class="photo__img"  :src="thumbnail" alt="">
-          </div>
-        </b-col>
-        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
-          <div class="photo" @click.prevent="show">
-            <img class="photo__img"  :src="thumbnail" alt="">
-          </div>
-        </b-col>
-        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
-          <div class="photo" @click.prevent="show">
-            <img class="photo__img"  :src="thumbnail" alt="">
+        <b-col v-for="(image,index) of images" :key="index" cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
+          <div class="photo" @click.prevent="show(index)">
+            <img class="photo__img" :src="image" alt="">
           </div>
         </b-col>
       </b-row>
@@ -55,8 +16,8 @@
         <i></i>
       </button>
       <div class="modals__content">
-        <div class="modals__img" @click.stop="">
-          <img :src="images[index]">
+        <div class="modals__img">
+          <img :src="images[id]">
         </div>
         <div class="prev"
              @click.stop="prev"
@@ -83,10 +44,10 @@
 
   export default {
     props: {
-      thumbnail: {
-        type: String,
-        required: true,
-      },
+      // thumbnail: {
+      //   type: String,
+      //   required: true,
+      // },
       images: {
         type: Array,
         default: () => [],
@@ -96,30 +57,32 @@
       return {
         visible: false,
         index: 0,
+        id: 0,
       };
     },
     methods: {
-      show() {
+      show(id) {
         this.visible = true;
+        this.id = id;
       },
       hide() {
         this.visible = false;
-        this.index = 0;
+        this.id = 0;
       },
       hasNext() {
-        return this.index + 1 < this.images.length;
+        return this.id + 1 < this.images.length;
       },
       hasPrev() {
-        return this.index - 1 >= 0;
+        return this.id - 1 >= 0;
       },
       prev() {
         if (this.hasPrev()) {
-          this.index -= 1;
+          this.id -= 1;
         }
       },
       next() {
         if (this.hasNext()) {
-          this.index += 1;
+          this.id += 1;
         }
       },
       onKeydown(e) {
