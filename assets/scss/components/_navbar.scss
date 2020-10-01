@@ -193,7 +193,7 @@
         background-color: #ffb612;
         border: 1px solid #ffb612;
       }
-         &::after {
+      &::after {
         border: none;
         background-image: url('../images/down-arrow.svg');
         background-repeat: no-repeat;
@@ -201,7 +201,11 @@
         width: 16px;
         height: 16px;
         display: inline-block;
-         }
+        vertical-align: middle;
+        position: relative;
+        z-index: 1;
+        right: -5px;
+      }
     }
     .dropdown-menu-right {
       left: 40px !important;
@@ -237,7 +241,8 @@
     border: 1px solid #ffb612;
     color: white !important;
     border-radius: 30px;
-    &>a{
+    transition: all 0.3s ease;
+    & > a {
       padding-left: 20px !important;
       padding-right: 20px !important;
       display: block;
@@ -253,6 +258,10 @@
         display: inline-block;
       }
     }
+     &:hover {
+        background-color: #ffb612;
+        border: 1px solid #ffb612;
+      }
     &:focus {
       outline: none;
     }

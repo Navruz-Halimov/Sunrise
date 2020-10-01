@@ -12,7 +12,7 @@
             <b-nav-item href="#">Rooms</b-nav-item>
             <b-nav-item href="#">Events</b-nav-item>
             <b-nav-item href="#">gallery</b-nav-item>
-            <b-nav-item href="#">Amenties</b-nav-item>
+            <b-nav-item to="/amenties">Amenties</b-nav-item>
             <b-nav-item href="#">Nearby attraction</b-nav-item>
             <b-nav-item href="#">Contact</b-nav-item>
             <b-nav-item href="#">Reviews</b-nav-item>
