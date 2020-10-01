@@ -22,6 +22,7 @@ export default {
     { src: '~/plugins/rate.js', ssr: false },
     { src: '~/plugins/swiper.js', mode: 'client' },
     { src: '~/plugins/backToTop.js', ssr: false },
+    { src: '~/plugins/datepicker.js', ssr: false },
 
   ],
 
