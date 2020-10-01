@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-container>
-      <Test :thumbnail="images[0]" :images="images" />
+      <Test :thumbnail="images[2]" :images="images" />
     </b-container>
   </div>
 </template>

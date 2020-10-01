@@ -11,6 +11,41 @@
             <img class="photo__img"  :src="thumbnail" alt="">
           </div>
         </b-col>
+        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
+          <div class="photo" @click.prevent="show">
+            <img class="photo__img"  :src="thumbnail" alt="">
+          </div>
+        </b-col>
+        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
+          <div class="photo" @click.prevent="show">
+            <img class="photo__img"  :src="thumbnail" alt="">
+          </div>
+        </b-col>
+        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
+          <div class="photo" @click.prevent="show">
+            <img class="photo__img"  :src="thumbnail" alt="">
+          </div>
+        </b-col>
+        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
+          <div class="photo" @click.prevent="show">
+            <img class="photo__img"  :src="thumbnail" alt="">
+          </div>
+        </b-col>
+        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
+          <div class="photo" @click.prevent="show">
+            <img class="photo__img"  :src="thumbnail" alt="">
+          </div>
+        </b-col>
+        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
+          <div class="photo" @click.prevent="show">
+            <img class="photo__img"  :src="thumbnail" alt="">
+          </div>
+        </b-col>
+        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
+          <div class="photo" @click.prevent="show">
+            <img class="photo__img"  :src="thumbnail" alt="">
+          </div>
+        </b-col>
       </b-row>
     </b-container>
 
@@ -21,7 +56,7 @@
       </button>
       <div class="modals__content">
         <div class="modals__img" @click.stop="">
-          <img class="w-100" :src="images[index]">
+          <img :src="images[index]">
         </div>
         <div class="prev"
              @click.stop="prev"

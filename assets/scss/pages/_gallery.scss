@@ -56,22 +56,30 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.89);
+    padding: 3rem;
     .modals__content{
       position: relative!important;
-      width: 52%;
+      width: 80%;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       margin: auto;
       border-radius: 5px;
-      transform: translateY(12%);
-      background-color: black;
+      .modals__img{
+        width: 100%;
+        height: 100%;
+        img{
+          width: 100%;
+          height: 85vh;
+        }
+      }
       .prev, .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
         width: auto;
-        padding: 16px;
+        padding: 10px;
         margin-top: -22px;
         color: white;
         font-weight: bold;
@@ -97,8 +105,9 @@
       height: 30px;
       outline: none;
       position: absolute;
-      top: 25px;
-      right: 25px;
+      top: 22px;
+      right: 22px;
+      z-index: 9;
       i{
         display: block;
         width: 100%;
@@ -115,3 +124,38 @@
   }
 
 }
+
+// Responsive style //
+
+@media (min-width: 0) and (max-width: 576px) {
+  .gallery{
+    .modals{
+      padding: 0 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .modals__content{
+        width: 100%;
+        height: 60vh;
+        .modals__img img{
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .gallery{
+    .modals{
+      padding: 0;
+      .modals__content{
+        width: 100%;
+        height: 100vh;
+        .modals__img img{
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
