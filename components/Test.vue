@@ -15,7 +15,7 @@
         <i></i>
         <i></i>
       </button>
-      <div class="modals__content">
+      <div class="modals__content" @click.stop="">
         <div class="modals__img">
           <img :src="images[id]">
         </div>
@@ -44,10 +44,6 @@
 
   export default {
     props: {
-      // thumbnail: {
-      //   type: String,
-      //   required: true,
-      // },
       images: {
         type: Array,
         default: () => [],
