@@ -7,8 +7,8 @@
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur laudantium error earum amet a qui.
+              yeah man itis working I think don't pay attention to the typos
+               that I have typed
             </p>
           </div>
         </swiper-slide>
