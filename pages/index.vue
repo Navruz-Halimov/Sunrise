@@ -6,15 +6,20 @@
           ><img src="../assets//images/11.jpg" alt="" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
-            <p class="swiper-caption-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laudantium error earum amet a qui.</p>
+            <p class="swiper-caption-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur laudantium error earum amet a qui.
+            </p>
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/22.jpg" alt=""
-        />
-        <div class="swiper-caption" >
+          ><img src="../assets/images/22.jpg" alt="" />
+          <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
-            <p class="swiper-caption-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laudantium error earum amet a qui.</p>
+            <p class="swiper-caption-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur laudantium error earum amet a qui.
+            </p>
           </div>
         </swiper-slide>
         <div class="swiper-button-prev" slot="button-prev"></div>
@@ -22,15 +27,37 @@
       </swiper>
     </div>
     <b-container>
-      <!-- <h1 class="animate__animated animate__zoomInDown">hollow</h1> -->
+      <div class="box">
+         <section class="order__part">
+      <date-picker v-model="value2" value-type="format" format="YYYY-MM-DD" placeholder="Arrival date"    :default-value="new Date()" :disabled-date="notBeforeToday"></date-picker>
+      <date-picker v-model="value3" value-type="format" format="YYYY-MM-DD" placeholder="Departure date"    :default-value="new Date()" :disabled-date="notBeforeToday"></date-picker>
+      <select name="adults__capacity" id="" class="adults__capacity">
+        <option value="0">Adults</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+       <select name="children__capacity" id="" class="children__capacity">
+        <option value="0">Children</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </section>
+      </div>
     </b-container>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'Range',
   data() {
     return {
+      value2: [new Date()],
+      value3:[new Date()],
       header__slider: {
         centeredSlides: true,
         spaceBetween: 30,
@@ -45,5 +72,10 @@ export default {
       },
     }
   },
+  methods:{
+     notBeforeToday(date) {
+      return date < new Date(new Date().setHours(0, 0, 0, 0));
+    },
+  }
 }
 </script>
