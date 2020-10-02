@@ -164,7 +164,7 @@ Price per person: USD 30* (may vary as per season)
                                 </li>
                                 <li class="event-page__footer-social-item">
                                     <a href="/">
-                                        <font-awesome-icon :icon="['fab', 'pinterest']" />
+                                        <font-awesome-icon :icon="['fab', 'linkedin-in']" />
                                     </a>
                                 </li>
                                 <li class="event-page__footer-social-item">
@@ -179,7 +179,7 @@ Price per person: USD 30* (may vary as per season)
                                 </li>
                                 <li class="event-page__footer-social-item">
                                     <a href="/">
-                                        <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+                                        <font-awesome-icon :icon="['fab', 'telegram']" />
                                     </a>
                                 </li>
                             </ul>
