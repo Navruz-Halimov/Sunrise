@@ -1,5 +1,6 @@
 .event-page {
     margin-top: 50px;
+    font-family: "Montserrat";
 
     &__top {
         margin-bottom: 50px;
@@ -10,7 +11,7 @@
         line-height: 26px;
         margin-bottom: 22px;
         font-weight: bold;
-        color: #53565a;
+        color: #000;
     }
 
     &__text-hide {
@@ -18,6 +19,7 @@
         max-height: 80px;
         overflow: hidden;
         position: relative;
+        color: #000;
 
         &:before {
             content: "";
@@ -42,7 +44,7 @@
     &__text-btn {
         background: transparent;
         border: none;
-        color: #c20808;
+        color: #ffb612;
 
         span {
             font-size: 14px;
@@ -50,7 +52,7 @@
 
         &:hover, &:focus, &:active {
             background: transparent;
-            color: #910606;  
+            color: #ffb615 !important;  
             text-decoration: underline;  
             border: none;
         }
@@ -72,9 +74,10 @@
         &-email {        
             display: flex;
             align-items: center;
+            color: #ffb615;
 
             a {
-                color: #c20808;
+                color: #ffb615;
                 font-size: 12px;
                 padding-left: 10px;
             }
@@ -89,7 +92,7 @@
             line-height: 26px;
             margin-bottom: 22px;
             font-weight: bold;
-            color: #53565a;
+            color: #000;
         }
 
         &-list {
@@ -108,6 +111,7 @@
             width: 130px;
             margin-bottom: 20px;
             justify-content: center;
+            color: #000;
             
             svg {
                 width: 40px !important;
@@ -123,6 +127,11 @@
 
     &__multimedia {
         margin-bottom: 50px;
+        color: #000;
+
+        img {
+            margin-bottom: 15px;
+        }
 
         .container {
             position: relative;
@@ -142,7 +151,7 @@
             line-height: 26px;
             margin-bottom: 22px;
             font-weight: bold;
-            color: #53565a;
+            color: #000;
         }
 
         &-heading {
@@ -154,7 +163,7 @@
 
         &-subtitle {
             font-size: 14px;
-            color: #53565A;
+            color: #000;
             font-weight: bold;
         }
 
@@ -164,9 +173,7 @@
             overflow: hidden;
             position: relative;
             transition: all 0.5s ease;
-    
 
-    
             &:before {
                 content: "";
                 position: absolute;
@@ -183,7 +190,7 @@
         &-btn {
             background: transparent;
             border: none;
-            color: #c20808;
+            color: #ffb612;
     
             span {
                 font-size: 14px;
@@ -191,7 +198,7 @@
 
             &:hover, &:focus, &:active {
                 background: transparent;
-                color: #910606;  
+                color: #ffb612 !important;  
                 text-decoration: underline;  
                 border: none;
             }
@@ -308,19 +315,19 @@
 
         &-link {
             background-color: transparent;
-            border: 1px solid #c20808;
+            border: 1px solid #ffb612;
             font-size: 12px;
             padding: 10px 15px;
             line-height: 12px;
             font-weight: 600;
             border-radius: 3px;
-            color: #c20808;
+            color: #ffb612;
             transition: all 0.3s ease;
             display: inline-block;
 
             &:hover {
                 color: #fff;
-                background-color: #c20808;
+                background-color: #ffb612;
                 text-decoration: none;
             }
 
@@ -337,7 +344,14 @@
             &-item {
                 a {
                     padding: 0 10px;
-                    color: #c20808;
+                    color: #ffb612;
+                    display: block;
+
+                }
+
+                &:hover {
+                    transform: translateY(-4px);
+                    transition: all 0.3s ease;
                 }
             }
         }
@@ -367,19 +381,19 @@
 
         &-btn {
             background-color: transparent;
-            border: 1px solid #c20808;
+            border: 1px solid #ffb612;
             font-size: 12px;
             padding: 10px 15px;
             line-height: 12px;
             font-weight: 600;
             border-radius: 3px;
-            color: #c20808;
+            color: #ffb612;
             transition: all 0.3s ease;
             display: inline-block;
 
             &:hover {
                 color: #fff;
-                background-color: #c20808;
+                background-color: #ffb612;
                 text-decoration: none;
             }
         }
