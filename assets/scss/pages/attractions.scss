@@ -1,0 +1,61 @@
+
+// Attractions style //
+
+.attractions{
+  .attractions__title{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #444444;
+    font-size: 30px;
+    h3:after{
+        content: "";
+        border-top: 2px solid;
+        display: block;
+        width: 8%;
+        margin: 10px auto 10px auto;
+      }
+  }
+  .attractions__map{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+  }
+  .cards{
+    height: 100%;
+    border: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.06), 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .7s ease;
+    .card-img-top{
+      height: 250px;
+    }
+    .card-body{
+      padding: 20px 15px;
+      span{
+        font-size: 13.5px;
+        text-transform: uppercase;
+      }
+      h4{
+        font-size: 19px;
+      }
+      .card-text{
+        font-size: 14px;
+        display: flex;
+        word-break: break-all;
+        a{
+          text-decoration: none;
+          display: block;
+          &:hover{color: #FFB612}
+        }
+        .att-icons{
+          color: #FFB612;
+          font-size: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+    &:hover{
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.28), 0 0 1px rgba(0, 0, 0, 0.24);
+    }
+  }
+}
