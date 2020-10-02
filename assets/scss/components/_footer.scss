@@ -1,3 +1,37 @@
+.footer {
+  background-image: url('../images/chooseus-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__logo {
+    display: block;
+    color: white;
+    font-size: 18px;
+    &:hover {
+      color: #ffb612;
+      text-decoration: none;
+    }
+  }
+  &__phone-link {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    &:hover {
+      color: #ffb612;
+      text-decoration: none;
+    }
+  }
+  &__address {
+    font-size: 16px;
+    color: #777c81;
+    line-height: 28px;
+  }
+  &__heading {
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+}
 .btn-to-top {
   width: 35px;
   height: 35px;

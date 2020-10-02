@@ -3,17 +3,37 @@
     <div class="navbar__slider">
       <swiper class="swiper" :options="header__slider">
         <swiper-slide
-          ><img src="../assets//images/11.jpg" alt="" />
+          ><img src="../assets//images/3D/1.jpg" alt="" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
               yeah man itis working I think don't pay attention to the typos
-               that I have typed
+               that I have typed 
             </p>
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/22.jpg" alt="" />
+          ><img src="../assets/images/3D/1night.jpg" alt="" />
+          <div class="swiper-caption">
+            <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
+            <p class="swiper-caption-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur laudantium error earum amet a qui.
+            </p>
+          </div>
+        </swiper-slide>
+         <swiper-slide
+          ><img src="../assets/images/3D/2.jpg" alt="" />
+          <div class="swiper-caption">
+            <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
+            <p class="swiper-caption-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur laudantium error earum amet a qui.
+            </p>
+          </div>
+        </swiper-slide>
+         <swiper-slide
+          ><img src="../assets/images/3D/2night.jpg" alt="" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
