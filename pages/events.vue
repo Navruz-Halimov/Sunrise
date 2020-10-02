@@ -146,7 +146,7 @@ Price per person: USD 30* (may vary as per season)
                 <b-row>
                     <b-col cols="12" class="event-page__footer-list">
                         <b-col lg="4" class="event-page__footer-item">
-                            <div class="event-page__footer-title">Sunrise Hotels</div>
+                            <div class="event-page__footer-title">Sunrise Hotels in Tashkent</div>
                             <a href="/" target="_blank" class="event-page__footer-link">Need help?</a>
                         </b-col>
                         <b-col lg="4" class="event-page__footer-item">
