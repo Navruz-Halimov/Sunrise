@@ -11,7 +11,7 @@
             <b-nav-item href="#">Offer</b-nav-item>
             <b-nav-item href="#">Rooms</b-nav-item>
             <b-nav-item href="#">Events</b-nav-item>
-            <b-nav-item href="#">gallery</b-nav-item>
+            <b-nav-item href="/gallery">gallery</b-nav-item>
             <b-nav-item to="/amenties">Amenties</b-nav-item>
             <b-nav-item href="#">Nearby attraction</b-nav-item>
             <b-nav-item href="#">Contact</b-nav-item>
@@ -20,31 +20,36 @@
         </b-collapse>
       </b-navbar>
     </b-container>
-     <div class="header__bottom">
-       <b-container>
-         <div class="header__bottom-content">
-         <div class="header__bottom-info">
-           <nuxt-link to="" class="address"> <font-awesome-icon :icon="['fas', 'map-marker-alt']" />Navoi Street, 1 A</nuxt-link>
-           <nuxt-link to="" class="tel"> <font-awesome-icon :icon="['fas', 'phone']" /> +998 99 999 99 99</nuxt-link>
-           <nuxt-link to="" class="review">
-               <vue-stars
-                    class="lawyer-profile__star"
-                    name="rate"
-                    active-color="#FFC805"
-                    inactive-color="#282932"
-                    shadow-color="#FFC805"
-                    hover-color="#00aced"
-                    :max="5"
-                    :value="4"
-                    :readonly="true"
-                    char="★"
-                  />
-              Reviews</nuxt-link>
-         </div>
-          <b-button class="header__bottom-btn">
-            Book now
-          </b-button>
-             <!-- Right aligned nav items -->
+    <div class="header__bottom">
+      <b-container>
+        <div class="header__bottom-content">
+          <div class="header__bottom-info">
+            <nuxt-link to="" class="address">
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" />Navoi
+              Street, 1 A</nuxt-link
+            >
+            <nuxt-link to="" class="tel">
+              <font-awesome-icon :icon="['fas', 'phone']" /> +998 99 999 99
+              99</nuxt-link
+            >
+            <nuxt-link to="" class="review">
+              <vue-stars
+                class="lawyer-profile__star"
+                name="rate"
+                active-color="#FFC805"
+                inactive-color="#282932"
+                shadow-color="#FFC805"
+                hover-color="#00aced"
+                :max="5"
+                :value="4"
+                :readonly="true"
+                char="★"
+              />
+              Reviews</nuxt-link
+            >
+          </div>
+          <b-button class="header__bottom-btn"> Book now </b-button>
+          <!-- Right aligned nav items -->
           <b-navbar-nav>
             <b-nav-item-dropdown text="Lang" right class="lang__list-wrapper">
               <b-dropdown-item href="#">ENGLISH</b-dropdown-item>
@@ -54,7 +59,7 @@
 
             <b-nav-item-dropdown class="user__join">
               <!-- Using 'button-content' slot -->
-              <template v-slot:button-content  >
+              <template v-slot:button-content>
                 <span class="sign__header"
                   ><font-awesome-icon :icon="['fas', 'user']" />Sign in</span
                 >
@@ -63,8 +68,8 @@
               <b-dropdown-item href="#">Join</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
-         </div>
-       </b-container>
-     </div>
+        </div>
+      </b-container>
+    </div>
   </header>
 </template>
