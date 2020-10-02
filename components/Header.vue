@@ -8,14 +8,14 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="header__navbar">
-            <b-nav-item href="#">Offer</b-nav-item>
-            <b-nav-item href="#">Rooms</b-nav-item>
-            <b-nav-item href="#">Events</b-nav-item>
+            <b-nav-item href="/offer">Offer</b-nav-item>
+            <b-nav-item href="/rooms">Rooms</b-nav-item>
+            <b-nav-item href="/events">Events</b-nav-item>
             <b-nav-item href="/gallery">gallery</b-nav-item>
             <b-nav-item to="/amenties">Amenties</b-nav-item>
-            <b-nav-item href="#">Nearby attraction</b-nav-item>
-            <b-nav-item href="#">Contact</b-nav-item>
-            <b-nav-item href="#">Reviews</b-nav-item>
+            <b-nav-item href="/attractions">Nearby attraction</b-nav-item>
+            <b-nav-item href="/contact">Contact</b-nav-item>
+            <b-nav-item href="/reviews">Reviews</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
