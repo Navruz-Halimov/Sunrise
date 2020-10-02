@@ -31,6 +31,88 @@
     font-weight: 500;
     margin-bottom: 25px;
   }
+  &__menu {
+    display: flex;
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+  }
+  &__item {
+    a {
+      color: #ffb612;
+      font-size: 16px;
+      line-height: 30px;
+      transition: all 0.3s ease;
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  .social__networks {
+    &-heading {
+      color: white;
+    }
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    .social__networks-item {
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px;
+      a {
+        background-image: url('../images/social.svg');
+        background-repeat: no-repeat;
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        background-size: 184px 138px;
+      }
+      .facebook {
+        background-position: -5px -5px;
+
+        &:hover {
+          background-position: -51px -5px;
+        }
+      }
+      .instagram {
+        background-position: -5px -51px;
+        &:hover{
+          background-position: -51px -51px;
+        }
+      }
+       .twitter {
+        background-position: -5px -97px;
+        &:hover{
+          background-position: -51px -97px;
+        }
+      }
+       .linkedin {
+        background-position: -97px -5px;
+        &:hover{
+          background-position: -97px -51px;
+        }
+      }
+       .youtube {
+        background-position: -97px -97px;
+        &:hover{
+          background-position: -143px -5px;
+        }
+      }
+      .telegram {
+        background-image: url("../images/telegram.svg");
+        background-size: 36px 36px;
+        &:hover{
+          background-image: url('../images/tg-hover.png');
+          background-size: cover;
+        }
+      }
+    }
+  }
 }
 .btn-to-top {
   width: 35px;

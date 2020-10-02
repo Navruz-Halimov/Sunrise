@@ -8,7 +8,7 @@
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
               yeah man itis working I think don't pay attention to the typos
-               that I have typed 
+              that I have typed
             </p>
           </div>
         </swiper-slide>
@@ -22,7 +22,7 @@
             </p>
           </div>
         </swiper-slide>
-         <swiper-slide
+        <swiper-slide
           ><img src="../assets/images/3D/2.jpg" alt="" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
@@ -32,7 +32,7 @@
             </p>
           </div>
         </swiper-slide>
-         <swiper-slide
+        <swiper-slide
           ><img src="../assets/images/3D/2night.jpg" alt="" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
