@@ -19,7 +19,7 @@
                                         <div class="contact-page-details__email">
                                             <font-awesome-icon :icon="['fas', 'envelope']" />
                                             <a href="mailto:reservation.tashkent@radissonblu.com">
-                                                reservation.tashkent@radissonblu.com
+                                                reservation.tashkent@Sunrise.com
                                             </a>
                                         </div>
                                         <div class="contact-page-details__fax">
