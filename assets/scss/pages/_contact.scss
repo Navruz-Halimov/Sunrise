@@ -1,7 +1,7 @@
 .contact-page {
   margin-top: 50px;
-  font-family: "Montserrat";
-  
+  font-family: 'Montserrat';
+
   a:hover {
     text-decoration: none;
   }
@@ -103,7 +103,7 @@
     margin-bottom: 50px;
 
     &__form {
-        display: none;
+      display: none;
     }
 
     &__button {
@@ -119,9 +119,9 @@
       margin: auto;
 
       &:focus {
-          border: none;
-          outline: none;
-          box-shadow: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
       }
 
       .fa-map-marker-alt {
@@ -240,9 +240,9 @@
     }
   }
 
-  .directionToggle{
+  .directionToggle {
     display: flex;
-  }  
+  }
   .contactPageBtnOpen {
     background-color: #fff;
     color: #c20808;
@@ -253,39 +253,34 @@
   }
 }
 
-
 @media (min-width: 768px) {
-    .contact-page-btn__form label {
-      max-width: 200px !important;
-      margin: 0px !important;
-    }
-    .contact-page-btn__button .fa-times {
-        display: block !important
-    }    
+  .contact-page-btn__form label {
+    max-width: 200px !important;
+    margin: 0px !important;
+  }
+  .contact-page-btn__button .fa-times {
+    display: block !important;
+  }
 }
 
 @media (min-width: 992px) {
-.contact-page-btn__form {
+  .contact-page-btn__form {
     padding: 15px 30px !important;
 
     .form-group {
-        margin-bottom: 0px !important;
+      margin-bottom: 0px !important;
     }
 
     label {
-        max-width: 130px !important;
+      max-width: 130px !important;
     }
 
     .contact-page-btn__form {
-        margin: auto !important;
+      margin: auto !important;
     }
+  }
+
+  .contact-page-btn__get {
+    width: auto !important;
+  }
 }
-
-    .contact-page-btn__get {
-        width: auto !important;
-    }
-}
-
-
-
-

@@ -27,26 +27,63 @@
       </swiper>
     </div>
     <b-container>
-      <div class="box">
-         <section class="order__part">
-      <date-picker v-model="value2" value-type="format" format="YYYY-MM-DD" placeholder="Arrival date"    :default-value="new Date()" :disabled-date="notBeforeToday"></date-picker>
-      <date-picker v-model="value3" value-type="format" format="YYYY-MM-DD" placeholder="Departure date"    :default-value="new Date()" :disabled-date="notBeforeToday"></date-picker>
-      <select name="adults__capacity" id="" class="adults__capacity">
-        <option value="0">Adults</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-       <select name="children__capacity" id="" class="children__capacity">
-        <option value="0">Children</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-    </section>
-      </div>
+      <form class="booking__form" method="" action="POST">
+        <section class="order__part">
+          <b-row>
+            <div class="col-xs-12 col-sm-6 col-lg-2">
+              <date-picker
+                v-model="value2"
+                value-type="format"
+                format="YYYY-MM-DD"
+                placeholder="Arrival date"
+                :default-value="new Date()"
+                :disabled-date="notBeforeToday"
+              ></date-picker>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-2">
+              <date-picker
+                v-model="value3"
+                value-type="format"
+                format="YYYY-MM-DD"
+                placeholder="Departure date"
+                :default-value="new Date()"
+                :disabled-date="notBeforeToday"
+              ></date-picker>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-2">
+              <select name="adults__capacity" class="adults__capacity">
+                <option value="0" selected disabled>Adults</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-2">
+              <select name="children__capacity" class="children__capacity">
+                <option value="0" selected disabled>Children</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-2">
+              <select name="room__type" class="room__type">
+                <option value="0" selected disabled>Choose a Room</option>
+                <option value="1">Standard room</option>
+                <option value="2">Standard Family room</option>
+                <option value="3">Deluxe double room</option>
+                <option value="4">Standard room</option>
+                <option value="5">Standard room</option>
+              </select>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-2">
+              <input type="submit" class="book__btn" value="Book now" />
+            </div>
+          </b-row>
+        </section>
+      </form>
     </b-container>
   </div>
 </template>
@@ -57,7 +94,7 @@ export default {
   data() {
     return {
       value2: [new Date()],
-      value3:[new Date()],
+      value3: [new Date()],
       header__slider: {
         centeredSlides: true,
         spaceBetween: 30,
@@ -72,10 +109,10 @@ export default {
       },
     }
   },
-  methods:{
-     notBeforeToday(date) {
-      return date < new Date(new Date().setHours(0, 0, 0, 0));
+  methods: {
+    notBeforeToday(date) {
+      return date < new Date(new Date().setHours(0, 0, 0, 0))
     },
-  }
+  },
 }
 </script>
