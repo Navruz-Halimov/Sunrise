@@ -9,7 +9,7 @@
                     <div class="contact-page-details">
                         <b-container>
                             <b-row>
-                                <b-col lg="6">
+                                <b-col cols="12">
                                     <div class="contact-page-details__cards">
                                         <h3 class="contact-page-details__title">General contact</h3>
                                         <div class="contact-page-details__phone">
