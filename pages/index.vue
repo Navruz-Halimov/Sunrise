@@ -48,12 +48,26 @@
     </section>
       </div>
     </b-container>
+    <b-container>
+      <b-row class="gallery">
+        <div class="gallery__title">
+          <i><img src="../assets/images/picture.svg" alt=""></i>
+          <h2>Gallery</h2>
+        </div>
+      </b-row>
+      <Test :images="images" />
+      <b-button href="http://localhost:3000/gallery" class="btn-img my-4">Gallery page</b-button>
+    </b-container>
   </div>
 </template>
 
 <script>
+  import Test from '../components/Test.vue';
 export default {
   name: 'Range',
+  comments: {
+    Test,
+  },
   data() {
     return {
       value2: [new Date()],

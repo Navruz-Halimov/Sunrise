@@ -1,5 +1,5 @@
 <template>
-  <div class="attractions">
+  <div class="attractions mt-4">
     <div class="attractions__title">
       <h3>Attractions</h3>
     </div>
