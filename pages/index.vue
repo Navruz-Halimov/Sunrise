@@ -114,7 +114,7 @@
       </b-row>
       <Test :images="images" />
       <b-button href="http://localhost:3000/gallery" class="btn-img my-4">Gallery page</b-button>
-    </b-container>
+    </b-container>    
   </div>
 </template>
 
