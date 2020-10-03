@@ -115,7 +115,11 @@
       <Test :images="images" />
       <b-button href="http://localhost:3000/gallery" class="btn-img my-4" to="/gallery">For more</b-button>
     </b-container>
-    
+    <div class="tourist__guide">
+      <b-container>
+        <h1 class="tourist__guide-heading">Tourist guide</h1>
+      </b-container>
+    </div>
   </div>
 </template>
 
