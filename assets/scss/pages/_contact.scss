@@ -8,7 +8,7 @@
   }
 
   &__heading {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 26px;
     margin-bottom: 22px;
     font-weight: bold;
@@ -17,10 +17,13 @@
   }
 
   &-details {
+    margin-bottom: 50px;
     &__cards {
       background: #f3f3f3;
       border-radius: 4px;
       padding: 15px;
+      box-shadow: 0px 10px 25px -10px rgba(0, 0, 0, 0.18);
+      
     }
 
     &__title {
@@ -32,6 +35,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
+      color: #ffb612;
 
       .fa-phone-volume {
         color: #000;
@@ -48,9 +52,10 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
+      color: #ffb612;
       a {
         padding-left: 10px;
-        color: #c20808;
+        color: #000;
         font-size: 12px;
         text-decoration: underline;
 
@@ -64,6 +69,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
+      color: #ffb612;
 
       a {
         padding-left: 10px;
@@ -88,7 +94,7 @@
     }
 
     &__title {
-      font-size: 22px;
+      font-size: 18px;
       margin-bottom: 22px;
       font-weight: bold;
       line-height: 26px;
@@ -109,7 +115,7 @@
 
     &__button {
       border: none;
-      background-color: #c20808;
+      background-color: #ffb612;
       font-size: 12px;
       color: #fff;
       padding: 10px 15px;
@@ -142,9 +148,6 @@
         display: none;
       }
 
-      &:hover {
-        background-color: #790505;
-      }
     }
 
     .button-show {
@@ -152,7 +155,7 @@
       border-radius: 4px 4px 0 0;
       border-bottom: none;
       background-color: #fff;
-      color: #c20808;
+      color: #ffb612;
       width: 100%;
     }
 
@@ -210,35 +213,32 @@
         height: 52px;
 
         &:hover {
-          border: 1px solid #c20808;
-          color: #c20808;
+          border: 1px solid #ffb612;
+          color: #ffb612;
           cursor: pointer;
         }
       }
 
       &-activ {
-        border: 1px solid #c20808 !important;
-        color: #c20808 !important;
+        border: 1px solid #ffb612 !important;
+        color: #ffb612 !important;
         cursor: pointer !important;
       }
     }
 
     &__get {
       border: none;
-      background-color: #c20808;
+      background-color: #ffb612;
       font-size: 14px;
       color: #fff;
       padding: 20px 25px;
       border-radius: 4px;
       display: flex;
       align-items: center;
-      justify-content: center;git
+      justify-content: center;
       margin: auto;
       width: 100%;
 
-      &:hover {
-        background-color: #790505;
-      }
     }
   }
 
@@ -247,7 +247,7 @@
   }
   .contactPageBtnOpen {
     background-color: #fff;
-    color: #c20808;
+    color: #ffb612;
     border: 1px solid #d8d8d8;
     border-bottom: none;
     border-radius: 4px 4px 0 0;
@@ -262,6 +262,10 @@
   }
   .contact-page-btn__button .fa-times {
     display: block !important;
+  }
+
+  .contact-page__heading, .contact-page-info__title {
+    font-size: 22px !important;
   }
 }
 
