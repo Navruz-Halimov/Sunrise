@@ -118,6 +118,11 @@
     <div class="tourist__guide">
       <b-container>
         <h1 class="tourist__guide-heading">Tourist guide</h1>
+        <ul class="guide__list">
+          <li class="guide__item">
+            <nuxt-link to='' class="guide__link">Online scoreboard of Tashkent airport</nuxt-link>
+          </li>
+        </ul>
       </b-container>
     </div>
   </div>
