@@ -98,8 +98,28 @@
                     <swiper-slide class="swiper-card">
                         <a href="/">
                             <div class="swiper-card__img">
-                                <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy>
+                                <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
                                 <div class="swiper-card__cost">100$</div>
+                                <swiper :options="swiper_card_mini" class="swiper__wrapper-mini">
+                                    <swiper-slide class="swiper__wrapper-mini_card">
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <div class="swiper-card__next-mini" slot="button-prev">
+                                        <font-awesome-icon :icon="['fas', 'angle-left']" />
+                                    </div>
+                                    <div class="swiper-card__prev-mini" slot="button-next">
+                                        <font-awesome-icon :icon="['fas', 'angle-right']" />
+                                    </div>  
+                                </swiper>
                             </div>
                             <div class="swiper-card__statistics">
                                 <div class="swiper-card__name-rooms">Sunrise</div>
@@ -132,8 +152,28 @@
                     <swiper-slide class="swiper-card">
                         <a href="/">
                             <div class="swiper-card__img">
-                                <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy>
+                                <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
                                 <div class="swiper-card__cost">100$</div>
+                                <swiper :options="swiper_card_mini" class="swiper__wrapper-mini">
+                                    <swiper-slide class="swiper__wrapper-mini_card">
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <div class="swiper-card__next-mini" slot="button-prev">
+                                        <font-awesome-icon :icon="['fas', 'angle-left']" />
+                                    </div>
+                                    <div class="swiper-card__prev-mini" slot="button-next">
+                                        <font-awesome-icon :icon="['fas', 'angle-right']" />
+                                    </div>  
+                                </swiper>
                             </div>
                             <div class="swiper-card__statistics">
                                 <div class="swiper-card__name-rooms">Sunrise</div>
@@ -166,8 +206,28 @@
                     <swiper-slide class="swiper-card">
                         <a href="/">
                             <div class="swiper-card__img">
-                                <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy>
+                                <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
                                 <div class="swiper-card__cost">100$</div>
+                                <swiper :options="swiper_card_mini" class="swiper__wrapper-mini">
+                                    <swiper-slide class="swiper__wrapper-mini_card">
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <div class="swiper-card__next-mini" slot="button-prev">
+                                        <font-awesome-icon :icon="['fas', 'angle-left']" />
+                                    </div>
+                                    <div class="swiper-card__prev-mini" slot="button-next">
+                                        <font-awesome-icon :icon="['fas', 'angle-right']" />
+                                    </div>  
+                                </swiper>
                             </div>
                             <div class="swiper-card__statistics">
                                 <div class="swiper-card__name-rooms">Sunrise</div>
@@ -200,8 +260,28 @@
                     <swiper-slide class="swiper-card">
                         <a href="/">
                             <div class="swiper-card__img">
-                                <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy>
+                                <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
                                 <div class="swiper-card__cost">100$</div>
+                                <swiper :options="swiper_card_mini" class="swiper__wrapper-mini">
+                                    <swiper-slide class="swiper__wrapper-mini_card">
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <div class="swiper-card__next-mini" slot="button-prev">
+                                        <font-awesome-icon :icon="['fas', 'angle-left']" />
+                                    </div>
+                                    <div class="swiper-card__prev-mini" slot="button-next">
+                                        <font-awesome-icon :icon="['fas', 'angle-right']" />
+                                    </div>  
+                                </swiper>
                             </div>
                             <div class="swiper-card__statistics">
                                 <div class="swiper-card__name-rooms">Sunrise</div>
@@ -230,12 +310,32 @@
                                 </div>
                             </div>
                         </a>
-                    </swiper-slide>    
-                    <swiper-slide class="swiper-card">
+                    </swiper-slide>
+                                        <swiper-slide class="swiper-card">
                         <a href="/">
                             <div class="swiper-card__img">
-                                <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy>
+                                <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
                                 <div class="swiper-card__cost">100$</div>
+                                <swiper :options="swiper_card_mini" class="swiper__wrapper-mini">
+                                    <swiper-slide class="swiper__wrapper-mini_card">
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <swiper-slide>
+                                        <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
+                                    </swiper-slide>
+                                    <div class="swiper-card__next-mini" slot="button-prev">
+                                        <font-awesome-icon :icon="['fas', 'angle-left']" />
+                                    </div>
+                                    <div class="swiper-card__prev-mini" slot="button-next">
+                                        <font-awesome-icon :icon="['fas', 'angle-right']" />
+                                    </div>  
+                                </swiper>
                             </div>
                             <div class="swiper-card__statistics">
                                 <div class="swiper-card__name-rooms">Sunrise</div>
@@ -264,7 +364,7 @@
                                 </div>
                             </div>
                         </a>
-                    </swiper-slide>  
+                    </swiper-slide>
                     <div class="swiper-card__next" slot="button-prev">
                         <font-awesome-icon :icon="['fas', 'angle-left']" />
                     </div>
@@ -282,13 +382,33 @@
             return{
                 isActive:false, 
                 swiper_card_rooms: {
-                    slidesPerView: 4,
+                    slidesPerView: 1,
                     spaceBetween: 30,
                     autoplay: true,
                     loop: true,
                     navigation: {
                         nextEl: '.swiper-card__next',
                         prevEl: '.swiper-card__prev',
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        992: {
+                            slidesPerView: 4,
+                            spaceBetween: 30,
+                        }
+                    }
+                },
+                swiper_card_mini: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    autoplay: true,
+                    loop: true,
+                    navigation: {
+                        nextEl: '.swiper-card__next-mini',
+                        prevEl: '.swiper-card__prev-mini',
                     },
                 }
             }
