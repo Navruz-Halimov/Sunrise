@@ -1,0 +1,21 @@
+.book__page{
+  border: 1px solid red;
+  width: 100%;
+  padding: 5rem 0;
+  .book_hr{
+    border: 1px solid #444444;
+    padding: 20px 0;
+  }
+  .book__slide{
+    border: 1px solid green;
+    img{
+      width: 100%;
+    }
+  }
+  .book__text{
+    border: 1px solid blue;
+  }
+  .book__price{
+    border: 1px solid black;
+  }
+}
