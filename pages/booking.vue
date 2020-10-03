@@ -4,7 +4,7 @@
       <b-row>
         <b-col class="book_hr" cols="12" md="12">
           <b-row>
-            <b-col cols="12" md="4">
+            <b-col class="mb-sm-2 mb-md-2" cols="12" sm="12" md="12" lg="4">
               <div class="book__slide">
                 <swiper class="swiper book_img" :options="header__slider">
                   <swiper-slide>
@@ -27,7 +27,7 @@
                 </div>
               </div>
             </b-col>
-            <b-col cols="12" md="5">
+            <b-col cols="12" sm="7" md="6" lg="5">
               <div class="book__text">
                 <h4>Номера с большой двуспальной кроватью (King)</h4>
                 <p>Насладитесь пребыванием в этом номере площадью 35 кв. м с большой двуспальной кроватью (King), окнами
@@ -46,7 +46,7 @@
                 </ul>
               </div>
             </b-col>
-            <b-col cols="12" md="3">
+            <b-col cols="12" sm="5" md="6" lg="3">
               <div class="book__price">
                 <h2>1 656 000 UZS</h2>
                 <span>Сред. за ночь (UZS)</span>

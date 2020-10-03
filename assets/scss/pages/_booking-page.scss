@@ -153,4 +153,39 @@
       }
     }
   }
+  .swiper-slide:before{background-color: transparent;}
+}
+
+// Responsive //
+
+@media (min-width: 0) and (max-width: 576px){
+  .book__page{
+    .book__text{
+      h4{
+        margin: 12px 0;
+        font-size: 15px;
+      }
+      p{
+        font-size: 14.5px;
+      }
+      a{
+        font-size: 14px;
+      }
+      ul{
+        h5{font-size: 14px}
+        li{font-size: 15px}
+      }
+    }
+    .book__price{
+      h2{font-size: 21px;}
+      .book__btn--btn{width: 50%;}
+    }
+    .book__modal{
+      padding: 10px;
+      .modal__slide{
+        width: 90%;
+        height: 50%;
+      }
+    }
+  }
 }
