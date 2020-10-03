@@ -1,0 +1,156 @@
+.book__page{
+  width: 100%;
+  padding: 5rem 1rem;
+  .book_hr{
+    border-top: 1px solid #444444;
+    padding: 20px 0;
+  }
+  .book__slide{
+    background-color: rgba(192, 192, 192, 0.2);
+    padding-bottom: 60%;
+    position: relative;
+    cursor: pointer;
+    .book__expand{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 70%;
+      margin: auto;
+      z-index: 9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      font-size: 40px;
+      color: white;
+      .expand{
+        display: none;
+      }
+      &:hover{
+        background-color: rgba(48, 48, 48, 0.44);
+        width: 100%;
+        .expand{
+          display: block;
+        }
+      }
+    }
+  }
+  .book__text{
+    h4{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    p{
+      font-size: 14px;
+      margin: 0;
+    }
+    a{
+      font-size: 13px;
+      vertical-align: sub;
+      text-decoration: none;
+      &:hover{
+        color: #FFB612;
+      }
+    }
+    ul{
+      padding-left: 20px;
+      h5{
+        font-size: 15px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      li{
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .book__price{
+    text-align: right;
+    h2{
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    span{
+      font-size: 14px;
+      margin: 8px 0;
+      display: block;
+    }
+    .book__btn--btn{
+      width: 60%;
+      font-size: 15px!important;
+      padding: 10px 20px;
+      background-color: transparent;
+      color: #FFB612;
+      transition: .4s;
+      &:hover{
+        color: white;
+        background-color: #FFB612;
+      }
+      &:focus{box-shadow: none}
+    }
+  }
+  .book_img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    .book__prev, .book__next{
+      background-color: rgba(98, 98, 98, 0.25);
+      width: 40px;
+      height: 40px;
+      border: none;
+      top: 52%;
+      &:after{
+        color: white;
+        font-size: 21px!important;
+      }
+      &:hover:after{color: #FFB612}
+    }
+    .book__prev{left: 5px}
+    .book__next{right: 5px}
+  }
+  .book__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(39, 39, 39, 0.57);
+    .modal__slide{
+      position: relative;
+      width: 70%;
+      height: 70%;
+    }
+    .close{
+      width: 30px;
+      height: 30px;
+      outline: none;
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      z-index: 9;
+      i{
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: white!important;
+        &:first-child{
+          transform: rotate(45deg) translate(4px);
+        }
+        &:last-child{
+          transform: rotate(-45deg) translate(4px);
+        }
+      }
+    }
+  }
+}

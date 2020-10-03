@@ -11,7 +11,7 @@
             <b-nav-item href="/offer">Offer</b-nav-item>
             <b-nav-item href="/rooms">Rooms</b-nav-item>
             <b-nav-item href="/events">Events</b-nav-item>
-            <b-nav-item href="/gallery">gallery</b-nav-item>
+            <b-nav-item href="/gallery">Gallery</b-nav-item>
             <b-nav-item to="/amenties">Amenties</b-nav-item>
             <b-nav-item href="/attractions">Nearby attraction</b-nav-item>
             <b-nav-item href="/contact">Contact</b-nav-item>
