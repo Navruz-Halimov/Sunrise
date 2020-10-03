@@ -23,7 +23,6 @@
       border-radius: 4px;
       padding: 15px;
       box-shadow: 0px 10px 25px -10px rgba(0, 0, 0, 0.18);
-      
     }
 
     &__title {
@@ -143,7 +142,6 @@
         right: 25px;
         display: none;
       }
-
     }
 
     .button-show {
@@ -164,7 +162,7 @@
       max-width: 1110px;
       margin: auto 15px;
       box-shadow: 0 0px 12px rgba(0, 0, 0, 0.25);
-      
+
       .form-group {
         margin-bottom: 20px !important;
         position: relative;
@@ -233,7 +231,6 @@
       align-items: center;
       justify-content: center;
       margin: auto;
-
     }
   }
 
@@ -250,8 +247,7 @@
   }
 }
 
-@media (min-width: 576px) { 
-
+@media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
@@ -287,9 +283,7 @@
       margin: auto !important;
     }
   }
-
 }
-
 
 .swiper-card-rooms {
   padding-bottom: 50px;
@@ -351,7 +345,7 @@
     &__name-rooms {
       margin-bottom: 9px;
       font-size: 16px;
-      color: #000; 
+      color: #000;
     }
 
     &__size-rooms {
@@ -364,7 +358,7 @@
 
       span {
         padding: 0 0 0 10px;
-      }      
+      }
     }
 
     &__guest-rooms {
@@ -387,7 +381,6 @@
     }
 
     &__services {
-
       ul {
         list-style: none;
         margin: 0;
@@ -419,7 +412,7 @@
       align-items: center;
       justify-content: center;
       left: 0;
-      
+
       svg {
         font-size: 20px;
         color: #fff;
@@ -441,12 +434,12 @@
       align-items: center;
       justify-content: center;
       right: 0;
-      
+
       svg {
         font-size: 20px;
         color: #fff;
         margin: 0 0 0 -2px;
-      }      
+      }
     }
   }
 }
