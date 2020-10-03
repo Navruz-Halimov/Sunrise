@@ -31,7 +31,8 @@
           </div>
         </b-col>
         <b-col lg="4">
-            <div class="footer__motto">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+          <h4 class="footer__motto-heading">Vacation Rental</h4>
+            <div class="footer__motto">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <nuxt-link to="/contact">Read more <font-awesome-icon :icon="['fas', 'angle-right']" /></nuxt-link></div>
             <h4 class="social__networks-heading">Connect with Sunshine</h4>
             <ul class="social__networks">
                 <li class="social__networks-item">
