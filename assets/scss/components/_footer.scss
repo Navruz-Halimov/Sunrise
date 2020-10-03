@@ -14,6 +14,10 @@
       text-decoration: none;
     }
   }
+  &__motto-heading{
+    font-size: 24px;
+    color:white;
+  }
   &__email {
     color: white;
     margin-right: 5px;
@@ -78,9 +82,11 @@
   &__motto {
     font-size: 16px;
     color: white;
-    padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 30px;
+    a{
+      color:#fd7792;
+    }
   }
   .social__networks {
     &-heading {
