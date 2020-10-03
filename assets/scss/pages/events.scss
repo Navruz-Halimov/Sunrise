@@ -78,7 +78,7 @@
             color: #ffb615;
 
             a {
-                color: #ffb615;
+                color: #000;
                 font-size: 12px;
                 padding-left: 10px;
             }
@@ -259,7 +259,7 @@
 
         &-link {
             a {
-                padding: 18px 22px;
+                padding: 15px 20px;
                 line-height: 20px;
                 background-color: transparent;
                 color: #fff;
@@ -413,7 +413,7 @@
 
 @media (min-width: 576px) { 
     .event-page__banner-title {
-        font-size: 28px !important;
+        font-size: 24px !important;
     }
     .event-page__features-list {
         justify-content: flex-start !important;
@@ -429,11 +429,13 @@
         width: 130px !important;
     }
 
-    .event-page__heading, .event-page__features-title, .event-page__multimedia-title {
-        font-size: 22px !important; 
+    .event-page__banner-title {
+        font-size: 28px !important;
     }
 
-    
+    .event-page__heading {
+        font-size: 22px !important;
+    }
 }
 
 @media (min-width: 992px) { 

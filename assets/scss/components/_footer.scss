@@ -1,31 +1,53 @@
-
 .footer {
   background-image: url('../images/chooseus-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
   &__logo {
     display: block;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
     &:hover {
       color: #ffb612;
       text-decoration: none;
+    }
+  }
+  &__email {
+    color: white;
+    margin-right: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    svg {
+      color: #fd7e14;
+      margin-right: 5px;
     }
   }
   &__phone-link {
     display: inline-block;
     color: white;
     font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     &:hover {
       color: #ffb612;
       text-decoration: none;
+    }
+    svg {
+      color: #fd7e14;
+      margin-right: 5px;
     }
   }
   &__address {
     font-size: 16px;
     color: #777c81;
     line-height: 28px;
+    padding-right: 10px;
+    svg {
+      color: #fd7e14;
+      margin-right: 5px;
+    }
   }
   &__heading {
     color: #ffffff;
@@ -52,6 +74,13 @@
         text-decoration: none;
       }
     }
+  }
+  &__motto {
+    font-size: 16px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
   }
   .social__networks {
     &-heading {
@@ -82,32 +111,32 @@
       }
       .instagram {
         background-position: -5px -51px;
-        &:hover{
+        &:hover {
           background-position: -51px -51px;
         }
       }
-       .twitter {
+      .twitter {
         background-position: -5px -97px;
-        &:hover{
+        &:hover {
           background-position: -51px -97px;
         }
       }
-       .linkedin {
+      .linkedin {
         background-position: -97px -5px;
-        &:hover{
+        &:hover {
           background-position: -97px -51px;
         }
       }
-       .youtube {
+      .youtube {
         background-position: -97px -97px;
-        &:hover{
+        &:hover {
           background-position: -143px -5px;
         }
       }
       .telegram {
-        background-image: url("../images/telegram.svg");
+        background-image: url('../images/telegram.svg');
         background-size: 36px 36px;
-        &:hover{
+        &:hover {
           background-image: url('../images/tg-hover.png');
           background-size: cover;
         }
@@ -144,4 +173,9 @@
 }
 .vue-back-to-top {
   right: 20px;
+}
+.copyright {
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
 }

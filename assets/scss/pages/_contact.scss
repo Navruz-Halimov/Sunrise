@@ -109,10 +109,6 @@
   &-btn {
     margin-bottom: 50px;
 
-    &__form {
-      display: none;
-    }
-
     &__button {
       border: none;
       background-color: #ffb612;
@@ -163,12 +159,12 @@
       padding: 20px 30px;
       border: 1px solid #d8d8d8;
       border-radius: 0 0 4px 4px;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
-      //display: none;
+      display: none;
       width: 100%;
       max-width: 1110px;
       margin: auto 15px;
-
+      box-shadow: 0 0px 12px rgba(0, 0, 0, 0.25);
+      
       .form-group {
         margin-bottom: 20px !important;
         position: relative;
@@ -231,13 +227,12 @@
       background-color: #ffb612;
       font-size: 14px;
       color: #fff;
-      padding: 20px 25px;
+      padding: 15px 20px;
       border-radius: 4px;
       display: flex;
       align-items: center;
       justify-content: center;
       margin: auto;
-      width: 100%;
 
     }
   }
@@ -255,6 +250,10 @@
   }
 }
 
+@media (min-width: 576px) { 
+
+}
+
 @media (min-width: 768px) {
   .contact-page-btn__form label {
     max-width: 200px !important;
@@ -263,8 +262,11 @@
   .contact-page-btn__button .fa-times {
     display: block !important;
   }
+  .contact-page__heading {
+    font-size: 22px !important;
+  }
 
-  .contact-page__heading, .contact-page-info__title {
+  .contact-page-info__title {
     font-size: 22px !important;
   }
 }
@@ -286,7 +288,4 @@
     }
   }
 
-  .contact-page-btn__get {
-    width: auto !important;
-  }
 }
