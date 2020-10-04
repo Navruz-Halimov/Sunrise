@@ -50,7 +50,7 @@
               <div class="book__price">
                 <h2>1 656 000 UZS</h2>
                 <span>Сред. за ночь (UZS)</span>
-                <button class="btn book__btn book__btn--btn" type="button">Выбрать</button>
+                <button @click="showSignModal()" class="btn book__btn book__btn--btn" type="button">Выбрать</button>
               </div>
             </b-col>
           </b-row>
@@ -62,7 +62,8 @@
         <i></i>
         <i></i>
       </button>
-      <div class="modal__slide">
+      <transition name="slide" appear>
+        <div class="modal__slide">
         <swiper class="swiper book_img" :options="header__slider">
           <swiper-slide>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSnsGmLGGa-UQvhLYScGoWymAOMnq9gCoTu1A&usqp=CAU" alt="" />
@@ -80,6 +81,27 @@
           <div class="swiper-button-next book__next" slot="button-next"></div>
         </swiper>
       </div>
+      </transition>
+    </div>
+    <div v-if="signModal" class="price__modal">
+      <button @click="hideSignModal()" type="button" class="close">
+        <i></i>
+        <i></i>
+      </button>
+      <b-col class="join" md="6">
+        <h4>Join World of Sunrise or sign in to your account to book.</h4>
+        <div class="d-flex">
+          <b-col class="join__content" md="6">
+            <p>Want to become a World of Hyatt member?</p>
+            <a href="#">Join while you book</a>
+          </b-col>
+          <b-col class="join__content" md="6">
+            <p>Already a World of Hyatt member?</p>
+            <a href="#">Sign in & book</a>
+          </b-col>
+        </div>
+        <a @click="hideSignModal()" href="#"> <font-awesome-icon :icon="['fas', 'chevron-left']" /> Maybe later. I'll choose another rate.</a>
+      </b-col>
     </div>
   </div>
 </template>
@@ -103,7 +125,7 @@
         visible: false,
         none: true,
         modals: false,
-
+        signModal: false,
       }
     },
     methods:{
@@ -120,6 +142,12 @@
       },
       hideModal() {
         this.modals = false;
+      },
+      showSignModal() {
+        this.signModal = true;
+      },
+      hideSignModal() {
+        this.signModal = false;
       }
     },
   }
