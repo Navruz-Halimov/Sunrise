@@ -1,0 +1,21 @@
+.tourist__guide {
+  &-heading {
+    color: #000;
+    border-bottom: 1px solid #ffb612;
+    padding-bottom: 12px;
+    .info__circle{
+    color: #FFB612;
+    margin-right: 10px;
+    }
+  }
+  .guide__list {
+    color: #000;
+    padding-top: 10px;
+    list-style-type: none;
+    .guide__link {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+  }
+}
