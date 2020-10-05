@@ -108,19 +108,61 @@
     <b-container>
       <b-row class="gallery">
         <div class="gallery__title">
-          <i><img src="../assets/images/picture.svg" alt=""></i>
+          <i><img src="../assets/images/picture.svg" alt="" /></i>
           <h2>Gallery</h2>
         </div>
       </b-row>
       <Test :images="images" />
-      <b-button href="http://localhost:3000/gallery" class="btn-img my-4" to="/gallery">For more</b-button>
+      <b-button
+        href="http://localhost:3000/gallery"
+        class="btn-img my-4"
+        to="/gallery"
+        >For more</b-button
+      >
     </b-container>
     <div class="tourist__guide">
       <b-container>
-        <h1 class="tourist__guide-heading">Tourist guide</h1>
+        <h1 class="tourist__guide-heading"><font-awesome-icon class="info__circle" :icon="['fas', 'info-circle']"/>Tourist guide</h1>
         <ul class="guide__list">
           <li class="guide__item">
-            <nuxt-link to='' class="guide__link">Online scoreboard of Tashkent airport</nuxt-link>
+            <b-row>
+              <b-col lg="6">
+                <nuxt-link to="" class="guide__link">
+                  Online scoreboard of Tashkent airport Airlines</nuxt-link
+                >
+                <nuxt-link to="" class="guide__link"
+                  >Law and law OVIRs of Tashkent</nuxt-link
+                >
+                <nuxt-link to="" class="guide__link">Travel Tips</nuxt-link>
+                <nuxt-link to="" class="guide__link"
+                  >Travel insurance</nuxt-link
+                >
+                <nuxt-link to="" class="guide__link">Travel tips</nuxt-link>
+                <nuxt-link to="" class="guide__link"
+                  >Online scoreboard of Tashkent airport</nuxt-link
+                >
+              </b-col>
+              <b-col lg="6">
+                <nuxt-link to="" class="guide__link">
+                  Tourism Code Horoscope for 2019</nuxt-link
+                >
+                <nuxt-link to="" class="guide__link"
+                  >Embassies in Tashkent</nuxt-link
+                >
+                <nuxt-link to="" class="guide__link"
+                  >Accommodation in hotels</nuxt-link
+                >
+                <nuxt-link to="" class="guide__link"
+                  >Communication abroad</nuxt-link
+                >
+                <nuxt-link to="" class="guide__link"
+                  >Travel Dictionary</nuxt-link
+                >
+                <nuxt-link to="" class="guide__link"
+                  >TOP-10 in the world of tourism</nuxt-link
+                >
+              </b-col>
+            </b-row>
           </li>
         </ul>
       </b-container>
@@ -129,7 +171,7 @@
 </template>
 
 <script>
-  import Test from '../components/Test.vue';
+import Test from '../components/Test.vue'
 export default {
   name: 'Range',
   comments: {

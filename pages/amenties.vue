@@ -31,14 +31,14 @@
               </ul>
               <ul class="outdoor__list">
                 <li class="outdoor__item">
-                  <span class="outdoor__item- icon"></span>
+                  <span class="outdoor__item-kitchen icon"></span>
                   <span class="outdoor__item-heading">Kitchen</span>
                 </li>
                 <li class="outdoor__item">Shared kitchen</li>
               </ul>
               <ul class="outdoor__list">
                 <li class="outdoor__item">
-                  <span class="outdoor__item-pet"></span>
+                  <span class="outdoor__item-pet icon"></span>
                   <span class="outdoor__item-heading">Pets</span>
                 </li>
                 <li class="outdoor__item">
