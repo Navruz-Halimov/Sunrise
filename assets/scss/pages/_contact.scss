@@ -285,6 +285,8 @@
   }
 }
 
+
+//start swiper slider for main page 
 .swiper-card-rooms {
   padding-bottom: 50px;
 
@@ -515,3 +517,85 @@
     width: 100% !important;
   }
 }
+
+//finish swiper slider for main page 
+
+
+
+// start Happy Clients & Feedbacks slider for main page
+.users-feedbacks {
+  font-size: 14px;
+  color: #000;
+  background: #f3f4f7;
+  padding: 50px 0;
+
+  .swiper-container {
+    height: auto;
+  }
+
+  .swiper-wrapper {
+    padding: 15px 0;
+
+    .swiper-slide::before {
+      content: none;
+    }
+    
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 30px;
+    padding: 30px 20px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    box-shadow: 0px 30px 33px -41px rgba(0, 0, 0, 0.24);
+
+    .card-icon {
+      position: absolute;
+      font-size: 25px;
+      color: #ffb612;
+      top: -13px;
+    }
+
+    &-img {
+      img {
+        width: 80px !important;
+      }
+    }
+
+    &-info {
+      text-align: left;
+      padding-left: 24px;
+    }
+
+    &-text {
+      margin-bottom: 10px;
+      color: #808080;
+    }
+
+    &-name {
+      font-size: 16px;
+    }
+
+    &-career {
+      color: #808080;
+    }
+
+
+  }
+
+
+}
+
+
+
+
+// finish Happy Clients & Feedbacks slider for main page
