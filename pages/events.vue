@@ -105,16 +105,16 @@
                         <b-col lg="6">
                             <h3 class="event-page__multimedia-heading">Custom tours for your team</h3>
                             <h5 class="event-page__multimedia-subtitle">Chimgan and Charvak tours</h5>
-                            <p class="event-page__multimedia-text" :class="{autoheight:isActive}" >
+                            <p class="event-page__multimedia-text" :class="{autoheight:isActive1}" >
                                 Take your business meeting to a new level with a recreational trip to the Chimgan mountains and Charvak reservoir with your the entire team. Start the tour with a long and scenic drive to the Chimgan mountains. Take the cable car to Kumbel peak. Enjoy the spectacular views and even if you are not able to take the cable car, the picturesque scenery of the mountainous region is sure wow you. Continue to the shore of Charvak reservoir and enjoy a different kind of tranquil beauty. Enjoy sumptuous lunch at the Chinaras restaurant where you can even see rock carvings from prehistoric era.
 Price per person: USD 30* (may vary as per season)
 *Includes: Transportation, tour guide, and lunch</p>
                             <b-button variant="outline-light" class="event-page__multimedia-btn" >
-                                <span @click="isActive = !isActive" v-if="isActive === false">
+                                <span @click="isActive1 = !isActive1" v-if="isActive1 === false">
                                     Read more
                                     <font-awesome-icon :icon="['fas', 'angle-down']" />
                                 </span>
-                                <span v-else @click="isActive = !isActive">
+                                <span v-else @click="isActive1 = !isActive1">
                                     Read less
                                     <font-awesome-icon :icon="['fas', 'angle-up']" />
                                 </span>
@@ -202,6 +202,7 @@ Price per person: USD 30* (may vary as per season)
         data() {
             return{
                 isActive:false,
+                isActive1:false,
             }
         },
         methods: {

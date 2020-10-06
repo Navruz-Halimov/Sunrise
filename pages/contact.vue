@@ -139,10 +139,6 @@
                                         <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                        <!-- <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'tv']" /></li> -->
                                         <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                                     </ul>
                                 </div>
@@ -193,10 +189,6 @@
                                         <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                        <!-- <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'tv']" /></li> -->
                                         <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                                     </ul>
                                 </div>
@@ -247,10 +239,6 @@
                                         <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                        <!-- <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'tv']" /></li> -->
                                         <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                                     </ul>
                                 </div>
@@ -301,17 +289,13 @@
                                         <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                        <!-- <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'tv']" /></li> -->
                                         <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                                     </ul>
                                 </div>
                             </div>
                         </a>
                     </swiper-slide>
-                                        <swiper-slide class="swiper-card">
+                    <swiper-slide class="swiper-card">
                         <a href="/">
                             <div class="swiper-card__img">
                                 <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
@@ -355,10 +339,6 @@
                                         <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                        <!-- <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'tv']" /></li> -->
                                         <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                                     </ul>
                                 </div>
