@@ -506,12 +506,24 @@
                 
                 // start it's code for main page Happy Clients & Feedbacks
                 users_feedback: {
-                    slidesPerView: 3,
+                    slidesPerView: 1,
                     spaceBetween: 15,
+                    autoplay: true,
+                    loop: true,
                     pagination: {
                         el: '.swiper-pagination',
-                        type: 'bullets',
+                        clickable: true,
                     },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 15,
+                        },
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 15,
+                        }
+                    }
                     
                 }
 

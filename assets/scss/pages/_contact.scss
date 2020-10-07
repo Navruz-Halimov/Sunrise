@@ -533,6 +533,21 @@
     height: auto;
   }
 
+  .swiper-pagination {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #ffb612;
+  }
+
   .swiper-wrapper {
     padding: 15px 0;
 
