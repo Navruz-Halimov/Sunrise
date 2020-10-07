@@ -8,19 +8,42 @@
                             <h1 class="event-page__heading">
                                 Reserve our meeting rooms for your next event in Tashkent
                             </h1>
-                            <div class="event-page__text-hide" :class="{autoheight:isActive}">
-                                With three outstanding meeting rooms that are designed to host all kinds of gatherings from small meetings to large receptions for up to 250 guests, the Sunrine Blu is an ideal venue for your next event in Tashkent. We can arrange the furniture in our Grand Ballroom, Turquoise Room, and Sapphire Room in a variety of setups as per your requirement. Each room comes with modern audiovisual equipment, videoconferencing facilities, and high-speed wireless internet. Our dedicated Meetings & Events coordinator helps you plan every aspect of your event and ensure that everything runs smoothly and our experienced chefs offer customized menus for your guests. An on-site business center is also available for the meeting delegates.
-                            </div>
-                            <b-button class="event-page__text-btn" variant="outline-light">
-                                <span @click="isActive = !isActive" v-if="isActive === false">
+                            <div class="event-page__collapse" :class="{autoheight:isActive}">
+                                <b-collapse id="collapse" >
+                                    <b-card>
+                                        With three outstanding meeting rooms that are designed to host all kinds of 
+                                        gatherings from small meetings to large receptions for up to 250 guests, 
+                                        the Sunrine Blu is an ideal venue for your next event in Tashkent. 
+                                        We can arrange the furniture in our Grand Ballroom, Turquoise Room, 
+                                        and Sapphire Room in a variety of setups as per your requirement. 
+                                        Each room comes with modern audiovisual equipment, videoconferencing facilities, 
+                                        and high-speed wireless internet. Our dedicated Meetings & Events coordinator helps 
+                                        you plan every aspect of your event and ensure that everything runs smoothly and our 
+                                        experienced chefs offer customized menus for your guests. An on-site business center
+                                        is also available for the meeting delegates.
+                                    </b-card>
+                                </b-collapse>
+                                <b-button 
+                                    v-b-toggle.collapse 
+                                    class="event-page__text-btn" 
+                                    variant="outline-light"
+                                    @click="isActive = !isActive"
+                                    v-if="isActive === false"
+                                >
                                     Read more
                                     <font-awesome-icon :icon="['fas', 'angle-down']" />
-                                </span>
-                                <span v-else @click="isActive = !isActive">
+                                </b-button>
+                                <b-button 
+                                    v-b-toggle.collapse 
+                                    class="event-page__text-btn" 
+                                    variant="outline-light"
+                                    v-else
+                                    @click="isActive = !isActive"
+                                >
                                     Read less
                                     <font-awesome-icon :icon="['fas', 'angle-up']" />
-                                </span>
-                            </b-button>
+                                </b-button>
+                            </div>
                         </b-col>
                     </b-row>
                 </b-container>
@@ -105,21 +128,41 @@
                         <b-col lg="6">
                             <h3 class="event-page__multimedia-heading">Custom tours for your team</h3>
                             <h5 class="event-page__multimedia-subtitle">Chimgan and Charvak tours</h5>
-                            <p class="event-page__multimedia-text" :class="{autoheight:isActive}" >
-                                Take your business meeting to a new level with a recreational trip to the Chimgan mountains and Charvak reservoir with your the entire team. Start the tour with a long and scenic drive to the Chimgan mountains. Take the cable car to Kumbel peak. Enjoy the spectacular views and even if you are not able to take the cable car, the picturesque scenery of the mountainous region is sure wow you. Continue to the shore of Charvak reservoir and enjoy a different kind of tranquil beauty. Enjoy sumptuous lunch at the Chinaras restaurant where you can even see rock carvings from prehistoric era.
-Price per person: USD 30* (may vary as per season)
-*Includes: Transportation, tour guide, and lunch</p>
-                            <b-button variant="outline-light" class="event-page__multimedia-btn" >
-                                <span @click="isActive = !isActive" v-if="isActive === false">
+                            <div class="event-page__collapse" :class="{autoheight:isActive1}">
+                                <b-collapse id="collapse" >
+                                    <b-card>
+                                        With three outstanding meeting rooms that are designed to host all kinds of 
+                                        gatherings from small meetings to large receptions for up to 250 guests, 
+                                        the Sunrine Blu is an ideal venue for your next event in Tashkent. 
+                                        We can arrange the furniture in our Grand Ballroom, Turquoise Room, 
+                                        and Sapphire Room in a variety of setups as per your requirement. 
+                                        Each room comes with modern audiovisual equipment, videoconferencing facilities, 
+                                        and high-speed wireless internet. Our dedicated Meetings & Events coordinator helps 
+                                        you plan every aspect of your event and ensure that everything runs smoothly and our 
+                                        experienced chefs offer customized menus for your guests.
+                                    </b-card>
+                                </b-collapse>
+                                <b-button 
+                                    v-b-toggle.collapse 
+                                    class="event-page__text-btn" 
+                                    variant="outline-light"
+                                    @click="isActive1 = !isActive1"
+                                    v-if="isActive1 === false"
+                                >
                                     Read more
                                     <font-awesome-icon :icon="['fas', 'angle-down']" />
-                                </span>
-                                <span v-else @click="isActive = !isActive">
+                                </b-button>
+                                <b-button 
+                                    v-b-toggle.collapse 
+                                    class="event-page__text-btn" 
+                                    variant="outline-light"
+                                    v-else
+                                    @click="isActive1 = !isActive1"
+                                >
                                     Read less
                                     <font-awesome-icon :icon="['fas', 'angle-up']" />
-                                </span>
-                                
-                            </b-button>
+                                </b-button>
+                            </div>
                         </b-col>
                     </b-row>
                 </b-container>
@@ -195,6 +238,11 @@ Price per person: USD 30* (may vary as per season)
                 </b-row>
             </b-container>
         </div>
+
+        <b-container>
+            
+            
+        </b-container>
     </div>
 </template>
 <script>
@@ -202,9 +250,13 @@ Price per person: USD 30* (may vary as per season)
         data() {
             return{
                 isActive:false,
+                isActive1:false,
             }
         },
         methods: {
+            animate() {
+
+            }
         }
     }
 </script>

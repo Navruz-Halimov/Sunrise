@@ -17,11 +17,12 @@
   }
 
   &-details {
+    margin-bottom: 50px;
     &__cards {
       background: #f3f3f3;
       border-radius: 4px;
       padding: 15px;
-      box-shadow: 0px 22px 24px -21px rgba(0, 0, 0, 0.18);
+      box-shadow: 0px 10px 25px -10px rgba(0, 0, 0, 0.18);
     }
 
     &__title {
@@ -33,7 +34,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
-      color: #ffb615; 
+      color: #ffb612;
 
       .fa-phone-volume {
         color: #000;
@@ -50,8 +51,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
-      color: #ffb615; 
-
+      color: #ffb612;
       a {
         padding-left: 10px;
         color: #000;
@@ -68,7 +68,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
-      color: #ffb615; 
+      color: #ffb612;
 
       a {
         padding-left: 10px;
@@ -142,10 +142,6 @@
         right: 25px;
         display: none;
       }
-
-      // &:hover {
-      //   background-color: #790505;
-      // }
     }
 
     .button-show {
@@ -166,7 +162,7 @@
       max-width: 1110px;
       margin: auto 15px;
       box-shadow: 0 0px 12px rgba(0, 0, 0, 0.25);
-      
+
       .form-group {
         margin-bottom: 20px !important;
         position: relative;
@@ -235,10 +231,6 @@
       align-items: center;
       justify-content: center;
       margin: auto;
-
-      &:hover {
-        background-color: #ffb612;
-      }
     }
   }
 
@@ -255,8 +247,7 @@
   }
 }
 
-@media (min-width: 576px) { 
-
+@media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
@@ -292,5 +283,340 @@
       margin: auto !important;
     }
   }
+}
+
+
+//start swiper slider for main page 
+.swiper-card-rooms {
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  .swiper-container {
+    height: auto;
+    padding: 0 25px;
+  }
+
+  .swiper-wrapper .swiper-slide::before {
+    content: none;
+  }
+
+  .swiper__wrapper-mini {
+    padding: 0;
+
+    .swiper-slide img {
+      width: 250px !important;
+    }
+  }
+
+  .swiper-card {
+    border-radius: 11px;
+    box-shadow: 0 15px 15px 0 rgba(0, 36, 77, 0.2);
+    transition: all 0.25s linear;
+    border: 1px solid #eef1f4;
+    min-height: 150px;
+    text-align: left;
+    margin-bottom: 50px;
+
+    a {
+      text-decoration: none;
+    }
+
+    &:hover {
+      border-color: #e8ebed;
+      box-shadow: none;
+      color: #2d2d2d;
+      border: 1px solid #e8ebed;
+    }
+
+    &__img {
+      position: relative;
+      img {
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+        min-height: 220px;
+      }
+    }
+
+    &__statistics {
+      padding: 10px 20px;
+    }
+
+    &__cost {
+      position: absolute;
+      top: 0;
+      background-color: #ffb612;
+      border-radius: 11px 0px 11px 0px;
+      color: #fff;
+      padding: 5px 25px;
+      font-size: 14px;
+      z-index: 99;
+    }
+
+    &__statistics {
+      display: flex;
+      flex-direction: column;
+      color: rgba(45, 45, 45, 0.5);
+    }
+
+    &__name-rooms {
+      margin-bottom: 9px;
+      font-size: 16px;
+      color: #000;
+    }
+
+    &__size-rooms {
+      margin-bottom: 9px;
+      font-size: 14px;
+
+      svg {
+        color: #ffb612;
+      }
+
+      span {
+        padding: 0 0 0 10px;
+      }
+    }
+
+    &__guest-rooms {
+      margin-bottom: 15px;
+      font-size: 14px;
+
+      svg {
+        color: #ffb612;
+      }
+
+      span {
+        padding: 0 0 0 10px;
+      }
+    }
+
+    &__desc {
+      font-size: 13px;
+      color: #000;
+      margin-bottom: 15px;
+    }
+
+    &__services {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          padding: 0 20px 0 0px;
+
+          svg {
+            color: #ffb612;
+          }
+        }
+      }
+    }
+
+    &__next {
+      background: #ffb612;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 40px;
+      width: 40px;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 3px;
+      box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+      transition: all .3s ease;
+        
+      &:hover {
+        box-shadow: none;
+      }
+
+      &-mini {
+        background: #ffb612;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 25px;
+        width: 25px;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;   
+        transition: all .3s ease; 
+
+
+        svg {
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+
+      svg {
+        font-size: 25px;
+        color: #fff;
+        //margin: 0 0 0 -2px;
+      }
+    }
+
+    &__prev {
+      background: #ffb612;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 40px;
+      width: 40px;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 3px;
+      box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+      transition: all .3s ease;
+        
+      &:hover {
+        box-shadow: none;
+      }
+
+      &-mini {
+        background: #ffb612;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 25px;
+        width: 25px;
+        padding: 10px;
+        border-radius: 50%;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        transition: all .3s ease;
+
+        svg {
+          font-size: 25px;
+          color: #fff;
+        }
+      }
+
+      svg {
+        font-size: 20px;
+        color: #fff;
+        // margin: 0 0 0 -2px;
+      }
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
+  .swiper-card-rooms .swiper__wrapper-mini .swiper-slide img {
+    width: 100% !important;
+  }
+}
+
+//finish swiper slider for main page 
+
+
+
+// start Happy Clients & Feedbacks slider for main page
+.users-feedbacks {
+  font-size: 14px;
+  color: #000;
+  background: #f3f4f7;
+  padding: 50px 0;
+
+  .swiper-container {
+    height: auto;
+  }
+
+  .swiper-pagination {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #ffb612;
+  }
+
+  .swiper-wrapper {
+    padding: 15px 0;
+
+    .swiper-slide::before {
+      content: none;
+    }
+    
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 30px;
+    padding: 30px 20px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    box-shadow: 0px 30px 33px -41px rgba(0, 0, 0, 0.24);
+
+    .card-icon {
+      position: absolute;
+      font-size: 25px;
+      color: #ffb612;
+      top: -13px;
+    }
+
+    &-img {
+      img {
+        width: 80px !important;
+      }
+    }
+
+    &-info {
+      text-align: left;
+      padding-left: 24px;
+    }
+
+    &-text {
+      margin-bottom: 10px;
+      color: #808080;
+    }
+
+    &-name {
+      font-size: 16px;
+    }
+
+    &-career {
+      color: #808080;
+    }
+
+
+  }
+
 
 }
+
+
+
+
+// finish Happy Clients & Feedbacks slider for main page

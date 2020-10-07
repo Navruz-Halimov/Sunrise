@@ -1,0 +1,456 @@
+%modal-style {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(39, 39, 39, 0.57);
+}
+
+.book__page {
+  width: 100%;
+  padding: 3rem 1rem;
+  .book_hr {
+    border-top: 1px solid #cccccc;
+    padding: 20px 0;
+  }
+  .book__header {
+    margin: 2rem 0;
+    padding: 15px 30px;
+    img{
+      width: 100%;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5px;
+      span {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+    a {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      text-decoration: none;
+    }
+    .header__content {
+      border-top: 1px solid #cccccc;
+      margin: 3rem 0;
+      text-align: center;
+      .amenity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+        img {
+          width: 26px;
+          height: 26px;
+        }
+        span {
+          font-size: 13.5px;
+        }
+      }
+      button{
+        font-size: 13.5px;
+        color: #007bff;
+        &:focus{
+          box-shadow: none;
+        }
+        &:hover{
+          color: #FFB612;
+        }
+      }
+    }
+  }
+  .book__slide {
+    background-color: rgba(192, 192, 192, 0.2);
+    padding-bottom: 60%;
+    position: relative;
+    cursor: pointer;
+    .book__expand {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 70%;
+      margin: auto;
+      z-index: 9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      font-size: 40px;
+      color: white;
+      .expand {
+        display: none;
+      }
+      &:hover {
+        background-color: rgba(48, 48, 48, 0.44);
+        width: 100%;
+        .expand {
+          display: block;
+        }
+      }
+    }
+  }
+  .book__text {
+    h4 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+    a {
+      font-size: 13px;
+      vertical-align: sub;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover{
+        color: #FFB612;
+      }
+    }
+    ul {
+      padding-left: 20px;
+      h5 {
+        font-size: 15px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      li {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .book__price {
+    text-align: right;
+    h2 {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    span {
+      font-size: 14px;
+      margin: 8px 0;
+      display: block;
+    }
+    .book__btn--btn {
+      width: 60%;
+      font-size: 15px !important;
+      padding: 10px 20px;
+      background-color: transparent;
+      color: #ffb612;
+      transition: 0.4s;
+      &:hover {
+        color: white;
+        background-color: #ffb612;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .book_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    .book__prev,
+    .book__next {
+      background-color: rgba(98, 98, 98, 0.25);
+      width: 40px;
+      height: 40px;
+      border: none;
+      top: 52%;
+      &:after {
+        color: white;
+        font-size: 21px !important;
+      }
+      &:hover:after {
+        color: #ffb612;
+      }
+    }
+    .book__prev {
+      left: 5px;
+    }
+    .book__next {
+      right: 5px;
+    }
+  }
+  .book__modal {
+    @extend %modal-style;
+    .modal__slide {
+      position: relative;
+      width: 70%;
+      height: 70%;
+    }
+  }
+  .price__modal {
+    @extend %modal-style;
+    .join {
+      background-color: white;
+      width: 100%;
+      border-radius: 5px;
+      padding: 40px 30px;
+      text-align: center;
+      h4 {
+        font-size: 19px;
+      }
+      .join__flex{
+        display: flex;
+        justify-content: center;
+      }
+      .join__content{
+        padding: 20px;
+        min-height: 100%;
+        p {
+          font-size: 16px;
+          color: #808080;
+        }
+        a {
+          border: 1px solid #ffb612;
+          text-decoration: none;
+          width: 100%;
+          padding: 10px 0;
+          margin: 20px 0;
+          display: block;
+          color: #ffb612;
+          border-radius: 8px;
+          transition: 0.5s ease-out;
+          &:hover {
+            background-color: #ffb612;
+            color: white;
+          }
+        }
+        &:nth-child(2) a {
+          background-color: #ffb612;
+          color: white;
+        }
+      }
+      a {
+        text-decoration: none;
+        font-size: 15px;
+        margin-top: 2rem;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .sign {
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 40px 30px;
+    h3 {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      span {
+        font-size: 14px;
+        display: block;
+        font-weight: normal;
+      }
+    }
+    .form {
+      label {
+        font-size: 12.5px;
+      }
+      a {
+        font-size: 13px;
+        text-decoration: none;
+        display: block;
+        margin-top: 10px;
+      }
+      input {
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      button {
+        width: 100%;
+        background-color: #ffb612;
+        border: none;
+        &:focus {
+          box-shadow: none;
+          background-color: #ffb612;
+        }
+      }
+    }
+  }
+  .close {
+    width: 30px;
+    height: 30px;
+    outline: none;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    z-index: 9;
+    i {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: white !important;
+      &:first-child {
+        transform: rotate(45deg) translate(4px);
+      }
+      &:last-child {
+        transform: rotate(-45deg) translate(4px);
+      }
+    }
+  }
+
+
+// Responsive //
+
+@media (min-width: 0) and (max-width: 576px){
+  .book__page{
+    .book__header{
+      padding: 0;
+      h3{
+        font-size: 18px;
+      }
+      img{
+        margin-bottom: 1rem;
+      }
+      .header__content{
+        span, button{
+          font-size: 14px!important;
+        }
+      }
+    }
+    .book__text{
+      h4{
+        margin: 12px 0;
+        font-size: 15px;
+      }
+      p {
+        font-size: 14.5px;
+      }
+      a {
+        font-size: 14px;
+      }
+      ul {
+        h5 {
+          font-size: 14px;
+        }
+        li {
+          font-size: 15px;
+        }
+      }
+    }
+    .book__price {
+      h2 {
+        font-size: 21px;
+      }
+      .book__btn--btn {
+        width: 50%;
+      }
+    }
+    .book__modal {
+      padding: 10px;
+      .modal__slide {
+        width: 90%;
+        height: 50%;
+      }
+    }
+    .price__modal{
+      .join{
+        width: 90%;
+        padding: 15px 10px;
+        h4{font-size: 16px;}
+        .join__flex{
+          flex-direction: column;
+          margin-top: 1rem;
+        }
+        .join__content{
+          padding: 0;
+          p{font-size: 16px;}
+        }
+      }
+    }
+    .sign{
+      width: 90%;
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px){
+  .book__page{
+    .book__header{
+      padding: 0;
+      h3{
+        font-size: 18px;
+      }
+      img{
+        margin-bottom: 1rem;
+      }
+      .header__content{
+        span, button{
+          font-size: 14px!important;
+        }
+      }
+    }
+    .book__text{
+      h4{
+        margin: 12px 0;
+        font-size: 15px;
+      }
+      p{
+        font-size: 14.5px;
+      }
+      a{
+        font-size: 14px;
+      }
+      ul{
+        h5{font-size: 14px}
+        li{font-size: 15px}
+      }
+    }
+    .book__price{
+      h2{font-size: 20px; margin-top: 8px}
+      .book__btn--btn{width: 80%;}
+    }
+    .book__modal{
+      padding: 10px;
+      .modal__slide{
+        width: 90%;
+        height: 80%;
+      }
+    }
+    .price__modal{
+      .join{
+        width: 80%;
+        padding: 15px 10px;
+        h4{font-size: 16px;}
+        .join__flex{
+          flex-direction: column;
+          margin-top: 1rem;
+        }
+        .join__content{
+          padding: 0;
+          p{font-size: 16px;}
+        }
+      }
+    }
+    .sign{
+      width: 80%;
+    }
+  }
+}
+}

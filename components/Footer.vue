@@ -16,22 +16,24 @@
           <h4 class="footer__heading">Quick Link</h4>
           <div class="footer__menu">
             <ul class="footer__list">
-              <li class="footer__item"><nuxt-link to="">Home </nuxt-link></li>
-              <li class="footer__item"><nuxt-link to="">Booking </nuxt-link></li>
-              <li class="footer__item"><nuxt-link to="">About Us </nuxt-link></li>
-              <li class="footer__item"><nuxt-link to="">Review</nuxt-link></li>
-              <li class="footer__item"><nuxt-link to="">Contact</nuxt-link></li>
+              <li class="footer__item"><nuxt-link to="/">Home</nuxt-link></li>
+              <li class="footer__item"><nuxt-link to="/booking">Booking</nuxt-link></li>
+              <li class="footer__item"><nuxt-link to="/offer">Offer</nuxt-link></li>
+              <li class="footer__item"><nuxt-link to="/rooms">Rooms</nuxt-link></li>
+              <li class="footer__item"><nuxt-link to="/events">Events</nuxt-link></li>
             </ul>
             <ul class="footer__list">
-              <li class="footer__item"><nuxt-link to="">Services</nuxt-link></li>
-              <li class="footer__item"><nuxt-link to="">Our Room</nuxt-link></li>
-              <li class="footer__item"><nuxt-link to="">Payments</nuxt-link></li>
-              <li class="footer__item"><nuxt-link to="">Events</nuxt-link></li>
+              <li class="footer__item"><nuxt-link to="/gallery">Gallery</nuxt-link></li>
+              <li class="footer__item"><nuxt-link to="/amenties">Amenties</nuxt-link></li>
+              <li class="footer__item"><nuxt-link to="/attractions">Nearby attraction</nuxt-link></li>
+              <li class="footer__item"><nuxt-link to="/contact">Contact</nuxt-link></li>
+              <li class="footer__item"><nuxt-link to="/reviews">Reviews</nuxt-link></li>
             </ul>
           </div>
         </b-col>
         <b-col lg="4">
-            <div class="footer__motto">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div>
+          <h4 class="footer__motto-heading">Vacation Rental</h4>
+            <div class="footer__motto">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <nuxt-link to="/contact">Read more <font-awesome-icon :icon="['fas', 'angle-right']" /></nuxt-link></div>
             <h4 class="social__networks-heading">Connect with Sunshine</h4>
             <ul class="social__networks">
                 <li class="social__networks-item">
