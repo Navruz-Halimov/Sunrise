@@ -98,6 +98,180 @@
             </b-card-text>
           </b-card>
         </b-col>
+        <b-col class="mt-3" cols="12" offset="1" sm="6" offset-sm="0" md="6" lg="4">
+          <b-card
+            img-src="../assets/images/attractions/ploshad-nezavisimosti.jpg"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 20rem;"
+            class="cards mb-2"
+          >
+            <span>Embassy</span>
+            <h4>Embassy of the United States</h4>
+            <hr>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="att-icons" />
+              Amir Temur Square
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'compass']" class="att-icons" />
+              <p class="mb-0">
+                7.66 km from property
+                <a href="https://www.google.ru/maps/dir/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C+%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82/%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9+%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82+%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9,+108+Amir+Temur+Avenue,+Tashkent+100200,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.3275719,69.2595236,13z/data=!4m13!4m12!1m5!1m1!1s0x38ae8b3cdae1b241:0xc2c5e9ba7c9ae5d0!2m2!1d69.2672662!2d41.3151214!1m5!1m1!1s0x38ae8b534175ed31:0x52a8f9d9414a2ad8!2m2!1d69.2868149!2d41.3408335" target="_blank">Get Directions</a>
+              </p>
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'link']" class="att-icons" />
+              <a href="https://www.google.ru/maps/place/%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D1%8C+%D0%9C%D1%83%D1%81%D1%82%D0%B0%D0%BA%D0%B8%D0%BB%D0%BB%D0%B8%D0%BA,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.3018857,69.2663161,13z/data=!4m5!3m4!1s0x38ae8b3d21e647ed:0x341f32e430bec39a!8m2!3d41.3152564!4d69.2666269" target="_blank">Show on map</a>
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col class="mt-3" cols="12" offset="1" sm="6" offset-sm="0" md="6" lg="4">
+          <b-card
+            img-src="../assets/images/attractions/skver-amira-temura.jpg"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 20rem;"
+            class="cards mb-2"
+          >
+            <span>Embassy</span>
+            <h4>Embassy of the United States</h4>
+            <hr>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="att-icons" />
+              Independence square Tashkent
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'compass']" class="att-icons" />
+              <p class="mb-0">
+                7.66 km from property
+                <a href="https://www.google.ru/maps/dir/%D0%A1%D0%BA%D0%B2%D0%B5%D1%80+%D0%B8%D0%BC.+%D0%90%D0%BC%D0%B8%D1%80%D0%B0+%D0%A2%D0%B5%D0%BC%D1%83%D1%80%D0%B0,+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%90%D0%BC%D0%B8%D1%80%D0%B0+%D0%A2%D0%B5%D0%BC%D1%83%D1%80%D0%B0,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82/%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9+%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82+%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9,+108+Amir+Temur+Avenue,+Tashkent+100200,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.3189232,69.2621727,13.75z/data=!4m13!4m12!1m5!1m1!1s0x38ae8b2931f41f23:0x81095e06b654b845!2m2!1d69.2795927!2d41.3111391!1m5!1m1!1s0x38ae8b534175ed31:0x52a8f9d9414a2ad8!2m2!1d69.2868149!2d41.3408335" target="_blank">Get Directions</a>
+              </p>
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'link']" class="att-icons" />
+              <a href="https://www.google.ru/maps/place/%D0%A1%D0%BA%D0%B2%D0%B5%D1%80+%D0%B8%D0%BC.+%D0%90%D0%BC%D0%B8%D1%80%D0%B0+%D0%A2%D0%B5%D0%BC%D1%83%D1%80%D0%B0/@41.3104922,69.2747035,14.75z/data=!4m5!3m4!1s0x38ae8b2931f41f23:0x81095e06b654b845!8m2!3d41.3111391!4d69.2795927" target="_blank">Show on map</a>
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col class="mt-3" cols="12" offset="1" sm="6" offset-sm="0" md="6" lg="4">
+          <b-card
+            img-src="../assets/images/attractions/muzey-iskusstv-uzbekistana.jpg"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 20rem;"
+            class="cards mb-2"
+          >
+            <span>Embassy</span>
+            <h4>Embassy of the United States</h4>
+            <hr>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="att-icons" />
+              Museum of Arts of Uzbekistan
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'compass']" class="att-icons" />
+              <p class="mb-0">
+                7.66 km from property
+                <a href="https://www.google.ru/maps/dir/O'zbekiston+davlat+sa'nat+muzeyi,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82/%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9+%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82+%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9,+108+Amir+Temur+Avenue,+Tashkent+100200,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.3226581,69.2423161,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x38ae8ad73c0e7845:0xca4415881e7cee5c!2m2!1d69.2777892!2d41.3027455!1m5!1m1!1s0x38ae8b534175ed31:0x52a8f9d9414a2ad8!2m2!1d69.2868149!2d41.3408335" target="_blank">Get Directions</a>
+              </p>
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'link']" class="att-icons" />
+              <a href="https://www.google.ru/maps/place/O'zbekiston+davlat+sa'nat+muzeyi/@41.3013718,69.2689514,14.5z/data=!4m5!3m4!1s0x38ae8ad73c0e7845:0xca4415881e7cee5c!8m2!3d41.3027455!4d69.2777892" target="_blank">Show on map</a>
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col class="mt-3" cols="12" offset="1" sm="6" offset-sm="0" md="6" lg="4">
+          <b-card
+            img-src="https://lh5.googleusercontent.com/p/AF1QipPwELF3URbosLP7A0aCx4v3Vkg1aXKyCru5lZsf=w408-h272-k-no"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 20rem;"
+            class="cards mb-2"
+          >
+            <span>Embassy</span>
+            <h4>Embassy of the United States</h4>
+            <hr>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="att-icons" />
+              Museum of History of Uzbekistan
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'compass']" class="att-icons" />
+              <p class="mb-0">
+                7.66 km from property
+                <a href="https://www.google.ru/maps/dir/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BC%D1%83%D0%B7%D0%B5%D0%B9+%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%B0,+3+Buyuk+Turon+Street,+Tashkent,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9+%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82+%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9,+108+Amir+Temur+Avenue,+Tashkent+100200,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.3260899,69.2614312,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x38ae8b238fb120d3:0x46bc080843d639a2!2m2!1d69.2692218!2d41.3115068!1m5!1m1!1s0x38ae8b534175ed31:0x52a8f9d9414a2ad8!2m2!1d69.2868149!2d41.3408335" target="_blank">Get Directions</a>
+              </p>
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'link']" class="att-icons" />
+              <a href="https://www.google.ru/maps/place/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BC%D1%83%D0%B7%D0%B5%D0%B9+%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%B0/@41.3122857,69.2646841,14.14z/data=!4m5!3m4!1s0x38ae8b238fb120d3:0x46bc080843d639a2!8m2!3d41.3115068!4d69.2692218" target="_blank">Show on map</a>
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col class="mt-3" cols="12" offset="1" sm="6" offset-sm="0" md="6" lg="4">
+          <b-card
+            img-src="https://lh5.googleusercontent.com/p/AF1QipOGogWPnERY-vRH4wIsrlm6M52f3AxPhXgmlqWu=w408-h271-k-no"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 20rem;"
+            class="cards mb-2"
+          >
+            <span>Embassy</span>
+            <h4>Embassy of the United States</h4>
+            <hr>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="att-icons" />
+              Museum of Timurid History
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'compass']" class="att-icons" />
+              <p class="mb-0">
+                7.66 km from property
+                <a href="https://www.google.ru/maps/dir/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BC%D1%83%D0%B7%D0%B5%D0%B9+%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8+%D0%A2%D0%B5%D0%BC%D1%83%D1%80%D0%B8%D0%B4%D0%BE%D0%B2,+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82+%D0%90%D0%BC%D0%B8%D1%80%D0%B0+%D0%A2%D0%B5%D0%BC%D1%83%D1%80%D0%B0,+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82/%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9+%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82+%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9,+108+Amir+Temur+Avenue,+Tashkent+100200,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.3261865,69.2633823,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x38ae8b2efdebfa1b:0x162c34a35b86b93c!2m2!1d69.2791!2d41.3135!1m5!1m1!1s0x38ae8b534175ed31:0x52a8f9d9414a2ad8!2m2!1d69.2868149!2d41.3408335" target="_blank">Get Directions</a>
+              </p>
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'link']" class="att-icons" />
+              <a href="https://www.google.ru/maps/place/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BC%D1%83%D0%B7%D0%B5%D0%B9+%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8+%D0%A2%D0%B5%D0%BC%D1%83%D1%80%D0%B8%D0%B4%D0%BE%D0%B2/@41.3102118,69.2674524,14.22z/data=!4m5!3m4!1s0x38ae8b2efdebfa1b:0x162c34a35b86b93c!8m2!3d41.3135!4d69.2791" target="_blank">Show on map</a>
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col class="mt-3" cols="12" offset="1" sm="6" offset-sm="0" md="6" lg="4">
+          <b-card
+            img-src="https://lh5.googleusercontent.com/p/AF1QipNa1fG4eakYcNcYSXXNggo9xHqv-sDuZYXXECmn=w426-h240-k-no"
+            img-alt="Image"
+            img-top
+            tag="article"
+            style="max-width: 20rem;"
+            class="cards mb-2"
+          >
+            <span>Embassy</span>
+            <h4>Embassy of the United States</h4>
+            <hr>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" class="att-icons" />
+              Museum of Arts of Uzbekistan
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'compass']" class="att-icons" />
+              <p class="mb-0">
+                7.66 km from property
+                <a href="https://www.google.ru/maps/dir/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BC%D1%83%D0%B7%D0%B5%D0%B9+%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%B8+%D0%B6%D0%B5%D1%80%D1%82%D0%B2+%D1%80%D0%B5%D0%BF%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B9+%D0%BF%D1%80%D0%B8+%D0%9A%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5+%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%BE%D0%B2+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD,+Tashkent,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82%D1%81%D0%BA%D0%B8%D0%B9+%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82+%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9,+108+Amir+Temur+Avenue,+Tashkent+100200,+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.3467582,69.2839618,14.5z/data=!4m13!4m12!1m5!1m1!1s0x38aef4aaa9e21209:0x9ee6a42080259222!2m2!1d69.2882191!2d41.3469165!1m5!1m1!1s0x38ae8b534175ed31:0x52a8f9d9414a2ad8!2m2!1d69.2868149!2d41.3408335" target="_blank">Get Directions</a>
+              </p>
+            </b-card-text>
+            <b-card-text>
+              <font-awesome-icon :icon="['fas', 'link']" class="att-icons" />
+              <a href="https://www.google.ru/maps/place/%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BC%D1%83%D0%B7%D0%B5%D0%B9+%D0%9F%D0%B0%D0%BC%D1%8F%D1%82%D0%B8+%D0%B6%D0%B5%D1%80%D1%82%D0%B2+%D1%80%D0%B5%D0%BF%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B9+%D0%BF%D1%80%D0%B8+%D0%9A%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5+%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%BE%D0%B2+%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD/@41.346103,69.2848749,14.53z/data=!4m5!3m4!1s0x38aef4aaa9e21209:0x9ee6a42080259222!8m2!3d41.3469165!4d69.2882191" target="_blank">Show on map</a>
+            </b-card-text>
+          </b-card>
+        </b-col>
       </b-row>
     </b-container>
   </div>
