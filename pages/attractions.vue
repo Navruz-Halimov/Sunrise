@@ -272,6 +272,7 @@
             </b-card-text>
           </b-card>
         </b-col>
+        
       </b-row>
     </b-container>
   </div>
