@@ -23,8 +23,7 @@
     margin: 2rem 0;
     padding: 15px 30px;
     img{
-      width: 320px;
-      height: 220px;
+      width: 100%;
     }
     h3{
       font-size: 20px;
@@ -64,9 +63,12 @@
           font-size: 13.5px;
         }
       }
-      a{
-        text-decoration: none;
+      button{
         font-size: 13.5px;
+        color: #007bff;
+        &:focus{
+          box-shadow: none;
+        }
         &:hover{
           color: #FFB612;
         }
@@ -118,6 +120,7 @@
       font-size: 13px;
       vertical-align: sub;
       text-decoration: none;
+      cursor: pointer;
       &:hover{
         color: #FFB612;
       }
@@ -200,6 +203,10 @@
       text-align: center;
       h4{
         font-size: 19px;
+      }
+      .join__flex{
+        display: flex;
+        justify-content: center;
       }
       .join__content{
         padding: 20px;
@@ -299,19 +306,26 @@
       }
     }
   }
-  .swiper-slide:before{background-color: transparent;}
-  .slide-enter-active, .slide-leave-active {
-    transition: transform .6s;
-  }
-  .slide-enter, .slide-leave-to {
-    transform: translateY(-100vw);
-  }
 }
 
 // Responsive //
 
 @media (min-width: 0) and (max-width: 576px){
   .book__page{
+    .book__header{
+      padding: 0;
+      h3{
+        font-size: 18px;
+      }
+      img{
+        margin-bottom: 1rem;
+      }
+      .header__content{
+        span, button{
+          font-size: 14px!important;
+        }
+      }
+    }
     .book__text{
       h4{
         margin: 12px 0;
@@ -338,6 +352,87 @@
         width: 90%;
         height: 50%;
       }
+    }
+    .price__modal{
+      .join{
+        width: 90%;
+        padding: 15px 10px;
+        h4{font-size: 16px;}
+        .join__flex{
+          flex-direction: column;
+          margin-top: 1rem;
+        }
+        .join__content{
+          padding: 0;
+          p{font-size: 16px;}
+        }
+      }
+    }
+    .sign{
+      width: 90%;
+    }
+  }
+}
+@media (min-width: 576px) and (max-width: 767px){
+  .book__page{
+    .book__header{
+      padding: 0;
+      h3{
+        font-size: 18px;
+      }
+      img{
+        margin-bottom: 1rem;
+      }
+      .header__content{
+        span, button{
+          font-size: 14px!important;
+        }
+      }
+    }
+    .book__text{
+      h4{
+        margin: 12px 0;
+        font-size: 15px;
+      }
+      p{
+        font-size: 14.5px;
+      }
+      a{
+        font-size: 14px;
+      }
+      ul{
+        h5{font-size: 14px}
+        li{font-size: 15px}
+      }
+    }
+    .book__price{
+      h2{font-size: 20px; margin-top: 8px}
+      .book__btn--btn{width: 80%;}
+    }
+    .book__modal{
+      padding: 10px;
+      .modal__slide{
+        width: 90%;
+        height: 80%;
+      }
+    }
+    .price__modal{
+      .join{
+        width: 80%;
+        padding: 15px 10px;
+        h4{font-size: 16px;}
+        .join__flex{
+          flex-direction: column;
+          margin-top: 1rem;
+        }
+        .join__content{
+          padding: 0;
+          p{font-size: 16px;}
+        }
+      }
+    }
+    .sign{
+      width: 80%;
     }
   }
 }
