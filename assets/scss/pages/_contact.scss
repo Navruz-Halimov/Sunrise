@@ -289,6 +289,7 @@
 //start swiper slider for main page 
 .swiper-card-rooms {
   padding-bottom: 50px;
+  padding-top: 50px;
 
   .swiper-container {
     height: auto;
@@ -309,12 +310,16 @@
 
   .swiper-card {
     border-radius: 11px;
-    box-shadow: 0 15px 25px 0 rgba(0, 36, 77, 0.2);
+    box-shadow: 0 15px 15px 0 rgba(0, 36, 77, 0.2);
     transition: all 0.25s linear;
     border: 1px solid #eef1f4;
     min-height: 150px;
     text-align: left;
     margin-bottom: 50px;
+
+    a {
+      text-decoration: none;
+    }
 
     &:hover {
       border-color: #e8ebed;
@@ -560,6 +565,7 @@
   &__title {
     font-size: 22px;
     font-weight: bold;
+    margin-bottom: 20px;
   }
 
   &__card {

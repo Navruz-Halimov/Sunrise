@@ -433,7 +433,7 @@
     </div>
 <!-- finish slider room-->
 
-    <!-- start Feedbacks slider -->
+<!-- start Feedbacks slider -->
     <div class="users-feedbacks">
         <b-container class="users__wrapper">
             <b-row>
@@ -539,7 +539,7 @@
 
         </b-container>
     </div>
-    <!-- finish Feedbacks slider-->
+<!-- finish Feedbacks slider-->
 
   </div>
 </template>
