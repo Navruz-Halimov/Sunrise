@@ -245,7 +245,7 @@
         </b-col>
         <b-col class="mt-3" cols="12" offset="1" sm="6" offset-sm="0" md="6" lg="4">
           <b-card
-            img-src="https://lh5.googleusercontent.com/p/AF1QipNa1fG4eakYcNcYSXXNggo9xHqv-sDuZYXXECmn=w426-h240-k-no"
+            img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxoKMyJ77cwoteL-MemzSGYTMuo3xLyNT21w&usqp=CAU"
             img-alt="Image"
             img-top
             tag="article"
