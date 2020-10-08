@@ -609,14 +609,113 @@
     &-career {
       color: #808080;
     }
+  }
+}
+// finish Happy Clients & Feedbacks slider for main page
 
+//start services for page main -->
+.main-services {
+  font-size: 14px;
+  padding: 50px 0 20px;
 
+  .collapse:not(.show) {
+    display: block !important;
+    height: 120px !important;
+    overflow: hidden;
   }
 
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__btn {
+    color: #000;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none;
+
+    &:hover, &:active {
+      background: inherit;
+      border: none;
+    }
+  }
+
+  &__list {
+    margin: 25px 0 0;
+
+    .card {
+      border: none;
+    }
+
+    .card-body {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 145px;
+    margin-bottom: 20px;
+    border: none;
+
+    &:hover {
+      background: inherit;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  &__icon {
+    font-size: 40px;
+    color: #ffb612;
+    margin-bottom: 10px;
+  }
 
 }
 
+.bs-popover-top, .bs-popover-bottom {
+  .popover-header {
+    font-size: 12px;
+  }
+  .popover-body {
+    font-size: 12px;
+  }  
+}
 
+@media (max-width: 991px) {
+  .main-services__item {
+    width: 142px;
+  }
+}
 
+@media (max-width: 767px) {
+  .main-services__item {
+    max-width: 170px;
+    width: 100%;
+  }
 
-// finish Happy Clients & Feedbacks slider for main page
+  .main-services .collapse:not(.show) {
+    height: 240px !important;
+  }
+}
+
+@media (max-width: 539px) {
+  .main-services__list .card-body {
+    justify-content: space-around;
+  }
+
+  .main-services .collapse:not(.show) {
+    height: 220px !important;
+  }
+}
+
+// finish services for page main -->
