@@ -344,7 +344,7 @@
         <!-- it's code for main page finish-->
 
         <!-- start services for page main -->
-        <div class="main-services">
+        <!-- <div class="main-services">
             <b-container>
                 <b-row>
                     <b-col cols="5">
@@ -455,7 +455,7 @@
                     </b-col>
                 </b-row>
             </b-container>
-        </div>
+        </div> -->
         <!-- finish services for page main -->
     </div>
 </template>
