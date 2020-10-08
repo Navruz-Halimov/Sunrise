@@ -4,4 +4,33 @@
     &-slider{
         height: 400px;
     }
+    &-amenties{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        &-heading{
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 3px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        &-item{
+            position: relative;
+            font-size: 14px;
+            &::before{
+                content:"";
+                position: absolute;
+                width: 4px;
+                height: 4px;    
+                background-color: #ffb612;
+                top:7px;
+                border-radius: 4px;
+                left:-10px;
+            }
+        }
+    }
+    &-text{
+        margin-top: 15px;
+    }
 }
