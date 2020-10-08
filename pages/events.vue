@@ -189,7 +189,7 @@
                 <b-row>
                     <b-col cols="12" class="event-page__footer-list">
                         <b-col lg="4" class="event-page__footer-item">
-                            <div class="event-page__footer-title">Sunrise Hotels in Tashkent</div>
+                            <div class="event-page__footer-title">Sunrise Hotel in Tashkent</div>
                             <a href="/" target="_blank" class="event-page__footer-link">Need help?</a>
                         </b-col>
                         <b-col lg="4" class="event-page__footer-item">

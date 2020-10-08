@@ -4,7 +4,7 @@
       <b-row>
         <b-col lg="4">
           <div class="logo">
-            <nuxt-link to="/" class="footer__logo">Sunrise</nuxt-link>
+            <nuxt-link to="/" class="footer__logo"><img src="../assets/images/logo.png" alt=""></nuxt-link>
             <a href="tel:998 71 289 56 66" class="footer__phone-link"
               ><font-awesome-icon :icon="['fas', 'phone']" /> 8 71 289 56 66</a
             >

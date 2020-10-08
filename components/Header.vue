@@ -2,20 +2,22 @@
   <header class="header">
     <b-container>
       <b-navbar toggleable="lg">
-        <b-navbar-brand to="/">Sunrise</b-navbar-brand>
+        <b-navbar-brand to="/" class="navbar__brand">
+        <img src="../assets/images/logo.png" alt="main logo">
+        </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="header__navbar">
-            <b-nav-item href="/offer">Offer</b-nav-item>
-            <b-nav-item href="/rooms">Rooms</b-nav-item>
-            <b-nav-item href="/events">Events</b-nav-item>
-            <b-nav-item href="/gallery">Gallery</b-nav-item>
-            <b-nav-item to="/amenties">Amenties</b-nav-item>
-            <b-nav-item href="/attractions">Nearby attraction</b-nav-item>
-            <b-nav-item href="/contact">Contact</b-nav-item>
-            <b-nav-item href="/reviews">Reviews</b-nav-item>
+            <b-nav-item :to="localePath('/offer')"> {{$t("navbar.offer")}}</b-nav-item>
+            <b-nav-item :to="localePath('/rooms')">{{$t('navbar.rooms')}}</b-nav-item>
+            <b-nav-item :to="localePath('/events')">Events</b-nav-item>
+            <b-nav-item :to="localePath('/gallery')">Gallery</b-nav-item>
+            <b-nav-item :to="localePath('/amenties')">Amenties</b-nav-item>
+            <b-nav-item :to="localePath('/attractions')">Nearby attraction</b-nav-item>
+            <b-nav-item :to="localePath('/contact')">Contact</b-nav-item>
+            <b-nav-item :to="localePath('/reviews')">Reviews</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -23,14 +25,13 @@
     <div class="header__bottom">
       <b-container>
         <div class="header__bottom-content">
-          <div class="header__bottom-info">
-            <nuxt-link to="" class="address">
-              <font-awesome-icon :icon="['fas', 'map-marker-alt']" />Navoi
-              Street, 1 A</nuxt-link
+          <div class="header__bottom-info d-none d-lg-block">
+            <a href="https://goo.gl/maps/RwzLKT38CgkVRXbKA" class="address">
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" /> 1 Mirzo Ulug'bek shoh ko'chasi, Тошкент</a
             >
-            <nuxt-link to="" class="tel">
-              <font-awesome-icon :icon="['fas', 'phone']" /> +998 99 999 99
-              99</nuxt-link
+            <a href="tel:998 71 289 56 66" class="tel">
+              <font-awesome-icon :icon="['fas', 'phone']" />998 71 289 56 66
+              99</a
             >
             <nuxt-link to="" class="review">
               <vue-stars
@@ -52,9 +53,9 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav>
             <b-nav-item-dropdown text="Lang" right class="lang__list-wrapper">
-              <b-dropdown-item href="#">ENGLISH</b-dropdown-item>
-              <b-dropdown-item href="#">RUSSIAN</b-dropdown-item>
-              <b-dropdown-item href="#">CHINESE</b-dropdown-item>
+              <b-dropdown-item href="#" :to="switchLocalePath('en')">ENGLISH</b-dropdown-item>
+              <b-dropdown-item href="#" :to="switchLocalePath('ru')">RUSSIAN</b-dropdown-item>
+              <b-dropdown-item href="#" :to="switchLocalePath('chn')">CHINESE</b-dropdown-item>
             </b-nav-item-dropdown>
 
             <b-nav-item-dropdown class="user__join">
@@ -73,3 +74,20 @@
     </div>
   </header>
 </template>
+<script>
+export default {
+  data(){
+    return{
+
+    }
+  },
+  methods:{
+    // changeLanguage(lang){
+    //   this.$router.push(switchLocalePath(lang));
+    // },
+    mounted(){
+
+    }
+  }
+}
+</script>
