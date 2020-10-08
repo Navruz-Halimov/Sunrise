@@ -6,12 +6,17 @@
   padding-top: 60px;
   padding-bottom: 30px;
   &__logo {
-    display: block;
+    display: inline-block;
     color: white;
     font-size: 24px;
     &:hover {
       color: #ffb612;
       text-decoration: none;
+    }
+    img{
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
     }
   }
   &__motto-heading{
@@ -29,7 +34,7 @@
     }
   }
   &__phone-link {
-    display: inline-block;
+    display: block;
     color: white;
     font-size: 18px;
     margin-top: 10px;
