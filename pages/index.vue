@@ -99,28 +99,13 @@
               </select>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
-              <input type="submit" class="book__btn" value="Book now" />
+              <b-button type="submit" class="book__btn" to="/booking">Book now</b-button>
             </div>
           </b-row>
         </section>
       </form>
     </b-container>
-    <b-container>
-      <b-row class="gallery">
-        <div class="gallery__title">
-          <i><img src="../assets/images/picture.svg" alt="" /></i>
-          <h2>Gallery</h2>
-        </div>
-      </b-row>
-      <Test :images="images" />
-      <b-button
-        href="http://localhost:3000/gallery"
-        class="btn-img my-4"
-        to="/gallery"
-        >For more</b-button
-      >
-    </b-container>
-    <div class="tourist__guide">
+     <div class="tourist__guide">
       <b-container>
         <h1 class="tourist__guide-heading"><font-awesome-icon class="info__circle" :icon="['fas', 'info-circle']"/>Tourist guide</h1>
         <ul class="guide__list">
@@ -167,7 +152,21 @@
         </ul>
       </b-container>
     </div>
-
+    <b-container>
+      <b-row class="gallery">
+        <div class="gallery__title">
+          <i><img src="../assets/images/picture.svg" alt="" /></i>
+          <h2>Gallery</h2>
+        </div>
+      </b-row>
+      <Test :images="images" />
+      <b-button
+        href="http://localhost:3000/gallery"
+        class="btn-img my-4"
+        to="/gallery"
+        >For more</b-button
+      >
+    </b-container>
 <!-- start slider room-->
     <div class="swiper-card-rooms">
         <b-container class="swiper__wrapper">

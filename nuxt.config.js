@@ -53,6 +53,31 @@ export default {
         ]
       }
     ],
+    [
+      "nuxt-i18n",
+      {
+        lazy: true,
+        locales: [
+          { code: "en", iso: "us-US", name: "English", file: "en.js" },
+          { code: "ru", iso: "ru-RU", name: "Russian", file: "ru.js" },
+          { code: "chn", iso: "chi-CHI", name: "Chinese", file: "chn.js"}
+        ],
+        defaultLocale: "en",
+        rootRedirect: "en",
+        strategy: "prefix",
+        // seo: false,
+        // lazy: true,
+        langDir: "lang/",
+        // By default, custom routes are extracted from page files using acorn parsing,
+        // set this to false to disable this
+        parsePages: false,
+        detectBrowserLanguage: {
+          // cookieKey: 'i18n_cookie',
+          useCookie: true,
+          fallbackLocale: "en"
+        }
+      }
+    ],
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
