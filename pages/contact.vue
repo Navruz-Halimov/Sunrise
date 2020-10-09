@@ -80,7 +80,7 @@
                                 <font-awesome-icon :icon="['fas', 'bus']" />
                             </label>
                             <label for="">
-                                    <font-awesome-icon :icon="['fas', 'walking']" />
+                                <font-awesome-icon :icon="['fas', 'walking']" />
                             </label>
                         </b-col>
                         <b-col lg="3" xl="2" offset-xl="1" class="p-0">
@@ -103,69 +103,192 @@
                     </b-col>
                 </b-row>
                 <b-row>
-                    <b-col lg="3">
+                    <b-col class="offer-main__item order-md-1 order-lg-1" md="6" lg="3" >
                         <div class="offer-main__picture">
-                            <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                            <b-img src="../assets/images/offer-main.jpg" alt="" height="270px"></b-img>
                         </div>
                     </b-col>
-                    <b-col lg="3">
+                    <b-col class="offer-main__item order-md-2 order-lg-2" md="6" lg="3" >
                         <div class="offer-main__text">
                             <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                             <div class="offer-main__text-info">
                                  Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
                             nights toward tier status through January 4, 2021.
+                                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+                                <span>19th March, 2021</span> -->
                             </div>
-                            <nuxt-link to="/offer">Read More</nuxt-link>
+                            <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
                         </div>
                     </b-col>
-                    <b-col lg="3">
+                    <b-col class="offer-main__item order-md-4 order-lg-3" md="6" lg="3" >
                         <div class="offer-main__picture">
                             <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
                         </div>
                     </b-col>
-                    <b-col lg="3">
+                    <b-col class="offer-main__item order-md-3 order-lg-4" md="6" lg="3" >
                         <div class="offer-main__text">
                             <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                             <div class="offer-main__text-info">
                                  Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
                             nights toward tier status through January 4, 2021.
+                                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+                                <span>19th March, 2021</span> -->
                             </div>
-                            <nuxt-link to="/offer">Read More</nuxt-link>
+                            <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
                         </div>
                     </b-col>
-                    <b-col lg="3">
-                        <div class="offer-main__picture">
-                            <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
-                        </div>
-                    </b-col>
-                    <b-col lg="3">
+                    <b-col class="offer-main__item order-md-6 order-lg-5" md="6" lg="3" >
                         <div class="offer-main__text">
                             <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                             <div class="offer-main__text-info">
                                  Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
                             nights toward tier status through January 4, 2021.
+                                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+                                <span>19th March, 2021</span> -->
                             </div>
-                            <nuxt-link to="/offer">Read More</nuxt-link>
+                            <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
                         </div>
                     </b-col>
-                    <b-col lg="3">
+                    <b-col class="offer-main__item order-md-5 order-lg-6 offer-main__item-left" md="6" lg="3" >
                         <div class="offer-main__picture">
                             <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
                         </div>
                     </b-col>
-                    <b-col lg="3">
+                    <b-col class="offer-main__item order-md-7 order-lg-7" md="6" lg="3" >
                         <div class="offer-main__text">
-                            <div class="offer-main__text-title"></div>
+                            <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                             <div class="offer-main__text-info">
                                  Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
                             nights toward tier status through January 4, 2021.
+                                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+                                <span>19th March, 2021</span> -->
                             </div>
-                            <nuxt-link to="/offer">Read More</nuxt-link>
+                            <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                        </div>
+                    </b-col>
+                    <b-col class="offer-main__item order-md-8 order-lg-8 offer-main__item-left" md="6" lg="3" >
+                        <div class="offer-main__picture">
+                            <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
                         </div>
                     </b-col>
                 </b-row>
             </b-container>
         </div>
+
+    <!-- start services for page main -->
+    <!-- <div class="main-services">
+        <b-container>
+            <b-row>
+                <b-col cols="5">
+                    <div class="main-services__title">Services</div>
+                </b-col>
+                <b-col cols="7" class="d-flex justify-content-end">
+                    <b-button 
+                        v-b-toggle.collapse 
+                        class="main-services__btn" 
+                        variant="outline-light"
+                        @click="show = !show"
+                        v-if="show === false"
+                    >
+                        Show more
+                        <font-awesome-icon :icon="['fas', 'angle-down']" />
+                    </b-button>
+                    <b-button 
+                        v-b-toggle.collapse 
+                        class="main-services__btn" 
+                        variant="outline-light"
+                        v-else
+                        @click="show = !show"
+                    >
+                        Show less
+                        <font-awesome-icon :icon="['fas', 'angle-up']" />
+                    </b-button>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col md="10" offset-md="1">
+                    <b-collapse id="collapse" class="main-services__list">
+                        <b-card>
+                            <b-button 
+                                v-b-popover.hover.top="'Free coffee and tea in the lobby'" 
+                                title="Complimentary coffee and tea"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'mug-hot']" class="main-services__icon" />
+                                <span>Complimentary coffee and tea</span>
+                            </b-button>
+                            <b-button 
+                                v-b-popover.hover.top="'Free Wi-Fi'" 
+                                title="Free Wi-Fi"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'wifi']" class="main-services__icon" />
+                                <span>Free Wi-Fi</span>
+                            </b-button>  
+                            <b-button 
+                                v-b-popover.hover.top="'Customized running trails around the hotel'" 
+                                title="Running trails"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'running']" class="main-services__icon" />
+                                <span>Running trails</span>
+                            </b-button>
+                            <b-button 
+                                v-b-popover.hover.top="'Meeting facilities / social space'" 
+                                title="Meeting facilities"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'user-friends']" class="main-services__icon" />
+                                <span>Meeting facilities</span>
+                            </b-button>   
+                            <b-button 
+                                v-b-popover.hover.top="'Luggage storage'" 
+                                title="Luggage storage"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'briefcase']" class="main-services__icon" />
+                                <span>Luggage storage</span>
+                            </b-button>
+                            <b-button 
+                                v-b-popover.hover.top="'Individual room climate control'" 
+                                title="Individual room climate control"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'thermometer-quarter']" class="main-services__icon" />
+                                <span>Individual room climate control</span>
+                            </b-button>   
+                            <b-button 
+                                v-b-popover.hover.top="'Complimentary parking'" 
+                                title="Complimentary parking"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'parking']" class="main-services__icon" />
+                                <span>Complimentary parking</span>
+                            </b-button> 
+                            <b-button 
+                                v-b-popover.hover.top="'Dry cleaning services'" 
+                                title="Dry cleaning"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'tshirt']" class="main-services__icon" />
+                                <span>Dry cleaning</span>
+                            </b-button> 
+                                                        
+                        </b-card>
+                    </b-collapse>
+                </b-col>
+            </b-row>
+        </b-container>
+    </div> -->
+    <!-- finish services for page main -->        
     </div>
 </template>
 <script>
