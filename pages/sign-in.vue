@@ -1,6 +1,10 @@
 <template>
   <div class="sign__wrapper">
-    <div class="sign__header"></div>
+    <div class="sign__header">
+      <h1>
+        Sign-in of Sunrise
+      </h1>
+    </div>
     <b-container class="sign__content">
       <b-row>
         <div class="sign__title">
@@ -13,13 +17,13 @@
               <b-form-group
                 label="Membership # / Username"
                 label-for="username">
-                <b-form-input type="text" id="username"/>
+                <b-form-input type="text" id="username" required/>
                 <a href="#">Forgot your membership number?</a>
               </b-form-group>
               <b-form-group
                 label="Password"
                 label-for="password">
-                <b-form-input type="password" id="password"/>
+                <b-form-input type="password" id="password" required/>
               </b-form-group>
               <b-form-group>
                 <b-form-checkbox-group class="d-flex justify-content-between">
@@ -27,13 +31,13 @@
                   <a href="#" class="mt-0">Forgot Password</a>
                 </b-form-checkbox-group>
               </b-form-group>
-              <b-button type="submit" disabled>SIGN IN</b-button>
+              <b-button type="submit">SIGN IN</b-button>
             </b-col>
             <b-col class="sign__input" cols="12" sm="12" md="6" lg="4">
               <b-form-group
                 label="Last Name / Surname"
                 label-for="name">
-                <b-form-input type="text" id="name"/>
+                <b-form-input type="text" id="name" required/>
               </b-form-group>
             </b-col>
           </b-row>

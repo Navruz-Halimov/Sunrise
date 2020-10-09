@@ -214,6 +214,7 @@
         p{
           font-size: 16px;
           color: #808080;
+          min-height: 50%;
         }
         a{
           border: 1px solid #FFB612;
@@ -270,8 +271,18 @@
         margin-top: 10px;
       }
       input{
-        &:focus{
-          box-shadow: none;
+        font-size: 14px;
+        padding-left: 10px;
+        width: 100%;
+        margin-right: 10px;
+        border: 1px solid #ffb612;
+        border-radius: 0;
+        height: 39px;
+        &:focus,
+        &:active {
+          box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+          border: 1px solid rgb(11, 61, 36);
+          outline: none;
         }
       }
       button{

@@ -149,10 +149,10 @@
                 <h4>Номера с большой двуспальной кроватью (King)</h4>
                 <p>Насладитесь пребыванием в этом номере площадью 35 кв. м с большой двуспальной кроватью (King), окнами
                   от пола до потолка и большим рабочим столом.</p>
-                <a v-b-toggle.collapse-2 @click="showDetails()" >{{textDetails}}
+                <a v-b-toggle.collapse-3 @click="showDetails()" >{{textDetails}}
                   <!--                  <font-awesome-icon :icon="['fas', 'chevron-down']"/>-->
                 </a>
-                <b-collapse id="collapse-2">
+                <b-collapse id="collapse-3">
                   <ul>
                     <h5>Удобства в номере</h5>
                     <li>Кровать Hyatt Grand Bed™</li>
@@ -196,10 +196,10 @@
                 <h4>Номера с большой двуспальной кроватью (King)</h4>
                 <p>Насладитесь пребыванием в этом номере площадью 35 кв. м с большой двуспальной кроватью (King), окнами
                   от пола до потолка и большим рабочим столом.</p>
-                <a v-b-toggle.collapse-2 @click="showDetails()" >{{textDetails}}
+                <a v-b-toggle.collapse-4 @click="showDetails()" >{{textDetails}}
                   <!--                  <font-awesome-icon :icon="['fas', 'chevron-down']"/>-->
                 </a>
-                <b-collapse id="collapse-2">
+                <b-collapse id="collapse-4">
                   <ul>
                     <h5>Удобства в номере</h5>
                     <li>Кровать Hyatt Grand Bed™</li>
@@ -266,18 +266,18 @@
           <b-form-group
             label="World of Sunrise # or Username:"
             label-for="username">
-            <b-form-input type="text" id="username"/>
+            <b-form-input type="text" id="username" required/>
             <a href="#">Forgot your membership number?</a>
           </b-form-group>
           <b-form-group
             label="Last Name:"
             label-for="name">
-            <b-form-input type="text" id="name"/>
+            <b-form-input type="text" id="name" required/>
           </b-form-group>
           <b-form-group
             label="Password"
             label-for="password">
-            <b-form-input type="password" id="password"/>
+            <b-form-input type="password" id="password" required/>
           </b-form-group>
           <b-form-group>
             <b-form-checkbox-group class="d-flex justify-content-between">
@@ -285,7 +285,7 @@
               <a href="#" class="mt-0">Forgot Password</a>
             </b-form-checkbox-group>
           </b-form-group>
-          <b-button type="submit" disabled>Submit</b-button>
+          <b-button type="submit">Submit</b-button>
         </b-form>
       </b-col>
     </div>
