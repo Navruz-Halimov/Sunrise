@@ -56,6 +56,26 @@
           </div>
         </b-col>
         <b-col lg="3">
+          <div class="first__floor">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/2room.jpg" alt="">
+            <img src="../assets/images/1floor/3room.jpg" alt="">
+            <img src="../assets/images/1floor/4room.jpg" alt="">
+            <img src="../assets/images/1floor/5room.jpg" alt="">
+            <img src="../assets/images/1floor/6room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+            <img src="../assets/images/1floor/1room.jpg" alt="">
+          </div>
           </b-col
         >
       </b-row>
