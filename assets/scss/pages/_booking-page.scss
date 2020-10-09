@@ -279,7 +279,7 @@
         display: block;
         margin-top: 10px;
       }
-<<<<<<< HEAD
+
       input{
         font-size: 14px;
         padding-left: 10px;
@@ -293,12 +293,6 @@
           box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
           border: 1px solid rgb(11, 61, 36);
           outline: none;
-=======
-      input {
-        &:focus {
-          box-shadow: none;
->>>>>>> 85279ef7f57f229b624b7845ffab4ca25bcba56a
-        }
       }
       button {
         width: 100%;
