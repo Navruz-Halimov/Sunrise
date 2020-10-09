@@ -2,12 +2,35 @@
   <div class="rooms__select">
     <b-container>
       <b-row>
-        <b-col lg="3"
-          >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-          quae corporis vitae temporibus harum eaque soluta eos iste ad mollitia
-          nobis, deserunt facere consequatur ullam non nesciunt dolores veniam.
-          Autem!</b-col
-        >
+        <b-col lg="3">
+          <ul class="rooms__select-amenties">
+            <span class="rooms__select-amenties-heading">Amenties</span>
+            <li class="rooms__select-amenties-item">Regency Club access</li>
+            <li class="rooms__select-amenties-item">Espresso machine</li>
+            <li class="rooms__select-amenties-item">Hyatt Grand Bed™</li>
+            <li class="rooms__select-amenties-item">55-inch flatscreen TV</li>
+            <li class="rooms__select-amenties-item">Blackout drapes</li>
+            <li class="rooms__select-amenties-item">Spacious work desk</li>
+            <li class="rooms__select-amenties-item">
+              Individually controlled air conditioning and heat
+            </li>
+            <li class="rooms__select-amenties-item">TV in bathroom</li>
+            <li class="rooms__select-amenties-item">In-room safe</li>
+            <li class="rooms__select-amenties-item">Minibar</li>
+            <li class="rooms__select-amenties-item">Tea and coffeemaker</li>
+            <li class="rooms__select-amenties-item">Iron and ironing board</li>
+            <li class="rooms__select-amenties-item">Hair dryer</li>
+            <li class="rooms__select-amenties-item">
+              Plush bath robe and slippers
+            </li>
+            <li class="rooms__select-amenties-item">Morning newspaper</li>
+            <li class="rooms__select-amenties-item">Pillow menu</li>
+            <li class="rooms__select-amenties-item">Crib upon request</li>
+            <li class="rooms__select-amenties-item">
+              Rollaway bed upon request
+            </li>
+          </ul>
+        </b-col>
         <b-col lg="6">
           <swiper class="rooms__select-slider" :options="rooms__select">
             <swiper-slide
@@ -25,12 +48,15 @@
             <div class="swiper-button-prev" slot="button-prev"></div>
             <div class="swiper-button-next" slot="button-next"></div>
           </swiper>
+          <div class="rooms__select-text">
+            The exclusive Presidential Suite encompasses 190 sq m of space with
+            an elegant living area including a study room, a kitchenette with
+            dining area, an expanded bathroom, and a guest bathroom. This is a
+            premium suite.
+          </div>
         </b-col>
-        <b-col lg="3"
-          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae modi
-          porro, itaque nisi optio consequatur aut sequi reiciendis! At ipsam
-          nobis ipsa eos molestiae! Odio nemo omnis nihil laudantium
-          corporis.</b-col
+        <b-col lg="3">
+          </b-col
         >
       </b-row>
     </b-container>
@@ -58,5 +84,3 @@ export default {
   methods: {},
 }
 </script>
-
-<style></style>

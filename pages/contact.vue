@@ -92,6 +92,7 @@
                 </b-row>
             </b-container>
         </div>
+        <!-- it's code for main page start -->
         <div class="swiper-card-rooms">
             <b-container class="swiper__wrapper">
                 <swiper :options="swiper_card_rooms">
@@ -139,10 +140,6 @@
                                         <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                        <!-- <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'tv']" /></li> -->
                                         <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                                     </ul>
                                 </div>
@@ -193,10 +190,6 @@
                                         <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                        <!-- <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'tv']" /></li> -->
                                         <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                                     </ul>
                                 </div>
@@ -247,10 +240,6 @@
                                         <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                        <!-- <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'tv']" /></li> -->
                                         <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                                     </ul>
                                 </div>
@@ -301,17 +290,13 @@
                                         <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                        <!-- <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'tv']" /></li> -->
                                         <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                                     </ul>
                                 </div>
                             </div>
                         </a>
                     </swiper-slide>
-                                        <swiper-slide class="swiper-card">
+                    <swiper-slide class="swiper-card">
                         <a href="/">
                             <div class="swiper-card__img">
                                 <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
@@ -355,10 +340,6 @@
                                         <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
                                         <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                        <!-- <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'angle-left']" /></li>
-                                        <li><font-awesome-icon :icon="['fas', 'tv']" /></li> -->
                                         <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                                     </ul>
                                 </div>
@@ -374,6 +355,115 @@
                 </swiper>   
             </b-container>
         </div>
+        <!-- it's code for main page finish-->
+
+        <!-- start Happy Clients & Feedbacks for main page -->
+        <div class="users-feedbacks">
+            <b-container class="users__wrapper">
+                <b-row>
+                    <b-col md="12">
+                        <div class="users-feedbacks__title">
+                            Happy Clients & Feedbacks
+                        </div>
+                        <swiper :options="users_feedback">
+                            <swiper-slide class="users-feedbacks__card">
+                                <div class="users-feedbacks__card-img">
+                                    <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
+                                </div>
+                                <div class="users-feedbacks__card-info">
+                                    <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
+                                    <div class="users-feedbacks__card-text">
+                                        Far far away, behind the word mountains, 
+                                        far from the countries Vokalia and Consonantia, 
+                                        there live the blind texts.
+                                    </div>
+                                    <div class="users-feedbacks__card-name">Rodel Golez</div>
+                                    <div class="users-feedbacks__card-career">Businessman</div>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide class="users-feedbacks__card">
+                                <div class="users-feedbacks__card-img">
+                                    <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
+                                </div>
+                                <div class="users-feedbacks__card-info">
+                                    <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
+                                    <div class="users-feedbacks__card-text">
+                                        Far far away, behind the word mountains, 
+                                        far from the countries Vokalia and Consonantia, 
+                                        there live the blind texts.
+                                    </div>
+                                    <div class="users-feedbacks__card-name">Rodel Golez</div>
+                                    <div class="users-feedbacks__card-career">Businessman</div>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide class="users-feedbacks__card">
+                                <div class="users-feedbacks__card-img">
+                                    <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
+                                </div>
+                                <div class="users-feedbacks__card-info">
+                                    <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
+                                    <div class="users-feedbacks__card-text">
+                                        Far far away, behind the word mountains, 
+                                        far from the countries Vokalia and Consonantia, 
+                                        there live the blind texts.
+                                    </div>
+                                    <div class="users-feedbacks__card-name">Rodel Golez</div>
+                                    <div class="users-feedbacks__card-career">Businessman</div>
+                                </div>
+                            </swiper-slide>  
+                            <swiper-slide class="users-feedbacks__card">
+                                <div class="users-feedbacks__card-img">
+                                    <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
+                                </div>
+                                <div class="users-feedbacks__card-info">
+                                    <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
+                                    <div class="users-feedbacks__card-text">
+                                        Far far away, behind the word mountains, 
+                                        far from the countries Vokalia and Consonantia, 
+                                        there live the blind texts.
+                                    </div>
+                                    <div class="users-feedbacks__card-name">Rodel Golez</div>
+                                    <div class="users-feedbacks__card-career">Businessman</div>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide class="users-feedbacks__card">
+                                <div class="users-feedbacks__card-img">
+                                    <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
+                                </div>
+                                <div class="users-feedbacks__card-info">
+                                    <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
+                                    <div class="users-feedbacks__card-text">
+                                        Far far away, behind the word mountains, 
+                                        far from the countries Vokalia and Consonantia, 
+                                        there live the blind texts.
+                                    </div>
+                                    <div class="users-feedbacks__card-name">Rodel Golez</div>
+                                    <div class="users-feedbacks__card-career">Businessman</div>
+                                </div>
+                            </swiper-slide>
+                            <swiper-slide class="users-feedbacks__card">
+                                <div class="users-feedbacks__card-img">
+                                    <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
+                                </div>
+                                <div class="users-feedbacks__card-info">
+                                    <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
+                                    <div class="users-feedbacks__card-text">
+                                        Far far away, behind the word mountains, 
+                                        far from the countries Vokalia and Consonantia, 
+                                        there live the blind texts.
+                                    </div>
+                                    <div class="users-feedbacks__card-name">Rodel Golez</div>
+                                    <div class="users-feedbacks__card-career">Businessman</div>
+                                </div>
+                            </swiper-slide>                         
+                        </swiper>
+                        <div class="swiper-pagination"></div> 
+                    </b-col>
+                </b-row>
+
+            </b-container>
+        </div>
+        <!-- finish Happy Clients & Feedbacks for main page -->
     </div>
 </template>
 <script>
@@ -381,6 +471,7 @@
         data() {
             return{
                 isActive:false, 
+                // it's code for main page start 
                 swiper_card_rooms: {
                     slidesPerView: 1,
                     spaceBetween: 30,
@@ -410,7 +501,33 @@
                         nextEl: '.swiper-card__next-mini',
                         prevEl: '.swiper-card__prev-mini',
                     },
+                },
+                // it's code for main page finish
+                
+                // start it's code for main page Happy Clients & Feedbacks
+                users_feedback: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    autoplay: true,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 15,
+                        },
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 15,
+                        }
+                    }
+                    
                 }
+
+                // finish it's code for main page Happy Clients & Feedbacks
             }
         },
         methods: {

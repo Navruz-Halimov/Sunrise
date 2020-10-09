@@ -14,27 +14,37 @@
         color: #000;
     }
 
-    &__text-hide {
+    &__collapse {
         font-size: 14px;
-        max-height: 80px;
-        overflow: hidden;
-        position: relative;
         color: #000;
 
         &:before {
             content: "";
             position: absolute;
-            bottom: 0;
+            bottom: 33px;
             height: 30px;
             width: 100%;
             background: rgb(255,255,255);
             background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,237,237,0) 100%);
+            z-index: 1;
+        }
+
+        .collapse:not(.show) {
+            display: block !important;
+            height: 80px !important;
+            overflow: hidden;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .card-body {
+            padding: 0;
         }
     }
 
     .autoheight {
-        max-height: none;
-        overflow: auto;
 
         &:before {
             content: none;
@@ -45,10 +55,7 @@
         background: transparent;
         border: none;
         color: #ffb612;
-
-        span {
-            font-size: 14px;
-        }
+        font-size: 14px;
 
         &:hover, &:focus, &:active {
             background: transparent;
@@ -168,51 +175,11 @@
             font-weight: bold;
         }
 
-        &-text {
-            font-size: 14px;
-            max-height: 120px;
-            overflow: hidden;
+        .event-page__collapse {
             position: relative;
-            transition: all 0.5s ease;
-
-            &:before {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                height: 30px;
-                width: 100%;
-                background: rgb(255,255,255);
-                background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,237,237,0) 100%);
-            }
         }
-
-
-
-        &-btn {
-            background: transparent;
-            border: none;
-            color: #ffb612;
-    
-            span {
-                font-size: 14px;
-            }
-
-            &:hover, &:focus, &:active {
-                background: transparent;
-                color: #ffb612 !important;  
-                text-decoration: underline;  
-                border: none;
-            }
-        }
-
-        .autoheight {
-            max-height: none;
-            overflow: auto;
-            transition: all .5s ease;
-    
-            &:before {
-                content: none;
-            }
+        .event-page__collapse:before {
+            bottom: 33px;
         }
     }
 
@@ -399,6 +366,9 @@
             }
         }
     }
+
+
+
 }
 
 @media (min-width: 420px) {
