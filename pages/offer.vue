@@ -19,19 +19,8 @@
                             <b-link href="/" class="offer-page__link">Register Now</b-link>
                         </div>
                         <div class="offer-page__text">
-                            <span v-b-toggle.collapse 
-                                @click="show = !show"
-                                v-if="show === false"
-                            >
+                            <span v-b-toggle.collapse>
                                 TERMS AND CONDITIONS
-                                <font-awesome-icon :icon="['fas', 'chevron-down']" />
-                            </span>
-                            <span v-b-toggle.collapse 
-                                v-else
-                                @click="show = !show"
-                            >
-                                TERMS AND CONDITIONS
-                                <font-awesome-icon :icon="['fas', 'chevron-up']" />
                             </span>
                             <b-collapse id="collapse">
                                 <b-card>
@@ -72,21 +61,11 @@
                             <b-link href="/" class="offer-page__link">Register Now</b-link>
                         </div>
                         <div class="offer-page__text">
-                            <span v-b-toggle.collapse 
-                                @click="show = !show"
-                                v-if="show === false"
+                            <span v-b-toggle.collapse1 
                             >
                                 TERMS AND CONDITIONS
-                                <font-awesome-icon :icon="['fas', 'chevron-down']" />
                             </span>
-                            <span v-b-toggle.collapse 
-                                v-else
-                                @click="show = !show"
-                            >
-                                TERMS AND CONDITIONS
-                                <font-awesome-icon :icon="['fas', 'chevron-up']" />
-                            </span>
-                            <b-collapse id="collapse">
+                            <b-collapse id="collapse1">
                                 <b-card>
                                     Triple Points Bonus: You must be a member of World of Hyatt and register for 
                                     the promotion between October 1, 2020 and November 30, 2020 to participate.
@@ -125,21 +104,11 @@
                             <b-link href="/" class="offer-page__link">Register Now</b-link>
                         </div>
                         <div class="offer-page__text">
-                            <span v-b-toggle.collapse 
-                                @click="show = !show"
-                                v-if="show === false"
+                            <span v-b-toggle.collapse2 
                             >
                                 TERMS AND CONDITIONS
-                                <font-awesome-icon :icon="['fas', 'chevron-down']" />
                             </span>
-                            <span v-b-toggle.collapse 
-                                v-else
-                                @click="show = !show"
-                            >
-                                TERMS AND CONDITIONS
-                                <font-awesome-icon :icon="['fas', 'chevron-up']" />
-                            </span>
-                            <b-collapse id="collapse">
+                            <b-collapse id="collapse2">
                                 <b-card>
                                     Triple Points Bonus: You must be a member of World of Hyatt and register for 
                                     the promotion between October 1, 2020 and November 30, 2020 to participate.
@@ -167,7 +136,7 @@
     export default {
         data() {
             return {
-                show: false,
+                //show: false,
 
             }
         },
