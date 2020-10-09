@@ -55,11 +55,8 @@
             premium suite.
           </div>
         </b-col>
-        <b-col lg="3"
-          >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae modi
-          porro, itaque nisi optio consequatur aut sequi reiciendis! At ipsam
-          nobis ipsa eos molestiae! Odio nemo omnis nihil laudantium
-          corporis.</b-col
+        <b-col lg="3">
+          </b-col
         >
       </b-row>
     </b-container>
@@ -87,5 +84,3 @@ export default {
   methods: {},
 }
 </script>
-
-<style></style>
