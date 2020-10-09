@@ -147,10 +147,6 @@
       .telegram {
         background-image: url('../images/telegram.svg');
         background-size: 36px 36px;
-        &:hover {
-          background-image: url('../images/tg-hover.png');
-          background-size: cover;
-        }
       }
     }
   }
