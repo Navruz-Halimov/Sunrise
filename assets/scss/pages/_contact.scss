@@ -525,8 +525,6 @@
 
 //finish swiper slider for main page 
 
-
-
 // start Happy Clients & Feedbacks slider for main page
 .users-feedbacks {
   font-size: 14px;
@@ -609,14 +607,231 @@
     &-career {
       color: #808080;
     }
+  }
+}
+// finish Happy Clients & Feedbacks slider for main page
 
+//start services for page main -->
+.main-services {
+  font-size: 14px;
+  padding: 50px 0 20px;
+
+  .collapse:not(.show) {
+    display: block !important;
+    height: 120px !important;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  &__btn {
+    color: #000;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none;
+
+    &:hover, &:active {
+      background: inherit;
+      border: none;
+    }
+  }
+
+  &__list {
+    margin: 25px 0 0;
+
+    .card {
+      border: none;
+    }
+
+    .card-body {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 145px;
+    margin-bottom: 20px;
+    border: none;
+
+    &:hover {
+      background: inherit;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  &__icon {
+    font-size: 40px;
+    color: #ffb612;
+    margin-bottom: 10px;
+  }
+
+}
+
+.bs-popover-top, .bs-popover-bottom {
+  .popover-header {
+    font-size: 12px;
+  }
+  .popover-body {
+    font-size: 12px;
+  }  
+}
+
+@media (max-width: 991px) {
+  .main-services__item {
+    width: 142px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-services__item {
+    max-width: 170px;
+    width: 100%;
+  }
+
+  .main-services .collapse:not(.show) {
+    height: 240px !important;
+  }
+}
+
+@media (max-width: 539px) {
+  .main-services__list .card-body {
+    justify-content: space-around;
+  }
+
+  .main-services .collapse:not(.show) {
+    height: 220px !important;
+  }
+}
+
+// finish services for page main -->
+
+// start offer-main
+
+.offer-main {
+  padding: 50px 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 30px;
+    }
+
+    h5 {
+      font-size: 18px;
+      color: #E9AD28;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__picture {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: -46px;
+      top: 50%;
+      height: 51px;
+      width: 51px;
+      background: #fff;
+      transform: translateY(-25.5px) rotate(45deg);
+      clip-path: polygon(-56% 0, 0 100%, 44% 100%);
+    }   
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    
+  }
+
+  &__item {
+    padding: 0;
+
+    &-left {
+      .offer-main__picture:before {
+        left: -46px;
+        transform: translateY(-25.5px) rotate(225deg);
+        right: 0;
+      }
+    }
 
   }
 
 
+  &__text {
+    padding: 10px 20px;
+    position: relative;
+
+    &-title {
+      font-weight: 800;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    &-info {
+      font-size: 14px;
+      margin-bottom: 20px;
+
+      span {
+        margin-left: 5px; 
+      }
+    }
+  }
+  
+  &__link {
+    font-size: 13px;
+    color: #ffb126;
+    font-weight: 700;
+    position: relative;
+
+    &:after {
+      display: block;
+      position: absolute;
+      left: 0; 
+      width: 0;
+      height: 2px; 
+      background-color: #ffb612; 
+      content: "";
+      transition: width 0.5s ease; 
+    }
+
+    &:hover {
+      color: #ffb612;
+    }
+
+    &:hover:after,
+    &:focus:after {
+      width: 100%; 
+    }
+
+    
+  }
 }
 
+@media (max-width: 991px) {
+.offer-main__picture:before {
+  content: none;
+    margin-bottom: 5px;
+  }
+}
 
-
-
-// finish Happy Clients & Feedbacks slider for main page
+@media (max-width: 540px) {
+  .offer-main__text {
+    margin-bottom: 30px;
+  }
+}
+// finish offer-main

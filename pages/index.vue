@@ -172,254 +172,239 @@
         <b-container class="swiper__wrapper">
             <swiper :options="swiper_card_rooms">
                 <swiper-slide class="swiper-card">
-                    <a href="/">
-                        <div class="swiper-card__img">
-                            <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
-                            <div class="swiper-card__cost">100$</div>
-                            <swiper :options="swiper_card_mini" class="swiper__wrapper-mini">
-                                <swiper-slide class="swiper__wrapper-mini_card">
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <div class="swiper-card__next-mini" slot="button-prev">
-                                    <font-awesome-icon :icon="['fas', 'angle-left']" />
-                                </div>
-                                <div class="swiper-card__prev-mini" slot="button-next">
-                                    <font-awesome-icon :icon="['fas', 'angle-right']" />
-                                </div>  
-                            </swiper>
+                    <div class="swiper-card__img">
+                        <div class="swiper-card__cost">100$</div>
+                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                            <swiper-slide class="swiper__wrapper-mini_card">
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <div class="swiper-card__next-mini" slot="button-prev">
+                                <font-awesome-icon :icon="['fas', 'angle-left']" />
+                            </div>
+                            <div class="swiper-card__prev-mini" slot="button-next">
+                                <font-awesome-icon :icon="['fas', 'angle-right']" />
+                            </div>  
+                        </swiper>
+                    </div>
+                    <div class="swiper-card__statistics">
+                        <div class="swiper-card__name-rooms">Sunrise</div>
+                        <div class="swiper-card__size-rooms">
+                            <font-awesome-icon :icon="['fas', 'expand']" />
+                            <span>size: 24.5 m²</span>
                         </div>
-                        <div class="swiper-card__statistics">
-                            <div class="swiper-card__name-rooms">Sunrise</div>
-                            <div class="swiper-card__size-rooms">
-                                <font-awesome-icon :icon="['fas', 'expand']" />
-                                <span>size: 24.5 m²</span>
-                            </div>
-                            <div class="swiper-card__guest-rooms">
-                                <font-awesome-icon :icon="['fas', 'user']" />
-                                <span>max. guests: 3 adults, 1 child</span>
-                            </div>
-                            <div class="swiper-card__desc">
-                                With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                            </div>
-                            <div class="swiper-card__services">
-                                <ul>
-                                    <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                                </ul>
-                            </div>
+                        <div class="swiper-card__guest-rooms">
+                            <font-awesome-icon :icon="['fas', 'user']" />
+                            <span>max. guests: 3 adults, 1 child</span>
                         </div>
-                    </a>
+                        <div class="swiper-card__desc">
+                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
+                        </div>
+                        <div class="swiper-card__services">
+                            <ul>
+                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                            </ul>
+                        </div>
+                    </div>
                 </swiper-slide>
                 <swiper-slide class="swiper-card">
-                    <a href="/">
-                        <div class="swiper-card__img">
-                            <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
-                            <div class="swiper-card__cost">100$</div>
-                            <swiper :options="swiper_card_mini" class="swiper__wrapper-mini">
-                                <swiper-slide class="swiper__wrapper-mini_card">
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <div class="swiper-card__next-mini" slot="button-prev">
-                                    <font-awesome-icon :icon="['fas', 'angle-left']" />
-                                </div>
-                                <div class="swiper-card__prev-mini" slot="button-next">
-                                    <font-awesome-icon :icon="['fas', 'angle-right']" />
-                                </div>  
-                            </swiper>
+                    <div class="swiper-card__img">
+                        <div class="swiper-card__cost">100$</div>
+                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                            <swiper-slide class="swiper__wrapper-mini_card">
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <div class="swiper-card__next-mini" slot="button-prev">
+                                <font-awesome-icon :icon="['fas', 'angle-left']" />
+                            </div>
+                            <div class="swiper-card__prev-mini" slot="button-next">
+                                <font-awesome-icon :icon="['fas', 'angle-right']" />
+                            </div>  
+                        </swiper>
+                    </div>
+                    <div class="swiper-card__statistics">
+                        <div class="swiper-card__name-rooms">Sunrise</div>
+                        <div class="swiper-card__size-rooms">
+                            <font-awesome-icon :icon="['fas', 'expand']" />
+                            <span>size: 24.5 m²</span>
                         </div>
-                        <div class="swiper-card__statistics">
-                            <div class="swiper-card__name-rooms">Sunrise</div>
-                            <div class="swiper-card__size-rooms">
-                                <font-awesome-icon :icon="['fas', 'expand']" />
-                                <span>size: 24.5 m²</span>
-                            </div>
-                            <div class="swiper-card__guest-rooms">
-                                <font-awesome-icon :icon="['fas', 'user']" />
-                                <span>max. guests: 3 adults, 1 child</span>
-                            </div>
-                            <div class="swiper-card__desc">
-                                With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                            </div>
-                            <div class="swiper-card__services">
-                                <ul>
-                                    <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                                </ul>
-                            </div>
+                        <div class="swiper-card__guest-rooms">
+                            <font-awesome-icon :icon="['fas', 'user']" />
+                            <span>max. guests: 3 adults, 1 child</span>
                         </div>
-                    </a>
+                        <div class="swiper-card__desc">
+                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
+                        </div>
+                        <div class="swiper-card__services">
+                            <ul>
+                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                            </ul>
+                        </div>
+                    </div>
                 </swiper-slide>
                 <swiper-slide class="swiper-card">
-                    <a href="/">
-                        <div class="swiper-card__img">
-                            <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
-                            <div class="swiper-card__cost">100$</div>
-                            <swiper :options="swiper_card_mini" class="swiper__wrapper-mini">
-                                <swiper-slide class="swiper__wrapper-mini_card">
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <div class="swiper-card__next-mini" slot="button-prev">
-                                    <font-awesome-icon :icon="['fas', 'angle-left']" />
-                                </div>
-                                <div class="swiper-card__prev-mini" slot="button-next">
-                                    <font-awesome-icon :icon="['fas', 'angle-right']" />
-                                </div>  
-                            </swiper>
+                    <div class="swiper-card__img">
+                        <div class="swiper-card__cost">100$</div>
+                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                            <swiper-slide class="swiper__wrapper-mini_card">
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <div class="swiper-card__next-mini" slot="button-prev">
+                                <font-awesome-icon :icon="['fas', 'angle-left']" />
+                            </div>
+                            <div class="swiper-card__prev-mini" slot="button-next">
+                                <font-awesome-icon :icon="['fas', 'angle-right']" />
+                            </div>  
+                        </swiper>
+                    </div>
+                    <div class="swiper-card__statistics">
+                        <div class="swiper-card__name-rooms">Sunrise</div>
+                        <div class="swiper-card__size-rooms">
+                            <font-awesome-icon :icon="['fas', 'expand']" />
+                            <span>size: 24.5 m²</span>
                         </div>
-                        <div class="swiper-card__statistics">
-                            <div class="swiper-card__name-rooms">Sunrise</div>
-                            <div class="swiper-card__size-rooms">
-                                <font-awesome-icon :icon="['fas', 'expand']" />
-                                <span>size: 24.5 m²</span>
-                            </div>
-                            <div class="swiper-card__guest-rooms">
-                                <font-awesome-icon :icon="['fas', 'user']" />
-                                <span>max. guests: 3 adults, 1 child</span>
-                            </div>
-                            <div class="swiper-card__desc">
-                                With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                            </div>
-                            <div class="swiper-card__services">
-                                <ul>
-                                    <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                                </ul>
-                            </div>
+                        <div class="swiper-card__guest-rooms">
+                            <font-awesome-icon :icon="['fas', 'user']" />
+                            <span>max. guests: 3 adults, 1 child</span>
                         </div>
-                    </a>
+                        <div class="swiper-card__desc">
+                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
+                        </div>
+                        <div class="swiper-card__services">
+                            <ul>
+                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                            </ul>
+                        </div>
+                    </div>
                 </swiper-slide>
                 <swiper-slide class="swiper-card">
-                    <a href="/">
-                        <div class="swiper-card__img">
-                            <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
-                            <div class="swiper-card__cost">100$</div>
-                            <swiper :options="swiper_card_mini" class="swiper__wrapper-mini">
-                                <swiper-slide class="swiper__wrapper-mini_card">
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <div class="swiper-card__next-mini" slot="button-prev">
-                                    <font-awesome-icon :icon="['fas', 'angle-left']" />
-                                </div>
-                                <div class="swiper-card__prev-mini" slot="button-next">
-                                    <font-awesome-icon :icon="['fas', 'angle-right']" />
-                                </div>  
-                            </swiper>
+                    <div class="swiper-card__img">
+                        <div class="swiper-card__cost">100$</div>
+                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                            <swiper-slide class="swiper__wrapper-mini_card">
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <div class="swiper-card__next-mini" slot="button-prev">
+                                <font-awesome-icon :icon="['fas', 'angle-left']" />
+                            </div>
+                            <div class="swiper-card__prev-mini" slot="button-next">
+                                <font-awesome-icon :icon="['fas', 'angle-right']" />
+                            </div>  
+                        </swiper>
+                    </div>
+                    <div class="swiper-card__statistics">
+                        <div class="swiper-card__name-rooms">Sunrise</div>
+                        <div class="swiper-card__size-rooms">
+                            <font-awesome-icon :icon="['fas', 'expand']" />
+                            <span>size: 24.5 m²</span>
                         </div>
-                        <div class="swiper-card__statistics">
-                            <div class="swiper-card__name-rooms">Sunrise</div>
-                            <div class="swiper-card__size-rooms">
-                                <font-awesome-icon :icon="['fas', 'expand']" />
-                                <span>size: 24.5 m²</span>
-                            </div>
-                            <div class="swiper-card__guest-rooms">
-                                <font-awesome-icon :icon="['fas', 'user']" />
-                                <span>max. guests: 3 adults, 1 child</span>
-                            </div>
-                            <div class="swiper-card__desc">
-                                With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                            </div>
-                            <div class="swiper-card__services">
-                                <ul>
-                                    <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                                </ul>
-                            </div>
+                        <div class="swiper-card__guest-rooms">
+                            <font-awesome-icon :icon="['fas', 'user']" />
+                            <span>max. guests: 3 adults, 1 child</span>
                         </div>
-                    </a>
+                        <div class="swiper-card__desc">
+                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
+                        </div>
+                        <div class="swiper-card__services">
+                            <ul>
+                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                            </ul>
+                        </div>
+                    </div>
                 </swiper-slide>
                 <swiper-slide class="swiper-card">
-                    <a href="/">
-                        <div class="swiper-card__img">
-                            <!-- <b-img-lazy src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img-lazy> -->
-                            <div class="swiper-card__cost">100$</div>
-                            <swiper :options="swiper_card_mini" class="swiper__wrapper-mini">
-                                <swiper-slide class="swiper__wrapper-mini_card">
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <b-img src="../assets/images/swiper_card1.jpg" fluid  alt="" width="250px"></b-img>
-                                </swiper-slide>
-                                <div class="swiper-card__next-mini" slot="button-prev">
-                                    <font-awesome-icon :icon="['fas', 'angle-left']" />
-                                </div>
-                                <div class="swiper-card__prev-mini" slot="button-next">
-                                    <font-awesome-icon :icon="['fas', 'angle-right']" />
-                                </div>  
-                            </swiper>
+                    <div class="swiper-card__img">
+                        <div class="swiper-card__cost">100$</div>
+                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                            <swiper-slide class="swiper__wrapper-mini_card">
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <div class="swiper-card__next-mini" slot="button-prev">
+                                <font-awesome-icon :icon="['fas', 'angle-left']" />
+                            </div>
+                            <div class="swiper-card__prev-mini" slot="button-next">
+                                <font-awesome-icon :icon="['fas', 'angle-right']" />
+                            </div>  
+                        </swiper>
+                    </div>
+                    <div class="swiper-card__statistics">
+                        <div class="swiper-card__name-rooms">Sunrise</div>
+                        <div class="swiper-card__size-rooms">
+                            <font-awesome-icon :icon="['fas', 'expand']" />
+                            <span>size: 24.5 m²</span>
                         </div>
-                        <div class="swiper-card__statistics">
-                            <div class="swiper-card__name-rooms">Sunrise</div>
-                            <div class="swiper-card__size-rooms">
-                                <font-awesome-icon :icon="['fas', 'expand']" />
-                                <span>size: 24.5 m²</span>
-                            </div>
-                            <div class="swiper-card__guest-rooms">
-                                <font-awesome-icon :icon="['fas', 'user']" />
-                                <span>max. guests: 3 adults, 1 child</span>
-                            </div>
-                            <div class="swiper-card__desc">
-                                With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                            </div>
-                            <div class="swiper-card__services">
-                                <ul>
-                                    <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                    <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                                </ul>
-                            </div>
+                        <div class="swiper-card__guest-rooms">
+                            <font-awesome-icon :icon="['fas', 'user']" />
+                            <span>max. guests: 3 adults, 1 child</span>
                         </div>
-                    </a>
+                        <div class="swiper-card__desc">
+                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
+                        </div>
+                        <div class="swiper-card__services">
+                            <ul>
+                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                            </ul>
+                        </div>
+                    </div>
                 </swiper-slide>
                 <div class="swiper-card__next" slot="button-prev">
                     <font-awesome-icon :icon="['fas', 'angle-left']" />
@@ -540,6 +525,121 @@
     </div>
 <!-- finish Feedbacks slider-->
 
+    <!-- start services for page main -->
+    <div class="main-services">
+        <b-container>
+            <b-row>
+                <b-col cols="5">
+                    <div class="main-services__title">Services</div>
+                </b-col>
+                <b-col cols="7" class="d-flex justify-content-end">
+                    <b-button 
+                        v-b-toggle.collapse 
+                        class="main-services__btn" 
+                        variant="outline-light"
+                        @click="show = !show"
+                        v-if="show === false"
+                    >
+                        Show more
+                        <font-awesome-icon :icon="['fas', 'angle-down']" />
+                    </b-button>
+                    <b-button 
+                        v-b-toggle.collapse 
+                        class="main-services__btn" 
+                        variant="outline-light"
+                        v-else
+                        @click="show = !show"
+                    >
+                        Show less
+                        <font-awesome-icon :icon="['fas', 'angle-up']" />
+                    </b-button>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col md="10" offset-md="1">
+                    <b-collapse id="collapse" class="main-services__list">
+                        <b-card>
+                            <b-button 
+                                v-b-popover.hover.top="'Free coffee and tea in the lobby'" 
+                                title="Complimentary coffee and tea"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'mug-hot']" class="main-services__icon" />
+                                <span>Complimentary coffee and tea</span>
+                            </b-button>
+                            <b-button 
+                                v-b-popover.hover.top="'Free Wi-Fi'" 
+                                title="Free Wi-Fi"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'wifi']" class="main-services__icon" />
+                                <span>Free Wi-Fi</span>
+                            </b-button>  
+                            <b-button 
+                                v-b-popover.hover.top="'Customized running trails around the hotel'" 
+                                title="Running trails"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'running']" class="main-services__icon" />
+                                <span>Running trails</span>
+                            </b-button>
+                            <b-button 
+                                v-b-popover.hover.top="'Meeting facilities / social space'" 
+                                title="Meeting facilities"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'user-friends']" class="main-services__icon" />
+                                <span>Meeting facilities</span>
+                            </b-button>   
+                            <b-button 
+                                v-b-popover.hover.top="'Luggage storage'" 
+                                title="Luggage storage"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'briefcase']" class="main-services__icon" />
+                                <span>Luggage storage</span>
+                            </b-button>
+                            <b-button 
+                                v-b-popover.hover.top="'Individual room climate control'" 
+                                title="Individual room climate control"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'thermometer-quarter']" class="main-services__icon" />
+                                <span>Individual room climate control</span>
+                            </b-button>   
+                            <b-button 
+                                v-b-popover.hover.top="'Complimentary parking'" 
+                                title="Complimentary parking"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'parking']" class="main-services__icon" />
+                                <span>Complimentary parking</span>
+                            </b-button> 
+                            <b-button 
+                                v-b-popover.hover.top="'Dry cleaning services'" 
+                                title="Dry cleaning"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'tshirt']" class="main-services__icon" />
+                                <span>Dry cleaning</span>
+                            </b-button> 
+                                                        
+                        </b-card>
+                    </b-collapse>
+                </b-col>
+            </b-row>
+        </b-container>
+    </div>
+    <!-- finish services for page main -->
+
   </div>
 </template>
 
@@ -566,37 +666,39 @@ export default {
           prevEl: '.swiper-button-prev',
         },
       },
-      // start slider room
-      swiper_card_rooms: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          autoplay: true,
-          loop: true,
-          navigation: {
-              nextEl: '.swiper-card__next',
-              prevEl: '.swiper-card__prev',
-          },
-          breakpoints: {
-              768: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-              },
-              992: {
-                  slidesPerView: 4,
-                  spaceBetween: 30,
-              }
-          }
-      },
-      swiper_card_mini: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-          autoplay: true,
-          loop: true,
-          navigation: {
-              nextEl: '.swiper-card__next-mini',
-              prevEl: '.swiper-card__prev-mini',
-          },
-      },
+      // start slider room      
+        swiper_card_rooms: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 4000,
+            },
+            navigation: {
+                nextEl: '.swiper-card__next',
+                prevEl: '.swiper-card__prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                }
+            }
+        },
+        slider_card_mini: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 4000,
+            },
+            navigation: {
+                nextEl: '.swiper-card__next-mini',
+                prevEl: '.swiper-card__prev-mini',
+            },
+        }, 
       // finish slider room
 
       // start Feedbacks slider
