@@ -207,6 +207,7 @@
                         </div>
                         <div class="swiper-card__desc">
                             With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
+<<<<<<< HEAD
                         </div>
                         <div class="swiper-card__services">
                             <ul>
@@ -216,6 +217,17 @@
                                 <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                             </ul>
                         </div>
+=======
+                        </div>
+                        <div class="swiper-card__services">
+                            <ul>
+                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                            </ul>
+                        </div>
+>>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                     </div>
                 </swiper-slide>
                 <swiper-slide class="swiper-card">
@@ -298,10 +310,17 @@
                         <div class="swiper-card__guest-rooms">
                             <font-awesome-icon :icon="['fas', 'user']" />
                             <span>max. guests: 3 adults, 1 child</span>
+<<<<<<< HEAD
                         </div>
                         <div class="swiper-card__desc">
                             With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
                         </div>
+=======
+                        </div>
+                        <div class="swiper-card__desc">
+                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
+                        </div>
+>>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                         <div class="swiper-card__services">
                             <ul>
                                 <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
@@ -348,6 +367,7 @@
                         </div>
                         <div class="swiper-card__desc">
                             With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
+<<<<<<< HEAD
                         </div>
                         <div class="swiper-card__services">
                             <ul>
@@ -357,6 +377,17 @@
                                 <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                             </ul>
                         </div>
+=======
+                        </div>
+                        <div class="swiper-card__services">
+                            <ul>
+                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                            </ul>
+                        </div>
+>>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                     </div>
                 </swiper-slide>
                 <swiper-slide class="swiper-card">
@@ -524,6 +555,121 @@
         </b-container>
     </div>
 <!-- finish Feedbacks slider-->
+
+    <!-- start services for page main -->
+    <div class="main-services">
+        <b-container>
+            <b-row>
+                <b-col cols="5">
+                    <div class="main-services__title">Services</div>
+                </b-col>
+                <b-col cols="7" class="d-flex justify-content-end">
+                    <b-button 
+                        v-b-toggle.collapse 
+                        class="main-services__btn" 
+                        variant="outline-light"
+                        @click="show = !show"
+                        v-if="show === false"
+                    >
+                        Show more
+                        <font-awesome-icon :icon="['fas', 'angle-down']" />
+                    </b-button>
+                    <b-button 
+                        v-b-toggle.collapse 
+                        class="main-services__btn" 
+                        variant="outline-light"
+                        v-else
+                        @click="show = !show"
+                    >
+                        Show less
+                        <font-awesome-icon :icon="['fas', 'angle-up']" />
+                    </b-button>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col md="10" offset-md="1">
+                    <b-collapse id="collapse" class="main-services__list">
+                        <b-card>
+                            <b-button 
+                                v-b-popover.hover.top="'Free coffee and tea in the lobby'" 
+                                title="Complimentary coffee and tea"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'mug-hot']" class="main-services__icon" />
+                                <span>Complimentary coffee and tea</span>
+                            </b-button>
+                            <b-button 
+                                v-b-popover.hover.top="'Free Wi-Fi'" 
+                                title="Free Wi-Fi"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'wifi']" class="main-services__icon" />
+                                <span>Free Wi-Fi</span>
+                            </b-button>  
+                            <b-button 
+                                v-b-popover.hover.top="'Customized running trails around the hotel'" 
+                                title="Running trails"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'running']" class="main-services__icon" />
+                                <span>Running trails</span>
+                            </b-button>
+                            <b-button 
+                                v-b-popover.hover.top="'Meeting facilities / social space'" 
+                                title="Meeting facilities"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'user-friends']" class="main-services__icon" />
+                                <span>Meeting facilities</span>
+                            </b-button>   
+                            <b-button 
+                                v-b-popover.hover.top="'Luggage storage'" 
+                                title="Luggage storage"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'briefcase']" class="main-services__icon" />
+                                <span>Luggage storage</span>
+                            </b-button>
+                            <b-button 
+                                v-b-popover.hover.top="'Individual room climate control'" 
+                                title="Individual room climate control"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'thermometer-quarter']" class="main-services__icon" />
+                                <span>Individual room climate control</span>
+                            </b-button>   
+                            <b-button 
+                                v-b-popover.hover.top="'Complimentary parking'" 
+                                title="Complimentary parking"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'parking']" class="main-services__icon" />
+                                <span>Complimentary parking</span>
+                            </b-button> 
+                            <b-button 
+                                v-b-popover.hover.top="'Dry cleaning services'" 
+                                title="Dry cleaning"
+                                class="main-services__item"
+                                variant="outline-light"
+                            >
+                                <font-awesome-icon :icon="['fas', 'tshirt']" class="main-services__icon" />
+                                <span>Dry cleaning</span>
+                            </b-button> 
+                                                        
+                        </b-card>
+                    </b-collapse>
+                </b-col>
+            </b-row>
+        </b-container>
+    </div>
+    <!-- finish services for page main -->
 
   </div>
 </template>

@@ -721,11 +721,9 @@
 // start offer-main
 
 .offer-main {
-  padding: 50px 0;
-
   &__title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     h2 {
       font-size: 30px;
     }
@@ -771,15 +769,12 @@
 
   }
 
-  &__text {
-    position: relative;
-    z-index: 2;
-    padding: 10px 20px;
 
+  &__text {
     &-title {
       font-weight: 800;
       font-size: 16px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
 
     &-info {
@@ -825,7 +820,8 @@
 @media (max-width: 991px) {
   .offer-main__picture:before {
     content: none;
+      margin-bottom: 5px;
+    }
   }
-}
 
 // finish offer-main

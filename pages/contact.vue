@@ -103,17 +103,27 @@
                     </b-col>
                 </b-row>
                 <b-row>
+<<<<<<< HEAD
                     <b-col class="offer-main__item order-md-1 order-lg-1" md="6" lg="3" >
                         <div class="offer-main__picture">
                             <b-img src="../assets/images/offer-main.jpg" alt="" height="270px"></b-img>
                         </div>
                     </b-col>
                     <b-col class="offer-main__item order-md-2 order-lg-2" md="6" lg="3" >
+=======
+                    <b-col lg="3">
+                        <div class="offer-main__picture">
+                            <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                        </div>
+                    </b-col>
+                    <b-col lg="3">
+>>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                         <div class="offer-main__text">
                             <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                             <div class="offer-main__text-info">
                                  Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
                             nights toward tier status through January 4, 2021.
+<<<<<<< HEAD
                                 <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                                 <span>19th March, 2021</span> -->
                             </div>
@@ -121,16 +131,28 @@
                         </div>
                     </b-col>
                     <b-col class="offer-main__item order-md-4 order-lg-3" md="6" lg="3" >
+=======
+                            </div>
+                            <nuxt-link to="/offer">Read More</nuxt-link>
+                        </div>
+                    </b-col>
+                    <b-col lg="3">
+>>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                         <div class="offer-main__picture">
                             <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
                         </div>
                     </b-col>
+<<<<<<< HEAD
                     <b-col class="offer-main__item order-md-3 order-lg-4" md="6" lg="3" >
+=======
+                    <b-col lg="3">
+>>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                         <div class="offer-main__text">
                             <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                             <div class="offer-main__text-info">
                                  Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
                             nights toward tier status through January 4, 2021.
+<<<<<<< HEAD
                                 <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                                 <span>19th March, 2021</span> -->
                             </div>
@@ -138,11 +160,24 @@
                         </div>
                     </b-col>
                     <b-col class="offer-main__item order-md-6 order-lg-5" md="6" lg="3" >
+=======
+                            </div>
+                            <nuxt-link to="/offer">Read More</nuxt-link>
+                        </div>
+                    </b-col>
+                    <b-col lg="3">
+                        <div class="offer-main__picture">
+                            <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                        </div>
+                    </b-col>
+                    <b-col lg="3">
+>>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                         <div class="offer-main__text">
                             <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                             <div class="offer-main__text-info">
                                  Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
                             nights toward tier status through January 4, 2021.
+<<<<<<< HEAD
                                 <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                                 <span>19th March, 2021</span> -->
                             </div>
@@ -150,10 +185,18 @@
                         </div>
                     </b-col>
                     <b-col class="offer-main__item order-md-5 order-lg-6 offer-main__item-left" md="6" lg="3" >
+=======
+                            </div>
+                            <nuxt-link to="/offer">Read More</nuxt-link>
+                        </div>
+                    </b-col>
+                    <b-col lg="3">
+>>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                         <div class="offer-main__picture">
                             <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
                         </div>
                     </b-col>
+<<<<<<< HEAD
                     <b-col class="offer-main__item order-md-7 order-lg-7" md="6" lg="3" >
                         <div class="offer-main__text">
                             <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
@@ -169,11 +212,22 @@
                     <b-col class="offer-main__item order-md-8 order-lg-8 offer-main__item-left" md="6" lg="3" >
                         <div class="offer-main__picture">
                             <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+=======
+                    <b-col lg="3">
+                        <div class="offer-main__text">
+                            <div class="offer-main__text-title"></div>
+                            <div class="offer-main__text-info">
+                                 Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
+                            nights toward tier status through January 4, 2021.
+                            </div>
+                            <nuxt-link to="/offer">Read More</nuxt-link>
+>>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                         </div>
                     </b-col>
                 </b-row>
             </b-container>
         </div>
+<<<<<<< HEAD
 
     <!-- start services for page main -->
     <!-- <div class="main-services">
@@ -289,6 +343,8 @@
         </b-container>
     </div> -->
     <!-- finish services for page main -->        
+=======
+>>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
     </div>
 </template>
 <script>
