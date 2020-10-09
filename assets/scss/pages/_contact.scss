@@ -525,8 +525,6 @@
 
 //finish swiper slider for main page 
 
-
-
 // start Happy Clients & Feedbacks slider for main page
 .users-feedbacks {
   font-size: 14px;
@@ -719,3 +717,36 @@
 }
 
 // finish services for page main -->
+
+// start offer-main
+
+.offer-main {
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+    h2 {
+      font-size: 30px;
+    }
+
+    h5 {
+      font-size: 18px;
+      color: #E9AD28;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    &-title {
+      font-weight: 800;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    &-info {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// finish offer-main
