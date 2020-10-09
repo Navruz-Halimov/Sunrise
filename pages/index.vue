@@ -207,7 +207,6 @@
                         </div>
                         <div class="swiper-card__desc">
                             With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-<<<<<<< HEAD
                         </div>
                         <div class="swiper-card__services">
                             <ul>
@@ -217,7 +216,44 @@
                                 <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                             </ul>
                         </div>
-=======
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="swiper-card">
+                    <div class="swiper-card__img">
+                        <div class="swiper-card__cost">100$</div>
+                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                            <swiper-slide class="swiper__wrapper-mini_card">
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <swiper-slide>
+                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
+                            </swiper-slide>
+                            <div class="swiper-card__next-mini" slot="button-prev">
+                                <font-awesome-icon :icon="['fas', 'angle-left']" />
+                            </div>
+                            <div class="swiper-card__prev-mini" slot="button-next">
+                                <font-awesome-icon :icon="['fas', 'angle-right']" />
+                            </div>  
+                        </swiper>
+                    </div>
+                    <div class="swiper-card__statistics">
+                        <div class="swiper-card__name-rooms">Sunrise</div>
+                        <div class="swiper-card__size-rooms">
+                            <font-awesome-icon :icon="['fas', 'expand']" />
+                            <span>size: 24.5 m²</span>
+                        </div>
+                        <div class="swiper-card__guest-rooms">
+                            <font-awesome-icon :icon="['fas', 'user']" />
+                            <span>max. guests: 3 adults, 1 child</span>
+                        </div>
+                        <div class="swiper-card__desc">
+                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
                         </div>
                         <div class="swiper-card__services">
                             <ul>
@@ -227,7 +263,6 @@
                                 <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                             </ul>
                         </div>
->>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                     </div>
                 </swiper-slide>
                 <swiper-slide class="swiper-card">
@@ -310,64 +345,9 @@
                         <div class="swiper-card__guest-rooms">
                             <font-awesome-icon :icon="['fas', 'user']" />
                             <span>max. guests: 3 adults, 1 child</span>
-<<<<<<< HEAD
                         </div>
                         <div class="swiper-card__desc">
                             With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                        </div>
-=======
-                        </div>
-                        <div class="swiper-card__desc">
-                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                        </div>
->>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
-                        <div class="swiper-card__services">
-                            <ul>
-                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                </swiper-slide>
-                <swiper-slide class="swiper-card">
-                    <div class="swiper-card__img">
-                        <div class="swiper-card__cost">100$</div>
-                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
-                            <swiper-slide class="swiper__wrapper-mini_card">
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <div class="swiper-card__next-mini" slot="button-prev">
-                                <font-awesome-icon :icon="['fas', 'angle-left']" />
-                            </div>
-                            <div class="swiper-card__prev-mini" slot="button-next">
-                                <font-awesome-icon :icon="['fas', 'angle-right']" />
-                            </div>  
-                        </swiper>
-                    </div>
-                    <div class="swiper-card__statistics">
-                        <div class="swiper-card__name-rooms">Sunrise</div>
-                        <div class="swiper-card__size-rooms">
-                            <font-awesome-icon :icon="['fas', 'expand']" />
-                            <span>size: 24.5 m²</span>
-                        </div>
-                        <div class="swiper-card__guest-rooms">
-                            <font-awesome-icon :icon="['fas', 'user']" />
-                            <span>max. guests: 3 adults, 1 child</span>
-                        </div>
-                        <div class="swiper-card__desc">
-                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-<<<<<<< HEAD
                         </div>
                         <div class="swiper-card__services">
                             <ul>
@@ -377,17 +357,6 @@
                                 <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
                             </ul>
                         </div>
-=======
-                        </div>
-                        <div class="swiper-card__services">
-                            <ul>
-                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                            </ul>
-                        </div>
->>>>>>> 0e5b1e14c966794ab229506c63fc374bd2bfac84
                     </div>
                 </swiper-slide>
                 <swiper-slide class="swiper-card">
