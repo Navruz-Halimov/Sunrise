@@ -98,7 +98,7 @@
                     <b-col cols="12">
                         <div class="offer-main__title">
                             <h5>NEWS & EVENT</h5>
-                            <h2>From Our BloChange of Seasons. Change of Scenery.g</h2>
+                            <h2>From Our Blog</h2>
                         </div>
                     </b-col>
                 </b-row>
@@ -111,7 +111,10 @@
                     <b-col lg="3">
                         <div class="offer-main__text">
                             <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
-                            <div class="offer-main__text-info"></div>
+                            <div class="offer-main__text-info">
+                                 Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
+                            nights toward tier status through January 4, 2021.
+                            </div>
                             <nuxt-link to="/offer">Read More</nuxt-link>
                         </div>
                     </b-col>
@@ -123,7 +126,10 @@
                     <b-col lg="3">
                         <div class="offer-main__text">
                             <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
-                            <div class="offer-main__text-info"></div>
+                            <div class="offer-main__text-info">
+                                 Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
+                            nights toward tier status through January 4, 2021.
+                            </div>
                             <nuxt-link to="/offer">Read More</nuxt-link>
                         </div>
                     </b-col>
@@ -135,7 +141,10 @@
                     <b-col lg="3">
                         <div class="offer-main__text">
                             <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
-                            <div class="offer-main__text-info"></div>
+                            <div class="offer-main__text-info">
+                                 Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
+                            nights toward tier status through January 4, 2021.
+                            </div>
                             <nuxt-link to="/offer">Read More</nuxt-link>
                         </div>
                     </b-col>
@@ -147,7 +156,10 @@
                     <b-col lg="3">
                         <div class="offer-main__text">
                             <div class="offer-main__text-title"></div>
-                            <div class="offer-main__text-info"></div>
+                            <div class="offer-main__text-info">
+                                 Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
+                            nights toward tier status through January 4, 2021.
+                            </div>
                             <nuxt-link to="/offer">Read More</nuxt-link>
                         </div>
                     </b-col>
