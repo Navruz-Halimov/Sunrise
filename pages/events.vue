@@ -9,7 +9,7 @@
                                 Reserve our meeting rooms for your next event in Tashkent
                             </h1>
                             <div class="event-page__collapse" :class="{autoheight:isActive}">
-                                <b-collapse id="collapse" >
+                                <b-collapse id="collapse1" >
                                     <b-card>
                                         With three outstanding meeting rooms that are designed to host all kinds of 
                                         gatherings from small meetings to large receptions for up to 250 guests, 
@@ -24,7 +24,7 @@
                                     </b-card>
                                 </b-collapse>
                                 <b-button 
-                                    v-b-toggle.collapse 
+                                    v-b-toggle.collapse1 
                                     class="event-page__text-btn" 
                                     variant="outline-light"
                                     @click="isActive = !isActive"
@@ -34,7 +34,7 @@
                                     <font-awesome-icon :icon="['fas', 'angle-down']" />
                                 </b-button>
                                 <b-button 
-                                    v-b-toggle.collapse 
+                                    v-b-toggle.collapse1 
                                     class="event-page__text-btn" 
                                     variant="outline-light"
                                     v-else
