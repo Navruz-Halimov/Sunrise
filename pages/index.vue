@@ -3,7 +3,7 @@
     <div class="navbar__slider">
       <swiper class="swiper" :options="header__slider">
         <swiper-slide
-          ><img src="../assets//images/3D/1.jpg" alt="" />
+        ><img src="../assets//images/3D/1.jpg" alt=""/>
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -13,7 +13,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/3D/1night.jpg" alt="" />
+        ><img src="../assets/images/3D/1night.jpg" alt=""/>
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -23,7 +23,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/3D/2.jpg" alt="" />
+        ><img src="../assets/images/3D/2.jpg" alt=""/>
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -33,7 +33,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/3D/2night.jpg" alt="" />
+        ><img src="../assets/images/3D/2night.jpg" alt=""/>
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -100,7 +100,8 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
               <b-button type="submit" class="book__btn" to="/booking"
-                >Book now</b-button
+              >Book now
+              </b-button
               >
             </div>
           </b-row>
@@ -113,45 +114,56 @@
           <font-awesome-icon
             class="info__circle"
             :icon="['fas', 'info-circle']"
-          />Tourist guide
+          />
+          Tourist guide
         </h1>
         <ul class="guide__list">
           <li class="guide__item">
             <b-row>
               <b-col lg="6">
                 <nuxt-link to="" class="guide__link">
-                  Online scoreboard of Tashkent airport Airlines</nuxt-link
+                  Online scoreboard of Tashkent airport Airlines
+                </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                  >Law and law OVIRs of Tashkent</nuxt-link
+                >Law and law OVIRs of Tashkent
+                </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link">Travel Tips</nuxt-link>
                 <nuxt-link to="" class="guide__link"
-                  >Travel insurance</nuxt-link
+                >Travel insurance
+                </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link">Travel tips</nuxt-link>
                 <nuxt-link to="" class="guide__link"
-                  >Online scoreboard of Tashkent airport</nuxt-link
+                >Online scoreboard of Tashkent airport
+                </nuxt-link
                 >
               </b-col>
               <b-col lg="6">
                 <nuxt-link to="" class="guide__link">
-                  Tourism Code Horoscope for 2019</nuxt-link
+                  Tourism Code Horoscope for 2019
+                </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                  >Embassies in Tashkent</nuxt-link
+                >Embassies in Tashkent
+                </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                  >Accommodation in hotels</nuxt-link
+                >Accommodation in hotels
+                </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                  >Communication abroad</nuxt-link
+                >Communication abroad
+                </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                  >Travel Dictionary</nuxt-link
+                >Travel Dictionary
+                </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                  >TOP-10 in the world of tourism</nuxt-link
+                >TOP-10 in the world of tourism
+                </nuxt-link
                 >
               </b-col>
             </b-row>
@@ -160,18 +172,133 @@
       </b-container>
     </div>
     <b-container>
+      <b-row class="book__page">
+        <b-col class="book__header" lg="12">
+          <b-col class="header__content" cols="12" md="12">
+            <b-row>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/amenties/wifi.svg" alt="">
+                <span>Free Internet Access</span>
+              </b-col>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/cutlery.svg" alt="">
+                <span>Restaurant On-Site</span>
+              </b-col>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/serving-dish.svg" alt="">
+                <span>Room Service</span>
+              </b-col>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/weight.svg" alt="">
+                <span>Fitness Center</span>
+              </b-col>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/swimming-pool.svg" alt="">
+                <span>Pool</span>
+              </b-col>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/lotus.svg" alt="">
+                <span>Spa</span>
+              </b-col>
+            </b-row>
+            <b-row>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/key.svg" alt="">
+                <span>Digital Key</span>
+              </b-col>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/clock.svg" alt="">
+                <span>Digital Check-In</span>
+              </b-col>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/printer.svg" alt="">
+                <span>Business Services</span>
+              </b-col>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/hanger-line.svg" alt="">
+                <span>Laundry</span>
+              </b-col>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/concierge.svg" alt="">
+                <span>Concierge</span>
+              </b-col>
+              <b-col class="amenity" cols="4" sm="4" md="2">
+                <img src="../assets/images/icons/teacher.svg" alt="">
+                <span>Meeting Facilities</span>
+              </b-col>
+            </b-row>
+            <b-collapse id="amenity" class="mt-2">
+              <b-row>
+                <b-col class="my-3 main-amenity" lg="4">
+                  <img src="" alt="img">
+                  <h6>HOTEL FEATURES</h6>
+                  <p>
+                    <span>300 guest rooms including 52 luxurious suites</span>
+                    <span>Complimentary Wi-Fi</span>
+                    <span>Four restaurants and bars</span>
+                    <span>2,300 sq m of flexible meeting and event space</span>
+                    <span>Executive Business Center</span>
+                    <span>One indoor pool</span>
+                    <span>The Spa, offering a range of treatments</span>
+                    <span>24-hour StayFit™ Gym</span>
+                  </p>
+                </b-col>
+                <b-col class="my-3 main-amenity" lg="4">
+                  <img src="" alt="img">
+                  <h6>SERVICES</h6>
+                  <p>
+                    <span>A range of spa treatments</span>
+                    <span>Laundry and dry cleaning services</span>
+                  </p>
+                </b-col>
+                <b-col class="my-3 main-amenity" lg="4">
+                  <img src="" alt="img">
+                  <h6>ROOM AMENITIES</h6>
+                  <p>
+                    <span>Complimentary Wi-Fi</span>
+                    <span>Spacious workspace</span>
+                    <span>Ergonomic chair</span>
+                    <span>Charging station</span>
+                  </p>
+                </b-col>
+                <b-col class="my-3 main-amenity" lg="4">
+                  <img src="" alt="img">
+                  <h6>SUITE AMENITIES</h6>
+                  <p>
+                    <span>Regency Club access</span>
+                    <span>Study and kitchenette with dining area (Regency Executive Suites)</span>
+                    <span>Large living room and study, kitchenette, and dining area (Diplomatic and Presidential Suites)</span>
+                  </p>
+                </b-col>
+                <b-col class="my-3 main-amenity" lg="4">
+                  <img src="" alt="img">
+                  <h6>BATHROOM</h6>
+                  <p>
+                    <span>Soothing walk-in rain shower</span>
+                    <span>Separate bathtub</span>
+                  </p>
+                </b-col>
+              </b-row>
+            </b-collapse>
+            <b-button v-b-toggle.amenity variant="transparent" @click="amenityShow()">
+              {{amenityText}}
+            </b-button>
+          </b-col>
+        </b-col>
+      </b-row>
       <b-row class="gallery">
         <div class="gallery__title">
-          <i><img src="../assets/images/picture.svg" alt="" /></i>
+          <i><img src="../assets/images/picture.svg" alt=""/></i>
           <h2>Gallery</h2>
         </div>
       </b-row>
-      <Test :images="images" />
+      <Test :images="images"/>
       <b-button
         href="http://localhost:3000/gallery"
         class="btn-img my-4"
         to="/gallery"
-        >For more</b-button
+      >For more
+      </b-button
       >
     </b-container>
     <!-- start slider room-->
@@ -211,21 +338,21 @@
                   ></b-img>
                 </swiper-slide>
                 <div class="swiper-card__next-mini" slot="button-prev">
-                  <font-awesome-icon :icon="['fas', 'angle-left']" />
+                  <font-awesome-icon :icon="['fas', 'angle-left']"/>
                 </div>
                 <div class="swiper-card__prev-mini" slot="button-next">
-                  <font-awesome-icon :icon="['fas', 'angle-right']" />
+                  <font-awesome-icon :icon="['fas', 'angle-right']"/>
                 </div>
               </swiper>
             </div>
             <div class="swiper-card__statistics">
               <div class="swiper-card__name-rooms">Sunrise</div>
               <div class="swiper-card__size-rooms">
-                <font-awesome-icon :icon="['fas', 'expand']" />
+                <font-awesome-icon :icon="['fas', 'expand']"/>
                 <span>size: 24.5 m²</span>
               </div>
               <div class="swiper-card__guest-rooms">
-                <font-awesome-icon :icon="['fas', 'user']" />
+                <font-awesome-icon :icon="['fas', 'user']"/>
                 <span>max. guests: 3 adults, 1 child</span>
               </div>
               <div class="swiper-card__desc">
@@ -234,10 +361,18 @@
               </div>
               <div class="swiper-card__services">
                 <ul>
-                  <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'wifi']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'coffee']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'blender']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'shower']"/>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -275,21 +410,21 @@
                   ></b-img>
                 </swiper-slide>
                 <div class="swiper-card__next-mini" slot="button-prev">
-                  <font-awesome-icon :icon="['fas', 'angle-left']" />
+                  <font-awesome-icon :icon="['fas', 'angle-left']"/>
                 </div>
                 <div class="swiper-card__prev-mini" slot="button-next">
-                  <font-awesome-icon :icon="['fas', 'angle-right']" />
+                  <font-awesome-icon :icon="['fas', 'angle-right']"/>
                 </div>
               </swiper>
             </div>
             <div class="swiper-card__statistics">
               <div class="swiper-card__name-rooms">Sunrise</div>
               <div class="swiper-card__size-rooms">
-                <font-awesome-icon :icon="['fas', 'expand']" />
+                <font-awesome-icon :icon="['fas', 'expand']"/>
                 <span>size: 24.5 m²</span>
               </div>
               <div class="swiper-card__guest-rooms">
-                <font-awesome-icon :icon="['fas', 'user']" />
+                <font-awesome-icon :icon="['fas', 'user']"/>
                 <span>max. guests: 3 adults, 1 child</span>
               </div>
               <div class="swiper-card__desc">
@@ -298,10 +433,18 @@
               </div>
               <div class="swiper-card__services">
                 <ul>
-                  <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'wifi']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'coffee']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'blender']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'shower']"/>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -339,21 +482,21 @@
                   ></b-img>
                 </swiper-slide>
                 <div class="swiper-card__next-mini" slot="button-prev">
-                  <font-awesome-icon :icon="['fas', 'angle-left']" />
+                  <font-awesome-icon :icon="['fas', 'angle-left']"/>
                 </div>
                 <div class="swiper-card__prev-mini" slot="button-next">
-                  <font-awesome-icon :icon="['fas', 'angle-right']" />
+                  <font-awesome-icon :icon="['fas', 'angle-right']"/>
                 </div>
               </swiper>
             </div>
             <div class="swiper-card__statistics">
               <div class="swiper-card__name-rooms">Sunrise</div>
               <div class="swiper-card__size-rooms">
-                <font-awesome-icon :icon="['fas', 'expand']" />
+                <font-awesome-icon :icon="['fas', 'expand']"/>
                 <span>size: 24.5 m²</span>
               </div>
               <div class="swiper-card__guest-rooms">
-                <font-awesome-icon :icon="['fas', 'user']" />
+                <font-awesome-icon :icon="['fas', 'user']"/>
                 <span>max. guests: 3 adults, 1 child</span>
               </div>
               <div class="swiper-card__desc">
@@ -362,10 +505,18 @@
               </div>
               <div class="swiper-card__services">
                 <ul>
-                  <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'wifi']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'coffee']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'blender']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'shower']"/>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -403,21 +554,21 @@
                   ></b-img>
                 </swiper-slide>
                 <div class="swiper-card__next-mini" slot="button-prev">
-                  <font-awesome-icon :icon="['fas', 'angle-left']" />
+                  <font-awesome-icon :icon="['fas', 'angle-left']"/>
                 </div>
                 <div class="swiper-card__prev-mini" slot="button-next">
-                  <font-awesome-icon :icon="['fas', 'angle-right']" />
+                  <font-awesome-icon :icon="['fas', 'angle-right']"/>
                 </div>
               </swiper>
             </div>
             <div class="swiper-card__statistics">
               <div class="swiper-card__name-rooms">Sunrise</div>
               <div class="swiper-card__size-rooms">
-                <font-awesome-icon :icon="['fas', 'expand']" />
+                <font-awesome-icon :icon="['fas', 'expand']"/>
                 <span>size: 24.5 m²</span>
               </div>
               <div class="swiper-card__guest-rooms">
-                <font-awesome-icon :icon="['fas', 'user']" />
+                <font-awesome-icon :icon="['fas', 'user']"/>
                 <span>max. guests: 3 adults, 1 child</span>
               </div>
               <div class="swiper-card__desc">
@@ -426,10 +577,18 @@
               </div>
               <div class="swiper-card__services">
                 <ul>
-                  <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'wifi']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'coffee']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'blender']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'shower']"/>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -467,21 +626,21 @@
                   ></b-img>
                 </swiper-slide>
                 <div class="swiper-card__next-mini" slot="button-prev">
-                  <font-awesome-icon :icon="['fas', 'angle-left']" />
+                  <font-awesome-icon :icon="['fas', 'angle-left']"/>
                 </div>
                 <div class="swiper-card__prev-mini" slot="button-next">
-                  <font-awesome-icon :icon="['fas', 'angle-right']" />
+                  <font-awesome-icon :icon="['fas', 'angle-right']"/>
                 </div>
               </swiper>
             </div>
             <div class="swiper-card__statistics">
               <div class="swiper-card__name-rooms">Sunrise</div>
               <div class="swiper-card__size-rooms">
-                <font-awesome-icon :icon="['fas', 'expand']" />
+                <font-awesome-icon :icon="['fas', 'expand']"/>
                 <span>size: 24.5 m²</span>
               </div>
               <div class="swiper-card__guest-rooms">
-                <font-awesome-icon :icon="['fas', 'user']" />
+                <font-awesome-icon :icon="['fas', 'user']"/>
                 <span>max. guests: 3 adults, 1 child</span>
               </div>
               <div class="swiper-card__desc">
@@ -490,19 +649,27 @@
               </div>
               <div class="swiper-card__services">
                 <ul>
-                  <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                  <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'wifi']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'coffee']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'blender']"/>
+                  </li>
+                  <li>
+                    <font-awesome-icon :icon="['fas', 'shower']"/>
+                  </li>
                 </ul>
               </div>
             </div>
           </swiper-slide>
           <div class="swiper-card__next" slot="button-prev">
-            <font-awesome-icon :icon="['fas', 'angle-left']" />
+            <font-awesome-icon :icon="['fas', 'angle-left']"/>
           </div>
           <div class="swiper-card__prev" slot="button-next">
-            <font-awesome-icon :icon="['fas', 'angle-right']" />
+            <font-awesome-icon :icon="['fas', 'angle-right']"/>
           </div>
         </swiper>
       </b-container>
@@ -697,7 +864,8 @@
                             <span>19th March, 2021</span> -->
               </div>
               <nuxt-link to="/offer" class="offer-main__link"
-                >Read More</nuxt-link
+              >Read More
+              </nuxt-link
               >
             </div>
           </b-col>
@@ -732,7 +900,8 @@
                             <span>19th March, 2021</span> -->
               </div>
               <nuxt-link to="/offer" class="offer-main__link"
-                >Read More</nuxt-link
+              >Read More
+              </nuxt-link
               >
             </div>
           </b-col>
@@ -753,7 +922,8 @@
                             <span>19th March, 2021</span> -->
               </div>
               <nuxt-link to="/offer" class="offer-main__link"
-                >Read More</nuxt-link
+              >Read More
+              </nuxt-link
               >
             </div>
           </b-col>
@@ -788,7 +958,8 @@
                             <span>19th March, 2021</span> -->
               </div>
               <nuxt-link to="/offer" class="offer-main__link"
-                >Read More</nuxt-link
+              >Read More
+              </nuxt-link
               >
             </div>
           </b-col>
@@ -814,115 +985,124 @@
 </template>
 
 <script>
-import Test from '../components/Test.vue'
-export default {
-  name: 'Range',
-  title: 'Sunrise hotel in Tashkent',
-  comments: {
-    Test,
-  },
-  data() {
-    return {
-      value2: [new Date()],
-      value3: [new Date()],
-      header__slider: {
-        centeredSlides: true,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: true,
-        effect: 'fade',
-        //  grabCursor: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      },
-      // start slider room
-      swiper_card_rooms: {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        autoplay: {
-          delay: 4000,
-        },
-        navigation: {
-          nextEl: '.swiper-card__next',
-          prevEl: '.swiper-card__prev',
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          992: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-        },
-      },
-      slider_card_mini: {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        autoplay: {
-          delay: 4000,
-        },
-        navigation: {
-          nextEl: '.swiper-card__next-mini',
-          prevEl: '.swiper-card__prev-mini',
-        },
-      },
-      // finish slider room
+  import Test from '../components/Test.vue'
 
-      // start Feedbacks slider
-      users_feedback: {
-        slidesPerView: 1,
-        spaceBetween: 15,
-        autoplay: true,
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-          992: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
-        },
-      },
-      // finish Feedbacks slider
-    }
-  },
-  methods: {
-    notBeforeToday(date) {
-      return date < new Date(new Date().setHours(0, 0, 0, 0))
+  export default {
+    name: 'Range',
+    title: 'Sunrise hotel in Tashkent',
+    comments: {
+      Test
     },
-  },
-  head() {
-    return {
-      title: this.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Home page description',
+    data() {
+      return {
+        value2: [new Date()],
+        value3: [new Date()],
+        amenityText: 'Show More',
+        header__slider: {
+          centeredSlides: true,
+          spaceBetween: 30,
+          loop: true,
+          autoplay: true,
+          effect: 'fade',
+          //  grabCursor: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
         },
-      ],
-      script: [
-        {
-          src: '',
+        // start slider room
+        swiper_card_rooms: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          autoplay: {
+            delay: 4000
+          },
+          navigation: {
+            nextEl: '.swiper-card__next',
+            prevEl: '.swiper-card__prev'
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            992: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            }
+          }
         },
-      ],
-      link: [
-        {
-          rel: 'stylesheet',
-          href: '',
+        slider_card_mini: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          autoplay: {
+            delay: 4000
+          },
+          navigation: {
+            nextEl: '.swiper-card__next-mini',
+            prevEl: '.swiper-card__prev-mini'
+          }
         },
-      ],
+        // finish slider room
+
+        // start Feedbacks slider
+        users_feedback: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+          autoplay: true,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 15
+            },
+            992: {
+              slidesPerView: 3,
+              spaceBetween: 15
+            }
+          }
+        }
+        // finish Feedbacks slider
+      }
+    },
+    methods: {
+      notBeforeToday(date) {
+        return date < new Date(new Date().setHours(0, 0, 0, 0))
+      },
+      amenityShow() {
+        if (this.amenityText === 'Show More') {
+          this.amenityText = 'Show Less'
+        } else {
+          this.amenityText = 'Show More'
+        }
+      }
+    },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Home page description'
+          }
+        ],
+        script: [
+          {
+            src: ''
+          }
+        ],
+        link: [
+          {
+            rel: 'stylesheet',
+            href: ''
+          }
+        ]
+      }
     }
-  },
-}
+  }
 </script>
