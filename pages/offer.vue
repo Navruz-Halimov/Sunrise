@@ -1,7 +1,7 @@
 <template>
     <div class="offer-page">
         <b-container>
-            <b-row class="offer-page__wrap">
+            <b-row class="offer-page__wrap"> 
                 <b-col md="5">
                     <div class="offer-page__img">
                         <b-img src="../assets/images/offer_img.jpg" alt=""></b-img>

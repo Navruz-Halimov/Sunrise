@@ -3,7 +3,7 @@
     <div class="navbar__slider">
       <swiper class="swiper" :options="header__slider">
         <swiper-slide
-        ><img src="../assets//images/3D/1.jpg" alt=""/>
+          ><img src="../assets//images/3D/1.jpg" alt="" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -13,7 +13,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-        ><img src="../assets/images/3D/1night.jpg" alt=""/>
+          ><img src="../assets/images/3D/1night.jpg" alt="" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -23,7 +23,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-        ><img src="../assets/images/3D/2.jpg" alt=""/>
+          ><img src="../assets/images/3D/2.jpg" alt="" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -33,7 +33,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-        ><img src="../assets/images/3D/2night.jpg" alt=""/>
+          ><img src="../assets/images/3D/2night.jpg" alt="" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -825,160 +825,85 @@
 
     <!-- start offer-main -->
     <div class="offer-main">
-      <b-container>
-        <b-row>
-          <b-col cols="12">
-            <div class="offer-main__title">
-              <h5>NEWS & OFFER</h5>
-            </div>
-          </b-col>
-        </b-row>
-        <b-row>
-          <b-col
-            class="offer-main__item order-md-1 order-lg-1 order-1"
-            md="6"
-            lg="3"
-          >
-            <div class="offer-main__picture">
-              <b-img
-                src="../assets/images/offer-main.jpg"
-                alt=""
-                height="270px"
-              ></b-img>
-            </div>
-          </b-col>
-          <b-col
-            class="offer-main__item order-md-2 order-lg-2 order-2"
-            md="6"
-            lg="3"
-          >
-            <div class="offer-main__text">
-              <div class="offer-main__text-title">
-                Change of Seasons. Change of Scenery.
-              </div>
-              <div class="offer-main__text-info">
-                Whatever new view you choose, Bonus Journeys is back with up to
-                4x points and double nights toward tier status through January
-                4, 2021.
-                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+        <b-container>
+            <b-row>
+                <b-col cols="12">
+                    <div class="offer-main__title">
+                        <h5>NEWS & OFFER</h5>
+                    </div>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col class="offer-main__item order-md-1 order-lg-1 order-1 animate__animated animate__fadeInUp" md="6" lg="3" >
+                    <div class="offer-main__picture">
+                        <b-img src="../assets/images/offer-main.jpg" alt="" height="270px"></b-img>
+                    </div>
+                </b-col>
+                <b-col class="offer-main__item order-md-2 order-lg-2 order-2 animate__animated animate__fadeInUp" md="6" lg="3" >
+                    <div class="offer-main__text">
+                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
+                        <div class="offer-main__text-info">
+                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
+                        nights toward tier status through January 4, 2021.
+                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
-              </div>
-              <nuxt-link to="/offer" class="offer-main__link"
-              >Read More
-              </nuxt-link
-              >
-            </div>
-          </b-col>
-          <b-col
-            class="offer-main__item order-md-4 order-lg-3 order-3"
-            md="6"
-            lg="3"
-          >
-            <div class="offer-main__picture">
-              <b-img
-                src="../assets/images/offer-main.jpg"
-                alt=""
-                width="270px"
-                height="270px"
-              ></b-img>
-            </div>
-          </b-col>
-          <b-col
-            class="offer-main__item order-md-3 order-lg-4 order-4"
-            md="6"
-            lg="3"
-          >
-            <div class="offer-main__text">
-              <div class="offer-main__text-title">
-                Change of Seasons. Change of Scenery.
-              </div>
-              <div class="offer-main__text-info">
-                Whatever new view you choose, Bonus Journeys is back with up to
-                4x points and double nights toward tier status through January
-                4, 2021.
-                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+                        </div>
+                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                    </div>
+                </b-col>
+                <b-col class="offer-main__item order-md-4 order-lg-3 order-3 animate__animated animate__fadeInUp" md="6" lg="3" >
+                    <div class="offer-main__picture">
+                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                    </div>
+                </b-col>
+                <b-col class="offer-main__item order-md-3 order-lg-4 order-4 animate__animated animate__fadeInUp" md="6" lg="3" >
+                    <div class="offer-main__text">
+                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
+                        <div class="offer-main__text-info">
+                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
+                        nights toward tier status through January 4, 2021.
+                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
-              </div>
-              <nuxt-link to="/offer" class="offer-main__link"
-              >Read More
-              </nuxt-link
-              >
-            </div>
-          </b-col>
-          <b-col
-            class="offer-main__item order-md-6 order-lg-5 order-6"
-            md="6"
-            lg="3"
-          >
-            <div class="offer-main__text">
-              <div class="offer-main__text-title">
-                Change of Seasons. Change of Scenery.
-              </div>
-              <div class="offer-main__text-info">
-                Whatever new view you choose, Bonus Journeys is back with up to
-                4x points and double nights toward tier status through January
-                4, 2021.
-                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+                        </div>
+                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                    </div>
+                </b-col>
+                <b-col class="offer-main__item order-md-6 order-lg-5 order-6 animate__animated animate__fadeInUp" md="6" lg="3" >
+                    <div class="offer-main__text">
+                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
+                        <div class="offer-main__text-info">
+                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
+                        nights toward tier status through January 4, 2021.
+                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
-              </div>
-              <nuxt-link to="/offer" class="offer-main__link"
-              >Read More
-              </nuxt-link
-              >
-            </div>
-          </b-col>
-          <b-col
-            class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left"
-            md="6"
-            lg="3"
-          >
-            <div class="offer-main__picture">
-              <b-img
-                src="../assets/images/offer-main.jpg"
-                alt=""
-                width="270px"
-                height="270px"
-              ></b-img>
-            </div>
-          </b-col>
-          <b-col
-            class="offer-main__item order-md-7 order-lg-7 order-8"
-            md="6"
-            lg="3"
-          >
-            <div class="offer-main__text">
-              <div class="offer-main__text-title">
-                Change of Seasons. Change of Scenery.
-              </div>
-              <div class="offer-main__text-info">
-                Whatever new view you choose, Bonus Journeys is back with up to
-                4x points and double nights toward tier status through January
-                4, 2021.
-                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+                        </div>
+                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                    </div>
+                </b-col>
+                <b-col class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
+                    <div class="offer-main__picture">
+                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                    </div>
+                </b-col>
+                <b-col class="offer-main__item order-md-7 order-lg-7 order-8 animate__animated animate__fadeInUp" md="6" lg="3" >
+                    <div class="offer-main__text">
+                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
+                        <div class="offer-main__text-info">
+                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
+                        nights toward tier status through January 4, 2021.
+                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
-              </div>
-              <nuxt-link to="/offer" class="offer-main__link"
-              >Read More
-              </nuxt-link
-              >
-            </div>
-          </b-col>
-          <b-col
-            class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left"
-            md="6"
-            lg="3"
-          >
-            <div class="offer-main__picture">
-              <b-img
-                src="../assets/images/offer-main.jpg"
-                alt=""
-                width="270px"
-                height="270px"
-              ></b-img>
-            </div>
-          </b-col>
-        </b-row>
-      </b-container>
+                        </div>
+                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                    </div>
+                </b-col>
+                <b-col class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
+                    <div class="offer-main__picture">
+                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                    </div>
+                </b-col>
+            </b-row>
+        </b-container>
     </div>
     <!-- finish offer-main -->
   </div>
