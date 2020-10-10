@@ -99,15 +99,22 @@
               </select>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
-              <b-button type="submit" class="book__btn" to="/booking">Book now</b-button>
+              <b-button type="submit" class="book__btn" to="/booking"
+                >Book now</b-button
+              >
             </div>
           </b-row>
         </section>
       </form>
     </b-container>
-     <div class="tourist__guide">
+    <div class="tourist__guide">
       <b-container>
-        <h1 class="tourist__guide-heading"><font-awesome-icon class="info__circle" :icon="['fas', 'info-circle']"/>Tourist guide</h1>
+        <h1 class="tourist__guide-heading">
+          <font-awesome-icon
+            class="info__circle"
+            :icon="['fas', 'info-circle']"
+          />Tourist guide
+        </h1>
         <ul class="guide__list">
           <li class="guide__item">
             <b-row>
@@ -167,447 +174,642 @@
         >For more</b-button
       >
     </b-container>
-<!-- start slider room-->
+    <!-- start slider room-->
     <div class="swiper-card-rooms">
-        <b-container class="swiper__wrapper">
-            <swiper :options="swiper_card_rooms">
-                <swiper-slide class="swiper-card">
-                    <div class="swiper-card__img">
-                        <div class="swiper-card__cost">100$</div>
-                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
-                            <swiper-slide class="swiper__wrapper-mini_card">
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <div class="swiper-card__next-mini" slot="button-prev">
-                                <font-awesome-icon :icon="['fas', 'angle-left']" />
-                            </div>
-                            <div class="swiper-card__prev-mini" slot="button-next">
-                                <font-awesome-icon :icon="['fas', 'angle-right']" />
-                            </div>  
-                        </swiper>
-                    </div>
-                    <div class="swiper-card__statistics">
-                        <div class="swiper-card__name-rooms">Sunrise</div>
-                        <div class="swiper-card__size-rooms">
-                            <font-awesome-icon :icon="['fas', 'expand']" />
-                            <span>size: 24.5 m²</span>
-                        </div>
-                        <div class="swiper-card__guest-rooms">
-                            <font-awesome-icon :icon="['fas', 'user']" />
-                            <span>max. guests: 3 adults, 1 child</span>
-                        </div>
-                        <div class="swiper-card__desc">
-                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                        </div>
-                        <div class="swiper-card__services">
-                            <ul>
-                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                            </ul>
-                        </div>
-                    </div>
+      <b-container class="swiper__wrapper">
+        <swiper :options="swiper_card_rooms">
+          <swiper-slide class="swiper-card">
+            <div class="swiper-card__img">
+              <div class="swiper-card__cost">100$</div>
+              <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                <swiper-slide class="swiper__wrapper-mini_card">
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
                 </swiper-slide>
-                <swiper-slide class="swiper-card">
-                    <div class="swiper-card__img">
-                        <div class="swiper-card__cost">100$</div>
-                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
-                            <swiper-slide class="swiper__wrapper-mini_card">
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <div class="swiper-card__next-mini" slot="button-prev">
-                                <font-awesome-icon :icon="['fas', 'angle-left']" />
-                            </div>
-                            <div class="swiper-card__prev-mini" slot="button-next">
-                                <font-awesome-icon :icon="['fas', 'angle-right']" />
-                            </div>  
-                        </swiper>
-                    </div>
-                    <div class="swiper-card__statistics">
-                        <div class="swiper-card__name-rooms">Sunrise</div>
-                        <div class="swiper-card__size-rooms">
-                            <font-awesome-icon :icon="['fas', 'expand']" />
-                            <span>size: 24.5 m²</span>
-                        </div>
-                        <div class="swiper-card__guest-rooms">
-                            <font-awesome-icon :icon="['fas', 'user']" />
-                            <span>max. guests: 3 adults, 1 child</span>
-                        </div>
-                        <div class="swiper-card__desc">
-                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                        </div>
-                        <div class="swiper-card__services">
-                            <ul>
-                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                            </ul>
-                        </div>
-                    </div>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
                 </swiper-slide>
-                <swiper-slide class="swiper-card">
-                    <div class="swiper-card__img">
-                        <div class="swiper-card__cost">100$</div>
-                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
-                            <swiper-slide class="swiper__wrapper-mini_card">
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <div class="swiper-card__next-mini" slot="button-prev">
-                                <font-awesome-icon :icon="['fas', 'angle-left']" />
-                            </div>
-                            <div class="swiper-card__prev-mini" slot="button-next">
-                                <font-awesome-icon :icon="['fas', 'angle-right']" />
-                            </div>  
-                        </swiper>
-                    </div>
-                    <div class="swiper-card__statistics">
-                        <div class="swiper-card__name-rooms">Sunrise</div>
-                        <div class="swiper-card__size-rooms">
-                            <font-awesome-icon :icon="['fas', 'expand']" />
-                            <span>size: 24.5 m²</span>
-                        </div>
-                        <div class="swiper-card__guest-rooms">
-                            <font-awesome-icon :icon="['fas', 'user']" />
-                            <span>max. guests: 3 adults, 1 child</span>
-                        </div>
-                        <div class="swiper-card__desc">
-                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                        </div>
-                        <div class="swiper-card__services">
-                            <ul>
-                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                            </ul>
-                        </div>
-                    </div>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
                 </swiper-slide>
-                <swiper-slide class="swiper-card">
-                    <div class="swiper-card__img">
-                        <div class="swiper-card__cost">100$</div>
-                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
-                            <swiper-slide class="swiper__wrapper-mini_card">
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <div class="swiper-card__next-mini" slot="button-prev">
-                                <font-awesome-icon :icon="['fas', 'angle-left']" />
-                            </div>
-                            <div class="swiper-card__prev-mini" slot="button-next">
-                                <font-awesome-icon :icon="['fas', 'angle-right']" />
-                            </div>  
-                        </swiper>
-                    </div>
-                    <div class="swiper-card__statistics">
-                        <div class="swiper-card__name-rooms">Sunrise</div>
-                        <div class="swiper-card__size-rooms">
-                            <font-awesome-icon :icon="['fas', 'expand']" />
-                            <span>size: 24.5 m²</span>
-                        </div>
-                        <div class="swiper-card__guest-rooms">
-                            <font-awesome-icon :icon="['fas', 'user']" />
-                            <span>max. guests: 3 adults, 1 child</span>
-                        </div>
-                        <div class="swiper-card__desc">
-                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                        </div>
-                        <div class="swiper-card__services">
-                            <ul>
-                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                            </ul>
-                        </div>
-                    </div>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
                 </swiper-slide>
-                <swiper-slide class="swiper-card">
-                    <div class="swiper-card__img">
-                        <div class="swiper-card__cost">100$</div>
-                        <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
-                            <swiper-slide class="swiper__wrapper-mini_card">
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <swiper-slide>
-                                <b-img src="../assets/images/swiper_card1.jpg" fluid  alt=""></b-img>
-                            </swiper-slide>
-                            <div class="swiper-card__next-mini" slot="button-prev">
-                                <font-awesome-icon :icon="['fas', 'angle-left']" />
-                            </div>
-                            <div class="swiper-card__prev-mini" slot="button-next">
-                                <font-awesome-icon :icon="['fas', 'angle-right']" />
-                            </div>  
-                        </swiper>
-                    </div>
-                    <div class="swiper-card__statistics">
-                        <div class="swiper-card__name-rooms">Sunrise</div>
-                        <div class="swiper-card__size-rooms">
-                            <font-awesome-icon :icon="['fas', 'expand']" />
-                            <span>size: 24.5 m²</span>
-                        </div>
-                        <div class="swiper-card__guest-rooms">
-                            <font-awesome-icon :icon="['fas', 'user']" />
-                            <span>max. guests: 3 adults, 1 child</span>
-                        </div>
-                        <div class="swiper-card__desc">
-                            With our Standard Guest Room, you will have everything you need for a comfortable stay and a good night's sleep.
-                        </div>
-                        <div class="swiper-card__services">
-                            <ul>
-                                <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
-                                <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
-                            </ul>
-                        </div>
-                    </div>
-                </swiper-slide>
-                <div class="swiper-card__next" slot="button-prev">
-                    <font-awesome-icon :icon="['fas', 'angle-left']" />
+                <div class="swiper-card__next-mini" slot="button-prev">
+                  <font-awesome-icon :icon="['fas', 'angle-left']" />
                 </div>
-                <div class="swiper-card__prev" slot="button-next">
-                    <font-awesome-icon :icon="['fas', 'angle-right']" />
-                </div>                                                                          
-            </swiper>   
-        </b-container>
+                <div class="swiper-card__prev-mini" slot="button-next">
+                  <font-awesome-icon :icon="['fas', 'angle-right']" />
+                </div>
+              </swiper>
+            </div>
+            <div class="swiper-card__statistics">
+              <div class="swiper-card__name-rooms">Sunrise</div>
+              <div class="swiper-card__size-rooms">
+                <font-awesome-icon :icon="['fas', 'expand']" />
+                <span>size: 24.5 m²</span>
+              </div>
+              <div class="swiper-card__guest-rooms">
+                <font-awesome-icon :icon="['fas', 'user']" />
+                <span>max. guests: 3 adults, 1 child</span>
+              </div>
+              <div class="swiper-card__desc">
+                With our Standard Guest Room, you will have everything you need
+                for a comfortable stay and a good night's sleep.
+              </div>
+              <div class="swiper-card__services">
+                <ul>
+                  <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                </ul>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="swiper-card">
+            <div class="swiper-card__img">
+              <div class="swiper-card__cost">100$</div>
+              <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                <swiper-slide class="swiper__wrapper-mini_card">
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <div class="swiper-card__next-mini" slot="button-prev">
+                  <font-awesome-icon :icon="['fas', 'angle-left']" />
+                </div>
+                <div class="swiper-card__prev-mini" slot="button-next">
+                  <font-awesome-icon :icon="['fas', 'angle-right']" />
+                </div>
+              </swiper>
+            </div>
+            <div class="swiper-card__statistics">
+              <div class="swiper-card__name-rooms">Sunrise</div>
+              <div class="swiper-card__size-rooms">
+                <font-awesome-icon :icon="['fas', 'expand']" />
+                <span>size: 24.5 m²</span>
+              </div>
+              <div class="swiper-card__guest-rooms">
+                <font-awesome-icon :icon="['fas', 'user']" />
+                <span>max. guests: 3 adults, 1 child</span>
+              </div>
+              <div class="swiper-card__desc">
+                With our Standard Guest Room, you will have everything you need
+                for a comfortable stay and a good night's sleep.
+              </div>
+              <div class="swiper-card__services">
+                <ul>
+                  <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                </ul>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="swiper-card">
+            <div class="swiper-card__img">
+              <div class="swiper-card__cost">100$</div>
+              <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                <swiper-slide class="swiper__wrapper-mini_card">
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <div class="swiper-card__next-mini" slot="button-prev">
+                  <font-awesome-icon :icon="['fas', 'angle-left']" />
+                </div>
+                <div class="swiper-card__prev-mini" slot="button-next">
+                  <font-awesome-icon :icon="['fas', 'angle-right']" />
+                </div>
+              </swiper>
+            </div>
+            <div class="swiper-card__statistics">
+              <div class="swiper-card__name-rooms">Sunrise</div>
+              <div class="swiper-card__size-rooms">
+                <font-awesome-icon :icon="['fas', 'expand']" />
+                <span>size: 24.5 m²</span>
+              </div>
+              <div class="swiper-card__guest-rooms">
+                <font-awesome-icon :icon="['fas', 'user']" />
+                <span>max. guests: 3 adults, 1 child</span>
+              </div>
+              <div class="swiper-card__desc">
+                With our Standard Guest Room, you will have everything you need
+                for a comfortable stay and a good night's sleep.
+              </div>
+              <div class="swiper-card__services">
+                <ul>
+                  <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                </ul>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="swiper-card">
+            <div class="swiper-card__img">
+              <div class="swiper-card__cost">100$</div>
+              <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                <swiper-slide class="swiper__wrapper-mini_card">
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <div class="swiper-card__next-mini" slot="button-prev">
+                  <font-awesome-icon :icon="['fas', 'angle-left']" />
+                </div>
+                <div class="swiper-card__prev-mini" slot="button-next">
+                  <font-awesome-icon :icon="['fas', 'angle-right']" />
+                </div>
+              </swiper>
+            </div>
+            <div class="swiper-card__statistics">
+              <div class="swiper-card__name-rooms">Sunrise</div>
+              <div class="swiper-card__size-rooms">
+                <font-awesome-icon :icon="['fas', 'expand']" />
+                <span>size: 24.5 m²</span>
+              </div>
+              <div class="swiper-card__guest-rooms">
+                <font-awesome-icon :icon="['fas', 'user']" />
+                <span>max. guests: 3 adults, 1 child</span>
+              </div>
+              <div class="swiper-card__desc">
+                With our Standard Guest Room, you will have everything you need
+                for a comfortable stay and a good night's sleep.
+              </div>
+              <div class="swiper-card__services">
+                <ul>
+                  <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                </ul>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="swiper-card">
+            <div class="swiper-card__img">
+              <div class="swiper-card__cost">100$</div>
+              <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                <swiper-slide class="swiper__wrapper-mini_card">
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <swiper-slide>
+                  <b-img
+                    src="../assets/images/swiper_card1.jpg"
+                    fluid
+                    alt=""
+                  ></b-img>
+                </swiper-slide>
+                <div class="swiper-card__next-mini" slot="button-prev">
+                  <font-awesome-icon :icon="['fas', 'angle-left']" />
+                </div>
+                <div class="swiper-card__prev-mini" slot="button-next">
+                  <font-awesome-icon :icon="['fas', 'angle-right']" />
+                </div>
+              </swiper>
+            </div>
+            <div class="swiper-card__statistics">
+              <div class="swiper-card__name-rooms">Sunrise</div>
+              <div class="swiper-card__size-rooms">
+                <font-awesome-icon :icon="['fas', 'expand']" />
+                <span>size: 24.5 m²</span>
+              </div>
+              <div class="swiper-card__guest-rooms">
+                <font-awesome-icon :icon="['fas', 'user']" />
+                <span>max. guests: 3 adults, 1 child</span>
+              </div>
+              <div class="swiper-card__desc">
+                With our Standard Guest Room, you will have everything you need
+                for a comfortable stay and a good night's sleep.
+              </div>
+              <div class="swiper-card__services">
+                <ul>
+                  <li><font-awesome-icon :icon="['fas', 'wifi']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'coffee']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'blender']" /></li>
+                  <li><font-awesome-icon :icon="['fas', 'shower']" /></li>
+                </ul>
+              </div>
+            </div>
+          </swiper-slide>
+          <div class="swiper-card__next" slot="button-prev">
+            <font-awesome-icon :icon="['fas', 'angle-left']" />
+          </div>
+          <div class="swiper-card__prev" slot="button-next">
+            <font-awesome-icon :icon="['fas', 'angle-right']" />
+          </div>
+        </swiper>
+      </b-container>
     </div>
-<!-- finish slider room-->
+    <!-- finish slider room-->
 
-<!-- start Feedbacks slider -->
+    <!-- start Feedbacks slider -->
     <div class="users-feedbacks">
-        <b-container class="users__wrapper">
-            <b-row>
-                <b-col md="12">
-                    <div class="users-feedbacks__title">
-                        Happy Clients & Feedbacks
-                    </div>
-                    <swiper :options="users_feedback">
-                        <swiper-slide class="users-feedbacks__card">
-                            <div class="users-feedbacks__card-img">
-                                <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
-                            </div>
-                            <div class="users-feedbacks__card-info">
-                                <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
-                                <div class="users-feedbacks__card-text">
-                                    Far far away, behind the word mountains, 
-                                    far from the countries Vokalia and Consonantia, 
-                                    there live the blind texts.
-                                </div>
-                                <div class="users-feedbacks__card-name">Rodel Golez</div>
-                                <div class="users-feedbacks__card-career">Businessman</div>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide class="users-feedbacks__card">
-                            <div class="users-feedbacks__card-img">
-                                <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
-                            </div>
-                            <div class="users-feedbacks__card-info">
-                                <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
-                                <div class="users-feedbacks__card-text">
-                                    Far far away, behind the word mountains, 
-                                    far from the countries Vokalia and Consonantia, 
-                                    there live the blind texts.
-                                </div>
-                                <div class="users-feedbacks__card-name">Rodel Golez</div>
-                                <div class="users-feedbacks__card-career">Businessman</div>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide class="users-feedbacks__card">
-                            <div class="users-feedbacks__card-img">
-                                <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
-                            </div>
-                            <div class="users-feedbacks__card-info">
-                                <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
-                                <div class="users-feedbacks__card-text">
-                                    Far far away, behind the word mountains, 
-                                    far from the countries Vokalia and Consonantia, 
-                                    there live the blind texts.
-                                </div>
-                                <div class="users-feedbacks__card-name">Rodel Golez</div>
-                                <div class="users-feedbacks__card-career">Businessman</div>
-                            </div>
-                        </swiper-slide>  
-                        <swiper-slide class="users-feedbacks__card">
-                            <div class="users-feedbacks__card-img">
-                                <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
-                            </div>
-                            <div class="users-feedbacks__card-info">
-                                <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
-                                <div class="users-feedbacks__card-text">
-                                    Far far away, behind the word mountains, 
-                                    far from the countries Vokalia and Consonantia, 
-                                    there live the blind texts.
-                                </div>
-                                <div class="users-feedbacks__card-name">Rodel Golez</div>
-                                <div class="users-feedbacks__card-career">Businessman</div>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide class="users-feedbacks__card">
-                            <div class="users-feedbacks__card-img">
-                                <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
-                            </div>
-                            <div class="users-feedbacks__card-info">
-                                <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
-                                <div class="users-feedbacks__card-text">
-                                    Far far away, behind the word mountains, 
-                                    far from the countries Vokalia and Consonantia, 
-                                    there live the blind texts.
-                                </div>
-                                <div class="users-feedbacks__card-name">Rodel Golez</div>
-                                <div class="users-feedbacks__card-career">Businessman</div>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide class="users-feedbacks__card">
-                            <div class="users-feedbacks__card-img">
-                                <b-img src="../assets/images/person_1.jpg" rounded="circle" alt="person"></b-img>
-                            </div>
-                            <div class="users-feedbacks__card-info">
-                                <font-awesome-icon :icon="['fas', 'quote-left']" class="card-icon"/>
-                                <div class="users-feedbacks__card-text">
-                                    Far far away, behind the word mountains, 
-                                    far from the countries Vokalia and Consonantia, 
-                                    there live the blind texts.
-                                </div>
-                                <div class="users-feedbacks__card-name">Rodel Golez</div>
-                                <div class="users-feedbacks__card-career">Businessman</div>
-                            </div>
-                        </swiper-slide>                         
-                    </swiper>
-                    <div class="swiper-pagination"></div> 
-                </b-col>
-            </b-row>
-
-        </b-container>
+      <b-container class="users__wrapper">
+        <b-row>
+          <b-col md="12">
+            <div class="users-feedbacks__title">Happy Clients & Feedbacks</div>
+            <swiper :options="users_feedback">
+              <swiper-slide class="users-feedbacks__card">
+                <div class="users-feedbacks__card-img">
+                  <b-img
+                    src="../assets/images/person_1.jpg"
+                    rounded="circle"
+                    alt="person"
+                  ></b-img>
+                </div>
+                <div class="users-feedbacks__card-info">
+                  <font-awesome-icon
+                    :icon="['fas', 'quote-left']"
+                    class="card-icon"
+                  />
+                  <div class="users-feedbacks__card-text">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </div>
+                  <div class="users-feedbacks__card-name">Rodel Golez</div>
+                  <div class="users-feedbacks__card-career">Businessman</div>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="users-feedbacks__card">
+                <div class="users-feedbacks__card-img">
+                  <b-img
+                    src="../assets/images/person_1.jpg"
+                    rounded="circle"
+                    alt="person"
+                  ></b-img>
+                </div>
+                <div class="users-feedbacks__card-info">
+                  <font-awesome-icon
+                    :icon="['fas', 'quote-left']"
+                    class="card-icon"
+                  />
+                  <div class="users-feedbacks__card-text">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </div>
+                  <div class="users-feedbacks__card-name">Rodel Golez</div>
+                  <div class="users-feedbacks__card-career">Businessman</div>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="users-feedbacks__card">
+                <div class="users-feedbacks__card-img">
+                  <b-img
+                    src="../assets/images/person_1.jpg"
+                    rounded="circle"
+                    alt="person"
+                  ></b-img>
+                </div>
+                <div class="users-feedbacks__card-info">
+                  <font-awesome-icon
+                    :icon="['fas', 'quote-left']"
+                    class="card-icon"
+                  />
+                  <div class="users-feedbacks__card-text">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </div>
+                  <div class="users-feedbacks__card-name">Rodel Golez</div>
+                  <div class="users-feedbacks__card-career">Businessman</div>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="users-feedbacks__card">
+                <div class="users-feedbacks__card-img">
+                  <b-img
+                    src="../assets/images/person_1.jpg"
+                    rounded="circle"
+                    alt="person"
+                  ></b-img>
+                </div>
+                <div class="users-feedbacks__card-info">
+                  <font-awesome-icon
+                    :icon="['fas', 'quote-left']"
+                    class="card-icon"
+                  />
+                  <div class="users-feedbacks__card-text">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </div>
+                  <div class="users-feedbacks__card-name">Rodel Golez</div>
+                  <div class="users-feedbacks__card-career">Businessman</div>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="users-feedbacks__card">
+                <div class="users-feedbacks__card-img">
+                  <b-img
+                    src="../assets/images/person_1.jpg"
+                    rounded="circle"
+                    alt="person"
+                  ></b-img>
+                </div>
+                <div class="users-feedbacks__card-info">
+                  <font-awesome-icon
+                    :icon="['fas', 'quote-left']"
+                    class="card-icon"
+                  />
+                  <div class="users-feedbacks__card-text">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </div>
+                  <div class="users-feedbacks__card-name">Rodel Golez</div>
+                  <div class="users-feedbacks__card-career">Businessman</div>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="users-feedbacks__card">
+                <div class="users-feedbacks__card-img">
+                  <b-img
+                    src="../assets/images/person_1.jpg"
+                    rounded="circle"
+                    alt="person"
+                  ></b-img>
+                </div>
+                <div class="users-feedbacks__card-info">
+                  <font-awesome-icon
+                    :icon="['fas', 'quote-left']"
+                    class="card-icon"
+                  />
+                  <div class="users-feedbacks__card-text">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </div>
+                  <div class="users-feedbacks__card-name">Rodel Golez</div>
+                  <div class="users-feedbacks__card-career">Businessman</div>
+                </div>
+              </swiper-slide>
+            </swiper>
+            <div class="swiper-pagination"></div>
+          </b-col>
+        </b-row>
+      </b-container>
     </div>
-<!-- finish Feedbacks slider-->
+    <!-- finish Feedbacks slider-->
 
-<!-- start offer-main -->
+    <!-- start offer-main -->
     <div class="offer-main">
-        <b-container>
-            <b-row>
-                <b-col cols="12">
-                    <div class="offer-main__title">
-                        <h5>NEWS & OFFER</h5>
-                    </div>
-                </b-col>
-            </b-row>
-            <b-row>
-                <b-col class="offer-main__item order-md-1 order-lg-1 order-1" md="6" lg="3" >
-                    <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" height="270px"></b-img>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-2 order-lg-2 order-2" md="6" lg="3" >
-                    <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
-                        <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
-                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+      <b-container>
+        <b-row>
+          <b-col cols="12">
+            <div class="offer-main__title">
+              <h5>NEWS & OFFER</h5>
+            </div>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col
+            class="offer-main__item order-md-1 order-lg-1 order-1"
+            md="6"
+            lg="3"
+          >
+            <div class="offer-main__picture">
+              <b-img
+                src="../assets/images/offer-main.jpg"
+                alt=""
+                height="270px"
+              ></b-img>
+            </div>
+          </b-col>
+          <b-col
+            class="offer-main__item order-md-2 order-lg-2 order-2"
+            md="6"
+            lg="3"
+          >
+            <div class="offer-main__text">
+              <div class="offer-main__text-title">
+                Change of Seasons. Change of Scenery.
+              </div>
+              <div class="offer-main__text-info">
+                Whatever new view you choose, Bonus Journeys is back with up to
+                4x points and double nights toward tier status through January
+                4, 2021.
+                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
-                        </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-4 order-lg-3 order-3" md="6" lg="3" >
-                    <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-3 order-lg-4 order-4" md="6" lg="3" >
-                    <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
-                        <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
-                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+              </div>
+              <nuxt-link to="/offer" class="offer-main__link"
+                >Read More</nuxt-link
+              >
+            </div>
+          </b-col>
+          <b-col
+            class="offer-main__item order-md-4 order-lg-3 order-3"
+            md="6"
+            lg="3"
+          >
+            <div class="offer-main__picture">
+              <b-img
+                src="../assets/images/offer-main.jpg"
+                alt=""
+                width="270px"
+                height="270px"
+              ></b-img>
+            </div>
+          </b-col>
+          <b-col
+            class="offer-main__item order-md-3 order-lg-4 order-4"
+            md="6"
+            lg="3"
+          >
+            <div class="offer-main__text">
+              <div class="offer-main__text-title">
+                Change of Seasons. Change of Scenery.
+              </div>
+              <div class="offer-main__text-info">
+                Whatever new view you choose, Bonus Journeys is back with up to
+                4x points and double nights toward tier status through January
+                4, 2021.
+                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
-                        </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-6 order-lg-5 order-6" md="6" lg="3" >
-                    <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
-                        <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
-                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+              </div>
+              <nuxt-link to="/offer" class="offer-main__link"
+                >Read More</nuxt-link
+              >
+            </div>
+          </b-col>
+          <b-col
+            class="offer-main__item order-md-6 order-lg-5 order-6"
+            md="6"
+            lg="3"
+          >
+            <div class="offer-main__text">
+              <div class="offer-main__text-title">
+                Change of Seasons. Change of Scenery.
+              </div>
+              <div class="offer-main__text-info">
+                Whatever new view you choose, Bonus Journeys is back with up to
+                4x points and double nights toward tier status through January
+                4, 2021.
+                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
-                        </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left" md="6" lg="3" >
-                    <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-7 order-lg-7 order-8" md="6" lg="3" >
-                    <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
-                        <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
-                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+              </div>
+              <nuxt-link to="/offer" class="offer-main__link"
+                >Read More</nuxt-link
+              >
+            </div>
+          </b-col>
+          <b-col
+            class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left"
+            md="6"
+            lg="3"
+          >
+            <div class="offer-main__picture">
+              <b-img
+                src="../assets/images/offer-main.jpg"
+                alt=""
+                width="270px"
+                height="270px"
+              ></b-img>
+            </div>
+          </b-col>
+          <b-col
+            class="offer-main__item order-md-7 order-lg-7 order-8"
+            md="6"
+            lg="3"
+          >
+            <div class="offer-main__text">
+              <div class="offer-main__text-title">
+                Change of Seasons. Change of Scenery.
+              </div>
+              <div class="offer-main__text-info">
+                Whatever new view you choose, Bonus Journeys is back with up to
+                4x points and double nights toward tier status through January
+                4, 2021.
+                <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
-                        </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left" md="6" lg="3" >
-                    <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
-                    </div>
-                </b-col>
-            </b-row>
-        </b-container>
+              </div>
+              <nuxt-link to="/offer" class="offer-main__link"
+                >Read More</nuxt-link
+              >
+            </div>
+          </b-col>
+          <b-col
+            class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left"
+            md="6"
+            lg="3"
+          >
+            <div class="offer-main__picture">
+              <b-img
+                src="../assets/images/offer-main.jpg"
+                alt=""
+                width="270px"
+                height="270px"
+              ></b-img>
+            </div>
+          </b-col>
+        </b-row>
+      </b-container>
     </div>
-<!-- finish offer-main -->
+    <!-- finish offer-main -->
   </div>
 </template>
 
@@ -615,6 +817,7 @@
 import Test from '../components/Test.vue'
 export default {
   name: 'Range',
+  title: 'Sunrise hotel in Tashkent',
   comments: {
     Test,
   },
@@ -634,61 +837,61 @@ export default {
           prevEl: '.swiper-button-prev',
         },
       },
-      // start slider room      
-        swiper_card_rooms: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 4000,
-            },
-            navigation: {
-                nextEl: '.swiper-card__next',
-                prevEl: '.swiper-card__prev',
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                992: {
-                    slidesPerView: 4,
-                    spaceBetween: 30,
-                }
-            }
+      // start slider room
+      swiper_card_rooms: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 4000,
         },
-        slider_card_mini: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            autoplay: {
-                delay: 4000,
-            },
-            navigation: {
-                nextEl: '.swiper-card__next-mini',
-                prevEl: '.swiper-card__prev-mini',
-            },
-        }, 
+        navigation: {
+          nextEl: '.swiper-card__next',
+          prevEl: '.swiper-card__prev',
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      },
+      slider_card_mini: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoplay: {
+          delay: 4000,
+        },
+        navigation: {
+          nextEl: '.swiper-card__next-mini',
+          prevEl: '.swiper-card__prev-mini',
+        },
+      },
       // finish slider room
 
       // start Feedbacks slider
       users_feedback: {
-          slidesPerView: 1,
-          spaceBetween: 15,
-          autoplay: true,
-          loop: true,
-          pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
+        slidesPerView: 1,
+        spaceBetween: 15,
+        autoplay: true,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
           },
-          breakpoints: {
-              768: {
-                  slidesPerView: 2,
-                  spaceBetween: 15,
-              },
-              992: {
-                  slidesPerView: 3,
-                  spaceBetween: 15,
-              }
-          }  
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        },
       },
       // finish Feedbacks slider
     }
@@ -697,6 +900,29 @@ export default {
     notBeforeToday(date) {
       return date < new Date(new Date().setHours(0, 0, 0, 0))
     },
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Home page description',
+        },
+      ],
+      script: [
+        {
+          src: '',
+        },
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href: '',
+        },
+      ],
+    }
   },
 }
 </script>
