@@ -73,6 +73,22 @@
           color: #FFB612;
         }
       }
+      .main-amenity{
+        text-align: left;
+        h6{font-size: 15px;}
+        p{
+          span{
+            display: block;
+            font-size: 13px;
+            margin-bottom: 8px;
+          }
+        }
+        img{
+          width: 60px;
+          height: 60px;
+          display: block;
+        }
+      }
     }
   }
   .book__slide {
