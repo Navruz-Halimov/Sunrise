@@ -97,8 +97,7 @@
                 <b-row>
                     <b-col cols="12">
                         <div class="offer-main__title">
-                            <h5>NEWS & EVENT</h5>
-                            <h2>From Our Blog</h2>
+                            <h5>NEWS & OFFER</h5>
                         </div>
                     </b-col>
                 </b-row>
