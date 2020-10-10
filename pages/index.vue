@@ -4,7 +4,7 @@
       <swiper class="swiper" :options="header__slider">
         <swiper-slide
           ><img src="../assets//images/3D/1.jpg" alt="" />
-          <div class="swiper-caption">
+          <div class="swiper-caption animate__animated animate__fadeInUp">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
               yeah man itis working I think don't pay attention to the typos
@@ -14,7 +14,7 @@
         </swiper-slide>
         <swiper-slide
           ><img src="../assets/images/3D/1night.jpg" alt="" />
-          <div class="swiper-caption">
+          <div class="swiper-caption animate__animated animate__fadeInUp">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -24,7 +24,7 @@
         </swiper-slide>
         <swiper-slide
           ><img src="../assets/images/3D/2.jpg" alt="" />
-          <div class="swiper-caption">
+          <div class="swiper-caption animate__animated animate__fadeInUp">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -34,7 +34,7 @@
         </swiper-slide>
         <swiper-slide
           ><img src="../assets/images/3D/2night.jpg" alt="" />
-          <div class="swiper-caption">
+          <div class="swiper-caption animate__animated animate__fadeInUp">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -536,12 +536,12 @@
                 </b-col>
             </b-row>
             <b-row>
-                <b-col class="offer-main__item order-md-1 order-lg-1 order-1" md="6" lg="3" >
+                <b-col class="offer-main__item order-md-1 order-lg-1 order-1 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
                         <b-img src="../assets/images/offer-main.jpg" alt="" height="270px"></b-img>
                     </div>
                 </b-col>
-                <b-col class="offer-main__item order-md-2 order-lg-2 order-2" md="6" lg="3" >
+                <b-col class="offer-main__item order-md-2 order-lg-2 order-2 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
                         <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                         <div class="offer-main__text-info">
@@ -553,12 +553,12 @@
                         <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
                     </div>
                 </b-col>
-                <b-col class="offer-main__item order-md-4 order-lg-3 order-3" md="6" lg="3" >
+                <b-col class="offer-main__item order-md-4 order-lg-3 order-3 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
                         <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
                     </div>
                 </b-col>
-                <b-col class="offer-main__item order-md-3 order-lg-4 order-4" md="6" lg="3" >
+                <b-col class="offer-main__item order-md-3 order-lg-4 order-4 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
                         <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                         <div class="offer-main__text-info">
@@ -570,7 +570,7 @@
                         <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
                     </div>
                 </b-col>
-                <b-col class="offer-main__item order-md-6 order-lg-5 order-6" md="6" lg="3" >
+                <b-col class="offer-main__item order-md-6 order-lg-5 order-6 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
                         <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                         <div class="offer-main__text-info">
@@ -582,12 +582,12 @@
                         <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
                     </div>
                 </b-col>
-                <b-col class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left" md="6" lg="3" >
+                <b-col class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
                         <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
                     </div>
                 </b-col>
-                <b-col class="offer-main__item order-md-7 order-lg-7 order-8" md="6" lg="3" >
+                <b-col class="offer-main__item order-md-7 order-lg-7 order-8 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
                         <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
                         <div class="offer-main__text-info">
@@ -599,7 +599,7 @@
                         <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
                     </div>
                 </b-col>
-                <b-col class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left" md="6" lg="3" >
+                <b-col class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
                         <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
                     </div>
