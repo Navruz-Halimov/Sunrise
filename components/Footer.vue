@@ -38,7 +38,7 @@
             <ul class="social__networks">
                 <li class="social__networks-item">
                     <a href="#" class="facebook"></a>
-                </li> 
+                </li>
                 <li class="social__networks-item">
                     <a href="#" class="instagram"></a>
                 </li>
@@ -57,7 +57,17 @@
             </ul>
         </b-col>
       </b-row>
-      <div class="copyright text-center">Copyright © 2020 All rights reserved.</div>
+      <b-row class="footer__end mt-5">
+        <b-col lg="12">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Security & Safety</a></li>
+            <li><a href="#">Do Not Sell My Personal Information</a></li>
+            <li><a href="#">Copyright © 2020 All rights reserved.</a></li>
+          </ul>
+        </b-col>
+      </b-row>
     </b-container>
   </footer>
 </template>

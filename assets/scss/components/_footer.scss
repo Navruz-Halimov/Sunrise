@@ -181,8 +181,28 @@
 .vue-back-to-top {
   right: 20px;
 }
-.copyright {
-  margin-top: 20px;
-  color: white;
-  font-size: 16px;
+.footer__end{
+  ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    li{
+      display: block;
+      margin: 0 1rem;
+      a{
+        padding-right: 1rem;
+        border-right: 1px solid #cccccc;
+        color: white;
+        font-size: 13.5px;
+        text-decoration: none;
+        &:hover{
+          color: #FFB612;
+        }
+      }
+      &:nth-child(5) a{
+        border: none;
+      }
+    }
+  }
 }
