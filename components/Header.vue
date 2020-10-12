@@ -56,7 +56,7 @@
               Reviews</nuxt-link
             >
           </div>
-          <b-button class="header__bottom-btn"> Book now </b-button>
+          <b-button class="header__bottom-btn" :to="localePath('/booking')"> Book now </b-button>
           <!-- Right aligned nav items -->
           <b-navbar-nav>
             <b-nav-item-dropdown text="Lang" right class="lang__list-wrapper">

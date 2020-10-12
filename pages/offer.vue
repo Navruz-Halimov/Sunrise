@@ -24,10 +24,10 @@
                             </span>
                             <b-collapse id="collapse">
                                 <b-card>
-                                    Triple Points Bonus: You must be a member of World of Hyatt and register for 
+                                    Triple Points Bonus: You must be a member of World of Sunrise and register for 
                                     the promotion between October 1, 2020 and November 30, 2020 to participate.
-                                    To join World of Hyatt, visit worldofhyatt.com, and to register for the promotion,
-                                    visit hyatt.com/bonusjourneys. All eligible stays under this promotion must 
+                                    To join World of Hyatt, visit , and to register for the promotion,
+                                    visit . All eligible stays under this promotion must 
                                     be completed October 1, 2020 through January 4, 2021 (“Promotion Period”). 
                                     Beginning on your first eligible stay after registration, you will receive 
                                     Triple Points on eligible spend for stays at Hyatt hotels and resorts worldwide
@@ -110,13 +110,13 @@
                             </span>
                             <b-collapse id="collapse2">
                                 <b-card>
-                                    Triple Points Bonus: You must be a member of World of Hyatt and register for 
+                                    Triple Points Bonus: You must be a member of  and register for 
                                     the promotion between October 1, 2020 and November 30, 2020 to participate.
                                     To join World of Hyatt, visit worldofhyatt.com, and to register for the promotion,
-                                    visit hyatt.com/bonusjourneys. All eligible stays under this promotion must 
+                                    visit . All eligible stays under this promotion must 
                                     be completed October 1, 2020 through January 4, 2021 (“Promotion Period”). 
                                     Beginning on your first eligible stay after registration, you will receive 
-                                    Triple Points on eligible spend for stays at Hyatt hotels and resorts worldwide
+                                    Triple Points on eligible spend for stays at  hotels and resorts worldwide
                                     and participating M life Rewards destinations, Small Luxury Hotels of the World
                                     (“SLH”) properties, and Lindblad Expeditions. Maximum 150,000 Bonus Points 
                                     may be earned for the Triple Points Bonus during Promotion Period.

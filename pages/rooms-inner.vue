@@ -56,28 +56,21 @@
           </div>
         </b-col>
         <b-col lg="3">
-          <div class="first__floor">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/2room.jpg" alt="">
-            <img src="../assets/images/1floor/3room.jpg" alt="">
-            <img src="../assets/images/1floor/4room.jpg" alt="">
-            <img src="../assets/images/1floor/5room.jpg" alt="">
-            <img src="../assets/images/1floor/6room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
-            <img src="../assets/images/1floor/1room.jpg" alt="">
+          <div class="floor__left-wrapper">
+          <div class="floor__number">First Floor scheme</div>
+          <img class="floor__mini-2d" src="../assets/images/1floor/1room.jpg" alt="">
+            <p class="floor__text">First floor rooms</p>
+          <b-pagination-nav
+            number-of-pages="10"
+            base-url="#"
+            hide-goto-end-buttons = "false"
+            pills = "true"
+            limit="10"
+            class="room__inner-pagination"
+          ></b-pagination-nav>
+            <b-button class="floor__btn" pill>Select room</b-button>
           </div>
-          </b-col
-        >
+        </b-col>
       </b-row>
     </b-container>
   </div>

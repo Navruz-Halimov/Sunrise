@@ -4,7 +4,7 @@
       <div class="floor__wrapper">
         <h1  class="text-center">First Floor</h1>
         <div class="floor__top-part">
-          <nuxt-link :to="localePath('/')" class="floor__link">
+          <nuxt-link :to="localePath('/rooms-inner')" class="floor__link">
             <img src="../../assets/images/1floor/1room.jpg" alt="" />
           </nuxt-link>
           <nuxt-link :to="localePath('/')" class="floor__link">

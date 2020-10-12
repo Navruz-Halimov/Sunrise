@@ -9,7 +9,7 @@
             </b-col>
             <b-col cols="12" sm="4" md="6" lg="4">
                 <div class="pt-2">
-                  <h3>Hyatt Regency Tashkent</h3>
+                  <h3>Sunrise Hotel in Tashkent</h3>
                   <p>
                     <span>Navoi Street, 1 A</span>
                     <span>Tashkent,</span>
@@ -108,7 +108,7 @@
                 <b-collapse id="collapse-2">
                   <ul>
                     <h5>Удобства в номере</h5>
-                    <li>Кровать Hyatt Grand Bed™</li>
+                    <li>Кровать Sunrise</li>
                     <li>Телевизор с плоским экраном диагональю 55 дюймов</li>
                     <li>Затемняющие шторы</li>
                     <li>Система индивидуального климат-контроля и регулировки температуры</li>
@@ -155,7 +155,7 @@
                 <b-collapse id="collapse-3">
                   <ul>
                     <h5>Удобства в номере</h5>
-                    <li>Кровать Hyatt Grand Bed™</li>
+                    <li>Кровать Sunrise</li>
                     <li>Телевизор с плоским экраном диагональю 55 дюймов</li>
                     <li>Затемняющие шторы</li>
                     <li>Система индивидуального климат-контроля и регулировки температуры</li>
@@ -202,7 +202,7 @@
                 <b-collapse id="collapse-4">
                   <ul>
                     <h5>Удобства в номере</h5>
-                    <li>Кровать Hyatt Grand Bed™</li>
+                    <li>Кровать Sunrise</li>
                     <li>Телевизор с плоским экраном диагональю 55 дюймов</li>
                     <li>Затемняющие шторы</li>
                     <li>Система индивидуального климат-контроля и регулировки температуры</li>

@@ -39,3 +39,44 @@
         content:none;
     }
 }
+
+.floor__mini-2d{
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.floor__text{
+}
+.room__inner-pagination{
+  .page-item.active{
+    .page-link{
+      color:white !important;
+      background-color: #ffb612;
+      border:1px solid #ccc;
+    }
+  }
+  .pagination{
+    flex-wrap: wrap;
+  }
+  .page-link{
+    color:#ffb612 !important;
+    transition: all 0.3s ease;
+    &:hover{
+      background-color:#ffb612 !important;
+      color:white !important;
+    }
+  }
+
+}
+.floor__btn{
+  background-color: #ffb612;
+  border:1px solid transparent;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  display: block;
+}

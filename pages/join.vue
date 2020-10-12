@@ -6,7 +6,7 @@
     <b-container>
       <b-row>
         <b-col class="join__title" lg="12">
-          <h2>Join World of Hyatt. It’s easy and rewarding.</h2>
+          <h2>Join World of Sunrise. It’s easy and rewarding.</h2>
           <p>Join World of Hyatt, your new loyalty program. It’s a world filled with thoughtful perks, personal connections
             and amazing experiences. And it revolves around you. Beyond great locations, luxurious rooms and top-notch
             amenities, World of Hyatt connects you to the people, places and stories at the heart of your world. For more
