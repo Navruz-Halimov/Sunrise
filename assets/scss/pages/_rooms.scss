@@ -15,7 +15,6 @@
   }
 
   a {
-    -webkit-transition: 0.3s all;
     transition: 0.3s all;
     outline: none;
   }
@@ -42,27 +41,19 @@
     outline-color: transparent !important;
     outline-width: 0 !important;
     outline-style: none !important;
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
     box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
   }
 
   @keyframes puls {
     0% {
-      -webkit-transform: scale(0.95);
-      transform: scale(0.95);
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
       box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
     }
     70% {
-      -webkit-transform: scale(1);
       transform: scale(1);
-      -webkit-box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
       box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
     }
     100% {
-      -webkit-transform: scale(0.95);
       transform: scale(0.95);
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
       box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
     }
   }
@@ -82,7 +73,6 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 100%;
@@ -91,7 +81,6 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 3;
     width: 100%;
@@ -107,7 +96,6 @@
     height: auto;
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
   .house-main svg path {
@@ -215,34 +203,6 @@
   .floor-choshtepa .floor-link a:hover {
     color: #ab88f0;
   }
-  .floor-choshtepa .floor-main svg path:hover {
-    fill: #cbb1ff;
-  }
-  .floor-manzara {
-    background: radial-gradient(30.67% 50% at 50% 50%, #48a7f7 0%, #005faf 100%),
-      #005faf;
-  }
-  .floor-manzara .floor-link a:hover {
-    color: rgba(30, 160, 248, 0.8);
-  }
-  .floor-manzara .floor-main svg path:hover {
-    fill: #2175c0;
-  }
-  .floor-olmazor {
-    background: radial-gradient(
-        30.04% 48.7% at 50% 50%,
-        #27d36b 0%,
-        #238d4d 100%
-      ),
-      #006525;
-  }
-  .floor-olmazor .floor-link a:hover {
-    color: #8fc74a;
-  }
-  .floor-olmazor .floor-main svg path:hover {
-    fill: #8fc74a;
-  }
-
   .flat-change {
     position: absolute;
     z-index: 11;
@@ -398,27 +358,7 @@
     .feedback-open {
       display: none;
     }
-    .popup-ads {
-      padding: 10px;
-    }
-    .popup-ads__close {
-      width: 24px;
-      height: 24px;
-    }
-    .popup-ads__logo {
-      margin-bottom: 65px;
-    }
-    .popup-ads__text {
-      font-size: 25px;
-      line-height: 29px;
-      margin-bottom: 60px;
-    }
-    .popup-ads__btn .fa {
-      top: 50%;
-    }
-    .popup-ads__content {
-      padding: 60px 40px;
-    }
+   
     .wrap {
       padding: 0 20px;
     }
