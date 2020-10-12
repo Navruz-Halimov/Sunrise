@@ -1,0 +1,59 @@
+.visit{
+  padding: 3rem 0;
+  .visit__title{
+    text-align: center;
+    h2{
+      font-size: 22px;
+    }
+  }
+  .visit__card{
+    padding-bottom: 80%;
+    margin: 1em auto;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .visit__text{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity .3s ease;
+      background-color: rgba(33, 33, 33, 0.3);
+      h6{
+        color: white;
+        font-size: 20px;
+      }
+    }
+    &:hover .visit__text{
+      opacity: 1;
+    }
+  }
+  .visit__modal{
+    @extend %modal-style;
+    position: relative;
+    .modal__content{
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      right: 10%;
+      bottom: 10%;
+      background-color: white;
+      .visit-img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+      }
+    }
+  }
+}

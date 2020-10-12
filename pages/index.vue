@@ -286,6 +286,7 @@
           </b-col>
         </b-col>
       </b-row>
+      <Visit />
       <b-row class="gallery">
         <div class="gallery__title">
           <i><img src="../assets/images/picture.svg" alt=""/></i>
@@ -911,7 +912,7 @@
 
 <script>
   import Test from '../components/Test.vue'
-
+  import Visit from '../components/Visit.vue'
   export default {
     name: 'Range',
     title: 'Sunrise hotel in Tashkent',
