@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.65);
   .navbar__brand {
     display: block;
     img {
@@ -10,6 +10,8 @@
     }
   }
   .header__navbar {
+    justify-content: center;
+    width: 100%;
     .nav-link {
       transition: all 0.3s ease;
       color: #fff !important;
@@ -92,7 +94,8 @@
   font-size: 14px;
   color: white !important;
   svg {
-    margin-right: 10px;
+   margin-left: 8px;
+   margin-right: 8px;
   }
 }
 .swiper-container {
@@ -204,17 +207,15 @@
         border: 1px solid #ffb612;
       }
       &::after {
-        border: none;
-        background-image: url('../images/down-arrow.svg');
-        background-repeat: no-repeat;
-        background-position: right center;
-        width: 16px;
-        height: 16px;
+        border: solid black;
+        border-width: 0 3px 3px 0;
         display: inline-block;
-        vertical-align: middle;
+        padding: 3px;
+        transform: rotate(45deg);
         position: relative;
-        z-index: 1;
-        right: -5px;
+        z-index: 1111;
+        width: 15px;
+        height: 15px;
       }
     }
     .dropdown-menu-right {
@@ -261,12 +262,7 @@
       padding-bottom: 10px !important;
       &::after {
         border: none;
-        background-image: url('../images/down-arrow.svg');
         vertical-align: middle !important;
-        background-repeat: no-repeat;
-        background-position: right center;
-        width: 16px;
-        height: 16px;
         display: inline-block;
       }
     }
