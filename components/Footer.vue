@@ -91,7 +91,7 @@
         </b-col>
       </b-row>
       <b-row class="footer__end mt-5">
-        <b-col class="p-0" lg="12">
+        <b-col class="p-0" cols="12" lg="12">
           <ul>
             <li><a @click.prevent="showModal('privacy')" href="#">Privacy Policy</a> |</li>
             <li><a @click.prevent="showModal('terms')" href="#">Terms & Conditions</a> |</li>
