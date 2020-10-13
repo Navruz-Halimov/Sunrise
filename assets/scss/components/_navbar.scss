@@ -4,10 +4,13 @@
     display: block;
     img {
       display: block;
-      width: 60px;
-      height: 60px;
+      width: 88px;
+      height: 65px;
       object-fit: cover;
     }
+  }
+  .navbar{
+    padding-top: 0 !important;
   }
   .header__navbar {
     justify-content: center;
@@ -199,30 +202,20 @@
 
     & > a {
       border: 1px solid #ffb612;
-      padding-left: 20px !important;
-      padding-right: 20px !important;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
       padding-top: 8px !important;
       padding-bottom: 8px !important;
       border-radius: 30px;
       color: white !important;
       transition: all 0.3s ease;
+      text-align: center;
       &:focus {
         outline: none;
       }
       &:hover {
         background-color: #ffb612;
         border: 1px solid #ffb612;
-      }
-      &::after {
-        border: solid black;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-        transform: rotate(45deg);
-        position: relative;
-        z-index: 1111;
-        width: 15px;
-        height: 15px;
       }
     }
     .dropdown-menu-right {
@@ -261,12 +254,13 @@
     border-radius: 30px;
     transition: all 0.3s ease;
     & > a {
-      padding-left: 20px !important;
-      padding-right: 20px !important;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
       display: block;
       font-size: 14px;
       padding-top: 10px !important;
       padding-bottom: 10px !important;
+      text-align: center;
       &::after {
         border: none;
         vertical-align: middle !important;
