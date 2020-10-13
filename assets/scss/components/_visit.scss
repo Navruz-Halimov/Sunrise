@@ -41,11 +41,8 @@
     @extend %modal-style;
     position: relative;
     .modal__content{
-      position: absolute;
-      top: 10%;
-      left: 10%;
-      right: 10%;
-      bottom: 10%;
+      width: 80%;
+      height: 80%;
       background-color: white;
       .swiper-slide:before{
         display: none;
