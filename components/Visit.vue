@@ -5,7 +5,7 @@
         <b-col class="visit__title" lg="12">
           <h2>PLACES TO VISIT</h2>
         </b-col>
-        <b-col class="" lg="3" v-for="(image,index) of images" :key="index" >
+        <b-col sm="6" md="4" lg="3" v-for="(image,index) of images" :key="index" >
           <div class="visit__card" :style="{backgroundImage: `url(${image.url})`}">
             <div class="visit__text" @click="show(index)">
               <h6>{{image.title}}</h6>
@@ -19,17 +19,15 @@
       <i></i>
       <i></i>
       </button>
-      <div class="modal__content">
-        <swiper class="swiper visit-img"  :options="header__slider">
-          <swiper-slide>
-            <img :src="images[id].url" alt=""/>
+        <swiper class="swiper modal__content visit-img"  :options="header__slider">
+          <swiper-slide v-for="(image,index) of images" :key="index">
+            <img :src="image.url" alt=""/>
           </swiper-slide>
           <div class="swiper-button-prev book__prev" slot="button-prev"></div>
           <div class="swiper-button-next book__next" slot="button-next"></div>
         </swiper>
       </div>
     </div>
-  </div>
 </template>
 <script>
   export default {
