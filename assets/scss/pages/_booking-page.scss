@@ -209,6 +209,11 @@
     position: absolute;
     min-width: 100%;
     min-height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     .book__prev,
     .book__next {
       background-color: rgba(98, 98, 98, 0.25);
