@@ -3,7 +3,7 @@
     <b-container>
       <b-row class="gallery__content">
         <b-col
-          v-for="(image, index) of images.slice(0, 3)"
+          v-for="(image, index) of images.slice(0, 10)"
           :key="index"
           cols="10"
           offset="1"
@@ -61,12 +61,6 @@
 
 <script>
 export default {
-  // props: {
-  //   images: {
-  //     type: Array,
-  //     default: () => [],
-  //   },
-  // },
   data() {
     return {
       images: [
