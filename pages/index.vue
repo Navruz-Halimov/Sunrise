@@ -99,7 +99,7 @@
               </select>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
-              <b-button type="submit" class="book__btn" to="/booking"
+              <b-button type="submit" class="book__btn" :to="localePath('/rooms')"
               >Book now
               </b-button
               >
@@ -172,8 +172,10 @@
       </b-container>
     </div>
     <b-container>
-      <b-row class="book__page">
+      <div class="main__book-page">
+<b-row class="book__page">
         <b-col class="book__header" lg="12">
+          <h1 class="book__page-heading">Amenties</h1>
           <b-col class="header__content" cols="12" md="12">
             <b-row>
               <b-col class="amenity" cols="4" sm="4" md="2">
@@ -286,6 +288,8 @@
           </b-col>
         </b-col>
       </b-row>
+      </div>
+      
       <Visit />
       <b-row class="gallery">
         <div class="gallery__title">

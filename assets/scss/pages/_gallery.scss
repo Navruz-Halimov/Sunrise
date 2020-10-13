@@ -1,6 +1,6 @@
 
 .gallery{
-
+  padding:0.5rem 0;
   .gallery__title{
     width: 100%;
     display: flex;
@@ -28,7 +28,6 @@
       margin: 1em auto;
       overflow: hidden;
       position: relative;
-      background-color: black;
       cursor: pointer;
       border-radius: 10px;
       .photo__img{
@@ -36,7 +35,6 @@
         position: absolute;
         min-width: 100%;
         min-height: 100%;
-        opacity: 1;
         transition: opacity .5s,transform .5s;
         transform: scale(1.15);
         object-fit: cover;
