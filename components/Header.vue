@@ -20,7 +20,7 @@
             <b-nav-item :to="localePath('/gallery')">{{$t('navbar.gallery')}}</b-nav-item>
             <b-nav-item :to="localePath('/amenties')">{{$t('navbar.amenties')}}</b-nav-item>
             <b-nav-item :to="localePath('/attractions')"
-              >{{$t('navbar.attractions')}}</b-nav-item
+              >{{$t('navbar.nearby')}}</b-nav-item
             >
             <b-nav-item :to="localePath('/contact')">{{$t('navbar.contact')}}</b-nav-item>
             <b-nav-item :to="localePath('/reviews')">{{$t('navbar.reviews')}}</b-nav-item>
@@ -84,8 +84,8 @@
                   <font-awesome-icon :icon="['fas', 'chevron-down']"
                 /></span>
               </template>
-              <b-dropdown-item href="#">Sign in</b-dropdown-item>
-              <b-dropdown-item href="#">Join</b-dropdown-item>
+              <b-dropdown-item :href="localePath('/sign-in')">Sign in</b-dropdown-item>
+              <b-dropdown-item :href="localePath('/join')">Join</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </div>

@@ -25,7 +25,7 @@
           <div class="footer__menu">
             <ul class="footer__list">
               <li class="footer__item">
-                <nuxt-link to="/">Home</nuxt-link>
+                <nuxt-link :to="localePath('/')">Home</nuxt-link>
               </li>
               <li class="footer__item">
                 <nuxt-link :to="localePath('/booking')">Booking</nuxt-link>

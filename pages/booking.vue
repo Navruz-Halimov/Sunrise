@@ -337,8 +337,8 @@
             offset-md="0"
             lg="6"
           >
-            <p>Want to become a World of Hyatt member?</p>
-            <a href="#">Join while you book</a>
+            <p>Want to become a Sunrise member?</p>
+            <a :href="localePath('/payment')">Join while you book</a>
           </b-col>
           <b-col
             class="join__content"
@@ -348,7 +348,7 @@
             offset-md="0"
             lg="6"
           >
-            <p>Already a World of Hyatt member?</p>
+            <p>Already a World of Sunrise member?</p>
             <a @click.prevent="showSignModal()" href="#">Sign in & book</a>
           </b-col>
         </div>
