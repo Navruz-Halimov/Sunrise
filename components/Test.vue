@@ -3,7 +3,7 @@
     <b-container>
       <b-row class="gallery__content">
         <b-col
-          v-for="(image, index) of images.slice(0, 10)"
+          v-for="(image, index) of images.slice(0, 4)"
           :key="index"
           cols="10"
           offset="1"
@@ -26,7 +26,7 @@
       </button>
       <div class="modals__content" @click.stop="">
         <div class="modals__img">
-          <img v-for="i of images" :key="i" :src="require(`../assets/images/rooms/${i}`)" />
+          <img v-for="i of images" :key="i" :src="require(`../assets/images/rooms/${i}`)" alt="" />
         </div>
         <div class="prev" @click.stop="prev" :class="{ invisible: !hasPrev() }">
           <svg
