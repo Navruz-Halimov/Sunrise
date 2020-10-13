@@ -28,33 +28,33 @@
                 <nuxt-link to="/">Home</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link to="/booking">Booking</nuxt-link>
+                <nuxt-link :to="localePath('/booking')">Booking</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link to="/offer">Offer</nuxt-link>
+                <nuxt-link :to="localePath('/offer')">Offer</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link to="/rooms">Rooms</nuxt-link>
+                <nuxt-link :to="localePath('/rooms')">Rooms</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link to="/events">Events</nuxt-link>
+                <nuxt-link :to="localePath('/events')">Events</nuxt-link>
               </li>
             </ul>
             <ul class="footer__list">
               <li class="footer__item">
-                <nuxt-link to="/gallery">Gallery</nuxt-link>
+                <nuxt-link :to="localePath('/gallery')">Gallery</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link to="/amenties">Amenties</nuxt-link>
+                <nuxt-link :to="localePath('/amenties')">Amenties</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link to="/attractions">Nearby attraction</nuxt-link>
+                <nuxt-link :to="localePath('/attractions')">Nearby attraction</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link to="/contact">Contact</nuxt-link>
+                <nuxt-link :to="localePath('/contact')">Contact</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link to="/reviews">Reviews</nuxt-link>
+                <nuxt-link :to="localePath('/reviews')">Reviews</nuxt-link>
               </li>
             </ul>
           </div>
@@ -63,7 +63,7 @@
           <h4 class="footer__motto-heading">Vacation Rental</h4>
           <div class="footer__motto">Far far away, behind the word mountains, far from the countries Vokalia and
             Consonantia, there live the blind texts.
-            <nuxt-link to="/contact">Read more
+            <nuxt-link :to="localePath('/contact')">Read more
               <font-awesome-icon :icon="['fas', 'angle-right']"/>
             </nuxt-link>
           </div>
