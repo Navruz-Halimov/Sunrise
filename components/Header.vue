@@ -16,14 +16,14 @@
             <b-nav-item :to="localePath('/rooms')">{{
               $t('navbar.rooms')
             }}</b-nav-item>
-            <b-nav-item :to="localePath('/events')">Events</b-nav-item>
-            <b-nav-item :to="localePath('/gallery')">Gallery</b-nav-item>
-            <b-nav-item :to="localePath('/amenties')">Amenties</b-nav-item>
+            <b-nav-item :to="localePath('/events')">{{$t('navbar.events')}}</b-nav-item>
+            <b-nav-item :to="localePath('/gallery')">{{$t('navbar.gallery')}}</b-nav-item>
+            <b-nav-item :to="localePath('/amenties')">{{$t('navbar.amenties')}}</b-nav-item>
             <b-nav-item :to="localePath('/attractions')"
-              >Nearby attraction</b-nav-item
+              >{{$t('navbar.attractions')}}</b-nav-item
             >
-            <b-nav-item :to="localePath('/contact')">Contact</b-nav-item>
-            <b-nav-item :to="localePath('/reviews')">Reviews</b-nav-item>
+            <b-nav-item :to="localePath('/contact')">{{$t('navbar.contact')}}</b-nav-item>
+            <b-nav-item :to="localePath('/reviews')">{{$t('navbar.reviews')}}</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -34,7 +34,7 @@
           <div class="header__bottom-info d-none d-lg-block">
             <a href="https://goo.gl/maps/RwzLKT38CgkVRXbKA" class="address">
               <font-awesome-icon :icon="['fas', 'map-marker-alt']" /> 1 Mirzo
-              Ulug'bek shoh ko'chasi, Тошкент</a
+              Ulug'bek shoh ko'chasi, Toshkent</a
             >
             <a href="tel:998 71 289 56 66" class="tel">
               <font-awesome-icon :icon="['fas', 'phone']" />998 71 289 56 66
