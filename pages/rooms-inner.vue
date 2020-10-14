@@ -68,7 +68,7 @@
             limit="10"
             class="room__inner-pagination"
           ></b-pagination-nav>
-            <b-button class="floor__btn" pill>Select room</b-button>
+            <b-button class="floor__btn" pill :to="localePath('/payment')">Select room</b-button>
           </div>
         </b-col>
       </b-row>
