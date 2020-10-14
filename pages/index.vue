@@ -172,112 +172,112 @@
       </b-container>
     </div>
     <b-container>
-      <div class="main__book-page">
-<b-row class="book__page">
+    <div class="main__book-page">
+      <b-row class="book__page">
         <b-col class="book__header" lg="12">
-          <h1 class="book__page-heading">Amenties</h1>
+          <h1 class="book__page-heading">{{$t('amenties.heading')}}</h1>
           <b-col class="header__content" cols="12" md="12">
             <b-row>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/amenties/wifi.svg" alt="">
-                <span>Free Internet Access</span>
+                <span>{{$t('amenties.amenties_1')}}</span>
               </b-col>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/cutlery.svg" alt="">
-                <span>Restaurant On-Site</span>
+                <span>{{$t('amenties.amenties_2')}}</span>
               </b-col>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/serving-dish.svg" alt="">
-                <span>Room Service</span>
+                <span>{{$t('amenties.amenties_3')}}</span>
               </b-col>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/weight.svg" alt="">
-                <span>Fitness Center</span>
+                <span>{{$t('amenties.amenties_4')}}</span>
               </b-col>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/swimming-pool.svg" alt="">
-                <span>Pool</span>
+                <span>{{$t('amenties.amenties_5')}}</span>
               </b-col>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/lotus.svg" alt="">
-                <span>Spa</span>
+                <span>{{$t('amenties.amenties_6')}}</span>
               </b-col>
             </b-row>
             <b-row>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/key.svg" alt="">
-                <span>Digital Key</span>
+                <span>{{$t('amenties.amenties_7')}}</span>
               </b-col>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/clock.svg" alt="">
-                <span>Digital Check-In</span>
+                <span>{{$t('amenties.amenties_8')}}</span>
               </b-col>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/printer.svg" alt="">
-                <span>Business Services</span>
+                <span>{{$t('amenties.amenties_9')}}</span>
               </b-col>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/hanger-line.svg" alt="">
-                <span>Laundry</span>
+                <span>{{$t('amenties.amenties_10')}}</span>
               </b-col>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/concierge.svg" alt="">
-                <span>Concierge</span>
+                <span>{{$t('amenties.amenties_11')}}</span>
               </b-col>
               <b-col class="amenity" cols="4" sm="4" md="2">
                 <img src="../assets/images/icons/teacher.svg" alt="">
-                <span>Meeting Facilities</span>
+                <span>{{$t('amenties.amenties_12')}}</span>
               </b-col>
             </b-row>
             <b-collapse id="amenity" class="mt-2">
               <b-row>
                 <b-col class="my-3 main-amenity" lg="4">
                   <img src="" alt="img">
-                  <h6>HOTEL FEATURES</h6>
+                  <h6>{{$t('amenties.mini_title1')}}</h6>
                   <p>
-                    <span>300 guest rooms including 52 luxurious suites</span>
-                    <span>Complimentary Wi-Fi</span>
-                    <span>Four restaurants and bars</span>
-                    <span>2,300 sq m of flexible meeting and event space</span>
-                    <span>Executive Business Center</span>
-                    <span>One indoor pool</span>
-                    <span>The Spa, offering a range of treatments</span>
-                    <span>24-hour StayFit™ Gym</span>
+                    <span>{{$t('amenties.title1_text1')}}</span>
+                    <span>{{$t('amenties.title1_text2')}}</span>
+                    <span>{{$t('amenties.title1_text3')}}</span>
+                    <span>{{$t('amenties.title1_text4')}}</span>
+                    <span>{{$t('amenties.title1_text5')}}</span>
+                    <span>{{$t('amenties.title1_text6')}}</span>
+                    <span>{{$t('amenties.title1_text7')}}</span>
+                    <span>{{$t('amenties.title1_text8')}}</span>
                   </p>
                 </b-col>
                 <b-col class="my-3 main-amenity" lg="4">
                   <img src="" alt="img">
-                  <h6>SERVICES</h6>
+                  <h6>{{$t('amenties.mini_title2')}}</h6>
                   <p>
-                    <span>A range of spa treatments</span>
-                    <span>Laundry and dry cleaning services</span>
+                    <span>{{$t('amenties.title2_text1')}}</span>
+                    <span>{{$t('amenties.title2_text2')}}</span>
                   </p>
                 </b-col>
                 <b-col class="my-3 main-amenity" lg="4">
                   <img src="" alt="img">
-                  <h6>ROOM AMENITIES</h6>
+                  <h6>{{$t('amenties.mini_title3')}}</h6>
                   <p>
-                    <span>Complimentary Wi-Fi</span>
-                    <span>Spacious workspace</span>
-                    <span>Ergonomic chair</span>
-                    <span>Charging station</span>
+                    <span>{{$t('amenties.title3_text1')}}</span>
+                    <span>{{$t('amenties.title3_text2')}}</span>
+                    <span>{{$t('amenties.title3_text3')}}</span>
+                    <span>{{$t('amenties.title3_text4')}}</span>
                   </p>
                 </b-col>
                 <b-col class="my-3 main-amenity" lg="4">
                   <img src="" alt="img">
-                  <h6>SUITE AMENITIES</h6>
+                  <h6>{{$t('amenties.mini_title4')}}</h6>
                   <p>
-                    <span>Regency Club access</span>
-                    <span>Study and kitchenette with dining area (Regency Executive Suites)</span>
-                    <span>Large living room and study, kitchenette, and dining area (Diplomatic and Presidential Suites)</span>
+                    <span>{{$t('amenties.title4_text1')}}</span>
+                    <span>{{$t('amenties.title4_text2')}}</span>
+                    <span>{{$t('amenties.title4_text3')}}</span>
                   </p>
                 </b-col>
                 <b-col class="my-3 main-amenity" lg="4">
                   <img src="" alt="img">
-                  <h6>BATHROOM</h6>
+                  <h6>{{$t('amenties.mini_title5')}}</h6>
                   <p>
-                    <span>Soothing walk-in rain shower</span>
-                    <span>Separate bathtub</span>
+                    <span>{{$t('amenties.title5_text1')}}</span>
+                    <span>{{$t('amenties.title5_text2')}}</span>
                   </p>
                 </b-col>
               </b-row>
@@ -288,7 +288,7 @@
           </b-col>
         </b-col>
       </b-row>
-      </div>
+    </div>
       
       <Visit />
       <b-row class="gallery">

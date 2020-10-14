@@ -33,5 +33,50 @@ export default {
         motto: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
         readmore: '阅读更多',
         connect: '与日出联系',
-    }
+    },
+    amenties: {
+        heading: "便利设施",
+        amenties_1: "免费上网",
+        amenties_2: "现场餐厅",
+        amenties_3: "客房服务",
+        amenties_4: "健身中心",
+        amenties_5: "泳池",
+        amenties_6: "温泉", 
+        amenties_7: "数字钥匙",
+        amenties_8: "数字签到",
+        amenties_9: "商业服务",
+        amenties_10: "洗衣房",
+        amenties_11: "门房",
+        amenties_12: "会议设施",
+
+        mini_title1: "酒店特色",
+        title1_text1: "300间客房，包括52间豪华套房",
+        title1_text2: "免费Wi-Fi",
+        title1_text3: "四家餐厅和酒吧",
+        title1_text4: "2,300平方米的灵活会议和活动空间",
+        title1_text5: "行政商务中心",
+        title1_text6: "一个室内游泳池",
+        title1_text7: "水疗中心，提供各种护理",
+        title1_text8: "24小时StayFit™体育馆",
+
+        mini_title2: "服务",
+        title2_text1: "一系列的水疗护理", 
+        title2_text2: "洗衣和干洗服务", 
+
+        mini_title3: "客房设施",
+        title3_text1: "免费Wi-Fi",
+        title3_text2: "宽敞的工作空间",
+        title3_text3: "人体工学椅",
+        title3_text4: "充电站",
+
+        mini_title4: "套房设施",
+        title4_text1: "摄政俱乐部的使用",
+        title4_text2: "书房和带用餐区的小厨房（摄政行政套房）",
+        title4_text3: "大客厅和书房，小厨房和用餐区（外交和总统套房）",
+
+        mini_title5: "浴室",
+        title5_text1: "舒缓步入式淋浴",
+        title5_text2: "独立浴缸"        
+
+    }    
 }
