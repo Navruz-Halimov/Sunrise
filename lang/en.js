@@ -84,6 +84,18 @@ export default {
         text_title: "Change of Seasons. Change of Scenery.",
         text_info: "Whatever new view you choose, Sunrise is back with up to 4x points and double nights toward tier status through January 4, 2021.",
         text_link: "Read More"
+    },
+    "booking": {
+        adults_title: "Adults",
+        children_title: "Children",
+        arrival: "Arrival date",
+        departure:"Departure date",
+        choose_title: "Choose a Room",
+        choose_room1: "Standard room",
+        choose_room2: "Standard Family room",
+        choose_room3: "Deluxe double room",
+        choose_room4: "Standard room",
+        btn_text: "Book now"
     }
     
 }

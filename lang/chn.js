@@ -83,5 +83,17 @@ export default {
         text_title: "季节变化。风景的变化。",
         text_info: "无论您选择哪种新视图，Sunrise都将在2021年1月4日之前以最高4倍的积分和双晚的等级状态返回。",
         text_link: "阅读更多"
-    }        
+    },
+    "booking": {
+        adults_title: "大人",
+        children_title: "小孩儿",
+        arrival: "到达日期",
+        departure:"出发日期",
+        choose_title: "选择一个房间",
+        choose_room1: "标准间",
+        choose_room2: "标准家庭间",
+        choose_room3: "豪华双人房",
+        choose_room4: "标准间",
+        btn_text: "现在预订"
+    }            
 }

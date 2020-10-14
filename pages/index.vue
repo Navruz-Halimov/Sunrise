@@ -3,7 +3,7 @@
     <div class="navbar__slider">
       <swiper class="swiper" :options="header__slider">
         <swiper-slide
-          ><img src="../assets//images/3D/1.jpg" alt="" />
+          ><img src="../assets//images/3D/1.jpg" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -13,7 +13,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/3D/1night.jpg" alt="" />
+          ><img src="../assets/images/3D/1night.jpg" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -23,7 +23,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/3D/2.jpg" alt="" />
+          ><img src="../assets/images/3D/2.jpg" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -33,7 +33,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/3D/2night.jpg" alt="" />
+          ><img src="../assets/images/3D/2night.jpg" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -55,7 +55,7 @@
                 v-model="value2"
                 value-type="format"
                 format="YYYY-MM-DD"
-                placeholder="Arrival date"
+                :placeholder="$t('booking.arrival')"
                 :default-value="new Date()"
                 :disabled-date="notBeforeToday"
               ></date-picker>
@@ -65,14 +65,14 @@
                 v-model="value3"
                 value-type="format"
                 format="YYYY-MM-DD"
-                placeholder="Departure date"
+                :placeholder="$t('booking.departure')"
                 :default-value="new Date()"
                 :disabled-date="notBeforeToday"
               ></date-picker>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
               <select name="adults__capacity" class="adults__capacity">
-                <option value="0" selected disabled>Adults</option>
+                <option value="0" selected disabled>{{$t('booking.adults_title')}}</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -81,7 +81,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
               <select name="children__capacity" class="children__capacity">
-                <option value="0" selected disabled>Children</option>
+                <option value="0" selected disabled>{{$t('booking.children_title')}}</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -90,17 +90,16 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
               <select name="room__type" class="room__type">
-                <option value="0" selected disabled>Choose a Room</option>
-                <option value="1">Standard room</option>
-                <option value="2">Standard Family room</option>
-                <option value="3">Deluxe double room</option>
-                <option value="4">Standard room</option>
-                <option value="5">Standard room</option>
+                <option value="0" selected disabled>{{$t('booking.choose_title')}}</option>
+                <option value="1">{{$t('booking.choose_room1')}}</option>
+                <option value="2">{{$t('booking.choose_room2')}}</option>
+                <option value="3">{{$t('booking.choose_room3')}}</option>
+                <option value="4">{{$t('booking.choose_room4')}}</option>
               </select>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
               <b-button type="submit" class="book__btn" :to="localePath('/rooms')"
-              >Book now
+              >{{$t('booking.btn_text')}} 
               </b-button
               >
             </div>
@@ -172,123 +171,123 @@
       </b-container>
     </div>
     <b-container>
-    <div class="main__book-page">
-      <b-row class="book__page">
-        <b-col class="book__header" lg="12">
-          <h1 class="book__page-heading">{{$t('amenties.heading')}}</h1>
-          <b-col class="header__content" cols="12" md="12">
-            <b-row>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/amenties/wifi.svg" alt="">
-                <span>{{$t('amenties.amenties_1')}}</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/cutlery.svg" alt="">
-                <span>{{$t('amenties.amenties_2')}}</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/serving-dish.svg" alt="">
-                <span>{{$t('amenties.amenties_3')}}</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/weight.svg" alt="">
-                <span>{{$t('amenties.amenties_4')}}</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/swimming-pool.svg" alt="">
-                <span>{{$t('amenties.amenties_5')}}</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/lotus.svg" alt="">
-                <span>{{$t('amenties.amenties_6')}}</span>
-              </b-col>
-            </b-row>
-            <b-row>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/key.svg" alt="">
-                <span>{{$t('amenties.amenties_7')}}</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/clock.svg" alt="">
-                <span>{{$t('amenties.amenties_8')}}</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/printer.svg" alt="">
-                <span>{{$t('amenties.amenties_9')}}</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/hanger-line.svg" alt="">
-                <span>{{$t('amenties.amenties_10')}}</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/concierge.svg" alt="">
-                <span>{{$t('amenties.amenties_11')}}</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/teacher.svg" alt="">
-                <span>{{$t('amenties.amenties_12')}}</span>
-              </b-col>
-            </b-row>
-            <b-collapse id="amenity" class="mt-2">
+      <div class="main__book-page">
+        <b-row class="book__page">
+          <b-col class="book__header" lg="12">
+            <h1 class="book__page-heading">{{$t('amenties.heading')}}</h1>
+            <b-col class="header__content" cols="12" md="12">
               <b-row>
-                <b-col class="my-3 main-amenity" lg="4">
-                  <img src="" alt="img">
-                  <h6>{{$t('amenties.mini_title1')}}</h6>
-                  <p>
-                    <span>{{$t('amenties.title1_text1')}}</span>
-                    <span>{{$t('amenties.title1_text2')}}</span>
-                    <span>{{$t('amenties.title1_text3')}}</span>
-                    <span>{{$t('amenties.title1_text4')}}</span>
-                    <span>{{$t('amenties.title1_text5')}}</span>
-                    <span>{{$t('amenties.title1_text6')}}</span>
-                    <span>{{$t('amenties.title1_text7')}}</span>
-                    <span>{{$t('amenties.title1_text8')}}</span>
-                  </p>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
+                  <span>{{$t('amenties.amenties_1')}}</span>
                 </b-col>
-                <b-col class="my-3 main-amenity" lg="4">
-                  <img src="" alt="img">
-                  <h6>{{$t('amenties.mini_title2')}}</h6>
-                  <p>
-                    <span>{{$t('amenties.title2_text1')}}</span>
-                    <span>{{$t('amenties.title2_text2')}}</span>
-                  </p>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/cutlery.svg" alt="">
+                  <span>{{$t('amenties.amenties_2')}}</span>
                 </b-col>
-                <b-col class="my-3 main-amenity" lg="4">
-                  <img src="" alt="img">
-                  <h6>{{$t('amenties.mini_title3')}}</h6>
-                  <p>
-                    <span>{{$t('amenties.title3_text1')}}</span>
-                    <span>{{$t('amenties.title3_text2')}}</span>
-                    <span>{{$t('amenties.title3_text3')}}</span>
-                    <span>{{$t('amenties.title3_text4')}}</span>
-                  </p>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/serving-dish.svg" alt="">
+                  <span>{{$t('amenties.amenties_3')}}</span>
                 </b-col>
-                <b-col class="my-3 main-amenity" lg="4">
-                  <img src="" alt="img">
-                  <h6>{{$t('amenties.mini_title4')}}</h6>
-                  <p>
-                    <span>{{$t('amenties.title4_text1')}}</span>
-                    <span>{{$t('amenties.title4_text2')}}</span>
-                    <span>{{$t('amenties.title4_text3')}}</span>
-                  </p>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/weight.svg" alt="">
+                  <span>{{$t('amenties.amenties_4')}}</span>
                 </b-col>
-                <b-col class="my-3 main-amenity" lg="4">
-                  <img src="" alt="img">
-                  <h6>{{$t('amenties.mini_title5')}}</h6>
-                  <p>
-                    <span>{{$t('amenties.title5_text1')}}</span>
-                    <span>{{$t('amenties.title5_text2')}}</span>
-                  </p>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/swimming-pool.svg" alt="">
+                  <span>{{$t('amenties.amenties_5')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/lotus.svg" alt="">
+                  <span>{{$t('amenties.amenties_6')}}</span>
                 </b-col>
               </b-row>
-            </b-collapse>
-            <b-button v-b-toggle.amenity variant="transparent" @click="amenityShow()">
-              {{amenityText}}
-            </b-button>
+              <b-row>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/key.svg" alt="">
+                  <span>{{$t('amenties.amenties_7')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/clock.svg" alt="">
+                  <span>{{$t('amenties.amenties_8')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/printer.svg" alt="">
+                  <span>{{$t('amenties.amenties_9')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/hanger-line.svg" alt="">
+                  <span>{{$t('amenties.amenties_10')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/concierge.svg" alt="">
+                  <span>{{$t('amenties.amenties_11')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/teacher.svg" alt="">
+                  <span>{{$t('amenties.amenties_12')}}</span>
+                </b-col>
+              </b-row>
+              <b-collapse id="amenity" class="mt-2">
+                <b-row>
+                  <b-col class="my-3 main-amenity" lg="4">
+                    <img src="" alt="img">
+                    <h6>{{$t('amenties.mini_title1')}}</h6>
+                    <p>
+                      <span>{{$t('amenties.title1_text1')}}</span>
+                      <span>{{$t('amenties.title1_text2')}}</span>
+                      <span>{{$t('amenties.title1_text3')}}</span>
+                      <span>{{$t('amenties.title1_text4')}}</span>
+                      <span>{{$t('amenties.title1_text5')}}</span>
+                      <span>{{$t('amenties.title1_text6')}}</span>
+                      <span>{{$t('amenties.title1_text7')}}</span>
+                      <span>{{$t('amenties.title1_text8')}}</span>
+                    </p>
+                  </b-col>
+                  <b-col class="my-3 main-amenity" lg="4">
+                    <img src="" alt="img">
+                    <h6>{{$t('amenties.mini_title2')}}</h6>
+                    <p>
+                      <span>{{$t('amenties.title2_text1')}}</span>
+                      <span>{{$t('amenties.title2_text2')}}</span>
+                    </p>
+                  </b-col>
+                  <b-col class="my-3 main-amenity" lg="4">
+                    <img src="" alt="img">
+                    <h6>{{$t('amenties.mini_title3')}}</h6>
+                    <p>
+                      <span>{{$t('amenties.title3_text1')}}</span>
+                      <span>{{$t('amenties.title3_text2')}}</span>
+                      <span>{{$t('amenties.title3_text3')}}</span>
+                      <span>{{$t('amenties.title3_text4')}}</span>
+                    </p>
+                  </b-col>
+                  <b-col class="my-3 main-amenity" lg="4">
+                    <img src="" alt="img">
+                    <h6>{{$t('amenties.mini_title4')}}</h6>
+                    <p>
+                      <span>{{$t('amenties.title4_text1')}}</span>
+                      <span>{{$t('amenties.title4_text2')}}</span>
+                      <span>{{$t('amenties.title4_text3')}}</span>
+                    </p>
+                  </b-col>
+                  <b-col class="my-3 main-amenity" lg="4">
+                    <img src="" alt="img">
+                    <h6>{{$t('amenties.mini_title5')}}</h6>
+                    <p>
+                      <span>{{$t('amenties.title5_text1')}}</span>
+                      <span>{{$t('amenties.title5_text2')}}</span>
+                    </p>
+                  </b-col>
+                </b-row>
+              </b-collapse>
+              <b-button v-b-toggle.amenity variant="transparent" @click="amenityShow()">
+                {{amenityText}}
+              </b-button>
+            </b-col>
           </b-col>
-        </b-col>
-      </b-row>
-    </div>
+        </b-row>
+      </div>
       
       <Visit />
       <b-row class="gallery">
