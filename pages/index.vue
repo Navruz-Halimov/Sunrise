@@ -834,7 +834,7 @@
             <b-row>
                 <b-col cols="12">
                     <div class="offer-main__title">
-                        <h5>NEWS & OFFER</h5>
+                        <h5>{{$t('offer_main.title')}}</h5>
                     </div>
                 </b-col>
             </b-row>
@@ -846,14 +846,12 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-2 order-lg-2 order-2 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
-                        <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
+                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
+                        <div class="offer-main__text-info">{{$t('offer_main.text_info')}}
                             <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
                         </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-4 order-lg-3 order-3 animate__animated animate__fadeInUp" md="6" lg="3" >
@@ -863,26 +861,24 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-3 order-lg-4 order-4 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
+                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
                         <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
+                                {{$t('offer_main.text_info')}}
                             <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
                         </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-6 order-lg-5 order-6 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
+                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
                         <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
+                                {{$t('offer_main.text_info')}}
                             <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
                         </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
@@ -892,14 +888,13 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-7 order-lg-7 order-8 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
+                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
                         <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
+                                {{$t('offer_main.text_info')}}
                             <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
                         </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >

@@ -77,6 +77,11 @@ export default {
         mini_title5: "浴室",
         title5_text1: "舒缓步入式淋浴",
         title5_text2: "独立浴缸"        
-
-    }    
+    },
+    offer_main: {
+        title: "新闻与要约",
+        text_title: "季节变化。风景的变化。",
+        text_info: "无论您选择哪种新视图，Sunrise都将在2021年1月4日之前以最高4倍的积分和双晚的等级状态返回。",
+        text_link: "阅读更多"
+    }        
 }
