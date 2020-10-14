@@ -24,9 +24,11 @@ export default {
     contact: {
         info: 'Контакты',
         general: 'Общий контакт',
-        heading: 'How to get to the Sunshine Hotel, Tashkent',
+        heading: 'Как добраться до Sunshine Hotel, Ташкент',
         text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore expedita natus autem, consequatur earum neque?',
         how: 'Как добраться до ул.Амира Темура 88 Ташкент 100084 Узбекистан',
+        btn: "Получить указания",
+        inp: "С чего ты начинаешь?"
     },
     footer: {
         quicklink: 'Прямая ссылка',

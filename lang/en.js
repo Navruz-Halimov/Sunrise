@@ -27,6 +27,8 @@ export default {
         heading: 'How to get to the Sunrise  Hotel, Tashkent',
         text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore expedita natus autem, consequatur earum neque?',
         how:'How to arrive at Amir Temur Street 88 Tashkent 100084 Uzbekistan',
+        btn: "Get directions",
+        inp: "Where are you starting from?"
     },
     footer:{
         quicklink:'Quick link',
