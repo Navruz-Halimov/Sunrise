@@ -19,7 +19,6 @@ export default {
     },
     attraction: {
         attraction: '吸引力',
-
     },
     contact: {
         info: '联系信息',
