@@ -5,14 +5,6 @@
                 <b-col cols="12" lg="10" md="9" sm="8">
                     <h1 class="reviews-page__title">Most recent traveler reviews</h1>
                 </b-col>
-                <b-col cols="12" lg="2" md="3" sm="4">
-                    <span class="reviews-page__select-text">Language</span>
-                    <b-form-select v-model="selected" class="reviews-page__select">
-                        <b-form-select-option class="reviews-page__option" :value="English">English</b-form-select-option>
-                        <b-form-select-option class="reviews-page__option" value="中文（简体）">中文（简体）</b-form-select-option>
-                        <b-form-select-option class="reviews-page__option" value="Русский">Русский</b-form-select-option>
-                    </b-form-select>
-                </b-col>
             </b-row>
             <div class="reviews-slider">
                 <b-container>
