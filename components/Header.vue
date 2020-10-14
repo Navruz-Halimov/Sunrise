@@ -53,26 +53,26 @@
                 :readonly="true"
                 char="★"
               />
-              Reviews</nuxt-link
+             {{$t('navbar.reviews')}}</nuxt-link
             >
           </div>
-          <b-button class="header__bottom-btn" :to="localePath('/booking')"> Book now </b-button>
+          <b-button class="header__bottom-btn" :to="localePath('/booking')"> {{$t('navbar.book')}} </b-button>
           <!-- Right aligned nav items -->
           <b-navbar-nav>
             <b-nav-item-dropdown text="Lang" right class="lang__list-wrapper">
               <template v-slot:button-content>
                 <span class="sign__header"
-                  >Lang<font-awesome-icon :icon="['fas', 'chevron-down']"
+                  >{{$t('navbar.lang')}}<font-awesome-icon :icon="['fas', 'chevron-down']"
                 /></span>
               </template>
               <b-dropdown-item href="#" :to="switchLocalePath('en')"
-                >ENGLISH</b-dropdown-item
+                >{{$t('navbar.eng')}}</b-dropdown-item
               >
               <b-dropdown-item href="#" :to="switchLocalePath('ru')"
-                >RUSSIAN</b-dropdown-item
+                >{{$t('navbar.ru')}}</b-dropdown-item
               >
               <b-dropdown-item href="#" :to="switchLocalePath('chn')"
-                >CHINESE</b-dropdown-item
+                >{{$t('navbar.chn')}}</b-dropdown-item
               >
             </b-nav-item-dropdown>
 
@@ -80,12 +80,12 @@
               <!-- Using 'button-content' slot -->
               <template v-slot:button-content>
                 <span class="sign__header"
-                  ><font-awesome-icon :icon="['fas', 'user']" />Sign in
+                  ><font-awesome-icon :icon="['fas', 'user']" />{{$t('navbar.sign')}}
                   <font-awesome-icon :icon="['fas', 'chevron-down']"
                 /></span>
               </template>
-              <b-dropdown-item :href="localePath('/sign-in')">Sign in</b-dropdown-item>
-              <b-dropdown-item :href="localePath('/join')">Join</b-dropdown-item>
+              <b-dropdown-item :href="localePath('/sign-in')">{{$t('navbar.sign')}}</b-dropdown-item>
+              <b-dropdown-item :href="localePath('/join')">{{$t('navbar.join')}}</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </div>
