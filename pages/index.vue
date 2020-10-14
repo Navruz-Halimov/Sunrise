@@ -3,7 +3,7 @@
     <div class="navbar__slider">
       <swiper class="swiper" :options="header__slider">
         <swiper-slide
-          ><img src="../assets//images/3D/1.jpg" alt="" />
+          ><img src="../assets//images/3D/1.jpg" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -13,7 +13,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/3D/1night.jpg" alt="" />
+          ><img src="../assets/images/3D/1night.jpg" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -23,7 +23,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/3D/2.jpg" alt="" />
+          ><img src="../assets/images/3D/2.jpg" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -33,7 +33,7 @@
           </div>
         </swiper-slide>
         <swiper-slide
-          ><img src="../assets/images/3D/2night.jpg" alt="" />
+          ><img src="../assets/images/3D/2night.jpg" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
             <p class="swiper-caption-text">
@@ -55,7 +55,7 @@
                 v-model="value2"
                 value-type="format"
                 format="YYYY-MM-DD"
-                placeholder="Arrival date"
+                :placeholder="$t('booking.arrival')"
                 :default-value="new Date()"
                 :disabled-date="notBeforeToday"
               ></date-picker>
@@ -65,14 +65,14 @@
                 v-model="value3"
                 value-type="format"
                 format="YYYY-MM-DD"
-                placeholder="Departure date"
+                :placeholder="$t('booking.departure')"
                 :default-value="new Date()"
                 :disabled-date="notBeforeToday"
               ></date-picker>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
               <select name="adults__capacity" class="adults__capacity">
-                <option value="0" selected disabled>Adults</option>
+                <option value="0" selected disabled>{{$t('booking.adults_title')}}</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -81,7 +81,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
               <select name="children__capacity" class="children__capacity">
-                <option value="0" selected disabled>Children</option>
+                <option value="0" selected disabled>{{$t('booking.children_title')}}</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -90,17 +90,16 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
               <select name="room__type" class="room__type">
-                <option value="0" selected disabled>Choose a Room</option>
-                <option value="1">Standard room</option>
-                <option value="2">Standard Family room</option>
-                <option value="3">Deluxe double room</option>
-                <option value="4">Standard room</option>
-                <option value="5">Standard room</option>
+                <option value="0" selected disabled>{{$t('booking.choose_title')}}</option>
+                <option value="1">{{$t('booking.choose_room1')}}</option>
+                <option value="2">{{$t('booking.choose_room2')}}</option>
+                <option value="3">{{$t('booking.choose_room3')}}</option>
+                <option value="4">{{$t('booking.choose_room4')}}</option>
               </select>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
               <b-button type="submit" class="book__btn" :to="localePath('/rooms')"
-              >Book now
+              >{{$t('booking.btn_text')}} 
               </b-button
               >
             </div>
@@ -173,121 +172,121 @@
     </div>
     <b-container>
       <div class="main__book-page">
-<b-row class="book__page">
-        <b-col class="book__header" lg="12">
-          <h1 class="book__page-heading">Amenties</h1>
-          <b-col class="header__content" cols="12" md="12">
-            <b-row>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/amenties/wifi.svg" alt="">
-                <span>Free Internet Access</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/cutlery.svg" alt="">
-                <span>Restaurant On-Site</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/serving-dish.svg" alt="">
-                <span>Room Service</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/weight.svg" alt="">
-                <span>Fitness Center</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/swimming-pool.svg" alt="">
-                <span>Pool</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/lotus.svg" alt="">
-                <span>Spa</span>
-              </b-col>
-            </b-row>
-            <b-row>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/key.svg" alt="">
-                <span>Digital Key</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/clock.svg" alt="">
-                <span>Digital Check-In</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/printer.svg" alt="">
-                <span>Business Services</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/hanger-line.svg" alt="">
-                <span>Laundry</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/concierge.svg" alt="">
-                <span>Concierge</span>
-              </b-col>
-              <b-col class="amenity" cols="4" sm="4" md="2">
-                <img src="../assets/images/icons/teacher.svg" alt="">
-                <span>Meeting Facilities</span>
-              </b-col>
-            </b-row>
-            <b-collapse id="amenity" class="mt-2">
+        <b-row class="book__page">
+          <b-col class="book__header" lg="12">
+            <h1 class="book__page-heading">{{$t('amenties.heading')}}</h1>
+            <b-col class="header__content" cols="12" md="12">
               <b-row>
-                <b-col class="my-3 main-amenity" lg="4">
-                  <img src="" alt="img">
-                  <h6>HOTEL FEATURES</h6>
-                  <p>
-                    <span>300 guest rooms including 52 luxurious suites</span>
-                    <span>Complimentary Wi-Fi</span>
-                    <span>Four restaurants and bars</span>
-                    <span>2,300 sq m of flexible meeting and event space</span>
-                    <span>Executive Business Center</span>
-                    <span>One indoor pool</span>
-                    <span>The Spa, offering a range of treatments</span>
-                    <span>24-hour StayFit™ Gym</span>
-                  </p>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
+                  <span>{{$t('amenties.amenties_1')}}</span>
                 </b-col>
-                <b-col class="my-3 main-amenity" lg="4">
-                  <img src="" alt="img">
-                  <h6>SERVICES</h6>
-                  <p>
-                    <span>A range of spa treatments</span>
-                    <span>Laundry and dry cleaning services</span>
-                  </p>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/cutlery.svg" alt="">
+                  <span>{{$t('amenties.amenties_2')}}</span>
                 </b-col>
-                <b-col class="my-3 main-amenity" lg="4">
-                  <img src="" alt="img">
-                  <h6>ROOM AMENITIES</h6>
-                  <p>
-                    <span>Complimentary Wi-Fi</span>
-                    <span>Spacious workspace</span>
-                    <span>Ergonomic chair</span>
-                    <span>Charging station</span>
-                  </p>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/serving-dish.svg" alt="">
+                  <span>{{$t('amenties.amenties_3')}}</span>
                 </b-col>
-                <b-col class="my-3 main-amenity" lg="4">
-                  <img src="" alt="img">
-                  <h6>SUITE AMENITIES</h6>
-                  <p>
-                    <span>Regency Club access</span>
-                    <span>Study and kitchenette with dining area (Regency Executive Suites)</span>
-                    <span>Large living room and study, kitchenette, and dining area (Diplomatic and Presidential Suites)</span>
-                  </p>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/weight.svg" alt="">
+                  <span>{{$t('amenties.amenties_4')}}</span>
                 </b-col>
-                <b-col class="my-3 main-amenity" lg="4">
-                  <img src="" alt="img">
-                  <h6>BATHROOM</h6>
-                  <p>
-                    <span>Soothing walk-in rain shower</span>
-                    <span>Separate bathtub</span>
-                  </p>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/swimming-pool.svg" alt="">
+                  <span>{{$t('amenties.amenties_5')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/lotus.svg" alt="">
+                  <span>{{$t('amenties.amenties_6')}}</span>
                 </b-col>
               </b-row>
-            </b-collapse>
-            <b-button v-b-toggle.amenity variant="transparent" @click="amenityShow()">
-              {{amenityText}}
-            </b-button>
+              <b-row>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/key.svg" alt="">
+                  <span>{{$t('amenties.amenties_7')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/clock.svg" alt="">
+                  <span>{{$t('amenties.amenties_8')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/printer.svg" alt="">
+                  <span>{{$t('amenties.amenties_9')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/hanger-line.svg" alt="">
+                  <span>{{$t('amenties.amenties_10')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/concierge.svg" alt="">
+                  <span>{{$t('amenties.amenties_11')}}</span>
+                </b-col>
+                <b-col class="amenity" cols="4" sm="4" md="2">
+                  <img src="../assets/images/icons/teacher.svg" alt="">
+                  <span>{{$t('amenties.amenties_12')}}</span>
+                </b-col>
+              </b-row>
+              <b-collapse id="amenity" class="mt-2">
+                <b-row>
+                  <b-col class="my-3 main-amenity" lg="4">
+                    <img src="" alt="img">
+                    <h6>{{$t('amenties.mini_title1')}}</h6>
+                    <p>
+                      <span>{{$t('amenties.title1_text1')}}</span>
+                      <span>{{$t('amenties.title1_text2')}}</span>
+                      <span>{{$t('amenties.title1_text3')}}</span>
+                      <span>{{$t('amenties.title1_text4')}}</span>
+                      <span>{{$t('amenties.title1_text5')}}</span>
+                      <span>{{$t('amenties.title1_text6')}}</span>
+                      <span>{{$t('amenties.title1_text7')}}</span>
+                      <span>{{$t('amenties.title1_text8')}}</span>
+                    </p>
+                  </b-col>
+                  <b-col class="my-3 main-amenity" lg="4">
+                    <img src="" alt="img">
+                    <h6>{{$t('amenties.mini_title2')}}</h6>
+                    <p>
+                      <span>{{$t('amenties.title2_text1')}}</span>
+                      <span>{{$t('amenties.title2_text2')}}</span>
+                    </p>
+                  </b-col>
+                  <b-col class="my-3 main-amenity" lg="4">
+                    <img src="" alt="img">
+                    <h6>{{$t('amenties.mini_title3')}}</h6>
+                    <p>
+                      <span>{{$t('amenties.title3_text1')}}</span>
+                      <span>{{$t('amenties.title3_text2')}}</span>
+                      <span>{{$t('amenties.title3_text3')}}</span>
+                      <span>{{$t('amenties.title3_text4')}}</span>
+                    </p>
+                  </b-col>
+                  <b-col class="my-3 main-amenity" lg="4">
+                    <img src="" alt="img">
+                    <h6>{{$t('amenties.mini_title4')}}</h6>
+                    <p>
+                      <span>{{$t('amenties.title4_text1')}}</span>
+                      <span>{{$t('amenties.title4_text2')}}</span>
+                      <span>{{$t('amenties.title4_text3')}}</span>
+                    </p>
+                  </b-col>
+                  <b-col class="my-3 main-amenity" lg="4">
+                    <img src="" alt="img">
+                    <h6>{{$t('amenties.mini_title5')}}</h6>
+                    <p>
+                      <span>{{$t('amenties.title5_text1')}}</span>
+                      <span>{{$t('amenties.title5_text2')}}</span>
+                    </p>
+                  </b-col>
+                </b-row>
+              </b-collapse>
+              <b-button v-b-toggle.amenity variant="transparent" @click="amenityShow()">
+                {{amenityText}}
+              </b-button>
+            </b-col>
           </b-col>
-        </b-col>
-      </b-row>
+        </b-row>
       </div>
       
       <Visit />
@@ -834,7 +833,7 @@
             <b-row>
                 <b-col cols="12">
                     <div class="offer-main__title">
-                        <h5>NEWS & OFFER</h5>
+                        <h5>{{$t('offer_main.title')}}</h5>
                     </div>
                 </b-col>
             </b-row>
@@ -846,14 +845,12 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-2 order-lg-2 order-2 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
-                        <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
+                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
+                        <div class="offer-main__text-info">{{$t('offer_main.text_info')}}
                             <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
                         </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-4 order-lg-3 order-3 animate__animated animate__fadeInUp" md="6" lg="3" >
@@ -863,26 +860,24 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-3 order-lg-4 order-4 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
+                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
                         <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
+                                {{$t('offer_main.text_info')}}
                             <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
                         </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-6 order-lg-5 order-6 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
+                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
                         <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
+                                {{$t('offer_main.text_info')}}
                             <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
                         </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
@@ -892,14 +887,13 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-7 order-lg-7 order-8 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__text">
-                        <div class="offer-main__text-title">Change of Seasons. Change of Scenery.</div>
+                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
                         <div class="offer-main__text-info">
-                                Whatever new view you choose, Bonus Journeys is back with up to 4x points and double
-                        nights toward tier status through January 4, 2021.
+                                {{$t('offer_main.text_info')}}
                             <!-- <font-awesome-icon :icon="['fas', 'clock']" />
                             <span>19th March, 2021</span> -->
                         </div>
-                        <nuxt-link to="/offer" class="offer-main__link">Read More</nuxt-link>
+                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
