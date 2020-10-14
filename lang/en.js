@@ -96,6 +96,31 @@ export default {
         choose_room3: "Deluxe double room",
         choose_room4: "Standard room",
         btn_text: "Book now"
+    },
+    "events": {
+        btn_more: "Read more",
+        btn_less: "Read less",
+        contact_title: "Contact information",
+        features_title: "Key features",
+        features_item1: "3 meeting rooms",
+        features_item2: "503 person max. capacity",
+        features_item3: "Catering service",
+        features_item4: "Free Wi-Fi",
+        features_item5: "Complimentary parking",
+        features_item6: "Printing services",
+        features_item7: "Reception",
+        features_item8: "Individual room climate control",
+        multimedia_title: "Meeting packages",
+        banner_small: "Meet your every objective with Sunrise Meetings",
+        banner_title: "Discover Sunrise Meetings",
+        banner_text: "Our dedicated team, attention to detail, and outstanding facilities in destinations around the world ensure the success of your meetings and events.",
+        banner_btn: "Find out more",
+        footer_title1: "Sunrise Hotel in Tashkent",
+        footer_link: "Need help?",
+        footer_title2: "Follow us on social media",
+        footer_title3: "Never miss out on our most popular deals",
+        footer_btn: "Subscribe",
+        footer_inp: "Email address"
     }
     
 }

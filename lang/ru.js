@@ -96,5 +96,30 @@ export default {
         choose_room3: "Двухместный номер делюкс",
         choose_room4: "Стандартный номер",
         btn_text: "Забронируйте сейчас"
-    }            
+    },
+    "events": {
+        btn_more: "Подробнее",
+        btn_less: "Скрыть",
+        contact_title: "Контакты",
+        features_title: "Ключевая особенность",
+        features_item1: "3 конференц-зала",
+        features_item2: "503 человека макс. вместимость",
+        features_item3: "Кейтеринг",
+        features_item4: "Бесплатный вай-фай",
+        features_item5: "Бесплатная парковка",
+        features_item6: "Полиграфические услуги",
+        features_item7: "Прием",
+        features_item8: "Индивидуальный климат-контроль помещения",
+        multimedia_title: "Пакеты встреч",
+        banner_small: "Достигайте каждой цели с помощью Sunrise Meetings",
+        banner_title: "Откройте для себя Sunrise Meetings",
+        banner_text: "Наша преданная своему делу команда, внимание к деталям и превосходное оснащение в различных направлениях по всему миру обеспечивают успех ваших встреч и мероприятий.",
+        banner_btn: "Узнать больше",
+        footer_title1: "Отель Sunrise в Ташкенте",
+        footer_link: "Нужна помощь?",
+        footer_title2: "Следуйте за нами в социальных сетях",
+        footer_title3: "Никогда не упускайте наши самые популярные предложения",
+        footer_btn: "Подписывайся",
+        footer_inp: "Введите почту"
+    }                
 }

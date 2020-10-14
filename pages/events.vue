@@ -30,7 +30,7 @@
                                     @click="isActive = !isActive"
                                     v-if="isActive === false"
                                 >
-                                    Read more
+                                    {{$t('events.btn_more')}} 
                                     <font-awesome-icon :icon="['fas', 'angle-down']" />
                                 </b-button>
                                 <b-button 
@@ -40,7 +40,7 @@
                                     v-else
                                     @click="isActive = !isActive"
                                 >
-                                    Read less
+                                    {{$t('events.btn_less')}}
                                     <font-awesome-icon :icon="['fas', 'angle-up']" />
                                 </b-button>
                             </div>
@@ -53,7 +53,7 @@
                     <b-row>
                         <b-col cols="12">
                             <h3 class="event-page__contact-title">
-                                Contact information
+                                {{$t('events.contact_title')}}
                             </h3>
                             <div class="event-page__contact-email">
                                 <font-awesome-icon :icon="['fas', 'envelope']" />
@@ -70,7 +70,7 @@
                     <b-row>
                         <b-col md="12">
                             <h2 class="event-page__features-title">
-                                Key features
+                               {{$t('events.features_title')}} 
                             </h2>
                         </b-col>
                     </b-row>
@@ -79,35 +79,35 @@
                             <ul class="event-page__features-list d-flex justufy-content-between">
                                 <li class="event-page__features-item">
                                     <font-awesome-icon :icon="['fas', 'handshake']" />
-                                    <span>3 meeting rooms</span>
+                                    <span>{{$t('events.features_item1')}}</span>
                                 </li>
                                 <li class="event-page__features-item">
                                     <font-awesome-icon :icon="['fas', 'users']" />
-                                    <span>503 person max. capacity</span>
+                                    <span>{{$t('events.features_item2')}}</span>
                                 </li>
                                 <li class="event-page__features-item">
                                     <font-awesome-icon :icon="['fas', 'hammer']" />
-                                    <span>Catering service</span>
+                                    <span>{{$t('events.features_item3')}}</span>
                                 </li>
                                 <li class="event-page__features-item">
                                     <font-awesome-icon :icon="['fas', 'wifi']" />
-                                    <span>Free Wi-Fi</span>
+                                    <span>{{$t('events.features_item4')}}</span>
                                 </li>
                                 <li class="event-page__features-item">
                                     <font-awesome-icon :icon="['fas', 'parking']" />
-                                    <span>Complimentary parking</span>
+                                    <span>{{$t('events.features_item5')}}</span>
                                 </li>
                                 <li class="event-page__features-item">
                                     <font-awesome-icon :icon="['fas', 'print']" />
-                                    <span>Printing services</span>
+                                    <span>{{$t('events.features_item6')}}</span>
                                 </li>
                                 <li class="event-page__features-item">
                                     <font-awesome-icon :icon="['fas', 'chalkboard-teacher']" />
-                                    <span>Reception</span>
+                                    <span>{{$t('events.features_item7')}}</span>
                                 </li>
                                 <li class="event-page__features-item">
                                     <font-awesome-icon :icon="['fas', 'thermometer-quarter']" />
-                                    <span>Individual room climate control</span>
+                                    <span>{{$t('events.features_item8')}}</span>
                                 </li>
                             </ul>
                         </b-col>
@@ -118,7 +118,7 @@
                 <b-container>
                     <b-row>
                         <b-col cols="12">
-                            <h2 class="event-page__multimedia-title">Meeting packages</h2>
+                            <h2 class="event-page__multimedia-title">{{$t('events.multimedia_title')}}</h2>
                         </b-col>
                     </b-row>
                     <b-row class="d-flex">
@@ -149,7 +149,7 @@
                                     @click="isActive1 = !isActive1"
                                     v-if="isActive1 === false"
                                 >
-                                    Read more
+                                    {{$t('events.btn_more')}}
                                     <font-awesome-icon :icon="['fas', 'angle-down']" />
                                 </b-button>
                                 <b-button 
@@ -159,7 +159,7 @@
                                     v-else
                                     @click="isActive1 = !isActive1"
                                 >
-                                    Read less
+                                    {{$t('events.btn_less')}}
                                     <font-awesome-icon :icon="['fas', 'angle-up']" />
                                 </b-button>
                             </div>
@@ -173,12 +173,14 @@
                 <b-row>
                     <b-col lg="6">
                         <div class="event-page__banner-text">
-                            <small>Meet your every objective with Sunrise Meetings</small>
-                            <h3 class="event-page__banner-title">Discover Sunrise Meetings</h3>
-                            <p>Our dedicated team, attention to detail, and outstanding facilities in destinations around the world ensure the success of your meetings and events.</p>
+                            <small>{{$t('events.banner_small')}}</small>
+                            <h3 class="event-page__banner-title"> 
+                                {{$t('events.banner_title')}}
+                            </h3>
+                            <p>{{$t('events.banner_text')}} </p>
                         </div>
                         <div class="event-page__banner-link">
-                            <a href="/" target="_blank">Find out more</a>
+                            <a href="/" target="_blank">{{$t('events.banner_btn')}}</a>
                         </div>
                     </b-col>
                 </b-row>
@@ -189,11 +191,11 @@
                 <b-row>
                     <b-col cols="12" class="event-page__footer-list">
                         <b-col lg="4" class="event-page__footer-item">
-                            <div class="event-page__footer-title">Sunrise Hotel in Tashkent</div>
-                            <a href="/" target="_blank" class="event-page__footer-link">Need help?</a>
+                            <div class="event-page__footer-title">{{$t('events.footer_title1')}}</div>
+                            <a href="/" target="_blank" class="event-page__footer-link">{{$t('events.footer_link')}} </a>
                         </b-col>
                         <b-col lg="4" class="event-page__footer-item">
-                            <div class="event-page__footer-title">Follow us on social media</div>
+                            <div class="event-page__footer-title">{{$t('events.footer_title2')}}</div>
                             <ul class="event-page__footer-social">
                                 <li class="event-page__footer-social-item">
                                     <a href="/">
@@ -228,10 +230,17 @@
                             </ul>
                         </b-col>
                         <b-col lg="4" class="event-page__footer-item">
-                            <div class="event-page__footer-title">Never miss out on our most popular deals</div>
+                            <div class="event-page__footer-title">{{$t('events.footer_title3')}}</div>
                             <b-form inline class="event-page__footer-form"> 
-                                <b-input type="email" placeholder="email address" required class="event-page__footer-input"></b-input>
-                                <b-button type="submit" variant="outline-light" class="event-page__footer-btn">Subscribe</b-button> 
+                                <b-input 
+                                    type="email" 
+                                    :placeholder="$t('events.footer_inp')" 
+                                    required 
+                                    class="event-page__footer-input"
+                                ></b-input>
+                                <b-button type="submit" variant="outline-light" class="event-page__footer-btn">
+                                    {{$t('events.footer_btn')}} 
+                                </b-button> 
                             </b-form>
                         </b-col>
                     </b-col>

@@ -95,5 +95,30 @@ export default {
         choose_room3: "豪华双人房",
         choose_room4: "标准间",
         btn_text: "现在预订"
-    }            
+    },
+    "events": {
+        btn_more: "阅读更多",
+        btn_less: "少读",
+        contact_title: "联系信息",
+        features_title: "主要特征",
+        features_item1: "3间会议室",
+        features_item2: "最多503人容量",
+        features_item3: "餐饮服务",
+        features_item4: "免费WiFi",
+        features_item5: "免费停车",
+        features_item6: "印刷服务",
+        features_item7: "接待处",
+        features_item8: "独立房间的温度控制",
+        multimedia_title: "会议套餐",
+        banner_small: "通过日出会议实现您的所有目标",
+        banner_title: "发现日出会议",
+        banner_text: "我们敬业的团队，对细节的关注以及在全球各地的出色设施，确保您的会议和活动取得成功。",
+        banner_btn: "找到更多",
+        footer_title1: "塔什干的日出酒店",
+        footer_link: "需要帮忙？",
+        footer_title2: "在社交媒体上关注我们",
+        footer_title3: "永远不要错过我们最受欢迎的交易",
+        footer_btn: "订阅",
+        footer_inp: "电子邮件地址"
+    }                
 }
