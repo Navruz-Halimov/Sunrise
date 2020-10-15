@@ -58,7 +58,7 @@
         <b-col lg="3">
           <div class="floor__left-wrapper">
           <div class="floor__number">First Floor scheme</div>
-          <img class="floor__mini-2d" src="../assets/images/1floor/1room.jpg" alt="">
+          <img class="floor__mini-2d" src="../assets/images/1floor/1.jpg" alt="">
             <p class="floor__text">First floor rooms</p>
           <b-pagination-nav
             number-of-pages="10"
