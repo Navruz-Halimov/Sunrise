@@ -26,6 +26,8 @@ export default {
         heading: '如何到达塔什干阳光蓝光酒店',
         text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore expedita natus autem, consequatur earum neque?',
         how: '如何到达Amir Temur Street 88 Tashkent 100084乌兹别克斯坦',
+        btn: "获取路线",
+        inp: "你从哪里开始？"
     },
     footer: {
         quicklink: '快速链接',
@@ -33,6 +35,21 @@ export default {
         motto: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
         readmore: '阅读更多',
         connect: '与日出联系',
+    },
+    tourist: {
+        heading: "导游",
+        link1: "塔什干机场航空公司在线记分牌",
+        link2: "塔什干的法律和法律OVIR",
+        link3: "旅行小贴士",
+        link4: "旅游保险",
+        link5: "旅行小贴士",
+        link6: "塔什干机场在线记分牌",
+        link7: "2019年旅游法规星座",
+        link8: "塔什干大使馆",
+        link9: "酒店住宿",
+        link10: "对外交流",
+        link11: "旅游词典",
+        link12: "旅游业世界排名前十",
     },
     amenties: {
         heading: "便利设施",

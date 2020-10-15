@@ -4,14 +4,14 @@
             <b-row>
                 <b-col sm="12">
                     <h1 class="contact-page__heading">
-                        Contact information
+                        {{$t('contact.info')}}
                     </h1>
                     <div class="contact-page-details">
                         <b-container>
                             <b-row>
                                 <b-col cols="12">
                                     <div class="contact-page-details__cards">
-                                        <h3 class="contact-page-details__title">General contact</h3>
+                                        <h3 class="contact-page-details__title">{{$t('contact.general')}}</h3>
                                         <div class="contact-page-details__phone">
                                             <font-awesome-icon :icon="['fas', 'phone-alt']" />
                                             <a href="tel:+998 78 1204900">+998 78 1204900</a>
@@ -35,10 +35,13 @@
                         <b-container>
                             <b-row>
                                 <b-col cols="12">
-                                    <h2 class="contact-page-info__title">How to get to the Sunshine Blu Hotel, Tashkent</h2>
+                                    <h2 class="contact-page-info__title">
+                                        {{$t('contact.heading')}}
+                                        
+                                    </h2>
                                 </b-col>
                                 <b-col cols="12">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore expedita natus autem, consequatur earum neque?
+                                    {{$t('contact.text')}}
                                 </b-col>
                             </b-row>   
                         </b-container>
@@ -59,7 +62,9 @@
                     <b-col cols="12">
                         <button class="contact-page-btn__button"  @click="isActive = !isActive" :class="{contactPageBtnOpen:isActive}">
                             <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
-                            <strong>How to arrive at Amir Temur Street 88 Tashkent 100084 Uzbekistan</strong>
+                            <strong>
+                                {{$t('contact.how')}}
+                            </strong>
                             <font-awesome-icon :icon="['fas', 'times']" class="closeButton" />
                         </button>
                     </b-col>
@@ -69,7 +74,12 @@
                         <b-col lg="3" class="p-0">
                             <b-form-group>
                                 <!-- <label for="input" class=""></label> -->
-                                <b-input id="input" placeholder="Where are you starting from?" class="form-control"></b-input>
+                                <b-input 
+                                    id="input" 
+                                    :placeholder="$t('contact.inp')" 
+                                    class="form-control"
+                                >
+                                </b-input>
                             </b-form-group>
                         </b-col>
                         <b-col lg="6" xl="5" offset-xl="1" class="d-flex justify-content-between mb-0 p-0 form-group" >
@@ -85,13 +95,16 @@
                         </b-col>
                         <b-col lg="3" xl="2" offset-xl="1" class="p-0">
                             <b-form-group>
-                                <b-button type="submit" class="contact-page-btn__get">Get directions</b-button>
+                                <b-button type="submit" class="contact-page-btn__get">
+                                    {{$t('contact.btn')}}    
+                                </b-button>
                             </b-form-group>
                         </b-col>
                     </b-form>
                 </b-row>
             </b-container>
         </div>
+
 
 
 

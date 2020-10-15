@@ -114,54 +114,54 @@
             class="info__circle"
             :icon="['fas', 'info-circle']"
           />
-          Tourist guide
+          {{$t('tourist.heading')}} 
         </h1>
         <ul class="guide__list">
           <li class="guide__item">
             <b-row>
               <b-col lg="6">
                 <nuxt-link to="" class="guide__link">
-                  Online scoreboard of Tashkent airport Airlines
+                 {{$t('tourist.link1')}}  
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >Law and law OVIRs of Tashkent
+                >{{$t('tourist.link2')}} 
                 </nuxt-link
                 >
-                <nuxt-link to="" class="guide__link">Travel Tips</nuxt-link>
+                <nuxt-link to="" class="guide__link">{{$t('tourist.link3')}}</nuxt-link>
                 <nuxt-link to="" class="guide__link"
-                >Travel insurance
+                >{{$t('tourist.link4')}} 
                 </nuxt-link
                 >
-                <nuxt-link to="" class="guide__link">Travel tips</nuxt-link>
+                <nuxt-link to="" class="guide__link">{{$t('tourist.link5')}} </nuxt-link>
                 <nuxt-link to="" class="guide__link"
-                >Online scoreboard of Tashkent airport
+                >{{$t('tourist.link6')}} 
                 </nuxt-link
                 >
               </b-col>
               <b-col lg="6">
                 <nuxt-link to="" class="guide__link">
-                  Tourism Code Horoscope for 2019
+                  {{$t('tourist.link7')}} 
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >Embassies in Tashkent
+                >{{$t('tourist.link8')}} 
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >Accommodation in hotels
+                >{{$t('tourist.link9')}} 
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >Communication abroad
+                >{{$t('tourist.link10')}} 
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >Travel Dictionary
+                >{{$t('tourist.link11')}} 
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >TOP-10 in the world of tourism
+                >{{$t('tourist.link12')}} 
                 </nuxt-link
                 >
               </b-col>
@@ -315,30 +315,30 @@
               <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
                 <swiper-slide class="swiper__wrapper-mini_card">
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-30.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-39.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-47.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-51.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <div class="swiper-card__next-mini" slot="button-prev">
@@ -387,30 +387,30 @@
               <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
                 <swiper-slide class="swiper__wrapper-mini_card">
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-1911.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-53.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-49.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-46.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <div class="swiper-card__next-mini" slot="button-prev">
@@ -459,30 +459,30 @@
               <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
                 <swiper-slide class="swiper__wrapper-mini_card">
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-13-54.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-13-56.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-14-03.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-14-05.jpg"
                     fluid
-                    alt=""
+                    alt="rooms"
                   ></b-img>
                 </swiper-slide>
                 <div class="swiper-card__next-mini" slot="button-prev">
@@ -531,30 +531,30 @@
               <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
                 <swiper-slide class="swiper__wrapper-mini_card">
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-14-20.jpg"
                     fluid
-                    alt=""
+                    alt="img-rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-14-22.jpg"
                     fluid
-                    alt=""
+                    alt="img-rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-14-56.jpg"
                     fluid
-                    alt=""
+                    alt="img-rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-42.jpg"
                     fluid
-                    alt=""
+                    alt="img-rooms"
                   ></b-img>
                 </swiper-slide>
                 <div class="swiper-card__next-mini" slot="button-prev">
@@ -603,30 +603,30 @@
               <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
                 <swiper-slide class="swiper__wrapper-mini_card">
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-43.jpg"
                     fluid
-                    alt=""
+                    alt="img-rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-53.jpg"
                     fluid
-                    alt=""
+                    alt="img-rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-46.jpg"
                     fluid
-                    alt=""
+                    alt="img-rooms" 
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
                   <b-img
-                    src="../assets/images/swiper_card1.jpg"
+                    src="../assets/images/rooms/photo_2020-10-12_16-15-43.jpg"
                     fluid
-                    alt=""
+                    alt="img-rooms"
                   ></b-img>
                 </swiper-slide>
                 <div class="swiper-card__next-mini" slot="button-prev">
@@ -840,7 +840,7 @@
             <b-row>
                 <b-col class="offer-main__item order-md-1 order-lg-1 order-1 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" height="270px"></b-img>
+                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-47.jpg" alt="" height="270px"></b-img>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-2 order-lg-2 order-2 animate__animated animate__fadeInUp" md="6" lg="3" >
@@ -855,7 +855,7 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-4 order-lg-3 order-3 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-46.jpg" alt="" width="270px" height="270px"></b-img>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-3 order-lg-4 order-4 animate__animated animate__fadeInUp" md="6" lg="3" >
@@ -882,7 +882,7 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-43.jpg" alt="" width="270px" height="270px"></b-img>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-7 order-lg-7 order-8 animate__animated animate__fadeInUp" md="6" lg="3" >
@@ -898,7 +898,7 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-42.jpg" alt="" width="270px" height="270px"></b-img>
                     </div>
                 </b-col>
             </b-row>

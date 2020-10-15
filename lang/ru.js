@@ -24,9 +24,11 @@ export default {
     contact: {
         info: 'Контакты',
         general: 'Общий контакт',
-        heading: 'How to get to the Sunshine Hotel, Tashkent',
+        heading: 'Как добраться до Sunshine Hotel, Ташкент',
         text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore expedita natus autem, consequatur earum neque?',
         how: 'Как добраться до ул.Амира Темура 88 Ташкент 100084 Узбекистан',
+        btn: "Получить указания",
+        inp: "С чего ты начинаешь?"
     },
     footer: {
         quicklink: 'Прямая ссылка',
@@ -35,6 +37,21 @@ export default {
         readmore: 'Подробнее',
         connect: 'Связаться с Sunrise'
     },
+    tourist: {
+        heading: "Справочник туриста",
+        link1: "Онлайн-табло авиакомпании Ташкентский аэропорт",
+        link2: "Право и право ОВИР города Ташкента",
+        link3: "Советы путешественникам",
+        link4: "Страхование путешествий",
+        link5: "Советы путешественникам",
+        link6: "Онлайн-табло аэропорта Ташкент",
+        link7: "Гороскоп Кодекса туризма на 2019 год",
+        link8: "Посольства в Ташкенте",
+        link9: "Размещение в отелях",
+        link10: "Общение за рубежом",
+        link11: "Словарь путешествий",
+        link12: "ТОП-10 в мире туризма",
+    },    
     amenties: {
         heading: "Удобства",
         amenties_1: "Бесплатный доступ в Интернет",

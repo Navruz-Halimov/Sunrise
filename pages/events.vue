@@ -123,7 +123,7 @@
                     </b-row>
                     <b-row class="d-flex">
                         <b-col lg="6">
-                            <b-img src="../assets/images/site_logo.jpg" fluid-grow rounded mx-auto d-block alt="site_logo" style="width:450px !important"></b-img>
+                            <b-img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-235.JPG" fluid-grow rounded mx-auto d-block alt="site_logo" style="width:450px !important"></b-img>
                         </b-col>
                         <b-col lg="6">
                             <h3 class="event-page__multimedia-heading">Custom tours for your team</h3>
