@@ -30,11 +30,25 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       transition: opacity .3s ease;
       background-color: rgba(33, 33, 33, 0.3);
       h6{
         color: white;
         font-size: 20px;
+      }
+      .like{
+        color: white;
+        button{
+          border: none;
+          outline: none;
+          background: none;
+        }
+        i{
+          font-style: normal;
+          font-size: 16px;
+          vertical-align: middle;
+        }
       }
     }
     &:hover .visit__text{
