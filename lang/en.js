@@ -37,6 +37,21 @@ export default {
         readmore:'Read more',
         connect:'Connect with Sunrise'
     },
+    tourist: {
+        heading: "Tourist guide",
+        link1: "Online scoreboard of Tashkent airport Airlines",
+        link2: "Law and law OVIRs of Tashkent",
+        link3: "Travel Tips",
+        link4: "Travel insurance",
+        link5: "Travel tips",
+        link6: "Online scoreboard of Tashkent airport",
+        link7: "Tourism Code Horoscope for 2019",
+        link8: "Embassies in Tashkent",
+        link9: "Accommodation in hotels",
+        link10: "Communication abroad",
+        link11: "Travel Dictionary",
+        link12: "TOP-10 in the world of tourism",
+    },
     amenties: {
         heading: "Amenities",
         amenties_1: "Free Internet Access",
