@@ -305,6 +305,8 @@
 
     .swiper-slide img {
       width: 250px !important;
+      height: 220px;
+      object-fit: cover;
     }
   }
 
