@@ -1,0 +1,41 @@
+.account{
+  background-color: #F6F6F6;
+  padding-bottom: 5rem;
+  .account__header{
+    width: 100%;
+    height: 60vh;
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.57)),
+    url("https://picsum.photos/2048/1080");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .account__title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding: 0 6rem;
+      h2{
+        color: white;
+      }
+      button{
+        font-size: 15px !important;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #ffb612;
+        transition: 0.4s;
+        border: 2px solid #FFB612;
+        &:hover {
+          color: white;
+          background-color: #ffb612;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .account__content{
+
+  }
+}
