@@ -4,7 +4,7 @@
       <div class="floor__wrapper">
         <h1  class="text-center">First Floor</h1>
         <div class="floor__header-part">
-          <nuxt-link to="">
+          <nuxt-link to="" class="floor__link">
             <img src="../../assets/images/1floor/1.jpg" alt="">
           </nuxt-link>
         </div>
@@ -67,6 +67,12 @@
           </nuxt-link>
           <nuxt-link :to="localePath('/')" class="floor__link">
             <img src="../../assets/images/1floor/20.jpg" alt="" />
+          </nuxt-link>
+           <nuxt-link :to="localePath('/')" class="floor__link">
+            <img src="../../assets/images/1floor/21.jpg" alt="" />
+          </nuxt-link>
+           <nuxt-link :to="localePath('/')" class="floor__link">
+            <img src="../../assets/images/1floor/22.jpg" alt="" />
           </nuxt-link>
         </div>
       </div>
