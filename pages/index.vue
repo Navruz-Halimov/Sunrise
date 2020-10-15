@@ -840,7 +840,7 @@
             <b-row>
                 <b-col class="offer-main__item order-md-1 order-lg-1 order-1 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" height="270px"></b-img>
+                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-47.jpg" alt="" height="270px"></b-img>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-2 order-lg-2 order-2 animate__animated animate__fadeInUp" md="6" lg="3" >
@@ -855,7 +855,7 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-4 order-lg-3 order-3 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-46.jpg" alt="" width="270px" height="270px"></b-img>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-3 order-lg-4 order-4 animate__animated animate__fadeInUp" md="6" lg="3" >
@@ -882,7 +882,7 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-43.jpg" alt="" width="270px" height="270px"></b-img>
                     </div>
                 </b-col>
                 <b-col class="offer-main__item order-md-7 order-lg-7 order-8 animate__animated animate__fadeInUp" md="6" lg="3" >
@@ -898,7 +898,7 @@
                 </b-col>
                 <b-col class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
-                        <b-img src="../assets/images/offer-main.jpg" alt="" width="270px" height="270px"></b-img>
+                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-42.jpg" alt="" width="270px" height="270px"></b-img>
                     </div>
                 </b-col>
             </b-row>
