@@ -93,7 +93,8 @@ export default {
 
         mini_title5: "浴室",
         title5_text1: "舒缓步入式淋浴",
-        title5_text2: "独立浴缸"        
+        title5_text2: "独立浴缸",
+        btn: "显示更多"         
     },
     offer_main: {
         title: "新闻与要约",
@@ -108,9 +109,9 @@ export default {
         departure:"出发日期",
         choose_title: "选择一个房间",
         choose_room1: "标准间",
-        choose_room2: "标准家庭间",
+        choose_room2: "标准家庭",
         choose_room3: "豪华双人房",
-        choose_room4: "标准间",
+        choose_room4: "标准",
         btn_text: "现在预订"
     },
     "events": {
