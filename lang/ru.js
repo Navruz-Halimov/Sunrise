@@ -94,7 +94,8 @@ export default {
 
         mini_title5: "ВАННАЯ КОМНАТА",
         title5_text1: "Успокаивающий тропический душ",
-        title5_text2: "Отдельная ванна"        
+        title5_text2: "Отдельная ванна",
+        btn: "Показать больше"        
     },
     offer_main: {
         title: "НОВОСТИ И ПРЕДЛОЖЕНИЕ",
@@ -108,10 +109,10 @@ export default {
         arrival: "Дата прибытия",
         departure:"Дата отбытия",
         choose_title: "Выберите комнату",
-        choose_room1: "Стандартный номер",
-        choose_room2: "Стандартный семейный номер",
-        choose_room3: "Двухместный номер делюкс",
-        choose_room4: "Стандартный номер",
+        choose_room1: "Стандарт",
+        choose_room2: "Стандартный семейный",
+        choose_room3: "Делюкс двухместный",
+        choose_room4: "Стандарт",
         btn_text: "Забронируйте сейчас"
     },
     "events": {

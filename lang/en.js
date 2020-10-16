@@ -94,13 +94,14 @@ export default {
 
         mini_title5: "BATHROOM",
         title5_text1: "Soothing walk-in rain shower",
-        title5_text2: "Separate bathtub"
+        title5_text2: "Separate bathtub",
+        btn: "Show More"
     },
     offer_main: {
         title: "NEWS & OFFER",
         text_title: "Change of Seasons. Change of Scenery.",
         text_info: "Whatever new view you choose, Sunrise is back with up to 4x points and double nights toward tier status through January 4, 2021.",
-        text_link: "Read More"
+        text_link: "Read More" 
     },
     "booking": {
         adults_title: "Adults",
@@ -108,10 +109,10 @@ export default {
         arrival: "Arrival date",
         departure:"Departure date",
         choose_title: "Choose a Room",
-        choose_room1: "Standard room",
-        choose_room2: "Standard Family room",
-        choose_room3: "Deluxe double room",
-        choose_room4: "Standard room",
+        choose_room1: "Standard",
+        choose_room2: "Standard Family",
+        choose_room3: "Deluxe double",
+        choose_room4: "Standard",
         btn_text: "Book now"
     },
     "events": {
