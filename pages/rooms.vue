@@ -49,7 +49,7 @@
           ></path>
         </a>
         <a
-          :href="localePath('/floor/fourfloor')"
+          :href="localePath('/floor/fourthfloor')"
           id="house__svg_185"
           @mouseover="(visible = true), (floor = 4)"
           @mouseleave="visible = false"

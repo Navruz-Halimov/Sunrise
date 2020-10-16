@@ -4,14 +4,14 @@
             <b-row>
                 <b-col sm="12">
                     <h1 class="contact-page__heading">
-                        Contact information
+                        {{$t('contact.info')}}
                     </h1>
                     <div class="contact-page-details">
                         <b-container>
                             <b-row>
                                 <b-col cols="12">
                                     <div class="contact-page-details__cards">
-                                        <h3 class="contact-page-details__title">General contact</h3>
+                                        <h3 class="contact-page-details__title">{{$t('contact.general')}}</h3>
                                         <div class="contact-page-details__phone">
                                             <font-awesome-icon :icon="['fas', 'phone-alt']" />
                                             <a href="tel:+998 78 1204900">+998 78 1204900</a>
@@ -35,10 +35,13 @@
                         <b-container>
                             <b-row>
                                 <b-col cols="12">
-                                    <h2 class="contact-page-info__title">How to get to the Sunshine Blu Hotel, Tashkent</h2>
+                                    <h2 class="contact-page-info__title">
+                                        {{$t('contact.heading')}}
+                                        
+                                    </h2>
                                 </b-col>
                                 <b-col cols="12">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore expedita natus autem, consequatur earum neque?
+                                    {{$t('contact.text')}}
                                 </b-col>
                             </b-row>   
                         </b-container>
@@ -59,7 +62,9 @@
                     <b-col cols="12">
                         <button class="contact-page-btn__button"  @click="isActive = !isActive" :class="{contactPageBtnOpen:isActive}">
                             <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
-                            <strong>How to arrive at Amir Temur Street 88 Tashkent 100084 Uzbekistan</strong>
+                            <strong>
+                                {{$t('contact.how')}}
+                            </strong>
                             <font-awesome-icon :icon="['fas', 'times']" class="closeButton" />
                         </button>
                     </b-col>
@@ -69,7 +74,12 @@
                         <b-col lg="3" class="p-0">
                             <b-form-group>
                                 <!-- <label for="input" class=""></label> -->
-                                <b-input id="input" placeholder="Where are you starting from?" class="form-control"></b-input>
+                                <b-input 
+                                    id="input" 
+                                    :placeholder="$t('contact.inp')" 
+                                    class="form-control"
+                                >
+                                </b-input>
                             </b-form-group>
                         </b-col>
                         <b-col lg="6" xl="5" offset-xl="1" class="d-flex justify-content-between mb-0 p-0 form-group" >
@@ -85,7 +95,9 @@
                         </b-col>
                         <b-col lg="3" xl="2" offset-xl="1" class="p-0">
                             <b-form-group>
-                                <b-button type="submit" class="contact-page-btn__get">Get directions</b-button>
+                                <b-button type="submit" class="contact-page-btn__get">
+                                    {{$t('contact.btn')}}    
+                                </b-button>
                             </b-form-group>
                         </b-col>
                     </b-form>
@@ -93,122 +105,6 @@
             </b-container>
         </div>
 
-        
-
-    <!-- start services for page main -->
-    <!-- <div class="main-services">
-        <b-container>
-            <b-row>
-                <b-col cols="5">
-                    <div class="main-services__title">Services</div>
-                </b-col>
-                <b-col cols="7" class="d-flex justify-content-end">
-                    <b-button 
-                        v-b-toggle.collapse 
-                        class="main-services__btn" 
-                        variant="outline-light"
-                        @click="show = !show"
-                        v-if="show === false"
-                    >
-                        Show more
-                        <font-awesome-icon :icon="['fas', 'angle-down']" />
-                    </b-button>
-                    <b-button 
-                        v-b-toggle.collapse 
-                        class="main-services__btn" 
-                        variant="outline-light"
-                        v-else
-                        @click="show = !show"
-                    >
-                        Show less
-                        <font-awesome-icon :icon="['fas', 'angle-up']" />
-                    </b-button>
-                </b-col>
-            </b-row>
-            <b-row>
-                <b-col md="10" offset-md="1">
-                    <b-collapse id="collapse" class="main-services__list">
-                        <b-card>
-                            <b-button 
-                                v-b-popover.hover.top="'Free coffee and tea in the lobby'" 
-                                title="Complimentary coffee and tea"
-                                class="main-services__item"
-                                variant="outline-light"
-                            >
-                                <font-awesome-icon :icon="['fas', 'mug-hot']" class="main-services__icon" />
-                                <span>Complimentary coffee and tea</span>
-                            </b-button>
-                            <b-button 
-                                v-b-popover.hover.top="'Free Wi-Fi'" 
-                                title="Free Wi-Fi"
-                                class="main-services__item"
-                                variant="outline-light"
-                            >
-                                <font-awesome-icon :icon="['fas', 'wifi']" class="main-services__icon" />
-                                <span>Free Wi-Fi</span>
-                            </b-button>  
-                            <b-button 
-                                v-b-popover.hover.top="'Customized running trails around the hotel'" 
-                                title="Running trails"
-                                class="main-services__item"
-                                variant="outline-light"
-                            >
-                                <font-awesome-icon :icon="['fas', 'running']" class="main-services__icon" />
-                                <span>Running trails</span>
-                            </b-button>
-                            <b-button 
-                                v-b-popover.hover.top="'Meeting facilities / social space'" 
-                                title="Meeting facilities"
-                                class="main-services__item"
-                                variant="outline-light"
-                            >
-                                <font-awesome-icon :icon="['fas', 'user-friends']" class="main-services__icon" />
-                                <span>Meeting facilities</span>
-                            </b-button>   
-                            <b-button 
-                                v-b-popover.hover.top="'Luggage storage'" 
-                                title="Luggage storage"
-                                class="main-services__item"
-                                variant="outline-light"
-                            >
-                                <font-awesome-icon :icon="['fas', 'briefcase']" class="main-services__icon" />
-                                <span>Luggage storage</span>
-                            </b-button>
-                            <b-button 
-                                v-b-popover.hover.top="'Individual room climate control'" 
-                                title="Individual room climate control"
-                                class="main-services__item"
-                                variant="outline-light"
-                            >
-                                <font-awesome-icon :icon="['fas', 'thermometer-quarter']" class="main-services__icon" />
-                                <span>Individual room climate control</span>
-                            </b-button>   
-                            <b-button 
-                                v-b-popover.hover.top="'Complimentary parking'" 
-                                title="Complimentary parking"
-                                class="main-services__item"
-                                variant="outline-light"
-                            >
-                                <font-awesome-icon :icon="['fas', 'parking']" class="main-services__icon" />
-                                <span>Complimentary parking</span>
-                            </b-button> 
-                            <b-button 
-                                v-b-popover.hover.top="'Dry cleaning services'" 
-                                title="Dry cleaning"
-                                class="main-services__item"
-                                variant="outline-light"
-                            >
-                                <font-awesome-icon :icon="['fas', 'tshirt']" class="main-services__icon" />
-                                <span>Dry cleaning</span>
-                            </b-button> 
-                                                        
-                        </b-card>
-                    </b-collapse>
-                </b-col>
-            </b-row>
-        </b-container>
-    </div> -->
-    <!-- finish services for page main -->        
     </div>
 </template>
 <script>

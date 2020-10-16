@@ -94,10 +94,7 @@
               <div class="book__slide">
                 <swiper class="swiper book_img" :options="header__slider">
                   <swiper-slide v-for="(image, index) of images" :key="index">
-                    <img
-                      :src="require(`../assets/images/rooms/${image}`)"
-                      alt=""
-                    />
+                    <img :src="require(`../assets/images/rooms/${image}`)" alt=""/>
                   </swiper-slide>
                   <div
                     class="swiper-button-prev book__prev"
@@ -314,7 +311,7 @@
       <div class="modal__slide">
         <swiper class="swiper book_img" :options="header__slider">
           <swiper-slide v-for="(image, index) of images" :key="index">
-            <img :src="image" alt="" />
+            <img :src="require(`../assets/images/rooms/${image}`)" alt=""/>
           </swiper-slide>
           <div class="swiper-button-prev book__prev" slot="button-prev"></div>
           <div class="swiper-button-next book__next" slot="button-next"></div>

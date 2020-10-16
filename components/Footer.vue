@@ -21,53 +21,52 @@
           </div>
         </b-col>
         <b-col lg="4">
-          <h4 class="footer__heading">Quick Link</h4>
+          <h4 class="footer__heading">{{$t('footer.quicklink')}}</h4>
           <div class="footer__menu">
             <ul class="footer__list">
               <li class="footer__item">
-                <nuxt-link :to="localePath('/')">Home</nuxt-link>
+                <nuxt-link :to="localePath('/')">{{$t('navbar.home')}}</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link :to="localePath('/booking')">Booking</nuxt-link>
+                <nuxt-link :to="localePath('/booking')">{{$t('navbar.book')}}</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link :to="localePath('/offer')">Offer</nuxt-link>
+                <nuxt-link :to="localePath('/offer')">{{$t('navbar.offer')}}</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link :to="localePath('/rooms')">Rooms</nuxt-link>
+                <nuxt-link :to="localePath('/rooms')">{{$t('navbar.rooms')}}</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link :to="localePath('/events')">Events</nuxt-link>
+                <nuxt-link :to="localePath('/events')">{{$t('navbar.events')}}</nuxt-link>
               </li>
             </ul>
             <ul class="footer__list">
               <li class="footer__item">
-                <nuxt-link :to="localePath('/gallery')">Gallery</nuxt-link>
+                <nuxt-link :to="localePath('/gallery')">{{$t('navbar.gallery')}}</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link :to="localePath('/amenties')">Amenties</nuxt-link>
+                <nuxt-link :to="localePath('/amenties')">{{$t('navbar.amenties')}}</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link :to="localePath('/attractions')">Nearby attraction</nuxt-link>
+                <nuxt-link :to="localePath('/attractions')">{{$t('navbar.nearby')}}</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link :to="localePath('/contact')">Contact</nuxt-link>
+                <nuxt-link :to="localePath('/contact')">{{$t('navbar.contact')}}</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link :to="localePath('/reviews')">Reviews</nuxt-link>
+                <nuxt-link :to="localePath('/reviews')">{{$t('navbar.reviews')}}</nuxt-link>
               </li>
             </ul>
           </div>
         </b-col>
         <b-col lg="4">
-          <h4 class="footer__motto-heading">Vacation Rental</h4>
-          <div class="footer__motto">Far far away, behind the word mountains, far from the countries Vokalia and
-            Consonantia, there live the blind texts.
-            <nuxt-link :to="localePath('/contact')">Read more
+          <h4 class="footer__motto-heading">{{$t('footer.voc')}}</h4>
+          <div class="footer__motto">{{$t('footer.motto')}}
+            <nuxt-link :to="localePath('/contact')">{{$t('footer.readmore')}}
               <font-awesome-icon :icon="['fas', 'angle-right']"/>
             </nuxt-link>
           </div>
-          <h4 class="social__networks-heading">Connect with Sunshine</h4>
+          <h4 class="social__networks-heading">{{$t('footer.connect')}}</h4>
           <ul class="social__networks">
             <li class="social__networks-item">
               <a href="#" class="facebook"></a>

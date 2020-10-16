@@ -3,14 +3,8 @@
     <b-container>
       <b-row class="gallery__content">
         <b-col
-          v-for="(image, index) of images.slice(0, 10)"
-          :key="index"
-          cols="10"
-          offset="1"
-          sm="6"
-          offset-sm="0"
-          md="6"
-          lg="3"
+          v-for="(image, index) of images.slice(0, 3)" :key="index"
+          cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3"
         >
           <div class="photo" @click.prevent="show(index)">
             <img class="photo__img" :src="require(`../assets/images/rooms/${image}`)"  alt="gallery image" />
@@ -19,42 +13,18 @@
       </b-row>
     </b-container>
 
-    <div class="modals" v-if="visible" @click="hide">
+    <div class="modals" v-if="visible">
       <button type="button" @click.stop="hide" class="close">
         <i></i>
         <i></i>
       </button>
-      <div class="modals__content" @click.stop="">
-        <div class="modals__img">
-          <img v-for="i of images" :key="i" :src="require(`../assets/images/rooms/${i}`)" />
-        </div>
-        <div class="prev" @click.stop="prev" :class="{ invisible: !hasPrev() }">
-          <svg
-            class="pointer-events-none"
-            fill="#777"
-            height="40"
-            viewBox="0 0 24 24"
-            width="40"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z" />
-            <path d="M0-.5h24v24H0z" fill="none" />
-          </svg>
-        </div>
-        <div class="next" @click.stop="next" :class="{ invisible: !hasNext() }">
-          <svg
-            class="pointer-events-none"
-            fill="#777"
-            height="40"
-            viewBox="0 0 24 24"
-            width="40"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
-            <path d="M0-.25h24v24H0z" fill="none" />
-          </svg>
-        </div>
-      </div>
+      <swiper class="swiper modals__content"  :options="visit__slider">
+        <swiper-slide v-for="(image,index) of images.slice(0, 3)" :key="index" class="modals__img">
+          <img :src="require(`../assets/images/rooms/${image}`)" alt=""/>
+        </swiper-slide>
+        <div class="swiper-button-prev book__prev" slot="button-prev"></div>
+        <div class="swiper-button-next book__next" slot="button-next"></div>
+      </swiper>
     </div>
   </div>
 </template>
@@ -63,6 +33,17 @@
 export default {
   data() {
     return {
+      visit__slider: {
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: true,
+        effect: 'fade',
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      },
       images: [
         'ABDUMANNONRAKHIMOVV-162.JPG',
         'ABDUMANNONRAKHIMOVV-194.JPG',
@@ -133,48 +114,6 @@ export default {
       this.visible = false
       this.id = 0
     },
-    hasNext() {
-      return this.id + 1 < this.images.length
-    },
-    hasPrev() {
-      return this.id - 1 >= 0
-    },
-    prev() {
-      if (this.hasPrev()) {
-        this.id -= 1
-      }
-    },
-    next() {
-      if (this.hasNext()) {
-        this.id += 1
-      }
-    },
-    onKeydown(e) {
-      if (this.visible) {
-        switch (e.key) {
-          case 'ArrowRight':
-            this.next()
-            break
-          case 'ArrowLeft':
-            this.prev()
-            break
-          case 'ArrowDown':
-          case 'ArrowUp':
-          case ' ':
-            e.preventDefault()
-            break
-          case 'Escape':
-            this.hide()
-            break
-        }
-      }
-    },
-  },
-  mounted() {
-    window.addEventListener('keydown', this.onKeydown)
-  },
-  destroyed() {
-    window.removeEventListener('keydown', this.onKeydown)
   },
 }
 </script>

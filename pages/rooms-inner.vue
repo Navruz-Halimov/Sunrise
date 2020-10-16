@@ -58,7 +58,7 @@
         <b-col lg="3">
           <div class="floor__left-wrapper">
           <div class="floor__number">First Floor scheme</div>
-          <img class="floor__mini-2d" src="../assets/images/1floor/1room.jpg" alt="">
+          <img class="floor__mini-2d" src="../assets/images/1floor/1.jpg" alt="">
             <p class="floor__text">First floor rooms</p>
           <b-pagination-nav
             number-of-pages="10"
@@ -68,7 +68,7 @@
             limit="10"
             class="room__inner-pagination"
           ></b-pagination-nav>
-            <b-button class="floor__btn" pill>Select room</b-button>
+            <b-button class="floor__btn" pill :to="localePath('/payment')">Select room</b-button>
           </div>
         </b-col>
       </b-row>
