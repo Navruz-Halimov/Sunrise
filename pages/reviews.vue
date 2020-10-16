@@ -41,23 +41,38 @@
                                                 <li><span>Trip type: </span>Family</li>
                                             </ul>
                                         </div>
-                                        <div class="reviews-slider__info-client">
-                                            <p :class="{autoheight:isActive}">
-                                            Sunrise hotel right in the heart of Tashkent, ideal for business or vacationing with easy access to all locations. 
-                                            Ideal for families as well as they have great pool facilities. 
-                                            Sunrise service from staff right from Robiya in Guest Relation and Ildar from Sales and all the staff are very courteous and accommodative. 
-                                            The breakfast buffet is good and has great variety and the restaurant by the pool has excellent service and food.  
-                                            Check-in and check-out was smooth and comfortable with a helpful front desk staff.  
-                                            It has everything a small family could ask for. Loved the views from the suite. 
-                                            </p>
-                                            <span @click="isActive = !isActive" v-if="isActive === false">
-                                                Read more
+                                        <div class="reviews-slider__info-client" :class="{autoheight:isActive}">
+                                            <b-collapse id="collapse">
+                                                <b-card> 
+                                                    Sunrise hotel right in the heart of Tashkent, ideal for business or vacationing with easy access to all locations. 
+                                                    Ideal for families as well as they have great pool facilities. 
+                                                    Sunrise service from staff right from Robiya in Guest Relation and Ildar from Sales and all the staff are very courteous and accommodative. 
+                                                    The breakfast buffet is good and has great variety and the restaurant by the pool has excellent service and food.  
+                                                    Check-in and check-out was smooth and comfortable with a helpful front desk staff.  
+                                                    It has everything a small family could ask for. Loved the views from the suite.
+                                                </b-card>
+                                            </b-collapse>
+                                            <b-button 
+                                                v-b-toggle.collapse 
+                                                class="reviews-slider__info-btn" 
+                                                variant="outline-light"
+                                                @click="isActive = !isActive"
+                                                v-if="isActive === false"
+                                            >
+                                                Read more  
                                                 <font-awesome-icon :icon="['fas', 'angle-down']" />
-                                            </span>
-                                            <span v-else @click="isActive = !isActive">
+                                            </b-button>
+                                            <b-button 
+                                                v-b-toggle.collapse
+                                                class="reviews-slider__info-btn" 
+                                                variant="outline-light"
+                                                v-else
+                                                @click="isActive = !isActive"
+                                            >
                                                 Read less
                                                 <font-awesome-icon :icon="['fas', 'angle-up']" />
-                                            </span>
+                                            </b-button>
+                                            
                                         </div>
                                         <div class="reviews-slider__info-hotel">
                                             <ul>
@@ -66,24 +81,39 @@
                                                         Tashkent, responded to this review <span>2019-06-13</span> </h5>
                                                     
                                                 </li>
-                                                <li>
-                                                    <p :class="{autoheight:isActive1}"> 
-                                                        Dear Apysib,
-                                                        Thank you so much for taking the time to review us on TripAdvisor regarding your stay in our hotel. 
-                                                        We sincerely do hope that your stay was both enjoyable and delightful. 
-                                                        We are glad that our staff lasted an excellent impression. 
-                                                        Every member of our team strives to provide 100% Guest Satisfaction to each our guest.
-                                                        It is a honor for us to read such kind of reviews as we always try to make our guests feel, like they are at home far away from home!
-                                                        Taking this opportunity, we would like to thank you for your comment regarding our breakfast as well.  
-                                                    </p>
-                                                    <span @click="isActive1 = !isActive1" v-if="isActive1 === false">
-                                                        Read more
+                                                <li class="reviews-slider__info-hotel-text" :class="{autoheight:isActive1}">
+                                                    <b-collapse id="collapse1">
+                                                        <b-card> 
+                                                            Dear Apysib,
+                                                            Thank you so much for taking the time to review us on TripAdvisor regarding your stay in our hotel. 
+                                                            We sincerely do hope that your stay was both enjoyable and delightful. 
+                                                            We are glad that our staff lasted an excellent impression. 
+                                                            Every member of our team strives to provide 100% Guest Satisfaction to each our guest.
+                                                            It is a honor for us to read such kind of reviews as we always try to make our guests feel, like they are at home far away from home!
+                                                            Taking this opportunity, we would like to thank you for your comment regarding our breakfast as well.
+                                                        </b-card>
+                                                    </b-collapse>
+                                                    <b-button 
+                                                        v-b-toggle.collapse1
+                                                        class="reviews-slider__info-btn" 
+                                                        variant="outline-light"
+                                                        @click="isActive1 = !isActive1"
+                                                        v-if="isActive1 === false"
+                                                    >
+                                                        Read more  
                                                         <font-awesome-icon :icon="['fas', 'angle-down']" />
-                                                    </span>
-                                                    <span v-else @click="isActive1 = !isActive1">
+                                                    </b-button>
+                                                    <b-button 
+                                                        v-b-toggle.collapse1
+                                                        class="reviews-slider__info-btn" 
+                                                        variant="outline-light"
+                                                        v-else
+                                                        @click="isActive1 = !isActive1"
+                                                    >
                                                         Read less
                                                         <font-awesome-icon :icon="['fas', 'angle-up']" />
-                                                    </span>
+                                                    </b-button>
+                                                    
                                                 </li>
                                             </ul>
                                         </div>
@@ -125,20 +155,38 @@
                                                 <li><span>Trip type: </span>Business</li>
                                             </ul>
                                         </div>
-                                        <div class="reviews-slider__info-client">
-                                            <p :class="{autoheight:isActive}">
-                                            Welcoming and helpful staff, clean rooms. We did not eat at the hotel.
-                                            They have ATM that gives $ and local cash, also exchange point, they had good rates. 
-                                            We were provided everything we have requested. Complimentary water.
-                                            </p>
-                                            <span @click="isActive = !isActive" v-if="isActive === false">
-                                                Read more
+                                        <div class="reviews-slider__info-client" :class="{autoheight:isActive}"> 
+                                            <b-collapse id="collapse2">
+                                                <b-card> 
+                                                    Welcoming and helpful staff, clean rooms. We did not eat at the hotel.
+                                                    They have ATM that gives $ and local cash, also exchange point, they had good rates. 
+                                                    We were provided everything we have requested. Complimentary water.  
+                                                    The breakfast buffet is good and has great variety and the restaurant 
+                                                    by the pool has excellent service and food. Check-in and check-out was 
+                                                    smooth and comfortable with a helpful front desk staff. It has everything 
+                                                    a small family could ask for. Loved the views from the suite.
+                                                </b-card>
+                                            </b-collapse>
+                                            <b-button 
+                                                v-b-toggle.collapse2 
+                                                class="reviews-slider__info-btn" 
+                                                variant="outline-light"
+                                                @click="isActive2 = !isActive2"
+                                                v-if="isActive2 === false"
+                                            >
+                                                Read more  
                                                 <font-awesome-icon :icon="['fas', 'angle-down']" />
-                                            </span>
-                                            <span v-else @click="isActive = !isActive">
+                                            </b-button>
+                                            <b-button 
+                                                v-b-toggle.collapse2
+                                                class="reviews-slider__info-btn" 
+                                                variant="outline-light"
+                                                v-else
+                                                @click="isActive2 = !isActive2"
+                                            >
                                                 Read less
                                                 <font-awesome-icon :icon="['fas', 'angle-up']" />
-                                            </span>
+                                            </b-button>
                                         </div>
                                         <div class="reviews-slider__info-hotel">
                                             <ul>
@@ -147,22 +195,37 @@
                                                         <span>2012-06-13</span> </h5>
                                                     
                                                 </li>
-                                                <li>
-                                                    <p :class="{autoheight:isActive1}"> 
-                                                       Dear desperate_traveler_7, 
-                                                        We sincerely do hope, that your stay was both enjoyable and delightful, and that we provided your stay with the best quality of service. 
-                                                        We are pleased to hear that you enjoyed the rooms and we are glad that our staff lasted an excellent impression. 
-                                                        Every member of our team strives to provide 100% Guest Satisfaction to each our guest. 
-                                                        It is a honor for us to read such kind of reviews as we always try to make our guests feel, like they are at home far away from home! 
-                                                    </p>
-                                                    <span @click="isActive1 = !isActive1" v-if="isActive1 === false">
-                                                        Read more
+                                                <li class="reviews-slider__info-hotel-text" :class="{autoheight:isActive1}">
+                                                    <b-collapse id="collapse3">
+                                                        <b-card> 
+                                                            Dear desperate_traveler_7, 
+                                                            We sincerely do hope, that your stay was both enjoyable and delightful, and that we provided your stay with the best quality of service. 
+                                                            We are pleased to hear that you enjoyed the rooms and we are glad that our staff lasted an excellent impression. 
+                                                            Every member of our team strives to provide 100% Guest Satisfaction to each our guest. 
+                                                            It is a honor for us to read such kind of reviews as we always try to make our guests feel, like they are at home far away from home!
+                                                        </b-card>
+                                                    </b-collapse>
+                                                    <b-button 
+                                                        v-b-toggle.collapse3
+                                                        class="reviews-slider__info-btn" 
+                                                        variant="outline-light"
+                                                        @click="isActive3 = !isActive3"
+                                                        v-if="isActive3 === false"
+                                                    >
+                                                        Read more  
                                                         <font-awesome-icon :icon="['fas', 'angle-down']" />
-                                                    </span>
-                                                    <span v-else @click="isActive1 = !isActive1">
+                                                    </b-button>
+                                                    <b-button 
+                                                        v-b-toggle.collapse3
+                                                        class="reviews-slider__info-btn" 
+                                                        variant="outline-light"
+                                                        v-else
+                                                        @click="isActive3 = !isActive3"
+                                                    >
                                                         Read less
                                                         <font-awesome-icon :icon="['fas', 'angle-up']" />
-                                                    </span>
+                                                    </b-button>
+                                                    
                                                 </li>
                                             </ul>
                                         </div>
@@ -182,8 +245,10 @@
   export default {
     data() {
         return {
-            isActive:false,
+            isActive: false,
             isActive1: false,
+            isActive2: false,
+            isActive3: false,
             reviews_slider: {
                 slidesPerView: 1,
                 spaceBetween: 30,

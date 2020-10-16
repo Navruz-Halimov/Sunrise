@@ -13,7 +13,7 @@
         font-weight: bold;
         color: #000;
     }
-
+ 
     &__collapse {
         font-size: 14px;
         color: #000;
@@ -58,10 +58,11 @@
         font-size: 14px;
 
         &:hover, &:focus, &:active {
-            background: transparent;
+            background: transparent !important;
             color: #ffb615 !important;  
             text-decoration: underline;  
             border: none;
+            box-shadow: none !important;
         }
     }
 
