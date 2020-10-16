@@ -103,7 +103,7 @@ export default {
         text_info: "Какой бы новый вид вы ни выбрали, Sunrise вернутся с 4-кратным увеличением баллов и двойными ночами для повышения статуса до 4 января 2021 года.",
         text_link: "Подробнее"
     },
-    "booking": {
+    booking: {
         adults_title: "Взрослые",
         children_title: "Дети",
         arrival: "Дата прибытия",
@@ -115,7 +115,14 @@ export default {
         choose_room4: "Стандарт",
         btn_text: "Забронируйте сейчас"
     },
-    "events": {
+    gallery: {
+        title: "Галерея",
+        btn: "Для большего"
+    },
+    visit: {
+        title: "МЕСТА ДЛЯ ПОСЕЩЕНИЯ"
+    },
+    events: {
         btn_more: "Подробнее",
         btn_less: "Скрыть",
         contact_title: "Контакты",

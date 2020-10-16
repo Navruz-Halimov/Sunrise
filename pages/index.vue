@@ -293,7 +293,7 @@
       <b-row class="gallery">
         <div class="gallery__title">
           <i><img src="../assets/images/picture.svg" alt=""/></i>
-          <h2>Gallery</h2>
+          <h2>{{$t('gallery.title')}} </h2>
         </div>
       </b-row>
       <Test :images="images"/>
@@ -301,7 +301,7 @@
         href="http://localhost:3000/gallery"
         class="btn-img my-4"
         to="/gallery"
-      >For more
+      >{{$t('gallery.btn')}}
       </b-button
       >
     </b-container>
