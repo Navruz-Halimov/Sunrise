@@ -165,6 +165,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: column;
+    padding: 15px 0;
   }
   &-info {
     font-size: 14px;
@@ -189,6 +191,7 @@
     padding-right: 25px;
     display: block;
     border: 1px solid transparent;
+    margin-bottom: 15px;
 
     &:focus,
     &:hover {
@@ -198,7 +201,7 @@
     }
   }
   .lang__list-wrapper {
-    margin-right: 20px;
+    // margin-right: 20px;
     text-align: center;
     width: 126px;
 
@@ -246,6 +249,7 @@
   .navbar-nav {
     flex-direction: row;
     align-items: center;
+    flex-direction: column;
   }
   span + .dropdown-menu {
     left: -40px !important;
@@ -255,6 +259,8 @@
     color: white !important;
     border-radius: 30px;
     transition: all 0.3s ease;
+    margin-top: 15px;
+
     & > a {
       padding-left: 15px !important;
       padding-right: 15px !important;
