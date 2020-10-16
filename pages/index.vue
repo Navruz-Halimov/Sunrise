@@ -292,7 +292,6 @@
       <Visit />
       <b-row class="gallery">
         <div class="gallery__title">
-          <i><img src="../assets/images/picture.svg" alt=""/></i>
           <h2>{{$t('gallery.title')}} </h2>
         </div>
       </b-row>
