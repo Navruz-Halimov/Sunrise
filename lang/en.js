@@ -103,7 +103,7 @@ export default {
         text_info: "Whatever new view you choose, Sunrise is back with up to 4x points and double nights toward tier status through January 4, 2021.",
         text_link: "Read More" 
     },
-    "booking": {
+    booking: {
         adults_title: "Adults",
         children_title: "Children",
         arrival: "Arrival date",
@@ -115,7 +115,14 @@ export default {
         choose_room4: "Standard",
         btn_text: "Book now"
     },
-    "events": {
+    gallery: {
+        title: "Gallery",
+        btn: "For more"
+    },
+    visit: {
+        title: "PLACES TO VISIT"
+    },
+    events: {
         btn_more: "Read more",
         btn_less: "Read less",
         contact_title: "Contact information",

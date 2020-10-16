@@ -102,7 +102,7 @@ export default {
         text_info: "无论您选择哪种新视图，Sunrise都将在2021年1月4日之前以最高4倍的积分和双晚的等级状态返回。",
         text_link: "阅读更多"
     },
-    "booking": {
+    booking: {
         adults_title: "大人",
         children_title: "小孩儿",
         arrival: "到达日期",
@@ -114,7 +114,14 @@ export default {
         choose_room4: "标准",
         btn_text: "现在预订"
     },
-    "events": {
+    gallery: {
+        title: "画廊",
+        btn: "欲了解更多"
+    },
+    visit: {
+        title: "参观的地点"
+    },
+    events: {
         btn_more: "阅读更多",
         btn_less: "少读",
         contact_title: "联系信息",

@@ -292,15 +292,18 @@
       <Visit />
       <b-row class="gallery">
         <div class="gallery__title">
-          <h2>{{$t('navbar.gallery')}}</h2>
+          <i><img src="../assets/images/picture.svg" alt=""/></i>
+          <h2>{{$t('gallery.title')}} </h2>
         </div>
       </b-row>
       <Test :images="images"/>
       <b-button
         href="http://localhost:3000/gallery"
-        class="btn-img my-4" to="/gallery">
-        For more
-      </b-button>
+        class="btn-img my-4"
+        to="/gallery"
+      >{{$t('gallery.btn')}}
+      </b-button
+      >
     </b-container>
     <!-- start slider room-->
     <div class="swiper-card-rooms">

@@ -3,7 +3,7 @@
     <b-container>
       <b-row>
         <b-col class="visit__title" lg="12">
-          <h2>PLACES TO VISIT</h2>
+          <h2>{{$t('visit.title')}}</h2>
         </b-col>
         <b-col sm="6" md="4" lg="3" v-for="(image,index) of images" :key="index" >
           <div class="visit__card">
