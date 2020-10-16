@@ -1,28 +1,21 @@
 
 .gallery{
-  padding:0.5rem 0;
+  padding: 0.5rem 0;
   .gallery__title{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem;
-    i{
-      width: 35px;
-      display: block;
-      margin-bottom: 10px;
-      img{
-        width: 100%;
-      }
-    }
+    padding-top: 20px;
     h2{
-      font-size: 17px;
+      font-size: 22px;
       text-transform: uppercase;
     }
   }
 
   .gallery__content{
     display: flex;
+    padding: 2rem 0;
     .photo{
       padding-bottom: 80%;
       margin: 1em auto;

@@ -324,7 +324,6 @@
         display: block;
         margin-top: 10px;
       }
-
       input{
         font-size: 14px;
         padding-left: 10px;
@@ -349,6 +348,17 @@
         }
       }
     }
+      button{
+        width: 100%;
+        color: white;
+        border: none;
+        border-radius: 0;
+        background-color: #FFB612;
+        &:focus{
+          box-shadow: none;
+          background-color: #FFB612;
+        }
+      }
   }
 
 

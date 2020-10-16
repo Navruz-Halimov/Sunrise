@@ -5,10 +5,7 @@
         <b-col class="book__header" cols="12" md="12">
           <b-row>
             <b-col cols="12" sm="8" md="6" lg="4">
-              <img
-                src="https://images3.alphacoders.com/100/thumb-350-1007463.jpg"
-                alt=""
-              />
+              <img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-279.JPG" alt=""/>
             </b-col>
             <b-col cols="12" sm="4" md="6" lg="4">
               <div class="pt-2">
@@ -303,8 +300,8 @@
         </b-col>
       </b-row>
     </b-container>
-    <div v-if="modals" class="book__modal">
-      <button type="button" @click.prevent="hideModal()" class="close">
+    <div v-if="modals" class="book__modal" @click="hideModal()">
+      <button type="button" @click="hideModal()" class="close">
         <i></i>
         <i></i>
       </button>
