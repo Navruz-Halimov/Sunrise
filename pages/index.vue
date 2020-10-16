@@ -99,7 +99,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-2">
               <b-button type="submit" class="book__btn" :to="localePath('/rooms')"
-              >{{$t('booking.btn_text')}} 
+              >{{$t('booking.btn_text')}}
               </b-button
               >
             </div>
@@ -114,54 +114,54 @@
             class="info__circle"
             :icon="['fas', 'info-circle']"
           />
-          {{$t('tourist.heading')}} 
+          {{$t('tourist.heading')}}
         </h1>
         <ul class="guide__list">
           <li class="guide__item">
             <b-row>
               <b-col lg="6">
                 <nuxt-link to="" class="guide__link">
-                 {{$t('tourist.link1')}}  
+                 {{$t('tourist.link1')}}
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link2')}} 
+                >{{$t('tourist.link2')}}
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link">{{$t('tourist.link3')}}</nuxt-link>
                 <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link4')}} 
+                >{{$t('tourist.link4')}}
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link">{{$t('tourist.link5')}} </nuxt-link>
                 <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link6')}} 
+                >{{$t('tourist.link6')}}
                 </nuxt-link
                 >
               </b-col>
               <b-col lg="6">
                 <nuxt-link to="" class="guide__link">
-                  {{$t('tourist.link7')}} 
+                  {{$t('tourist.link7')}}
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link8')}} 
+                >{{$t('tourist.link8')}}
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link9')}} 
+                >{{$t('tourist.link9')}}
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link10')}} 
+                >{{$t('tourist.link10')}}
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link11')}} 
+                >{{$t('tourist.link11')}}
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link12')}} 
+                >{{$t('tourist.link12')}}
                 </nuxt-link
                 >
               </b-col>
@@ -230,8 +230,8 @@
               </b-row>
               <b-collapse id="amenity" class="mt-2">
                 <b-row>
-                  <b-col class="my-3 main-amenity" lg="4">
-                    <img src="" alt="img">
+                  <b-col class="my-4 main-amenity" lg="4">
+                    <img src="../assets/images/icons/hotel.svg" alt="img">
                     <h6>{{$t('amenties.mini_title1')}}</h6>
                     <p>
                       <span>{{$t('amenties.title1_text1')}}</span>
@@ -244,16 +244,16 @@
                       <span>{{$t('amenties.title1_text8')}}</span>
                     </p>
                   </b-col>
-                  <b-col class="my-3 main-amenity" lg="4">
-                    <img src="" alt="img">
+                  <b-col class="my-4 main-amenity" lg="4">
+                    <img src="../assets/images/icons/concierge.svg" alt="img">
                     <h6>{{$t('amenties.mini_title2')}}</h6>
                     <p>
                       <span>{{$t('amenties.title2_text1')}}</span>
                       <span>{{$t('amenties.title2_text2')}}</span>
                     </p>
                   </b-col>
-                  <b-col class="my-3 main-amenity" lg="4">
-                    <img src="" alt="img">
+                  <b-col class="my-4 main-amenity" lg="4">
+                    <img src="../assets/images/icons/door.svg" alt="img">
                     <h6>{{$t('amenties.mini_title3')}}</h6>
                     <p>
                       <span>{{$t('amenties.title3_text1')}}</span>
@@ -262,8 +262,8 @@
                       <span>{{$t('amenties.title3_text4')}}</span>
                     </p>
                   </b-col>
-                  <b-col class="my-3 main-amenity" lg="4">
-                    <img src="" alt="img">
+                  <b-col class="my-4 main-amenity" lg="4">
+                    <img src="../assets/images/icons/double-door.svg" alt="img">
                     <h6>{{$t('amenties.mini_title4')}}</h6>
                     <p>
                       <span>{{$t('amenties.title4_text1')}}</span>
@@ -271,8 +271,8 @@
                       <span>{{$t('amenties.title4_text3')}}</span>
                     </p>
                   </b-col>
-                  <b-col class="my-3 main-amenity" lg="4">
-                    <img src="" alt="img">
+                  <b-col class="my-4 main-amenity" lg="4">
+                    <img src="../assets/images/icons/bathtub.svg" alt="img">
                     <h6>{{$t('amenties.mini_title5')}}</h6>
                     <p>
                       <span>{{$t('amenties.title5_text1')}}</span>
@@ -288,7 +288,7 @@
           </b-col>
         </b-row>
       </div>
-      
+
       <Visit />
       <b-row class="gallery">
         <div class="gallery__title">
@@ -619,7 +619,7 @@
                   <b-img
                     src="../assets/images/rooms/photo_2020-10-12_16-15-46.jpg"
                     fluid
-                    alt="img-rooms" 
+                    alt="img-rooms"
                   ></b-img>
                 </swiper-slide>
                 <swiper-slide>
