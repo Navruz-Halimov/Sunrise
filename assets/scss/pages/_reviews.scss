@@ -15,7 +15,7 @@
         align-items: center;
     }
 
-    &__select {
+    &__select { 
         border: 0;
         border-bottom: 1px solid #aaa;
         border-radius: 0;
@@ -112,6 +112,10 @@
                     display: flex;
                     align-items: center;
 
+                    img {
+                        margin: 0 0 0 -33px;
+                    }
+
                     span {
                         font-weight: bold;
                         margin-right: 5px;
@@ -120,36 +124,47 @@
             }
 
             &-client {
-                p {
-                    font-size: 14px;
-                    position: relative;
-                    max-height: 60px;
+                position: relative;
+                .collapse:not(.show) {
+                    display: block !important;
+                    height: 60px !important;
                     overflow: hidden;
-                    
+                    position: relative;
+
                     &:before {
                         content: "";
                         position: absolute;
-                        bottom: 0;
-                        height: 30px;
+                        bottom: 0px;
+                        height: 40px;
                         width: 100%;
                         background: white;
                         background: linear-gradient(0deg, white 0%, rgba(255, 237, 237, 0) 100%);
+                        z-index: 1;
                     }
+                    
                 }
-
-                span {
-                    cursor: pointer;
-                    color: #ffb612;
+                .card {
+                    border: none;
+                }
+                .card-body {
+                    padding: 0;
                     font-size: 14px;
                 }
+                
             }
 
-            .autoheight {
-                max-height: none;
-                overflow: auto;
-        
-                &:before {
-                    content: none;
+            &-btn {
+                color: #ffb612;
+                font-size: 14px;
+                border: none;
+                box-shadow: none;
+
+                &:active, &:hover, &:focus {
+                    color: #ffb612 !important;
+                    font-size: 14px;
+                    border: none !important;
+                    box-shadow: none !important; 
+                    background-color: transparent !important;
                 }
             }
 
@@ -158,6 +173,34 @@
                 border-left: 1px solid #C1C1C1;
                 font-size: 14px;
                 margin-top: 15px;
+                
+                &-text {
+                    position: relative;
+                    .collapse:not(.show) {
+                        display: block !important;
+                        height: 60px !important;
+                        overflow: hidden;
+                        position: relative;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            bottom: 0px;
+                            height: 40px;
+                            width: 100%;
+                            background: white;
+                            background: linear-gradient(0deg, white 0%, rgba(255, 237, 237, 0) 100%);
+                            z-index: 1;
+                        }
+                    }
+                    .card {
+                        border: none;
+                    }
+                    .card-body {
+                        padding: 0;
+                        font-size: 14px;
+                    }
+                }
                 
                 ul, li {
                     list-style: none;
@@ -281,6 +324,7 @@
             }
             &__info-list {
                 display: none;
+                
             }
         }
 
@@ -292,5 +336,11 @@
             }
         }
     }
+}
 
+@media (max-width: 480px) {
+    .reviews-page .reviews-slider__info-hotel ul h5 span {
+        display: block;
+        margin-left: 0;
+    }
 }

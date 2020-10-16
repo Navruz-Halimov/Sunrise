@@ -10,7 +10,7 @@
                             </h1>
                             <div class="event-page__collapse" :class="{autoheight:isActive}">
                                 <b-collapse id="collapse1" >
-                                    <b-card>
+                                    <b-card> 
                                         With three outstanding meeting rooms that are designed to host all kinds of 
                                         gatherings from small meetings to large receptions for up to 250 guests, 
                                         the Sunrine Blu is an ideal venue for your next event in Tashkent. 
