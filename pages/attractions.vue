@@ -21,9 +21,8 @@
           <h4>{{ $t('attraction.attraction') }}</h4>
         </div>
         <b-col
-          class="mt-3"
+          class="mt-5"
           cols="12"
-          offset="1"
           sm="6"
           offset-sm="0"
           md="6"
@@ -69,9 +68,8 @@
           </b-card>
         </b-col>
         <b-col
-          class="mt-3"
+          class="mt-5"
           cols="12"
-          offset="1"
           sm="6"
           offset-sm="0"
           md="6"
@@ -117,9 +115,8 @@
           </b-card>
         </b-col>
         <b-col
-          class="mt-3"
+          class="mt-5"
           cols="12"
-          offset="1"
           sm="6"
           offset-sm="0"
           md="6"
@@ -165,9 +162,8 @@
           </b-card>
         </b-col>
         <b-col
-          class="mt-3"
+          class="mt-5"
           cols="12"
-          offset="1"
           sm="6"
           offset-sm="0"
           md="6"
@@ -213,9 +209,8 @@
           </b-card>
         </b-col>
         <b-col
-          class="mt-3"
+          class="mt-5"
           cols="12"
-          offset="1"
           sm="6"
           offset-sm="0"
           md="6"
@@ -261,9 +256,8 @@
           </b-card>
         </b-col>
         <b-col
-          class="mt-3"
+          class="mt-5"
           cols="12"
-          offset="1"
           sm="6"
           offset-sm="0"
           md="6"
@@ -309,9 +303,8 @@
           </b-card>
         </b-col>
         <b-col
-          class="mt-3"
+          class="mt-5"
           cols="12"
-          offset="1"
           sm="6"
           offset-sm="0"
           md="6"
@@ -357,9 +350,8 @@
           </b-card>
         </b-col>
         <b-col
-          class="mt-3"
+          class="mt-5"
           cols="12"
-          offset="1"
           sm="6"
           offset-sm="0"
           md="6"
@@ -405,9 +397,8 @@
           </b-card>
         </b-col>
         <b-col
-          class="mt-3"
+          class="mt-5"
           cols="12"
-          offset="1"
           sm="6"
           offset-sm="0"
           md="6"
