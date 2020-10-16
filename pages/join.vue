@@ -1,7 +1,9 @@
 <template>
   <div class="join__wrapper">
     <div class="join__header">
-      <h1>Join World of Sunrise</h1>
+      <div class="join__title">
+        <h1>Join World of Sunrise</h1>
+      </div>
     </div>
     <b-container>
       <b-row>

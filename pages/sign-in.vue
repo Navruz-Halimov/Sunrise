@@ -1,9 +1,9 @@
 <template>
   <div class="sign__wrapper">
     <div class="sign__header">
-      <h1>
-        Sign-in of Sunrise
-      </h1>
+      <div class="sign-in__title">
+        <h1>Sign-in of Sunrise</h1>
+      </div>
     </div>
     <b-container class="sign__content">
       <b-row>
