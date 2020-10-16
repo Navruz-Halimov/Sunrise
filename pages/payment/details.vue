@@ -5,7 +5,7 @@
         <b-col class="book__header mb-5" cols="12" md="12">
           <b-row>
             <b-col cols="12" sm="6" md="6" lg="3">
-              <img src="https://images3.alphacoders.com/100/thumb-350-1007463.jpg" alt="">
+              <img src="../../assets/images/rooms/ABDUMANNONRAKHIMOVV-279.JPG" alt="">
             </b-col>
             <b-col cols="12" sm="6" md="6" lg="4">
               <div class="pt-1">
