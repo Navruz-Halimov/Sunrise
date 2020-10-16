@@ -247,7 +247,6 @@
     }
   }
   .navbar-nav {
-    flex-direction: row;
     align-items: center;
     flex-direction: column;
   }
@@ -282,6 +281,28 @@
     &:focus {
       outline: none;
     }
+  }
+}
+
+@media (min-width: 480px) {
+  .header__bottom-btn {
+    margin-bottom: 0px;
+  }
+
+  .header__bottom-content {
+    flex-direction: row;
+  }
+
+  .header__bottom .navbar-nav {
+    flex-direction: row;
+  }
+
+  .header__bottom .user__join {
+    margin-top: 0;
+  }
+
+  .header__bottom .lang__list-wrapper {
+    margin-right: 20px;
   }
 }
 
