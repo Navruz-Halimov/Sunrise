@@ -3,6 +3,8 @@
     color: #000;
     border-bottom: 1px solid #ffb612;
     padding-bottom: 12px;
+    font-size: 35px;
+
     .info__circle{
     color: #FFB612;
     margin-right: 10px;
@@ -21,8 +23,10 @@
 }
 .main__book-page{
   .book__page-heading{
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-bottom: 1px solid #FFB612 !important;
+    color: #000;
+    font-size: 35px;
   }
   .header__content{
     margin: 1rem 0 !important;
@@ -30,3 +34,6 @@
     border:none !important;
   }
 }
+
+
+ 

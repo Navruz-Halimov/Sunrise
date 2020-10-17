@@ -120,7 +120,7 @@ export default {
         btn: "For more"
     },
     visit: {
-        title: "PLACES TO VISIT"
+        title: "Places to visit"
     },
     events: {
         btn_more: "Read more",

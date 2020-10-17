@@ -173,7 +173,7 @@
     <b-container>
       <div class="main__book-page">
         <b-row class="book__page">
-          <b-col class="book__header" lg="12">
+          <b-col class="book__header book__header-main" lg="12">
             <h1 class="book__page-heading">{{$t('amenties.heading')}}</h1>
             <b-col class="header__content" cols="12" md="12">
               <b-row>
@@ -292,7 +292,7 @@
       <Visit />
       <b-row class="gallery">
         <div class="gallery__title">
-          <h2>{{$t('gallery.title')}} </h2>
+          <h2 class="gallery__title-main">{{$t('gallery.title')}} </h2>
         </div>
       </b-row>
       <Test :images="images"/>

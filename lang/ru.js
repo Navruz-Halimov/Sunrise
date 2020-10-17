@@ -120,7 +120,7 @@ export default {
         btn: "Для большего"
     },
     visit: {
-        title: "МЕСТА ДЛЯ ПОСЕЩЕНИЯ"
+        title: "Места для посещения"
     },
     events: {
         btn_more: "Подробнее",

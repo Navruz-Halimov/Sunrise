@@ -281,12 +281,12 @@
     }
 
     & > a {
-      padding-left: 15px !important;
-      padding-right: 15px !important;
+      padding-left: 8px !important;
+      padding-right: 8px !important;
       display: block;
       font-size: 14px;
-      padding-top: 10px !important;
-      padding-bottom: 10px !important;
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
       text-align: center;
       &::after {
         border: none;
@@ -330,6 +330,13 @@
 
   .header__bottom .user__join {
     margin-top: 0;
+  }
+
+  .header__bottom .user__join > a {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 
   .header__bottom .lang__list-wrapper {

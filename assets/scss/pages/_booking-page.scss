@@ -43,6 +43,10 @@
   .book__header {
     margin: 2rem 0;
     padding: 15px 30px;
+
+    &-main {
+      padding: 15px 0;
+    }
     img{
       width: 100%;
     }
