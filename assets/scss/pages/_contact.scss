@@ -304,6 +304,14 @@
     padding: 0 25px;
   }
 
+  .swiper__wrapper-title {
+    font-size: 30px;
+    color: #000;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #FFB612;
+    margin-bottom: 15px;
+  }
+
   .swiper-wrapper .swiper-slide::before {
     content: none;
   }
@@ -571,8 +579,7 @@
   }
 
   &__title {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 30px;
     margin-bottom: 20px;
   }
 
@@ -732,18 +739,19 @@
 
 .offer-main {
   padding: 50px 0;
+    
+  .col-12 {
+    padding: 0;
+  }
   
   &__title {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
     h2 {
       font-size: 30px;
-    }
-
-    h5 {
-      font-size: 18px;
-      color: #E9AD28;
-      margin-bottom: 10px;
+      color: #000;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #FFB612;
     }
   }
 

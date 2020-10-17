@@ -98,7 +98,7 @@ export default {
         btn: "Show More"
     },
     offer_main: {
-        title: "NEWS & OFFER",
+        title: "News & Offer",
         text_title: "Change of Seasons. Change of Scenery.",
         text_info: "Whatever new view you choose, Sunrise is back with up to 4x points and double nights toward tier status through January 4, 2021.",
         text_link: "Read More" 
