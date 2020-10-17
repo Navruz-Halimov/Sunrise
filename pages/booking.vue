@@ -388,13 +388,8 @@ export default {
       images: [
         'ABDUMANNONRAKHIMOVV-162.jpg',
         'ABDUMANNONRAKHIMOVV-194.jpg',
-        'ABDUMANNONRAKHIMOVV-218.jpg',
-        'ABDUMANNONRAKHIMOVV-235.jpg',
-        'ABDUMANNONRAKHIMOVV-239.jpg',
-        'ABDUMANNONRAKHIMOVV-241.jpg',
-        'ABDUMANNONRAKHIMOVV-258.jpg',
-        'ABDUMANNONRAKHIMOVV-260.jpg',
-        'ABDUMANNONRAKHIMOVV-261.jpg',
+        'ABDUMANNONRAKHIMOVV-212.jpg',
+        'ABDUMANNONRAKHIMOVV-217.jpg',
       ],
       header__slider: {
         centeredSlides: true,
