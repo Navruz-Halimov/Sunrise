@@ -2,6 +2,9 @@
     <div class="offer-page">
         <b-container>
             <b-row class="offer-page__wrap"> 
+                <b-col cols="12">
+                    <h2 class="offer-page__title">Offer</h2>
+                </b-col>
                 <b-col md="5">
                     <div class="offer-page__img">
                         <b-img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-260.jpg" alt=""></b-img>

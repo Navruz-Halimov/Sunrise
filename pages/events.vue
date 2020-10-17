@@ -3,6 +3,9 @@
         <b-container>
             <div class="event-page__top">
                 <b-container>
+                    <b-col cols="12">
+                        <h2 class="event-page__title">Events</h2>
+                    </b-col>
                     <b-row>
                         <b-col cols="12">
                             <h1 class="event-page__heading">

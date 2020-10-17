@@ -22,7 +22,7 @@ export default {
 
     },
     contact:{
-        info:'Contact information',
+        info:'Contact',
         general:'General contact',
         heading: 'How to get to the Sunrise  Hotel, Tashkent',
         text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore expedita natus autem, consequatur earum neque?',
@@ -118,6 +118,12 @@ export default {
     gallery: {
         title: "Gallery",
         btn: "For more"
+    },
+    rooms: {
+        title: "Rooms"
+    },
+    feedbacks: {
+        title: "Happy Clients & Feedbacks"
     },
     visit: {
         title: "Places to visit"

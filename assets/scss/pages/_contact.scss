@@ -8,12 +8,17 @@
   }
 
   &__heading {
-    font-size: 18px;
-    line-height: 26px; 
-    margin-bottom: 22px;
-    font-weight: bold;
-    color: #000;
-    padding: 0 15px;
+    color: #FFB612;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+      &:after {
+        content: "";
+        border-top: 1px solid;
+        display: block;
+        width: 15%;
+        margin: 12px auto;
+    }
   }
 
   &-details {
@@ -292,8 +297,6 @@
   }
 }
 
-
-
 //start swiper slider for main page 
 .swiper-card-rooms {
   padding-bottom: 50px;
@@ -309,7 +312,7 @@
     color: #000;
     padding-bottom: 12px;
     border-bottom: 1px solid #FFB612;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   .swiper-wrapper .swiper-slide::before {
@@ -541,6 +544,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .swiper-card-rooms .swiper__wrapper-title {
+    font-size: 20px;
+  }
+}
+
 //finish swiper slider for main page 
 
 // start Happy Clients & Feedbacks slider for main page
@@ -723,6 +732,15 @@
   }
 }
 
+@media (max-width: 575px) {
+  .users-feedbacks {
+    padding: 25px 0;
+  }
+  .users-feedbacks__title {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 539px) {
   .main-services__list .card-body {
     justify-content: space-around;
@@ -861,6 +879,14 @@
 @media (max-width: 575px) {
   .offer-main__item {
     padding: 0 15px;
+  }
+
+  .offer-main .col-12 {
+    padding: 0 15px;
+  }
+
+  .offer-main__title h2 {
+    font-size: 20px;
   }
 }
 

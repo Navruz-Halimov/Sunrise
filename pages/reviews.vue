@@ -2,8 +2,8 @@
     <div class="reviews-page">
         <b-container>
             <b-row class="reviews-page__top">
-                <b-col cols="12" lg="10" md="9" sm="8">
-                    <h1 class="reviews-page__title">Most recent traveler reviews</h1>
+                <b-col cols="12">
+                    <h2 class="reviews-page__title">Most recent traveler reviews</h2>
                 </b-col>
             </b-row>
             <div class="reviews-slider">

@@ -3,9 +3,9 @@
         <b-container>
             <b-row>
                 <b-col sm="12">
-                    <h1 class="contact-page__heading">
+                    <h2 class="contact-page__heading">
                         {{$t('contact.info')}}
-                    </h1>
+                    </h2>
                     <div class="contact-page-details">
                         <b-container>
                             <b-row>

@@ -119,6 +119,12 @@ export default {
         title: "Галерея",
         btn: "Для большего"
     },
+    rooms: {
+        title: "Номера"
+    },
+    feedbacks: {
+        title: "Счастливые клиенты и отзывы"
+    },
     visit: {
         title: "Места для посещения"
     },

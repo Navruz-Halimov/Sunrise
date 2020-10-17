@@ -1,7 +1,7 @@
 <template>
   <div class="attractions mt-4">
     <div class="attractions__title">
-      <h3>{{ $t('attraction.attraction') }}</h3>
+      <h2>{{ $t('attraction.attraction') }}</h2>
     </div>
     <div class="attractions__map">
       <iframe
@@ -17,9 +17,9 @@
     </div>
     <b-container>
       <b-row>
-        <div class="mt-3 attractions__title">
+        <!-- <div class="mt-3 attractions__title">
           <h4>{{ $t('attraction.attraction') }}</h4>
-        </div>
+        </div> -->
         <b-col
           class="mt-5"
           cols="12"

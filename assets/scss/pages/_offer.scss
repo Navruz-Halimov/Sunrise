@@ -3,6 +3,21 @@
     color: #000;
     font-size: 14px;
 
+    &__title {
+        color: #FFB612;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px;
+
+        &:after {
+            content: "";
+            border-top: 1px solid;
+            display: block;
+            width: 15%;
+            margin: 12px auto;
+        }
+    }
+
     &__wrap {
         max-width: 860px;
         margin: auto;
