@@ -5,6 +5,15 @@
     width: 100%;
     padding-top: 30px;
     text-align: center;
+    .gallery__title-main{
+      color: #2d2d2d;
+      font-size: 35px;
+      text-align: left;
+      &:after{
+        width: 100%;
+        color: #FFB612;
+      }
+    }
     h2{
       color: #FFB612;
       font-size: 25px;
