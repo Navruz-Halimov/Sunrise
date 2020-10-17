@@ -3,13 +3,18 @@
   padding: 0.5rem 0;
   .gallery__title{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
+    text-align: center;
     h2{
-      font-size: 22px;
-      text-transform: uppercase;
+      color: #FFB612;
+      font-size: 25px;
+      &:after{
+        content: "";
+        border-top: 1px solid;
+        display: block;
+        width: 15%;
+        margin: 12px auto;
+      }
     }
   }
 
