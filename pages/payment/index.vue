@@ -124,11 +124,7 @@
                 <b-form-group
                   label="Country / Region"
                   label-for="country">
-                  <select id="country" class="adults__capacity">
-                    <option value="0" selected>Uzbekistan</option>
-                    <option value="1">China</option>
-                    <option value="2">USA</option>
-                  </select>
+                  <b-form-input type="text" id="country" required/>
                 </b-form-group>
                 <b-form-group
                   label="Address"
@@ -144,13 +140,9 @@
               <b-col lg="6"/>
               <b-col class="pay__input" cols="12" sm="12" md="12" lg="3">
                 <b-form-group
-                  label="State"
-                  label-for="state">
-                  <select id="state" class="adults__capacity">
-                    <option value="0" selected>Uzbekistan</option>
-                    <option value="1">China</option>
-                    <option value="2">USA</option>
-                  </select>
+                  label="City"
+                  label-for="city">
+                  <b-form-input type="text" id="city" required/>
                 </b-form-group>
               </b-col>
               <b-col class="pay__input" cols="12" sm="12" md="12" lg="3">

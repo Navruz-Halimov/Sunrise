@@ -9,13 +9,16 @@
     padding: 20px;
     color: #444444;
     font-size: 30px;
-    h3:after{
+    h3{
+      color: #FFB612;
+      &:after{
         content: "";
-        border-top: 2px solid;
+        border-top: 1px solid;
         display: block;
-        width: 8%;
-        margin: 10px auto 10px auto;
+        width: 20%;
+        margin: 12px auto;
       }
+    }
   }
   .attractions__map{
     width: 90%;
