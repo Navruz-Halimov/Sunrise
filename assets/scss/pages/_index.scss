@@ -22,6 +22,10 @@
   }
 }
 .main__book-page{
+  .book__page {
+    padding: 0;
+    margin: 0 auto;
+  }
   .book__page-heading{
     padding-bottom: 12px;
     border-bottom: 1px solid #FFB612 !important;

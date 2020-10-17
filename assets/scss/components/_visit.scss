@@ -1,5 +1,8 @@
 .visit{
   padding-bottom: 2rem;
+  .container {
+    padding: 0;
+  }
   .visit__title{
     text-align: center;
     h2{
@@ -7,6 +10,7 @@
       text-align: left;
       border-bottom: 1px solid #FFB612;
       padding-bottom: 12px;
+      color: #000;
     }
   }
   .visit__card{
