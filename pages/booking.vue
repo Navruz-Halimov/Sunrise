@@ -5,7 +5,7 @@
         <b-col class="book__header" cols="12" md="12">
           <b-row>
             <b-col cols="12" sm="8" md="6" lg="4">
-              <img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-279.JPG" alt=""/>
+              <img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-279.jpg" alt=""/>
             </b-col>
             <b-col cols="12" sm="4" md="6" lg="4">
               <div class="pt-2">
@@ -386,16 +386,16 @@ export default {
   data() {
     return {
       images: [
-        'ABDUMANNONRAKHIMOVV-162.JPG',
-        'ABDUMANNONRAKHIMOVV-194.JPG',
-        'ABDUMANNONRAKHIMOVV-217.JPG',
-        'ABDUMANNONRAKHIMOVV-218.JPG',
-        'ABDUMANNONRAKHIMOVV-235.JPG',
-        'ABDUMANNONRAKHIMOVV-239.JPG',
-        'ABDUMANNONRAKHIMOVV-241.JPG',
-        'ABDUMANNONRAKHIMOVV-258.JPG',
-        'ABDUMANNONRAKHIMOVV-260.JPG',
-        'ABDUMANNONRAKHIMOVV-261.JPG',
+        'ABDUMANNONRAKHIMOVV-162.jpg',
+        'ABDUMANNONRAKHIMOVV-194.jpg',
+        'ABDUMANNONRAKHIMOVV-217.jpg',
+        'ABDUMANNONRAKHIMOVV-218.jpg',
+        'ABDUMANNONRAKHIMOVV-235.jpg',
+        'ABDUMANNONRAKHIMOVV-239.jpg',
+        'ABDUMANNONRAKHIMOVV-241.jpg',
+        'ABDUMANNONRAKHIMOVV-258.jpg',
+        'ABDUMANNONRAKHIMOVV-260.jpg',
+        'ABDUMANNONRAKHIMOVV-261.jpg',
       ],
       header__slider: {
         centeredSlides: true,
