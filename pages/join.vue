@@ -55,11 +55,12 @@
                 <b-form-group
                   label="Country / Region"
                   label-for="country">
-                  <select id="country" class="adults__capacity">
-                    <option value="0" selected>Uzbekistan</option>
-                    <option value="1">China</option>
-                    <option value="2">USA</option>
-                  </select>
+                  <b-form-input class="join__input" type="text" id="country" required/>
+                </b-form-group>
+                <b-form-group
+                  label="City"
+                  label-for="city">
+                  <b-form-input class="join__input" type="text" id="city" required/>
                 </b-form-group>
                 <b-form-group
                   label="Password"
