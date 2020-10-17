@@ -388,7 +388,6 @@ export default {
       images: [
         'ABDUMANNONRAKHIMOVV-162.jpg',
         'ABDUMANNONRAKHIMOVV-194.jpg',
-        'ABDUMANNONRAKHIMOVV-217.jpg',
         'ABDUMANNONRAKHIMOVV-218.jpg',
         'ABDUMANNONRAKHIMOVV-235.jpg',
         'ABDUMANNONRAKHIMOVV-239.jpg',
