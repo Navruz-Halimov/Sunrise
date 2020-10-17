@@ -59,8 +59,8 @@
                           <b-col class="mt-2 pay__input" cols="12" sm="12" md="6" lg="6">
                             <b-form-group
                               label="Last Name"
-                              label-for="username">
-                              <b-form-input type="text" id="username" placeholder="Last Name" required/>
+                              label-for="lastname">
+                              <b-form-input type="text" id="lastname" placeholder="Last Name" required/>
                             </b-form-group>
                           </b-col>
                           <b-col class="mt-2 pay__input" cols="12" sm="12" md="6" lg="6">
@@ -120,15 +120,15 @@
                           <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="10">
                             <b-form-group
                               label="New Password"
-                              label-for="password">
-                              <b-form-input type="password" id="password" required/>
+                              label-for="new-password">
+                              <b-form-input type="password" id="new-password" required/>
                             </b-form-group>
                           </b-col>
                           <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="10">
                             <b-form-group
                               label="New Password Again"
-                              label-for="password">
-                              <b-form-input type="password" id="password" required/>
+                              label-for="password-again">
+                              <b-form-input type="password" id="password-again" required/>
                             </b-form-group>
                           </b-col>
                           <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="10">
