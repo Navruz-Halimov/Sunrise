@@ -1,7 +1,7 @@
 <template>
   <div class="gallery">
     <b-container>
-      <b-row class="gallery__content">
+      <b-row class="gallery__content gallery__content-main">
         <b-col
           v-for="(image, index) of images.slice(0, 3)" :key="index"
           cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3"

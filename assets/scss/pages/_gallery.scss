@@ -30,10 +30,9 @@
 
   .gallery__content{
     display: flex;
-    padding: 2rem 0;
     .photo{
       padding-bottom: 80%;
-      margin: 1em auto;
+      margin: 0em auto 1em;
       overflow: hidden;
       position: relative;
       cursor: pointer;

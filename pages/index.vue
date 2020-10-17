@@ -307,7 +307,7 @@
     <!-- start slider room-->
     <div class="swiper-card-rooms">
       <b-container class="swiper__wrapper">
-        <h2 class="swiper__wrapper-title">Rooms</h2>
+        <h2 class="swiper__wrapper-title">{{$t('rooms.title')}}</h2>
         <swiper :options="swiper_card_rooms">
           <swiper-slide class="swiper-card">
             <div class="swiper-card__img">
@@ -685,7 +685,7 @@
       <b-container class="users__wrapper">
         <b-row>
           <b-col md="12">
-            <h2 class="users-feedbacks__title">Happy Clients & Feedbacks</h2>
+            <h2 class="users-feedbacks__title">{{$t('feedbacks.title')}}</h2>
             <swiper :options="users_feedback">
               <swiper-slide class="users-feedbacks__card">
                 <div class="users-feedbacks__card-img">

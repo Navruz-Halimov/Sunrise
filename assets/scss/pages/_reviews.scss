@@ -5,9 +5,17 @@
     margin-bottom: 50px;
 
     &__title {
-        font-size: 22px;
-        line-height: 26px;
-        font-weight: bold;
+        color: #FFB612;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px;
+        &:after {
+            content: "";
+            border-top: 1px solid;
+            display: block;
+            width: 15%;
+            margin: 12px auto;
+        }
     }
 
     &__top {

@@ -21,7 +21,7 @@ export default {
         attraction: '吸引力',
     },
     contact: {
-        info: '联系信息',
+        info: '联系',
         general: '般联络人',
         heading: '如何到达塔什干阳光蓝光酒店',
         text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore expedita natus autem, consequatur earum neque?',
@@ -117,6 +117,12 @@ export default {
     gallery: {
         title: "画廊",
         btn: "欲了解更多"
+    },
+    rooms: {
+        title: "房间数"
+    },    
+    feedbacks: {
+        title: "满意的客户和反馈"
     },
     visit: {
         title: "参观的地点"
