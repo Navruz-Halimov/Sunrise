@@ -4,7 +4,7 @@
             <b-row class="offer-page__wrap"> 
                 <b-col md="5">
                     <div class="offer-page__img">
-                        <b-img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-260.JPG" alt=""></b-img>
+                        <b-img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-260.jpg" alt=""></b-img>
                     </div>
                 </b-col>
                 <b-col md="7">
@@ -46,7 +46,7 @@
             <b-row class="offer-page__wrap">
                 <b-col md="5">
                     <div class="offer-page__img">
-                        <b-img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-239.JPG" alt=""></b-img>
+                        <b-img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-239.jpg" alt=""></b-img>
                     </div>
                 </b-col>
                 <b-col md="7">
@@ -89,7 +89,7 @@
             <b-row class="offer-page__wrap">
                 <b-col md="5">
                     <div class="offer-page__img">
-                        <b-img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-162.JPG" alt=""></b-img>
+                        <b-img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-162.jpg" alt=""></b-img>
                     </div>
                 </b-col>
                 <b-col md="7">
