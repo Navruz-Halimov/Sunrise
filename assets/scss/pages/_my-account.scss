@@ -1,5 +1,5 @@
 .account{
-  background-color: #F6F6F6;
+  //background-color: #F6F6F6;
   padding-bottom: 5rem;
   .account__header{
     width: 100%;
@@ -37,15 +37,8 @@
   }
   .account__content{
     h3{
-      font-size: 19px;
+      font-size: 20px;
       margin-top: 20px;
-    }
-    h4{
-      font-size: 17px;
-      margin-top: 2rem;
-    }
-    p{
-      font-size: 15px;
     }
     hr{
       width: 50%;
@@ -55,14 +48,43 @@
     label{
       text-align: left;
     }
+    .person{
+      padding: 20px;
+      display: flex;
+      p{
+        color: #FFB612;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      span{
+        color: #444444;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 21px;
+        margin-left: 2rem;
+      }
+    }
+    .book{
+      .table {
+        th{
+          color: #FFB612;
+          font-size: 15px;
+        }
+        td{
+          font-size: 14px;
+        }
+      }
+    }
     .nav-item{
       .active{
-        background-color: #FFB612;
+        background-color: transparent;
       }
-      font-size: 14px;
+      font-size: 16px;
     }
-    .card-header{
-      background-color: transparent;
+    .nav-link{
+      color: #444444;
     }
     .total{
       text-align: right;

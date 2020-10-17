@@ -14,33 +14,53 @@
               <b-tabs pills card vertical>
                 <b-tab title="Personal Info">
                   <div class="person">
-                    <p>NAME: <span>John Brown</span></p>
-                    <p>E-MAIL: <span>Johnbrown@Test.Mail.Com</span></p>
-                    <p>PHONE NUMBER: <span>+0 000-000-000</span></p>
-                    <p>HOME AIRPORT: <span>London Heathrow Airport (LHR)</span></p>
-                    <p>STREET ADDRESS: <span>46 Gray's Inn Rd, London, WC1X 8LP</span></p>
-                    <p>CITY: <span>London</span></p>
-                    <p>STATE/ PROVINCE/ REGION: <span>London</span></p>
-                    <p>POSTAL CODE: <span>69106</span></p>
-                    <p>COUNTRY: <span>United Kingdom</span></p>
+                    <div>
+                      <p>NAME: </p>
+                      <p>E-MAIL: </p>
+                      <p>PHONE NUMBER: </p>
+                      <p>HOME AIRPORT: </p>
+                      <p>STREET ADDRESS: </p>
+                      <p>CITY:</p>
+                      <p>STATE/ PROVINCE/ REGION: </p>
+                      <p>POSTAL CODE: </p>
+                      <p>COUNTRY: </p>
+                    </div>
+                    <div>
+                      <span>John Brown</span>
+                      <span>Johnbrown@Test.Mail.Com</span>
+                      <span>+0 000-000-000</span>
+                      <span>London Heathrow Airport (LHR)</span>
+                      <span>46 Gray's Inn Rd, London, WC1X 8LP</span>
+                      <span>London</span>
+                      <span>London</span>
+                      <span>69106</span>
+                      <span>United Kingdom</span>
+                    </div>
                   </div>
                 </b-tab>
                 <b-tab title=" Booking History">
                   <div class="book">
-                    <b-table sticky-header :items="items" head-variant="light"></b-table>
+                    <b-table bordered :items="items"></b-table>
                   </div>
                 </b-tab>
                 <b-tab title="Settings">
                   <div class="setting">
-                    <h3>Change Personal Infomation</h3>
                     <b-col class="mt-5" lg="10">
+                      <h3 class="mb-4">Change Personal Infomation</h3>
                       <b-form>
                         <b-row>
                           <b-col class="mt-2 pay__input" cols="12" sm="12" md="6" lg="6">
                             <b-form-group
-                              label="Username"
+                              label="First Name"
                               label-for="username">
-                              <b-form-input type="text" id="username" placeholder="User Name" required/>
+                              <b-form-input type="text" id="username" placeholder="First Name" required/>
+                            </b-form-group>
+                          </b-col>
+                          <b-col class="mt-2 pay__input" cols="12" sm="12" md="6" lg="6">
+                            <b-form-group
+                              label="Last Name"
+                              label-for="username">
+                              <b-form-input type="text" id="username" placeholder="Last Name" required/>
                             </b-form-group>
                           </b-col>
                           <b-col class="mt-2 pay__input" cols="12" sm="12" md="6" lg="6">
@@ -78,38 +98,40 @@
                               <b-form-input type="text" id="city" placeholder="London" required/>
                             </b-form-group>
                           </b-col>
+                          <b-col lg="6" />
                           <b-col class="mt-2 pay__input" cols="12" sm="12" md="6" lg="6">
+                            <hr />
                             <b-button type="submit" style="transform: none">Save changes</b-button>
                           </b-col>
                         </b-row>
                       </b-form>
                     </b-col>
-                    <h3>Change Password</h3>
                     <b-col class="mt-5" lg="6">
+                      <h3 class="mb-4">Change Password</h3>
                       <b-form>
                         <b-row>
-                          <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="12">
+                          <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="10">
                             <b-form-group
                               label="Current Password"
                               label-for="password">
                               <b-form-input type="password" id="password" required/>
                             </b-form-group>
                           </b-col>
-                          <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="12">
+                          <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="10">
                             <b-form-group
                               label="New Password"
                               label-for="password">
                               <b-form-input type="password" id="password" required/>
                             </b-form-group>
                           </b-col>
-                          <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="12">
+                          <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="10">
                             <b-form-group
                               label="New Password Again"
                               label-for="password">
                               <b-form-input type="password" id="password" required/>
                             </b-form-group>
                           </b-col>
-                          <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="12">
+                          <b-col class="mt-1 pay__input" cols="12" sm="12" md="6" lg="10">
                             <hr />
                             <b-button type="submit" style="transform: none">Save password</b-button>
                           </b-col>
@@ -131,6 +153,27 @@
     data() {
       return {
         items: [
+          {
+            title: 'Wellington Hotel',
+            location: 'San Fancisco',
+            orderDate: '01/01/2014',
+            dataOfYourStay: '01/05/2014 - 01/15/2014',
+            cost: '$'+1280
+          },
+          {
+            title: 'Wellington Hotel',
+            location: 'San Fancisco',
+            orderDate: '01/01/2014',
+            dataOfYourStay: '01/05/2014 - 01/15/2014',
+            cost: '$'+1280
+          },
+          {
+            title: 'Wellington Hotel',
+            location: 'San Fancisco',
+            orderDate: '01/01/2014',
+            dataOfYourStay: '01/05/2014 - 01/15/2014',
+            cost: '$'+1280
+          },
           {
             title: 'Wellington Hotel',
             location: 'San Fancisco',
