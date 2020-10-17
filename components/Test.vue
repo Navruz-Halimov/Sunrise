@@ -45,7 +45,7 @@ export default {
         }
       },
       images: [
-        'ABDUMANNONRAKHIMOVV-162.JPG',
+        'ABDUMANNONRAKHIMOVV-162.jpg',
         'ABDUMANNONRAKHIMOVV-194.JPG',
         'ABDUMANNONRAKHIMOVV-217.JPG',
         'ABDUMANNONRAKHIMOVV-218.JPG',
