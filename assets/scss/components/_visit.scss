@@ -46,6 +46,15 @@
       }
       .like{
         color: white;
+        .like__icon{
+          color: white;
+        }
+        .like__icon--active{
+          color: red;
+          animation-name: like;
+          animation-duration: .4s;
+          animation-timing-function: linear;
+        }
         button{
           border: none;
           outline: none;
@@ -96,5 +105,13 @@
         left: 10px;
       }
     }
+  }
+}
+@keyframes like {
+  from{
+    transform: scale(0.8);
+  }
+  to{
+    transform: scale(1.3);
   }
 }
