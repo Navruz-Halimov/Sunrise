@@ -16,13 +16,13 @@
       ></iframe>
     </div>
     <b-container>
-      <b-row>
+      <b-row class="attractions__items"> 
         <!-- <div class="mt-3 attractions__title">
           <h4>{{ $t('attraction.attraction') }}</h4>
         </div> -->
         <b-col
           class="mt-5"
-          cols="12"
+          cols="8"
           sm="6"
           offset-sm="0"
           md="6"
@@ -69,7 +69,7 @@
         </b-col>
         <b-col
           class="mt-5"
-          cols="12"
+          cols="8"
           sm="6"
           offset-sm="0"
           md="6"
@@ -116,7 +116,7 @@
         </b-col>
         <b-col
           class="mt-5"
-          cols="12"
+          cols="8"
           sm="6"
           offset-sm="0"
           md="6"
@@ -163,7 +163,7 @@
         </b-col>
         <b-col
           class="mt-5"
-          cols="12"
+          cols="8"
           sm="6"
           offset-sm="0"
           md="6"
@@ -210,7 +210,7 @@
         </b-col>
         <b-col
           class="mt-5"
-          cols="12"
+          cols="8"
           sm="6"
           offset-sm="0"
           md="6"
@@ -257,7 +257,7 @@
         </b-col>
         <b-col
           class="mt-5"
-          cols="12"
+          cols="8"
           sm="6"
           offset-sm="0"
           md="6"
@@ -304,7 +304,7 @@
         </b-col>
         <b-col
           class="mt-5"
-          cols="12"
+          cols="8"
           sm="6"
           offset-sm="0"
           md="6"
@@ -351,7 +351,7 @@
         </b-col>
         <b-col
           class="mt-5"
-          cols="12"
+          cols="8"
           sm="6"
           offset-sm="0"
           md="6"
@@ -398,7 +398,7 @@
         </b-col>
         <b-col
           class="mt-5"
-          cols="12"
+          cols="8"
           sm="6"
           offset-sm="0"
           md="6"
