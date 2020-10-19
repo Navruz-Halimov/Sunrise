@@ -120,7 +120,7 @@
           <li class="guide__item">
             <b-row>
               <b-col lg="6">
-                <nuxt-link to="" class="guide__link">
+                <nuxt-link :to="localePath('/guide')" class="guide__link">
                  {{$t('tourist.link1')}}
                 </nuxt-link
                 >
@@ -915,7 +915,8 @@
     name: 'Range',
     title: 'Sunrise hotel in Tashkent',
     comments: {
-      Test
+      Test,
+      Visit
     },
     data() {
       return {
