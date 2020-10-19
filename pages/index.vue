@@ -120,7 +120,7 @@
           <li class="guide__item">
             <b-row>
               <b-col lg="6">
-                <nuxt-link to="" class="guide__link">
+                <nuxt-link :to="localePath('/guide')" class="guide__link">
                  {{$t('tourist.link1')}}
                 </nuxt-link
                 >
@@ -837,7 +837,7 @@
                     </div>
                 </b-col>
             </b-row>
-            <b-row>
+            <b-row class="offer-main-items">
                 <b-col class="offer-main__item order-md-1 order-lg-1 order-1 animate__animated animate__fadeInUp" md="6" lg="3" >
                     <div class="offer-main__picture">
                         <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-47.jpg" alt="" height="270px"></b-img>
@@ -915,7 +915,8 @@
     name: 'Range',
     title: 'Sunrise hotel in Tashkent',
     comments: {
-      Test
+      Test,
+      Visit
     },
     data() {
       return {

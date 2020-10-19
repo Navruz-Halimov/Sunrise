@@ -1,0 +1,28 @@
+.guide{
+  .guide__title{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 25px;
+    color: #FFB612;
+    &:after{
+      content: "";
+      border-top: 1px solid;
+      display: block;
+      width: 20%;
+      margin: 12px auto;
+    }
+  }
+  .guide__content{
+    .nav-link{
+      background-color: transparent;
+      color: #007bff;
+    }
+    .card-text{
+      display: flex;
+      flex-direction: column;
+      a{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
