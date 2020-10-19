@@ -251,10 +251,6 @@
             </b-container>
         </div>
 
-        <b-container>
-            
-            
-        </b-container>
     </div>
 </template>
 <script>

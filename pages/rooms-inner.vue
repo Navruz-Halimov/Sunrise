@@ -5,8 +5,23 @@
         <b-col lg="3" class="rooms__select-left">
           <ul class="rooms__select-amenties">
             <span class="rooms__select-amenties-heading">Amenties</span>
-            <b-button v-b-toggle.collapse-1 class="rooms__select-amenties-heading mobil">
+            <b-button 
+              v-b-toggle.collapse-1 
+              class="rooms__select-amenties-heading mobil"
+              @click="isActive = !isActive"
+              v-if="isActive === false"
+            >
               Amenties
+              <font-awesome-icon :icon="['fas', 'angle-down']" />
+            </b-button>
+            <b-button 
+              v-b-toggle.collapse-1 
+              class="rooms__select-amenties-heading mobil"
+              v-else
+              @click="isActive = !isActive"
+            >
+              Amenties
+              <font-awesome-icon :icon="['fas', 'angle-up']" />
             </b-button>
             <b-collapse id="collapse-1">
               <b-card>
@@ -135,6 +150,7 @@ export default {
     return {
       value2: [new Date()],
       value3: [new Date()],
+      isActive:false,
       rooms__select: {
         centeredSlides: true,
         spaceBetween: 30,

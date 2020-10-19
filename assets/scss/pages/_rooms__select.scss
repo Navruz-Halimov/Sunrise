@@ -140,7 +140,6 @@
 @media (max-width: 991px) {
   .rooms__select-left {
     order: 2;
-    width: 100%;
   }
 
   .rooms__select-center {
@@ -150,22 +149,56 @@
 
   .rooms__select-right {
     order: 2;
-    width: 49%;
   }
   
   .rooms__select-amenties-heading {
     margin-top: 0;
     display: none;
+    position: relative;
+    
   }
 
   .rooms__select-amenties .mobil {
     display: block;
-    background-image: url("../images/arrow-down-rooms.svg");
-    background-repeat: no-repeat;
+    width: 100%;
+    text-align: left;
   }
 
   .rooms__select-amenties .collapse:not(.show) {
     display: none !important;
   }
 
+  .rooms__select-amenties .card .card-body {
+    padding: 0 0 0 10px;
+  }
+
+  .rooms__select-amenties {
+    margin-bottom: 25px;
+  }
+
+  .floor__btn {
+    max-width: 170px;
+  }
+
+  .floor__left-wrapper .booking__form {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .rooms__select-slider {
+    height: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  .rooms__select-slider {
+    height: 250px;
+  }
+}
+
+@media (max-width: 360px) {
+  .rooms__select-slider {
+    height: 200px;
+  }
 }
