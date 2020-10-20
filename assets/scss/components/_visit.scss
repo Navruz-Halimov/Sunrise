@@ -26,6 +26,8 @@
       min-width: 100%;
       min-height: 100%;
       object-fit: cover;
+      transition: transform .3s ease;
+      transform: scale(1.15);
     }
     .visit__text{
       position: absolute;
@@ -67,8 +69,13 @@
         }
       }
     }
-    &:hover .visit__text{
-      opacity: 1;
+    &:hover {
+      .visit__text {
+        opacity: 1;
+      }
+      img {
+        transform: scale(1);
+      }
     }
   }
   .visit__modal{
