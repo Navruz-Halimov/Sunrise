@@ -300,7 +300,7 @@
         </b-col>
       </b-row>
     </b-container>
-    <div v-if="modals" class="book__modal" @click="hideModal()">
+    <div v-if="modals" class="book__modal">
       <button type="button" @click="hideModal()" class="close">
         <i></i>
         <i></i>

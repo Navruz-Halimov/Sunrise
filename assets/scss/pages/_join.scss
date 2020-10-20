@@ -91,6 +91,12 @@
   .join__wrapper{
     .join__header{
       height: 40vh;
+      .join__title{
+        padding: 0;
+        h1{
+          font-size: 28px;
+        }
+      }
     }
     .join__title{
       padding: 3rem 1rem;

@@ -5,7 +5,8 @@
         <b-col class="visit__title" lg="12">
           <h2>{{$t('visit.title')}}</h2>
         </b-col>
-        <b-col sm="6" md="4" lg="3" v-for="(image,index) of images" :key="index" >
+        <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3"
+               v-for="(image,index) of images" :key="index" >
           <div class="visit__card">
 <!--            <img :src="require(`../assets/images/rooms/${image.url}`)" alt=""/>-->
             <img :src="image.url" alt="">
@@ -22,7 +23,6 @@
             </div>
           </div>
         </b-col>
-
       </b-row>
     </b-container>
     <div class="visit__modal" v-if="visible" @click.stop="hide">
