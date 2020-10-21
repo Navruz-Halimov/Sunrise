@@ -202,8 +202,8 @@
       color: #ffb612;
       transition: 0.4s;
       &:hover {
-        color: white;
-        background-color: #ffb612;
+        color: white!important;
+        background-color: #ffb612!important;
       }
       &:focus {
         box-shadow: none;

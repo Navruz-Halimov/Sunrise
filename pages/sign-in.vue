@@ -43,7 +43,7 @@
           </b-row>
         </b-form>
         <b-col class="pl-0 mt-5" lg="4" offset-lg="2">
-          <span>Not a Member? <a href="#">Join World of Hyatt.</a></span>
+          <span>Not a Member? <a href="#">Join World of Sunrise.</a></span>
           <span>First time signing in? <a href="#">Create an online account.</a></span>
         </b-col>
         <b-col class="pl-0 mt-5" lg="10" offset-lg="2">
