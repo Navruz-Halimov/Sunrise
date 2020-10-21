@@ -102,6 +102,14 @@
   text-align: center;
   width: 100%;
   font-size: 14px;
+  line-height: 24px;
+
+  &:hover, &:focus, &:active {
+    background: #fff !important;
+    color: #ffb612 !important;
+    border: 2px solid #ffb612 !important;
+    box-shadow: none !important;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)

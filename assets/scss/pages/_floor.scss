@@ -64,3 +64,31 @@
     }
   }
 }
+
+// responsive 
+
+@media (max-width: 1199px) {
+  .floor__wrapper .floor__top-part img {
+    max-width: 100%;
+  }
+  .floor__wrapper .floor__bottom-part img, .floor__wrapper .floor__header-part img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .house {
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      width: 24px;
+      height: 12px; 
+      background-color: #143861;
+    } 
+    &::-webkit-scrollbar-thumb {
+      background-color: #ffb612;
+      box-shadow: inset 1px 1px 10px #f3faf7;
+    }
+  }
+
+}
