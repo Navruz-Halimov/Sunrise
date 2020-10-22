@@ -153,8 +153,8 @@
                 </b-form-group>
               </b-col>
               <b-col lg="12">
-                <h5>Join World of Hyatt.</h5>
-                <p>Join World of Hyatt to earn free nights (no blackout dates!), member rates, room upgrades, waived
+                <h5>Join World of Sunrise.</h5>
+                <p>Join World of Sunrise to earn free nights (no blackout dates!), member rates, room upgrades, waived
                   resort fees, and more.</p>
               </b-col>
               <b-col class="pay__input" cols="12" sm="12" md="12" lg="4">
