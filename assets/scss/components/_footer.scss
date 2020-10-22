@@ -328,6 +328,12 @@
     margin-bottom: 10px;
   }  
 }
+
+@media (max-width: 380px) {
+  .footer__menu {
+    flex-direction: column;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .footer__end{
     ul{

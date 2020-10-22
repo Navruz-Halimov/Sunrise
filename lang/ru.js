@@ -5,7 +5,7 @@ export default {
         events: 'События',
         gallery: 'Галерея',
         amenties: 'Удобства',
-        nearby: 'Рядом достопримечательность',
+        nearby: 'Достопримечательности',
         contact: 'Связаться с нами',
         reviews: 'Отзывы',
         book: 'Забронируйте сейчас',
@@ -18,7 +18,7 @@ export default {
         home: 'Главная',
     },
     attraction: {
-        attraction: 'Привлечение',
+        attraction: 'Достопримечательности',
 
     },
     contact: {
@@ -95,7 +95,8 @@ export default {
         mini_title5: "ВАННАЯ КОМНАТА",
         title5_text1: "Успокаивающий тропический душ",
         title5_text2: "Отдельная ванна",
-        btn: "Показать больше"        
+        btnMore: "Показать все",
+        btnLess: "Скрыть"        
     },
     offer_main: {
         title: "Новости и предложения",
@@ -149,7 +150,7 @@ export default {
         footer_title1: "Отель Sunrise в Ташкенте",
         footer_link: "Нужна помощь?",
         footer_title2: "Следуйте за нами в социальных сетях",
-        footer_title3: "Никогда не упускайте наши самые популярные предложения",
+        footer_title3: "Не упускайте наши предложения",
         footer_btn: "Подписывайся",
         footer_inp: "Введите почту"
     }                

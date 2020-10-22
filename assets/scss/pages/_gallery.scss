@@ -131,6 +131,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid transparent;
+
+  &:hover {
+    background: #fff !important;
+    color: #ffb612 !important;
+    border: 2px solid #ffb612 !important;
+    box-shadow: none !important;
+  }
 }
 // Responsive style //
 
