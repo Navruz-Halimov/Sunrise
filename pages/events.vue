@@ -231,7 +231,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </b-col>
+                        </b-col> 
                         <b-col lg="4" class="event-page__footer-item">
                             <div class="event-page__footer-title">{{$t('events.footer_title3')}}</div>
                             <b-form inline class="event-page__footer-form"> 

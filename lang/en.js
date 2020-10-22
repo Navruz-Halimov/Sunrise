@@ -95,7 +95,9 @@ export default {
         mini_title5: "BATHROOM",
         title5_text1: "Soothing walk-in rain shower",
         title5_text2: "Separate bathtub",
-        btn: "Show More"
+        btnMore: "Show more",
+        btnLess: "Show less"
+
     },
     offer_main: {
         title: "News & Offer",

@@ -94,7 +94,8 @@ export default {
         mini_title5: "浴室",
         title5_text1: "舒缓步入式淋浴",
         title5_text2: "独立浴缸",
-        btn: "显示更多"         
+        btnMore: "显示更多",
+        btnLess: "显示较少"       
     },
     offer_main: {
         title: "新闻与要约",

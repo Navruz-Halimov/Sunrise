@@ -297,8 +297,21 @@
                   </b-col>
                 </b-row>
               </b-collapse>
-              <b-button v-b-toggle.amenity variant="transparent" @click="amenityShow()">
-                {{amenityText}}
+              <b-button 
+                v-b-toggle.amenity 
+                variant="transparent" 
+                @click="isShow = !isShow"
+                v-if="isShow === false"
+              >
+                {{$t('amenties.btnMore')}} 
+              </b-button>
+              <b-button 
+                v-b-toggle.amenity 
+                variant="transparent" 
+                v-else
+                @click="isShow = !isShow"
+              >
+                {{$t('amenties.btnLess')}} 
               </b-button>
             </b-col>
           </b-col>
@@ -938,7 +951,7 @@
       return {
         value2: [new Date()],
         value3: [new Date()],
-        amenityText: 'Show More',
+        isShow: false,
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
