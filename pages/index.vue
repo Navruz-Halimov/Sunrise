@@ -122,62 +122,50 @@
               <b-col cols="12" lg="5">
                 <nuxt-link :to="localePath('/guide')" class="guide__link">
                  {{$t('tourist.link1')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link2')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link">
                   {{$t('tourist.link3')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link>
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link4')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link">
                   {{$t('tourist.link5')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link>
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link6')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link
                 >
               </b-col>
               <b-col cols="12" offset="0" lg="5" offset-lg="2">
                 <nuxt-link to="" class="guide__link">
                   {{$t('tourist.link7')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link8')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link9')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link10')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link11')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link
                 >
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link12')}}
-                  <font-awesome-icon :icon="['fas', 'chevron-right']" />
                 </nuxt-link
                 >
               </b-col>
@@ -297,21 +285,21 @@
                   </b-col>
                 </b-row>
               </b-collapse>
-              <b-button 
-                v-b-toggle.amenity 
-                variant="transparent" 
+              <b-button
+                v-b-toggle.amenity
+                variant="transparent"
                 @click="isShow = !isShow"
                 v-if="isShow === false"
               >
-                {{$t('amenties.btnMore')}} 
+                {{$t('amenties.btnMore')}}
               </b-button>
-              <b-button 
-                v-b-toggle.amenity 
-                variant="transparent" 
+              <b-button
+                v-b-toggle.amenity
+                variant="transparent"
                 v-else
                 @click="isShow = !isShow"
               >
-                {{$t('amenties.btnLess')}} 
+                {{$t('amenties.btnLess')}}
               </b-button>
             </b-col>
           </b-col>
