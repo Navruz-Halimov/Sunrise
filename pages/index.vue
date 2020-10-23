@@ -116,62 +116,86 @@
           />
           {{$t('tourist.heading')}}
         </h1>
-        <ul class="guide__list">
-          <li class="guide__item">
-            <b-row>
-              <b-col cols="12" lg="5">
+        <b-row>
+          <b-col cols="12" lg="5">
+            <ul class="guide__list">
+              <li class="guide__item">
                 <nuxt-link :to="localePath('/guide')" class="guide__link">
-                 {{$t('tourist.link1')}}
+                  {{$t('tourist.link1')}}
                 </nuxt-link
                 >
+              </li>
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link2')}}
                 </nuxt-link
                 >
+              </li>
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link">
                   {{$t('tourist.link3')}}
                 </nuxt-link>
+              </li>
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link4')}}
                 </nuxt-link
                 >
+              </li>
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link">
                   {{$t('tourist.link5')}}
                 </nuxt-link>
+              </li>
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link6')}}
                 </nuxt-link
                 >
-              </b-col>
-              <b-col cols="12" offset="0" lg="5" offset-lg="2">
+              </li>
+            </ul>
+          </b-col>
+          <b-col cols="12" offset="0" lg="5" offset-lg="2">
+            <ul class="guide__list">
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link">
                   {{$t('tourist.link7')}}
                 </nuxt-link
                 >
+              </li>
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link8')}}
                 </nuxt-link
                 >
+              </li>
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link9')}}
                 </nuxt-link
                 >
+              </li>
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link10')}}
                 </nuxt-link
                 >
+              </li>
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link11')}}
                 </nuxt-link
                 >
+              </li>
+              <li class="guide__item">
                 <nuxt-link to="" class="guide__link"
                 >{{$t('tourist.link12')}}
                 </nuxt-link
                 >
-              </b-col>
-            </b-row>
-          </li>
-        </ul>
+              </li>
+            </ul>
+          </b-col>
+        </b-row>
       </b-container>
     </div>
     <b-container>
