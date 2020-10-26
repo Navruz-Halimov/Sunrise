@@ -947,7 +947,7 @@
     </div>
     <!-- finish offer-main -->
   </div>
-</template>
+</template> 
 
 <script>
   import Test from '../components/Test.vue'
