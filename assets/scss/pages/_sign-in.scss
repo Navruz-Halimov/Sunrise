@@ -88,6 +88,12 @@
   .sign__wrapper{
     .sign__header{
       height: 40vh;
+      .sign-in__title{
+        padding: 0;
+        h1{
+          font-size: 28px;
+        }
+      }
     }
   }
 }

@@ -16,7 +16,6 @@
                   <span>Uzbekistan</span>
                 </p>
                 <a href="#">+998 99 000 00 00</a>
-                <a href="#">Visit Hotel Website</a>
               </div>
             </b-col>
             <b-col md="4" />
@@ -300,12 +299,12 @@
         </b-col>
       </b-row>
     </b-container>
-    <div v-if="modals" class="book__modal">
-      <button type="button" @click="hideModal()" class="close">
+    <div v-if="modals" class="book__modal" @click="hideModal">
+      <button type="button" @click="hideModal" class="close">
         <i></i>
         <i></i>
       </button>
-      <div class="modal__slide">
+      <div @click.stop="" class="modal__slide">
         <swiper class="swiper book_img" :options="header__slider">
           <swiper-slide v-for="(image, index) of images" :key="index">
             <img :src="require(`../assets/images/rooms/${image}`)" alt=""/>
@@ -315,12 +314,12 @@
         </swiper>
       </div>
     </div>
-    <div v-if="priceModal" class="price__modal">
-      <button @click="hidePriceModal()" type="button" class="close">
+    <div v-if="priceModal" class="price__modal" @click="hidePriceModal">
+      <button @click="hidePriceModal" type="button" class="close">
         <i></i>
         <i></i>
       </button>
-      <b-col v-if="joinModal" class="join" md="8" lg="5">
+      <b-col v-if="joinModal" @click.stop="" class="join" md="8" lg="5">
         <h4>Join World of Sunrise or sign in to your account to book.</h4>
         <div class="join__flex">
           <b-col
@@ -351,7 +350,7 @@
           Maybe later. I'll choose another rate.</a
         >
       </b-col>
-      <b-col v-if="signModal" class="sign" md="6" lg="3">
+      <b-col v-if="signModal" @click.stop="" class="sign" md="6" lg="3">
         <h3><span>SIGN IN TO</span> WORLD OF SUNRISE</h3>
         <b-form class="form">
           <b-form-group

@@ -200,7 +200,8 @@
     }
 
     &__banner {
-        background-image: url("../images/banner_fon_events.jpg");
+        // background-image: url("../images/rooms/ABDUMANNONRAKHIMOVV-232.jpg");
+        background-image: url("../images/rooms/ABDUMANNONRAKHIMOVV-232.jpg");
         background-size: cover;
         background-position: center center;
         position: relative;
@@ -242,18 +243,22 @@
 
         &-link {
             a {
-                padding: 15px 20px;
+                padding: 10px 22px;
                 line-height: 20px;
                 background-color: transparent;
                 color: #fff;
                 border: 1px solid #fff;
-                border-radius: 3px;
+                border-radius: 18px;
                 font-size: 14px;
                 display: inline-block;
+                transition: ease background .3s,border-color .2s;
 
                 &:hover {
                     text-decoration: none;
-                    background-color: rgba(255,255,255,0.3);
+                    // background-color: rgba(255,255,255,0.3);
+                    background-color: #ffb612;
+                    color: #fff;
+                    border: 1px solid transparent;
                 }
             }
         }
@@ -298,20 +303,20 @@
         }
 
         &-link {
-            background-color: transparent;
+            background-color: #ffb612;
             border: 1px solid #ffb612;
             font-size: 12px;
             padding: 10px 15px;
             line-height: 12px;
             font-weight: 600;
             border-radius: 3px;
-            color: #ffb612;
+            color: #fff;
             transition: all 0.3s ease;
             display: inline-block;
 
             &:hover {
-                color: #fff;
-                background-color: #ffb612;
+                color: #ffb612;
+                background-color: transparent;
                 text-decoration: none;
             }
 
@@ -345,40 +350,44 @@
         }
 
         &-input {
-            width: 170px !important;
-            margin: 0 8px 0 0;
+            width: 260px !important;
+            margin: 0 -69px 0 0;
             background: #f3f3f3;
             border: none;
-            border-bottom: 1px solid #dedede;
+            border: 1px solid #ffb612;
+            border-radius: 12px;
+            position: relative;
+            z-index: 1;
             min-height: 28px;
-            border-radius: 0;
             font-size: 14px;
 
             &:focus {
-                border: none;
                 box-shadow: none;
                 background: #f3f3f3;
-                //border-bottom: 1px solid #000;
-                border-bottom: 1px solid #dedede;
             }
         }
 
         &-btn {
-            background-color: transparent;
+            background-color: #ffb612;
             border: 1px solid #ffb612;
+            border-radius: 12px;
             font-size: 12px;
             padding: 10px 15px;
             line-height: 12px;
             font-weight: 600;
-            border-radius: 3px;
-            color: #ffb612;
+            color: #fff;
             transition: all 0.3s ease;
             display: inline-block;
+            position: relative;
+            z-index: 2;
+            height: 35px;
+            box-shadow: rgb(119, 119, 119) -6px 0px 11px -7px;
 
             &:hover {
                 color: #fff;
                 background-color: #ffb612;
                 text-decoration: none;
+                border: 1px solid #ffb612;
             }
         }
     }

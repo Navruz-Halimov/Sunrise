@@ -101,12 +101,12 @@
           </ul>
         </b-col>
       </b-row>
-      <div v-if="footerModal" class="footer__modal">
-        <button @click="hideModal()" type="button" class="close">
+      <div v-if="footerModal" class="footer__modal" @click="hideModal">
+        <button @click="hideModal" type="button" class="close">
           <i></i>
           <i></i>
         </button>
-        <div class="footer__text">
+        <div class="footer__text" @click.stop="">
           <div v-if="privacy" class="privacy">
             <h4>Sunrise Privacy Policy</h4>
             <span>1 Introduction</span>
@@ -158,9 +158,8 @@
               rights. Your submission of information on the Site is subject to Hyatt’s Global Privacy Policy for Guests
               which is hereby incorporated into these Terms & Conditions.</p>
             <p>The Site offers information on properties managed, franchised, owned, licensed, or developed by
-              affiliates of Hyatt Hotels Corporation. As used throughout the Site, the terms “Hyatt,” “the Company,”
-              “our,” “we,” “us,” and other similar terms may refer to one or more of Hyatt Hotels Corporation, Hyatt
-              Corporation, Hyatt International Corporation, Select Hotels Group, LLC, or one or more of their direct or
+              affiliates of Sunrise Hotels Corporation. As used throughout the Site, the terms and other similar terms may refer to one or more of Sunrise Hotels Corporation, Sunrise
+              Corporation, Sunrise International Corporation, Select Hotels Group, LLC, or one or more of their direct or
               indirect subsidiaries or affiliates. These terms are used for convenience only and are not intended as a
               precise designation of any one particular entity.</p>
             <p>PLEASE READ THE TERMS & CONDITIONS CAREFULLY BEFORE DOWNLOADING, USING OR OBTAINING ANY MATERIALS,
@@ -225,7 +224,7 @@
           </div>
           <div v-if="security" class="security">
             <h4>Security & Safety</h4>
-            <p>Hotels managed by Hyatt Hotels & Resorts consider guest comfort and security as our priority,
+            <p>Hotels managed by Sunrise Hotels & Resorts consider guest comfort and security as our priority,
               particularly when faced with today's global security challenges. We would like to share with you some of
               the proactive security programs that are integral to the operations of our hotels.</p>
             <ul>
