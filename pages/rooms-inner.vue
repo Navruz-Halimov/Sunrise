@@ -5,8 +5,8 @@
         <b-col lg="3" class="rooms__select-left">
           <ul class="rooms__select-amenties">
             <span class="rooms__select-amenties-heading">Amenties</span>
-            <b-button 
-              v-b-toggle.collapse-1 
+            <b-button
+              v-b-toggle.collapse-1
               class="rooms__select-amenties-heading mobil"
               @click="isActive = !isActive"
               v-if="isActive === false"
@@ -14,8 +14,8 @@
               Amenties
               <font-awesome-icon :icon="['fas', 'angle-down']" />
             </b-button>
-            <b-button 
-              v-b-toggle.collapse-1 
+            <b-button
+              v-b-toggle.collapse-1
               class="rooms__select-amenties-heading mobil"
               v-else
               @click="isActive = !isActive"
@@ -48,10 +48,10 @@
                 <li class="rooms__select-amenties-item">Crib upon request</li>
                 <li class="rooms__select-amenties-item">
                   Rollaway bed upon request
-                </li>                
+                </li>
               </b-card>
             </b-collapse>
-            
+
           </ul>
         </b-col>
         <b-col lg="6" class="rooms__select-center">
@@ -135,11 +135,72 @@
               limit="10"
               class="room__inner-pagination"
             ></b-pagination-nav>
-              <b-button class="floor__btn" pill :to="localePath('/payment')">Select room</b-button>
-              
+              <b-button class="floor__btn" pill @click="showPriceModal">Select room</b-button>
           </div>
         </b-col>
       </b-row>
+      <div v-if="priceModal" class="price__modal" @click="hidePriceModal">
+        <button @click="hidePriceModal" type="button" class="close">
+          <i></i>
+          <i></i>
+        </button>
+        <b-col v-if="joinModal" @click.stop="" class="join" md="8" lg="5">
+          <h4>Join World of Sunrise or sign in to your account to book.</h4>
+          <div class="join__flex">
+            <b-col
+              class="join__content"
+              cols="8"
+              offset="2"
+              md="6"
+              offset-md="0"
+              lg="6"
+            >
+              <p>Want to become a Sunrise member?</p>
+              <a :href="localePath('/payment')">Join while you book</a>
+            </b-col>
+            <b-col
+              class="join__content"
+              cols="8"
+              offset="2"
+              md="6"
+              offset-md="0"
+              lg="6"
+            >
+              <p>Already a World of Sunrise member?</p>
+              <a @click.prevent="showSignModal()" href="#">Sign in & book</a>
+            </b-col>
+          </div>
+          <a @click.prevent="hidePriceModal()" href="#">
+            <font-awesome-icon :icon="['fas', 'chevron-left']" />
+            Maybe later. I'll choose another rate.</a
+          >
+        </b-col>
+        <b-col v-if="signModal" @click.stop="" class="sign" md="6" lg="3">
+          <h3><span>SIGN IN TO</span> WORLD OF SUNRISE</h3>
+          <b-form class="form">
+            <b-form-group
+              label="World of Sunrise # or Username:"
+              label-for="username"
+            >
+              <b-form-input type="text" id="username" required />
+              <a href="#">Forgot your membership number?</a>
+            </b-form-group>
+            <b-form-group label="Last Name:" label-for="name">
+              <b-form-input type="text" id="name" required />
+            </b-form-group>
+            <b-form-group label="Password" label-for="password">
+              <b-form-input type="password" id="password" required />
+            </b-form-group>
+            <b-form-group>
+              <b-form-checkbox-group class="d-flex justify-content-between">
+                <b-form-checkbox>Remember Me</b-form-checkbox>
+                <a href="#" class="mt-0">Forgot Password</a>
+              </b-form-checkbox-group>
+            </b-form-group>
+            <b-button type="submit">Submit</b-button>
+          </b-form>
+        </b-col>
+      </div>
     </b-container>
   </div>
 </template>
@@ -151,6 +212,9 @@ export default {
       value2: [new Date()],
       value3: [new Date()],
       isActive:false,
+      priceModal: false,
+      joinModal: false,
+      signModal: false,
       rooms__select: {
         centeredSlides: true,
         spaceBetween: 30,
@@ -168,7 +232,26 @@ export default {
   methods: {
     notBeforeToday(date) {
       return date < new Date(new Date().setHours(0, 0, 0, 0))
-    },    
+    },
+    showPriceModal() {
+      this.priceModal = true
+      if (!this.joinModal) {
+        this.joinModal = true
+      }
+    },
+    hidePriceModal() {
+      this.priceModal = false
+      if (!this.priceModal) {
+        this.joinModal = false
+        this.signModal = false
+      }
+    },
+    showSignModal() {
+      if (!this.signModal) {
+        this.signModal = true
+        this.joinModal = false
+      }
+    },
   },
 }
 </script>
