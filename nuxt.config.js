@@ -37,9 +37,13 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    '@nuxtjs/auth',
+    // https://go.nuxtjs.dev/
+    ['@nuxtjs/axios',
+      { baseURL: "http://188.225.83.193/api/" },
+    ],
+
+    // '@nuxtjs/auth',
+
     [
       'nuxt-fontawesome', {
         imports: [
@@ -61,7 +65,7 @@ export default {
         locales: [
           { code: "en", iso: "us-US", name: "English", file: "en.js" },
           { code: "ru", iso: "ru-RU", name: "Russian", file: "ru.js" },
-          { code: "chn", iso: "chi-CHI", name: "Chinese", file: "chn.js"}
+          { code: "chn", iso: "chi-CHI", name: "Chinese", file: "chn.js" }
         ],
         defaultLocale: "en",
         rootRedirect: "en",

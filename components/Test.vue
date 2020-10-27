@@ -3,11 +3,21 @@
     <b-container class="p-0">
       <b-row class="gallery__content gallery__content-main">
         <b-col
-          v-for="(image, index) of images.slice(0, 3)" :key="index"
-          cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3"
+          v-for="(gallereyid, index) of gallery.slice(0,count)"
+          :key="index"
+          cols="10"
+          offset="1"
+          sm="6"
+          offset-sm="0"
+          md="6"
+          lg="3"
         >
           <div class="photo" @click.prevent="show(index)">
-            <img class="photo__img" :src="require(`../assets/images/rooms/${image}`)"  alt="gallery image" />
+            <img
+              class="photo__img"
+              :src="gallereyid.image"
+              alt="gallery image"
+            />
           </div>
         </b-col>
       </b-row>
@@ -18,9 +28,13 @@
         <i></i>
         <i></i>
       </button>
-      <swiper class="swiper modals__content"  :options="visit__slider">
-        <swiper-slide v-for="(image,index) of images.slice(0, 3)" :key="index" class="modals__img">
-          <img :src="require(`../assets/images/rooms/${image}`)" alt=""/>
+      <swiper class="swiper modals__content" :options="visit__slider">
+        <swiper-slide
+          v-for="(gallereyid, index) of gallery"
+          :key="index"
+          class="modals__img"
+        >
+          <img :src="gallereyid.image" alt="" />
         </swiper-slide>
         <div class="swiper-button-prev book__prev" slot="button-prev"></div>
         <div class="swiper-button-next book__next" slot="button-next"></div>
@@ -28,11 +42,13 @@
     </div>
   </div>
 </template>
-
 <script>
+import { mapGetters } from 'vuex'
 export default {
+  props: ['count'],
   data() {
     return {
+      gallery: [],
       visit__slider: {
         centeredSlides: true,
         spaceBetween: 30,
@@ -41,21 +57,21 @@ export default {
         effect: 'fade',
         navigation: {
           nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        }
+          prevEl: '.swiper-button-prev',
+        },
       },
-      images: [
-        'ABDUMANNONRAKHIMOVV-162.jpg',
-        'ABDUMANNONRAKHIMOVV-194.jpg',
-        'ABDUMANNONRAKHIMOVV-212.jpg',
-        'ABDUMANNONRAKHIMOVV-217.jpg',
-      ],
       visible: false,
       index: 0,
       id: 0,
     }
   },
   methods: {
+    async getGallery() {
+      await this.$axios.get('/gallery/list/').then((res) => {
+        this.gallery = res.data
+        console.log(res)
+      })
+    },
     show(id) {
       this.visible = true
       this.id = id
@@ -64,6 +80,11 @@ export default {
       this.visible = false
       this.id = 0
     },
+  },
+  computed: {},
+  created() {},
+  mounted() {
+    this.getGallery()
   },
 }
 </script>

@@ -9,16 +9,16 @@
           </nuxt-link>
         </div>
         <div class="floor__top-part">
-          <nuxt-link :to="localePath('/rooms-inner')" class="floor__link">
+          <nuxt-link :to="localePath(`/firstfloor/1`)" class="floor__link">
             <img src="../../assets/images/1floor/2.jpg" alt="" />
           </nuxt-link>
-          <nuxt-link :to="localePath('/')" class="floor__link">
+          <nuxt-link :to="localePath(`/firstfloor/${$route.params.id}`)" class="floor__link">
             <img src="../../assets/images/1floor/3.jpg" alt="" />
           </nuxt-link>
-          <nuxt-link :to="localePath('/')" class="floor__link">
+          <nuxt-link :to="localePath(`/firstfloor/${$route.params.id}`)" class="floor__link">
             <img src="../../assets/images/1floor/4.jpg" alt="" />
           </nuxt-link>
-          <nuxt-link :to="localePath('/')" class="floor__link">
+          <nuxt-link :to="localePath(`/firstfloor/${$route.params.id}`)" class="floor__link">
             <img src="../../assets/images/1floor/5.jpg" alt="" />
           </nuxt-link>
           <nuxt-link to="" class="floor__link">
@@ -44,31 +44,31 @@
           </nuxt-link>
         </div>
         <div class="floor__bottom-part">
-          <nuxt-link :to="localePath('/')" class="floor__link">
+          <nuxt-link :to="localePath('#')" class="floor__link">
             <img src="../../assets/images/1floor/13.jpg" alt="" />
           </nuxt-link>
-          <nuxt-link :to="localePath('/')" class="floor__link">
+          <nuxt-link :to="localePath(`/firstfloor/1`)" class="floor__link">
             <img src="../../assets/images/1floor/14.jpg" alt="" />
           </nuxt-link>
-          <nuxt-link :to="localePath('/')" class="floor__link">
+          <nuxt-link :to="localePath(`/firstfloor/${$route.params.id}`)" class="floor__link">
             <img src="../../assets/images/1floor/15.jpg" alt="" />
           </nuxt-link>
-          <nuxt-link :to="localePath('/')" class="floor__link">
+          <nuxt-link :to="localePath(`/firstfloor/${$route.params.id}`)" class="floor__link">
             <img src="../../assets/images/1floor/16.jpg" alt="" />
           </nuxt-link>
-          <nuxt-link :to="localePath('/')" class="floor__link">
+          <nuxt-link :to="localePath(`/firstfloor/${$route.params.id}`)" class="floor__link">
             <img src="../../assets/images/1floor/17.jpg" alt="" />
           </nuxt-link>
-          <nuxt-link to="" class="floor__link">
+          <nuxt-link :to="localePath(`/firstfloor/${$route.params.id}`)" class="floor__link">
             <img src="../../assets/images/1floor/18.jpg" alt="" />
           </nuxt-link>
-          <nuxt-link :to="localePath('/')" class="floor__link">
+          <nuxt-link :to="localePath(`/firstfloor/${$route.params.id}`)" class="floor__link">
             <img src="../../assets/images/1floor/19.jpg" alt="" />
           </nuxt-link>
           <nuxt-link :to="localePath('/')" class="floor__link">
             <img src="../../assets/images/1floor/20.jpg" alt="" />
           </nuxt-link>
-           <nuxt-link :to="localePath('/')" class="floor__link">
+           <nuxt-link :to="localePath(`/firstfloor/${$route.params.id}`)" class="floor__link">
             <img src="../../assets/images/1floor/21.jpg" alt="" />
           </nuxt-link>
            <nuxt-link :to="localePath('/')" class="floor__link">
@@ -81,7 +81,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  mounted() {
+    console.log(this.$route.params.id)
+  }
+}
 </script>
 
 <style lang="scss" scoped></style>

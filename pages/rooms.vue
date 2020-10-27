@@ -11,9 +11,8 @@
       </div>
       <svg viewBox="0 0 1920 1080" preserveAspectRatio="none">
         <a
-          :href="localePath('/floor/firstfloor')"
-          id="house__svg_182"
-          @mouseover="(visible = true), (floor = 1)"
+          :href="localePath('/firstfloor')"
+          @mouseover=";(visible = true), (floor = 1)"
           @mouseleave="visible = false"
         >
           <path
@@ -23,9 +22,8 @@
           ></path>
         </a>
         <a
-          :href="localePath('/floor/secondfloor')"
-          id="house__svg_183"
-          @mouseover="(visible = true), (floor = 2)"
+          :href="localePath('/secondfloor')"
+          @mouseover=";(visible = true), (floor = 2)"
           @mouseleave="visible = false"
         >
           <path
@@ -36,9 +34,8 @@
         </a>
 
         <a
-          :href="localePath('/floor/thirdfloor')"
-          id="house__svg_184"
-          @mouseover="(visible = true), (floor = 3)"
+          :href="localePath('/thirdfloor')"
+          @mouseover=";(visible = true), (floor = 3)"
           @mouseleave="visible = false"
         >
           <path
@@ -49,9 +46,8 @@
           ></path>
         </a>
         <a
-          :href="localePath('/floor/fourthfloor')"
-          id="house__svg_185"
-          @mouseover="(visible = true), (floor = 4)"
+          :href="localePath('/fourthfloor')"
+          @mouseover=";(visible = true), (floor = 4)"
           @mouseleave="visible = false"
         >
           <path
