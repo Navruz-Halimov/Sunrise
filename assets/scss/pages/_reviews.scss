@@ -1,0 +1,354 @@
+.reviews-page {
+    color: #000;
+    font-family: "Montserrat";
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &__title {
+        color: #FFB612;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px;
+        &:after {
+            content: "";
+            border-top: 1px solid;
+            display: block;
+            width: 15%;
+            margin: 12px auto;
+        }
+    }
+
+    &__top {
+        margin-bottom: 20px; 
+        align-items: center;
+    }
+
+    &__select { 
+        border: 0;
+        border-bottom: 1px solid #aaa;
+        border-radius: 0;
+        font-size: 14px;
+        background: url("../images/select_bottom.svg");
+        background-size: 10px 10px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        width: 150px;
+        cursor: pointer;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        height: auto;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &-text {
+            font-size: 11px;
+            margin: 0 0 0 20px;
+        }
+    }
+
+    &__option {
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+
+    .swiper-wrapper .swiper-slide::before {
+        content: none;
+    }
+
+    .reviews-slider {
+        height: auto;
+
+        &__card {
+            border: 1px solid #eee;
+            padding: 20px 10px;
+            margin-bottom: 50px;
+            border-radius: 5px;
+        }
+
+        &__users {
+            &-icon {
+                width: 90px;
+                margin: auto;
+                margin-bottom: 15px;
+
+                img {
+                    border-radius: 50%;
+                    width: 90px;
+                }
+            }
+
+            &-name {
+                font-size: 14px;
+                font-weight: bold;
+                max-width: 140px;
+                padding: 0 0 0 20px;
+            }
+
+            &-country {
+                font-size: 14px;
+                max-width: 140px;
+                padding: 0 0 0 20px;
+            }
+            &-title {
+                display: none;
+            }
+
+            &-list {
+                display: none;
+            }
+        }
+
+        &__info {
+            text-align: left;
+            &-title {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            &-list {
+                margin-bottom: 8px;
+                font-size: 14px;
+
+                ul, li {
+                    list-style: none;
+                    margin: 0 10px 0 10px; 
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin: 0 0 0 -33px;
+                    }
+
+                    span {
+                        font-weight: bold;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            &-client {
+                position: relative;
+                .collapse:not(.show) {
+                    display: block !important;
+                    height: 60px !important;
+                    overflow: hidden;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0px;
+                        height: 40px;
+                        width: 100%;
+                        background: white;
+                        background: linear-gradient(0deg, white 0%, rgba(255, 237, 237, 0) 100%);
+                        z-index: 1;
+                    }
+                    
+                }
+                .card {
+                    border: none;
+                }
+                .card-body {
+                    padding: 0;
+                    font-size: 14px;
+                }
+                
+            }
+
+            &-btn {
+                color: #ffb612;
+                font-size: 14px;
+                border: none;
+                box-shadow: none;
+
+                &:active, &:hover, &:focus {
+                    color: #ffb612 !important;
+                    font-size: 14px;
+                    border: none !important;
+                    box-shadow: none !important; 
+                    background-color: transparent !important;
+                }
+            }
+
+            &-hotel {
+                margin-left: 25px;
+                border-left: 1px solid #C1C1C1;
+                font-size: 14px;
+                margin-top: 15px;
+                
+                &-text {
+                    position: relative;
+                    .collapse:not(.show) {
+                        display: block !important;
+                        height: 60px !important;
+                        overflow: hidden;
+                        position: relative;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            bottom: 0px;
+                            height: 40px;
+                            width: 100%;
+                            background: white;
+                            background: linear-gradient(0deg, white 0%, rgba(255, 237, 237, 0) 100%);
+                            z-index: 1;
+                        }
+                    }
+                    .card {
+                        border: none;
+                    }
+                    .card-body {
+                        padding: 0;
+                        font-size: 14px;
+                    }
+                }
+                
+                ul, li {
+                    list-style: none;
+                    margin: 0 10px 0 10px; 
+                    padding: 0;
+
+                    h5 {
+                        font-size: 14px;
+                        font-weight: bold;
+                        margin: 0;
+
+                        span {
+                            color: #000;
+                            font-weight: 400;
+                        }
+                    }
+                    span {
+                        font-size: 14px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                        color: #ffb612;
+                        font-size: 14px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        position: relative;
+                        max-height: 60px;
+                        overflow: hidden;
+                        
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            height: 30px;
+                            width: 100%;
+                            background: white;
+                            background: linear-gradient(0deg, white 0%, rgba(255, 237, 237, 0) 100%);
+                        }                        
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 991px) {
+    .reviews-page { 
+        .reviews-slider {
+            &__card {
+                padding: 20px 0;
+            }
+            &__users-name {
+                padding: 0 0 0 5px;
+            }
+
+            &__users-country {
+                padding: 0 0 0 5px;
+            }
+
+            &__users-icon {
+                img {
+                    width: 75px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .reviews-page {
+        .reviews-slider {
+            .container {
+                padding: 0;
+            }
+
+            &__card {
+                border: none;
+                border-bottom: 1px solid rgba(0,0,0,0.08);
+                border-radius: 0;
+            }
+
+            &__users {
+                text-align: center;
+            }
+
+            &__users-name {
+                display: none;
+            }
+            
+            &__users-country {
+                display: none;
+            }
+
+            &__users-title {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 0px;
+                display: block;
+            }
+
+            &__users-list {
+                margin-bottom: 8px;
+                font-size: 14px;
+                display: block;
+
+                ul {
+                    list-style: none;
+                    margin: 0 10px 0 10px;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            &__info-title {
+                display: none;
+            }
+            &__info-list {
+                display: none;
+                
+            }
+        }
+
+        &__select {
+            width: 250px;
+
+            &-text {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews-page .reviews-slider__info-hotel ul h5 span {
+        display: block;
+        margin-left: 0;
+    }
+}

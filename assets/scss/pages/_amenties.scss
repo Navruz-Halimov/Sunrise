@@ -1,19 +1,18 @@
 .amenties {
+  padding-bottom: 50px;
   &__heading {
     margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
-    color: rgb(68, 68, 68);
+    color: #FFB612;
+    font-size: 25px;
+
     &::after {
-      content: '';
-      position: absolute;
-      width: 90px;
-      height: 2px;
-      background-color: #ffb612;
+      content: "";
+      border-top: 1px solid;
       display: block;
-      left: 50%;
-      bottom: -5px;
-      transform: translate(-50%, -50%);
+      width: 15%;
+      margin: 12px auto;
     }
   }
   &__header {

@@ -1,123 +1,90 @@
 <template>
   <div class="gallery">
-    <b-container>
-      <b-row class="gallery__content">
-        <b-col v-for="(image,index) of images" :key="index" cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3">
+    <b-container class="p-0">
+      <b-row class="gallery__content gallery__content-main">
+        <b-col
+          v-for="(gallereyid, index) of gallery.slice(0,count)"
+          :key="index"
+          cols="10"
+          offset="1"
+          sm="6"
+          offset-sm="0"
+          md="6"
+          lg="3"
+        >
           <div class="photo" @click.prevent="show(index)">
-            <img class="photo__img" :src="image" alt="">
+            <img
+              class="photo__img"
+              :src="gallereyid.image"
+              alt="gallery image"
+            />
           </div>
         </b-col>
       </b-row>
     </b-container>
 
-    <div class="modals" v-if="visible" @click="hide">
+    <div class="modals" v-if="visible">
       <button type="button" @click.stop="hide" class="close">
         <i></i>
         <i></i>
       </button>
-      <div class="modals__content" @click.stop="">
-        <div class="modals__img">
-          <img :src="images[id]">
-        </div>
-        <div class="prev"
-             @click.stop="prev"
-             :class="{'invisible': ! hasPrev()}">
-          <svg class="pointer-events-none" fill="#777" height="40" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/>
-            <path d="M0-.5h24v24H0z" fill="none"/>
-          </svg>
-        </div>
-        <div class="next"
-             @click.stop="next"
-             :class="{'invisible': ! hasNext()}">
-          <svg class="pointer-events-none" fill="#777" height="40" viewBox="0 0 24 24" width="40" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
-            <path d="M0-.25h24v24H0z" fill="none"/>
-          </svg>
-        </div>
-      </div>
+      <swiper class="swiper modals__content" :options="visit__slider">
+        <swiper-slide
+          v-for="(gallereyid, index) of gallery"
+          :key="index"
+          class="modals__img"
+        >
+          <img :src="gallereyid.image" alt="" />
+        </swiper-slide>
+        <div class="swiper-button-prev book__prev" slot="button-prev"></div>
+        <div class="swiper-button-next book__next" slot="button-next"></div>
+      </swiper>
     </div>
   </div>
 </template>
-
 <script>
-
-  export default {
-    // props: {
-    //   images: {
-    //     type: Array,
-    //     default: () => [],
-    //   },
-    // },
-    data() {
-      return {
-        images: [
-          'https://www.wyndhamhotels.com/content/dam/property-images/en-us/hr/uz/others/tashkent/49135/49135_exterior_view_1.jpg?crop=3000:2000;*,*&downsize=720:*',
-          'https://www.wyndhamhotels.com/content/dam/property-images/en-us/hr/uz/others/tashkent/49135/49135_exterior_view_2.jpg?crop=1278:852;*,*&downsize=720:*',
-          'https://www.wyndhamhotels.com/content/dam/property-images/en-us/hr/uz/others/tashkent/49135/49135_lobby_view_2.jpg?crop=3000:2000;*,*&downsize=720:*',
-          'https://www.wyndhamhotels.com/content/dam/property-images/en-us/hr/uz/others/tashkent/49135/49135_lobby_view_3.jpg?crop=3000:2000;*,*&downsize=720:*',
-          '',
-          '',
-          '',
-          '',
-        ],
-        visible: false,
-        index: 0,
-        id: 0,
-      };
+import { mapGetters } from 'vuex'
+export default {
+  props: ['count'],
+  data() {
+    return {
+      gallery: [],
+      visit__slider: {
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: true,
+        effect: 'fade',
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      },
+      visible: false,
+      index: 0,
+      id: 0,
+    }
+  },
+  methods: {
+    async getGallery() {
+      await this.$axios.get('/gallery/list/').then((res) => {
+        this.gallery = res.data
+        console.log(res)
+      })
     },
-    methods: {
-      show(id) {
-        this.visible = true;
-        this.id = id;
-      },
-      hide() {
-        this.visible = false;
-        this.id = 0;
-      },
-      hasNext() {
-        return this.id + 1 < this.images.length;
-      },
-      hasPrev() {
-        return this.id - 1 >= 0;
-      },
-      prev() {
-        if (this.hasPrev()) {
-          this.id -= 1;
-        }
-      },
-      next() {
-        if (this.hasNext()) {
-          this.id += 1;
-        }
-      },
-      onKeydown(e) {
-        if (this.visible) {
-          switch (e.key) {
-            case 'ArrowRight':
-              this.next();
-              break;
-            case 'ArrowLeft':
-              this.prev();
-              break;
-            case 'ArrowDown':
-            case 'ArrowUp':
-            case ' ':
-              e.preventDefault();
-              break;
-            case 'Escape':
-              this.hide();
-              break;
-          }
-        }
-      },
+    show(id) {
+      this.visible = true
+      this.id = id
     },
-    mounted() {
-      window.addEventListener('keydown', this.onKeydown)
+    hide() {
+      this.visible = false
+      this.id = 0
     },
-    destroyed() {
-      window.removeEventListener('keydown', this.onKeydown)
-    },
-  };
-
+  },
+  computed: {},
+  created() {},
+  mounted() {
+    this.getGallery()
+  },
+}
 </script>

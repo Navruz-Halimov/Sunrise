@@ -2,20 +2,28 @@
   <header class="header">
     <b-container>
       <b-navbar toggleable="lg">
-        <b-navbar-brand href="#">Sunrise</b-navbar-brand>
+        <b-navbar-brand to="/" class="navbar__brand">
+          <img src="../assets/images/logo.png" alt="main logo" />
+        </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="header__navbar">
-            <b-nav-item href="/offer">Offer</b-nav-item>
-            <b-nav-item href="/rooms">Rooms</b-nav-item>
-            <b-nav-item href="/events">Events</b-nav-item>
-            <b-nav-item href="/gallery">gallery</b-nav-item>
-            <b-nav-item to="/amenties">Amenties</b-nav-item>
-            <b-nav-item href="/attractions">Nearby attraction</b-nav-item>
-            <b-nav-item href="/contact">Contact</b-nav-item>
-            <b-nav-item href="/reviews">Reviews</b-nav-item>
+            <b-nav-item :to="localePath('/offer')">
+              {{ $t('navbar.offer') }}</b-nav-item
+            >
+            <b-nav-item :to="localePath('/rooms')">{{
+              $t('navbar.rooms')
+            }}</b-nav-item>
+            <b-nav-item :to="localePath('/events')">{{$t('navbar.events')}}</b-nav-item>
+            <b-nav-item :to="localePath('/gallery')">{{$t('navbar.gallery')}}</b-nav-item>
+            <b-nav-item :to="localePath('/amenties')">{{$t('navbar.amenties')}}</b-nav-item>
+            <b-nav-item :to="localePath('/attractions')"
+              >{{$t('navbar.nearby')}}</b-nav-item
+            >
+            <b-nav-item :to="localePath('/contact')">{{$t('navbar.contact')}}</b-nav-item>
+            <b-nav-item :to="localePath('/reviews')">{{$t('navbar.reviews')}}</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -23,14 +31,14 @@
     <div class="header__bottom">
       <b-container>
         <div class="header__bottom-content">
-          <div class="header__bottom-info">
-            <nuxt-link to="" class="address">
-              <font-awesome-icon :icon="['fas', 'map-marker-alt']" />Navoi
-              Street, 1 A</nuxt-link
+          <div class="header__bottom-info d-none d-lg-block">
+            <a href="https://goo.gl/maps/RwzLKT38CgkVRXbKA" class="address">
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" /> 1 Mirzo
+              Ulug'bek shoh ko'chasi, Toshkent</a
             >
-            <nuxt-link to="" class="tel">
-              <font-awesome-icon :icon="['fas', 'phone']" /> +998 99 999 99
-              99</nuxt-link
+            <a href="tel:998 71 289 56 66" class="tel">
+              <font-awesome-icon :icon="['fas', 'phone']" />998 71 289 56 66
+              99</a
             >
             <nuxt-link to="" class="review">
               <vue-stars
@@ -45,27 +53,39 @@
                 :readonly="true"
                 char="★"
               />
-              Reviews</nuxt-link
+             {{$t('navbar.reviews')}}</nuxt-link
             >
           </div>
-          <b-button class="header__bottom-btn"> Book now </b-button>
+          <b-button class="header__bottom-btn" :to="localePath('/booking')"> {{$t('navbar.book')}} </b-button>
           <!-- Right aligned nav items -->
           <b-navbar-nav>
             <b-nav-item-dropdown text="Lang" right class="lang__list-wrapper">
-              <b-dropdown-item href="#">ENGLISH</b-dropdown-item>
-              <b-dropdown-item href="#">RUSSIAN</b-dropdown-item>
-              <b-dropdown-item href="#">CHINESE</b-dropdown-item>
+              <template v-slot:button-content>
+                <span class="sign__header"
+                  >{{$t('navbar.lang')}}<font-awesome-icon :icon="['fas', 'chevron-down']"
+                /></span>
+              </template>
+              <b-dropdown-item href="#" :to="switchLocalePath('en')"
+                >{{$t('navbar.eng')}}</b-dropdown-item
+              >
+              <b-dropdown-item href="#" :to="switchLocalePath('ru')"
+                >{{$t('navbar.ru')}}</b-dropdown-item
+              >
+              <b-dropdown-item href="#" :to="switchLocalePath('chn')"
+                >{{$t('navbar.chn')}}</b-dropdown-item
+              >
             </b-nav-item-dropdown>
 
             <b-nav-item-dropdown class="user__join">
               <!-- Using 'button-content' slot -->
               <template v-slot:button-content>
                 <span class="sign__header"
-                  ><font-awesome-icon :icon="['fas', 'user']" />Sign in</span
-                >
+                  ><font-awesome-icon :icon="['fas', 'user']" />{{$t('navbar.sign')}}
+                  <font-awesome-icon :icon="['fas', 'chevron-down']"
+                /></span>
               </template>
-              <b-dropdown-item href="#">Sign in</b-dropdown-item>
-              <b-dropdown-item href="#">Join</b-dropdown-item>
+              <b-dropdown-item :href="localePath('/sign-in')">{{$t('navbar.sign')}}</b-dropdown-item>
+              <b-dropdown-item :href="localePath('/join')">{{$t('navbar.join')}}</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </div>
@@ -73,3 +93,16 @@
     </div>
   </header>
 </template>
+<script>
+export default {
+  data() {
+    return {}
+  },
+  methods: {
+    // changeLanguage(lang){
+    //   this.$router.push(switchLocalePath(lang));
+    // },
+    mounted() {},
+  },
+}
+</script>

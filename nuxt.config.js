@@ -8,7 +8,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
     ]
   },
 
@@ -37,8 +37,13 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    // https://go.nuxtjs.dev/
+    ['@nuxtjs/axios',
+      { baseURL: "http://188.225.83.193/api/" },
+    ],
+
+    // '@nuxtjs/auth',
+
     [
       'nuxt-fontawesome', {
         imports: [
@@ -51,6 +56,31 @@ export default {
             icons: ['fab']
           }
         ]
+      }
+    ],
+    [
+      "nuxt-i18n",
+      {
+        lazy: true,
+        locales: [
+          { code: "en", iso: "us-US", name: "English", file: "en.js" },
+          { code: "ru", iso: "ru-RU", name: "Russian", file: "ru.js" },
+          { code: "chn", iso: "chi-CHI", name: "Chinese", file: "chn.js" }
+        ],
+        defaultLocale: "en",
+        rootRedirect: "en",
+        strategy: "prefix",
+        // seo: false,
+        // lazy: true,
+        langDir: "lang/",
+        // By default, custom routes are extracted from page files using acorn parsing,
+        // set this to false to disable this
+        parsePages: false,
+        detectBrowserLanguage: {
+          // cookieKey: 'i18n_cookie',
+          useCookie: true,
+          fallbackLocale: "en"
+        }
       }
     ],
   ],

@@ -1,0 +1,77 @@
+.tourist__guide {
+  &-heading {
+    color: #000;
+    border-bottom: 1px solid #ffb612;
+    padding-bottom: 12px;
+    font-size: 30px;
+
+    .info__circle{
+    color: #FFB612;
+    margin-right: 10px;
+    }
+  }
+  .guide__list {
+    color: #000;
+    padding-top: 20px;
+    list-style-type: none;
+    .guide__item{
+      .guide__link {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 1px;
+          background-color: #FFB612;
+          transition: all .5s ;
+        }
+        &:hover{
+          color: #FFB612;
+          &:before{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  ul{
+    padding: 0 10px;
+  }
+}
+.main__book-page{
+  .book__page {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .book__page-heading{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #FFB612 !important;
+    color: #000;
+    font-size: 30px;
+  }
+  .header__content{
+    margin: 1rem 0 !important;
+    padding-top: 15px;
+    border:none !important;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .tourist__guide-heading, .main__book-page .book__page-heading, .visit .visit__title h2 {
+    font-size: 20px;
+  }
+
+  .gallery .gallery__title .gallery__title-main {
+    font-size: 20px;
+  }
+}
+
+
+
