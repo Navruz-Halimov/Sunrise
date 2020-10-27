@@ -9,7 +9,7 @@
           <b-row>
             <b-col cols="12" v-for="event in events" :key="event">
               <h1 class="event-page__heading">
-                {{event.title}}
+                {{ event.title }}
               </h1>
               <div
                 class="event-page__collapse"
@@ -296,21 +296,21 @@
 export default {
   data() {
     return {
-        events:[],
+      events: [],
       isActive: false,
       isActive1: false,
     }
   },
   methods: {
-       async getEvents() {
-      await this.$axios.get("events/").then(res => {
-          console.log(res);
-        this.events = res.data;
-      });
+    async getEvents() {
+      await this.$axios.get('events/').then((res) => {
+        console.log(res)
+        this.events = res.data
+      })
+    },
   },
-},
- mounted() {
-    this.getEvents();
-  }
+  mounted() {
+    this.getEvents()
+  },
 }
 </script>

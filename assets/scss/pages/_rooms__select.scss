@@ -26,12 +26,13 @@
       color: #000;
       padding: 0;
 
-      &:focus, &:active, &:hover {
+      &:focus,
+      &:active,
+      &:hover {
         box-shadow: none !important;
         background: transparent !important;
         color: #000 !important;
       }
-
     }
     .mobil {
       display: none;
@@ -49,15 +50,24 @@
     &-item {
       position: relative;
       font-size: 14px;
-      &::before {
-        content: '';
-        position: absolute;
-        width: 4px;
-        height: 4px;
-        background-color: #ffb612;
-        top: 7px;
-        border-radius: 4px;
-        left: -10px;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background-color: #ffb612;
+            top: 7px;
+            border-radius: 4px;
+            left: -10px;
+          }
+        }
       }
     }
   }
@@ -75,11 +85,11 @@
       h4 {
         font-size: 19px;
       }
-      .join__flex{
+      .join__flex {
         display: flex;
         justify-content: center;
       }
-      .join__content{
+      .join__content {
         padding: 20px;
         min-height: 100%;
         p {
@@ -141,7 +151,7 @@
         display: block;
         margin-top: 10px;
       }
-      input{
+      input {
         font-size: 14px;
         padding-left: 10px;
         width: 100%;
@@ -165,41 +175,42 @@
           }
         }
       }
-      button{
+      button {
         width: 100%;
         color: white;
         border: none;
         border-radius: 0;
-        background-color: #FFB612;
-        &:focus{
+        background-color: #ffb612;
+        &:focus {
           box-shadow: none;
-          background-color: #FFB612;
+          background-color: #ffb612;
         }
       }
     }
   }
 }
-.rooms__select-slider{
-    .swiper-slide::before{
-        content:none;
-    }
+.rooms__select-slider {
+  .swiper-slide::before {
+    content: none;
+  }
 
-    .swiper-button-prev, .swiper-button-next {
-      width: 35px;
-      height: 35px;
-      box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.13);
-      border: 1px solid #e7e7e7;
-      border-radius: 50%;
-      background-color: #fff;
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 35px;
+    height: 35px;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.13);
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+    background-color: #fff;
 
-      &:after {
-        font-size: 18px;
-        color: #ffb612;
-      }
+    &:after {
+      font-size: 18px;
+      color: #ffb612;
     }
+  }
 }
 
-.floor__mini-2d{
+.floor__mini-2d {
   text-align: center;
   display: block;
   margin-top: 20px;
@@ -210,30 +221,29 @@
   text-align: center;
 }
 
-.room__inner-pagination{
-  .page-item.active{
-    .page-link{
-      color:white !important;
+.room__inner-pagination {
+  .page-item.active {
+    .page-link {
+      color: white !important;
       background-color: #ffb612;
-      border:1px solid #ccc;
+      border: 1px solid #ccc;
     }
   }
-  .pagination{
+  .pagination {
     flex-wrap: wrap;
   }
-  .page-link{
-    color:#ffb612 !important;
+  .page-link {
+    color: #ffb612 !important;
     transition: all 0.3s ease;
-    &:hover{
-      background-color:#ffb612 !important;
-      color:white !important;
+    &:hover {
+      background-color: #ffb612 !important;
+      color: white !important;
     }
   }
-
 }
-.floor__btn{
+.floor__btn {
   background-color: #ffb612;
-  border:1px solid transparent;
+  border: 1px solid transparent;
   padding-left: 20px !important;
   padding-right: 20px !important;
   display: block;
@@ -283,7 +293,6 @@
     margin-top: 0;
     display: none;
     position: relative;
-
   }
 
   .rooms__select-amenties .mobil {
@@ -320,7 +329,8 @@
 }
 
 @media (max-width: 640px) {
-  .rooms__select-slider .swiper-button-prev, .rooms__select-slider .swiper-button-next {
+  .rooms__select-slider .swiper-button-prev,
+  .rooms__select-slider .swiper-button-next {
     width: 30px;
     height: 30px;
 
@@ -334,7 +344,8 @@
   .rooms__select-slider {
     height: 250px;
   }
-  .rooms__select-slider .swiper-button-prev, .rooms__select-slider .swiper-button-next {
+  .rooms__select-slider .swiper-button-prev,
+  .rooms__select-slider .swiper-button-next {
     width: 25px;
     height: 25px;
     top: 55%;

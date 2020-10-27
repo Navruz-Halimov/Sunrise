@@ -4,11 +4,11 @@
     margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
-    color: #FFB612;
+    color: #ffb612;
     font-size: 25px;
 
     &::after {
-      content: "";
+      content: '';
       border-top: 1px solid;
       display: block;
       width: 15%;
@@ -46,13 +46,17 @@
   .outdoor__list {
     margin-top: 20px;
     margin-bottom: 20px;
-    .outdoor__item:first-child {
-      list-style: none;
-    }
-    .outdoor__item {
-      position: relative;
-      font-size: 15px;
-      color: rgb(68, 68, 68);
+   
+    .outdoor__item-wrap {
+      margin-bottom: 10px;
+      &-list{
+        font-size: 15px;
+        color: rgb(68, 68, 68);
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+      }
       &-heading {
         font-size: 16px;
         color: #000;
@@ -67,38 +71,17 @@
         background-repeat: no-repeat;
         background-size: contain;
       }
-      &-icon {
-        background-image: url('../images/amenties/park.svg');
-      }
-      &-kitchen {
-        background-image: url('../images/amenties/kitchen.svg');
-      }
-      &-pet {
-        background-image: url('../images/amenties/track.svg');
-      }
-      &-mega {
-        background-image: url('../images/amenties/megaphone.svg');
-      }
-      &-food {
-        background-image: url('../images/amenties/cutlery.svg');
-      }
-      &-wifi {
-        background-image: url('../images/amenties/wifi.svg');
-      }
-      &-bell {
-        background-image: url('../images/amenties/desk-bell.svg');
-      }
-      &-parking {
-        background-image: url('../images/amenties/parking.svg');
-      }
-      &-family {
-        background-image: url('../images/amenties/family.svg');
-      }
-      &-safety {
-        background-image: url('../images/amenties/protection.svg');
-      }
-      &-info {
-        background-image: url('../images/amenties/information.svg');
+      .outdoor__item-container {
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px;
+          height: 30px;
+          display: block;
+          margin-right: 10px;
+          margin-left: -42px;
+          object-fit: cover;
+        }
       }
     }
   }
