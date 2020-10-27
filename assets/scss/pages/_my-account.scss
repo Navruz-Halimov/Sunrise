@@ -96,6 +96,24 @@
         }
       }
     }
+    .textarea{
+      textarea{
+        border-color: #FFB612;
+        &:focus{
+          box-shadow: none;
+        }
+      }
+      button{
+        padding: 10px 50px;
+        margin-top: 20px;
+        background-color: #FFB612;
+        border: none;
+        &:focus{
+          box-shadow: none;
+          background-color: #FFB612;
+        }
+      }
+    }
   }
 }
 // Responsive
