@@ -43,6 +43,19 @@
                     <b-table bordered :items="items"></b-table>
                   </div>
                 </b-tab>
+                <b-tab title="Reviews">
+                  <div class="textarea">
+                    <h6 class="mb-3">Your Reviews</h6>
+                    <b-form-textarea
+                      class="pay_input"
+                      id="textarea-rows"
+                      placeholder="Tall textarea"
+                      rows="8"
+                      no-resize
+                    ></b-form-textarea>
+                    <b-button type="submit" >Submit</b-button>
+                  </div>
+                </b-tab>
                 <b-tab title="Settings">
                   <div class="setting">
                     <b-col class="mt-5" lg="10">
