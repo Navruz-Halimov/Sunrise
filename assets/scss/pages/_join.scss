@@ -1,92 +1,126 @@
- .reg-bg{
-    background-image: url("../images/3D/1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.reg-bg {
+  background: url('../images/registration.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  .container {
+    background-color:rgba(0, 0, 0, 0.45);
+  }
+  .registration__form{
+    max-width: 300px;
+    width:100%;
+  }
+
+  &-form {
     height: 500px;
-    &-inner{
-      background: rgba(0,0,0,.25);
-    }
-    &-form{
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color:white;
+    input{
+      padding: 5px;
       width:100%;
-      .form-group{
-        width: 330px;
-        color:#fff;
+      display: block;
+      border:1px solid transparent;
+      outline: none;
+      border-radius: 10px;
+      &:active,&:hover,&:focus{
+        border:1px solid #ffb612
       }
     }
+   
+    label{
+      display: block;
+    }
   }
-.join__wrapper{
- 
-  .join__header{
+  &-btn{
+    background-color: #ffb612;
+    box-shadow: #777777 -6px 0px 11px -7px;
+     max-width: 300px;
+      width:100%;
+      border-radius: 10px;
+      margin-top: 15px;
+      &:focus,&:hover,&:active{
+        background-color: rgb(51, 181, 229);
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  }
+}}
+.join__wrapper {
+  .join__header {
     height: 60vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)),
-      url("https://picsum.photos/2048/1080");
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.51),
+        rgba(0, 0, 0, 0.51)
+      ),
+      url('https://picsum.photos/2048/1080');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    .join__title{
+    .join__title {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100%;
       padding: 0 6rem;
-      h1{
+      h1 {
         color: white;
       }
     }
   }
-  .join__title{
+  .join__title {
     text-align: left;
     padding: 3rem 7rem;
-    h2{
+    h2 {
       text-align: center;
       font-size: 25px;
-      color: #FFB612;
-      &:after{
-        content: "";
+      color: #ffb612;
+      &:after {
+        content: '';
         border-top: 1px solid;
         display: block;
         width: 40%;
         margin: 12px auto;
       }
     }
-    p{
+    p {
       font-size: 14px;
       display: block;
       margin: 2rem 0;
     }
-    span{
+    span {
       font-size: 15.5px;
     }
   }
-  .join__content{
+  .join__content {
     padding-bottom: 4rem;
-    label{
+    label {
       font-size: 13px;
     }
-    span{
+    span {
       font-size: 13.5px;
       margin: 12px 0;
       display: block;
     }
-    button{
+    button {
       width: 100%;
       border-radius: 0;
       border: none;
-      background-color: #FFB612;
-      &:focus, &:active{
-        background-color: #FFB612!important;
-        box-shadow: none!important;
+      background-color: #ffb612;
+      &:focus,
+      &:active {
+        background-color: #ffb612 !important;
+        box-shadow: none !important;
       }
     }
-    select{
-      background-color: transparent!important;
+    select {
+      background-color: transparent !important;
     }
-    .form-group{
-      margin-bottom: 20px!important;
+    .form-group {
+      margin-bottom: 20px !important;
     }
-    .join__input{
+    .join__input {
       font-size: 14px;
       padding-left: 10px;
       width: 100%;
@@ -106,32 +140,32 @@
 
 // Responsive
 
-@media (min-width: 0) and (max-width: 576px){
-  .join__wrapper{
-    .join__header{
+@media (min-width: 0) and (max-width: 576px) {
+  .join__wrapper {
+    .join__header {
       height: 40vh;
-      .join__title{
+      .join__title {
         padding: 0;
-        h1{
+        h1 {
           font-size: 28px;
         }
       }
     }
-    .join__title{
+    .join__title {
       padding: 3rem 1rem;
     }
   }
 }
-@media (min-width: 576px) and (max-width: 767px){
-  .join__wrapper{
-    .join__title{
+@media (min-width: 576px) and (max-width: 767px) {
+  .join__wrapper {
+    .join__title {
       padding: 3rem 1rem;
     }
   }
 }
-@media (min-width: 767px) and (max-width: 992px){
-  .join__wrapper{
-    .join__title{
+@media (min-width: 767px) and (max-width: 992px) {
+  .join__wrapper {
+    .join__title {
       padding: 3rem 1rem;
     }
   }

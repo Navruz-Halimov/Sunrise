@@ -41,14 +41,14 @@ const store = () => new Vuex.Store({
                 })
         },
         async getCode({ commit }, data) {
-            await this.$axios.post('user/code/send/', { phone_number: data })
+            await this.$axios.post('/user/code/send/', { phone_number: data })
                 .then(res => {
                     console.log("Code: ", res.data.code)
                 })
                 .catch(err => console.log(err))
         },
         async sendCode({ commit }, data) {
-            await this.$axios.post('user/code/check/', data)
+            await this.$axios.post('/user/code/check/', data)
                 .then(res => {
                     commit('setToken', res.data.token)
                     commit('setPhone_number', res.data.phone_number)
