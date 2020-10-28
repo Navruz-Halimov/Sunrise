@@ -85,7 +85,7 @@
                 /></span>
               </template>
               <b-dropdown-item :href="localePath('/sign-in')">{{$t('navbar.sign')}}</b-dropdown-item>
-              <b-dropdown-item :href="localePath('/join')">{{$t('navbar.join')}}</b-dropdown-item>
+              <b-dropdown-item :href="localePath('/reg')">{{$t('navbar.join')}}</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </div>

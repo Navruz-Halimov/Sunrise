@@ -1,4 +1,23 @@
+ .reg-bg{
+    background-image: url("../images/3D/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    &-inner{
+      background: rgba(0,0,0,.25);
+    }
+    &-form{
+      display: flex;
+      justify-content: center;
+      width:100%;
+      .form-group{
+        width: 330px;
+        color:#fff;
+      }
+    }
+  }
 .join__wrapper{
+ 
   .join__header{
     height: 60vh;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)),
