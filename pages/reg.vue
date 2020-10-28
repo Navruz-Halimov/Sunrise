@@ -11,6 +11,7 @@
                 type="tel"
                 id="phone"
                 required
+                placeholder="Enter phone number"
               />
             </div>
           </div>
