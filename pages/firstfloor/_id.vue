@@ -35,8 +35,8 @@
         </b-col>
         <b-col lg="6" class="rooms__select-center">
           <swiper class="rooms__select-slider" :options="rooms__select">
-            <swiper-slide
-              ><img :src="rooms.image_set" alt="" />
+            <swiper-slide v-for="room of imageset" :key="room.id"
+              ><img :src="room.image" alt="" />
             </swiper-slide>
             <div class="swiper-button-prev" slot="button-prev"></div>
             <div class="swiper-button-next" slot="button-next"></div>
@@ -119,6 +119,7 @@ export default {
   data() {
     return {
       rooms: [],
+      imageset: [],
       value2: [new Date()],
       value3: [new Date()],
       isActive: false,
@@ -140,21 +141,23 @@ export default {
     notBeforeToday(date) {
       return date < new Date(new Date().setHours(0, 0, 0, 0))
     },
-    // ${this.$route.params.id}
-    async getSingleRoom() {
+    async getRoom() {
       await this.$axios
         .get(`rooms/${this.$route.params.id}/`)
         .then((res) => {
-          console.log(res)
           this.rooms = res.data
+          this.imageset = res.data.image_set
+          console.log('first')
+          console.log(this.imageset)
         })
         .catch((err) => {
           console.log(err)
         })
     },
   },
-  mounted() {
-    this.getSingleRoom()
+  computed: {},
+  created() {
+    this.getRoom();
   },
 }
 </script>
