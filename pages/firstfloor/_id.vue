@@ -35,8 +35,11 @@
         </b-col>
         <b-col lg="6" class="rooms__select-center">
           <swiper class="rooms__select-slider" :options="rooms__select">
-            <swiper-slide v-for="room of imageset" :key="room.id"
-              ><img :src="room.image" alt="" />
+            <swiper-slide v-for="room of imageset" :key="room.id">
+              <img :src="room.image" alt="" />
+              <div class="rooms_price">
+                <i>{{ Math.floor(rooms.cost_per_day * 10359.88) }} $</i>
+              </div>
             </swiper-slide>
             <div class="swiper-button-prev" slot="button-prev"></div>
             <div class="swiper-button-next" slot="button-next"></div>

@@ -84,13 +84,14 @@
             </b-col>
           </b-row>
         </b-col>
-        <b-col class="book_hr" cols="12" md="12">
+        <b-col class="book_hr" cols="12" md="12"
+               v-for="(room,index) of rooms" :key="index.id" >
           <b-row>
             <b-col class="mb-sm-2 mb-md-2" cols="12" sm="12" md="4" lg="4">
               <div class="book__slide">
                 <swiper class="swiper book_img" :options="header__slider">
-                  <swiper-slide v-for="(image, index) of images" :key="index">
-                    <img :src="require(`../assets/images/rooms/${image}`)" alt=""/>
+                  <swiper-slide v-for="room of imageset" :key="room.id">
+                    <img :src="room.image" alt="///"/>
                   </swiper-slide>
                   <div
                     class="swiper-button-prev book__prev"
@@ -111,187 +112,28 @@
             </b-col>
             <b-col cols="12" sm="7" md="4" lg="5">
               <div class="book__text">
-                <h4>Номера с большой двуспальной кроватью (King)</h4>
-                <p>
-                  Насладитесь пребыванием в этом номере площадью 35 кв. м с
-                  большой двуспальной кроватью (King), окнами от пола до потолка
-                  и большим рабочим столом.
-                </p>
-                <a v-b-toggle.collapse-2 @click="showDetails()"
-                  >{{ textDetails }}
-                  <!--                  <font-awesome-icon :icon="['fas', 'chevron-down']"/>-->
+                <h4 v-html="room.description_1"></h4>
+                <p v-html="room.description_2"></p>
+                <a v-b-toggle.collapse-2 @click="showDetails()">
+                  {{ textDetails }}
                 </a>
                 <b-collapse id="collapse-2">
                   <ul>
                     <h5>Удобства в номере</h5>
-                    <li>Кровать Sunrise</li>
-                    <li>Телевизор с плоским экраном диагональю 55 дюймов</li>
-                    <li>Затемняющие шторы</li>
-                    <li>
-                      Система индивидуального климат-контроля и регулировки
-                      температуры
-                    </li>
-                    <li>Телевизор в ванной</li>
-                    <li>
-                      Душевая кабина с тропическим душем и отдельная ванна
-                    </li>
-                    <li>Сейф в номере</li>
+                    <li v-html="room.description_1"></li>
                   </ul>
                 </b-collapse>
               </div>
             </b-col>
             <b-col cols="12" sm="5" md="4" lg="3">
               <div class="book__price">
-                <h2>1 656 000 UZS</h2>
+                <h2>{{ Math.floor(room.cost_per_day * 10359.88) }} UZS</h2>
                 <span>Сред. за ночь (UZS)</span>
                 <button
                   @click="showPriceModal()"
                   class="btn book__btn book__btn--btn"
-                  type="button"
-                >
-                  Выбрать
-                </button>
-              </div>
-            </b-col>
-          </b-row>
-        </b-col>
-        <b-col class="book_hr" cols="12" md="12">
-          <b-row>
-            <b-col class="mb-sm-2 mb-md-2" cols="12" sm="12" md="4" lg="4">
-              <div class="book__slide">
-                <swiper class="swiper book_img" :options="header__slider">
-                  <swiper-slide v-for="(image, index) of images" :key="index">
-                    <img :src="require(`../assets/images/rooms/${image}`)" alt="" />
-                  </swiper-slide>
-                  <div
-                    class="swiper-button-prev book__prev"
-                    slot="button-prev"
-                  ></div>
-                  <div
-                    class="swiper-button-next book__next"
-                    slot="button-next"
-                  ></div>
-                </swiper>
-                <div class="book__expand" @click.prevent="showModal(index)">
-                  <font-awesome-icon
-                    class="expand"
-                    :icon="['fas', 'expand-arrows-alt']"
-                  />
-                </div>
-              </div>
-            </b-col>
-            <b-col cols="12" sm="7" md="4" lg="5">
-              <div class="book__text">
-                <h4>Номера с большой двуспальной кроватью (King)</h4>
-                <p>
-                  Насладитесь пребыванием в этом номере площадью 35 кв. м с
-                  большой двуспальной кроватью (King), окнами от пола до потолка
-                  и большим рабочим столом.
-                </p>
-                <a v-b-toggle.collapse-3 @click="showDetails()"
-                  >{{ textDetails }}
-                  <!--                  <font-awesome-icon :icon="['fas', 'chevron-down']"/>-->
-                </a>
-                <b-collapse id="collapse-3">
-                  <ul>
-                    <h5>Удобства в номере</h5>
-                    <li>Кровать Sunrise</li>
-                    <li>Телевизор с плоским экраном диагональю 55 дюймов</li>
-                    <li>Затемняющие шторы</li>
-                    <li>
-                      Система индивидуального климат-контроля и регулировки
-                      температуры
-                    </li>
-                    <li>Телевизор в ванной</li>
-                    <li>
-                      Душевая кабина с тропическим душем и отдельная ванна
-                    </li>
-                    <li>Сейф в номере</li>
-                  </ul>
-                </b-collapse>
-              </div>
-            </b-col>
-            <b-col cols="12" sm="5" md="4" lg="3">
-              <div class="book__price">
-                <h2>1 656 000 UZS</h2>
-                <span>Сред. за ночь (UZS)</span>
-                <button
-                  @click="showPriceModal()"
-                  class="btn book__btn book__btn--btn"
-                  type="button"
-                >
-                  Выбрать
-                </button>
-              </div>
-            </b-col>
-          </b-row>
-        </b-col>
-        <b-col class="book_hr" cols="12" md="12">
-          <b-row>
-            <b-col class="mb-sm-2 mb-md-2" cols="12" sm="12" md="4" lg="4">
-              <div class="book__slide">
-                <swiper class="swiper book_img" :options="header__slider">
-                  <swiper-slide v-for="(image, index) of images" :key="index">
-                    <img :src="require(`../assets/images/rooms/${image}`)" alt="" />
-                  </swiper-slide>
-                  <div
-                    class="swiper-button-prev book__prev"
-                    slot="button-prev"
-                  ></div>
-                  <div
-                    class="swiper-button-next book__next"
-                    slot="button-next"
-                  ></div>
-                </swiper>
-                <div class="book__expand" @click.prevent="showModal(index)">
-                  <font-awesome-icon
-                    class="expand"
-                    :icon="['fas', 'expand-arrows-alt']"
-                  />
-                </div>
-              </div>
-            </b-col>
-            <b-col cols="12" sm="7" md="4" lg="5">
-              <div class="book__text">
-                <h4>Номера с большой двуспальной кроватью (King)</h4>
-                <p>
-                  Насладитесь пребыванием в этом номере площадью 35 кв. м с
-                  большой двуспальной кроватью (King), окнами от пола до потолка
-                  и большим рабочим столом.
-                </p>
-                <a v-b-toggle.collapse-4 @click="showDetails()"
-                  >{{ textDetails }}
-                  <!--                  <font-awesome-icon :icon="['fas', 'chevron-down']"/>-->
-                </a>
-                <b-collapse id="collapse-4">
-                  <ul>
-                    <h5>Удобства в номере</h5>
-                    <li>Кровать Sunrise</li>
-                    <li>Телевизор с плоским экраном диагональю 55 дюймов</li>
-                    <li>Затемняющие шторы</li>
-                    <li>
-                      Система индивидуального климат-контроля и регулировки
-                      температуры
-                    </li>
-                    <li>Телевизор в ванной</li>
-                    <li>
-                      Душевая кабина с тропическим душем и отдельная ванна
-                    </li>
-                    <li>Сейф в номере</li>
-                  </ul>
-                </b-collapse>
-              </div>
-            </b-col>
-            <b-col cols="12" sm="5" md="4" lg="3">
-              <div class="book__price">
-                <h2>1 656 000 UZS</h2>
-                <span>Сред. за ночь (UZS)</span>
-                <button
-                  @click="showPriceModal()"
-                  class="btn book__btn book__btn--btn"
-                  type="button"
-                >
-                  Выбрать
+                  type="button">
+                  Select
                 </button>
               </div>
             </b-col>
@@ -384,17 +226,12 @@ export default {
   name: 'Range',
   data() {
     return {
-      images: [
-        'ABDUMANNONRAKHIMOVV-162.jpg',
-        'ABDUMANNONRAKHIMOVV-194.jpg',
-        'ABDUMANNONRAKHIMOVV-212.jpg',
-        'ABDUMANNONRAKHIMOVV-217.jpg',
-      ],
+      rooms: [],
+      imageset: [],
       header__slider: {
         centeredSlides: true,
         spaceBetween: 30,
         loop: true,
-        autoplay: true,
         effect: 'fade',
         navigation: {
           nextEl: '.swiper-button-next',
@@ -451,6 +288,22 @@ export default {
         this.joinModal = false
       }
     },
+    async getRooms() {
+      await this.$axios.get('rooms/')
+        .then((res) => {
+          this.rooms = res.data;
+          this.imageset = res.data.image_set;
+          console.log(res);
+          console.log(this.imageset);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+    },
   },
+  computed: {},
+  created() {
+    this.getRooms();
+  }
 }
 </script>
