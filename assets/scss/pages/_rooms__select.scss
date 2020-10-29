@@ -3,11 +3,20 @@
   padding-bottom: 30px;
   &-slider {
     height: 400px;
-
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    .rooms_price{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 4px 35px;
+      color: white;
+      background-color: #FFB612;
+      border-bottom-left-radius: 10px;
+      //z-index: 9;
     }
   }
   &-amenties {
