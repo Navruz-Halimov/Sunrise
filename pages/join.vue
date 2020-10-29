@@ -70,12 +70,12 @@
                     required
                   />
                 </b-form-group>
-                    <b-form-group label="SMS code" label-for="code">
+                <b-form-group label="Zip code" label-for="zip">
                   <b-form-input
                     class="join__input"
-                    type="email"
-                    id="code"
-                    v-model="form.email"
+                    type="text"
+                    id="zip"
+                    v-model="form.zipcode"
                     required
                   />
                 </b-form-group>
@@ -123,7 +123,6 @@
 export default {
   data() {
     return {
-      showPasswordInput: false,
       form: {
         gerder: '',
         name: '',
@@ -137,14 +136,46 @@ export default {
   },
   methods: {
     async onSubmit() {
-      this.showPasswordInput = true
+      await this.$axios
+        .post('user/me/', {
+          prefix: this.gender,
+          firstname: this.name,
+          lastname: this.lastname,
+          phone_number: this.$store.state.phone_number,
+          password: this.password,
+          email: this.email,
+          region: this.region,
+          state: this.country,
+          city: this.city,
+          zim_code: this.zipcode,
+          token: this.$store.state.token,
+        })
+        .then(async () => {
+          try {
+            await this.$auth.loginWith('local', {
+              data: {
+                phone_number: this.$store.state.phone_number,
+                password: this.form.password,
+              },
+            })
+            console.log(this.$auth.user)
 
-      if (this.data.code != '') {
-        this.$store.dispatch('sendCode', this.data)
-        this.$router.push(this.localePath({ name: 'selectuser' }))
-      } else {
-        this.$store.dispatch('getCode', this.data.phone_number)
-      }
+            this.$toast.success({
+              title: `${this.$t('toast.success')}`,
+              message: `${this.$t('toast.loginSuccessMessage')}`,
+            })
+            // this.disable = false;
+          } catch (err) {
+            console.log(err)
+            this.$toast.error({
+              title: `${this.$t('toast.loginError')}`,
+              message: `${this.$t('toast.loginErrorMessage')}`,
+            })
+          }
+        })
+        .catch((err) => {
+          console.log(err)
+        })
     },
   },
 }

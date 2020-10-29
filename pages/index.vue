@@ -338,9 +338,8 @@
       </b-row>
       <Test :images="images" :count="8" />
       <b-button
-        href="http://localhost:3000/gallery"
         class="btn-img my-4"
-        to="/gallery"
+        :to="localePath('/gallery')"
       >{{$t('gallery.btn')}}
       </b-button
       >

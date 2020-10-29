@@ -154,6 +154,22 @@ export default {
         footer_title3: "Never miss out on our most popular deals",
         footer_btn: "Subscribe",
         footer_inp: "Email address"
-    }
+    },
+    toast: {
+        success: 'Успешно',
+        sMessage: 'Информация успешно обновлено.',
+        error: 'Ошибка',
+        eMessage: 'Произошла ошибка при загрузке изображения',
+        loginError: 'Ошибка',
+        loginErrorMessage: 'Телефонный номер или пароль введены неверно.',
+        loginSuccessMessage: 'Вы успешно вошли в свой профиль.',
+        signupErrorMessage: 'Произошла ошибка при создании профиля.',
+        updateProfile: 'Ваш профиль был успешно изменен.',
+        updateProfileError: 'При вводе информации произошла ошибка',
+        lawyerpost: 'Ваш запрос принят. Подождите, пока администрация одобрит.',
+        lawyererror: 'Произошла ошибка.Пожалуйста, попробуйте еще раз',
+        input: 'Пожалуйста, убедитесь, что ваша информация полная.',
+        code: "Вы ввели неправильный код! Повторите попытку.",
+    },
     
 }

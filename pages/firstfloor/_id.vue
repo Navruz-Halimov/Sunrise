@@ -147,7 +147,7 @@ export default {
         .then((res) => {
           this.rooms = res.data
           this.imageset = res.data.image_set
-          console.log('first')
+          console.log(res)
           console.log(this.imageset)
         })
         .catch((err) => {
