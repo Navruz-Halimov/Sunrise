@@ -179,9 +179,23 @@
         font-weight: bold;
         margin: 10px 0;
       }
-      li {
-        font-size: 14px;
-        margin-bottom: 8px;
+      .amenties_text{
+        li {
+          font-size: 13px;
+          margin-bottom: 8px;
+          list-style: none;
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background-color: #ffb612;
+            top: 7px;
+            border-radius: 4px;
+            left: -10px;
+          }
+        }
       }
     }
   }
@@ -199,17 +213,19 @@
     }
     .book__btn--btn {
       width: 60%;
-      font-size: 15px !important;
-      padding: 10px 20px;
+      font-size: 14px !important;
+      padding: 6px 25px;
       background-color: transparent;
       color: #ffb612;
       transition: 0.4s;
+      border: 1px solid #FFB612!important;
       &:hover {
         color: white!important;
         background-color: #ffb612!important;
+         box-shadow: 0 5px 11px 0 rgba(0,0,0,0.08), 0 4px 15px 0 rgba(0,0,0,0.05)!important;
       }
       &:focus {
-        box-shadow: none;
+        box-shadow: #777777 -6px 0px 11px -7px;
       }
     }
   }
