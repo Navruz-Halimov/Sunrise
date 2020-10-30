@@ -112,7 +112,7 @@
             </b-col>
             <b-col cols="12" sm="7" md="4" lg="5">
               <div class="book__text">
-                <h4 v-html="room.description_1"></h4>
+                <h4></h4>
                 <p class="small_text" v-html="room.description_2"></p>
                 <a v-b-toggle.id @click="showDetails()">
                   {{ textDetails }}
@@ -120,7 +120,7 @@
                 <b-collapse id="id">
                   <ul>
                     <h5>Удобства в номере</h5>
-                    <li v-html="room.description_2"></li>
+                    <div class="amenties_text" v-html="room.description_1"></div>
                   </ul>
                 </b-collapse>
               </div>

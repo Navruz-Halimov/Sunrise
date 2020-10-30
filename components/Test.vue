@@ -119,8 +119,8 @@ height: 100vh;
     }
 
     .atom-spinner {
-      height: 100px;
-      width: 100px;
+      height: 60px;
+      width: 60px;
       overflow: hidden;
 
     }
