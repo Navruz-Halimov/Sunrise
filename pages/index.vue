@@ -971,11 +971,9 @@
         value2: [new Date()],
         value3: [new Date()],
         isShow: false,
-<<<<<<< HEAD
         offerModal: false,
-=======
         sliders: [],
->>>>>>> 59122ada2ab29d8fc9e8d35565259e12f015ac38
+
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
