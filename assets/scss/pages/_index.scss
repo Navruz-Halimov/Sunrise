@@ -61,7 +61,61 @@
     border:none !important;
   }
 }
-
+.offer-main-items{
+  border: 1px solid red;
+  .offer__modal{
+    @extend %modal-style;
+    .offer__text{
+      width: 50%;
+      height: 80%;
+      background-color: white;
+      overflow: scroll;
+      padding: 2rem 3rem;
+      box-shadow: 0px 2px 8px -3px #cccccc;
+      h4{
+        font-size: 18px;
+      }
+      h6{
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        b{
+          color: #007bff;
+          font-size: 14px;
+        }
+      }
+      p{
+        font-size: 13px;
+        margin: 1rem 0;
+        display: block;
+        span{
+          font-size: 13px;
+          margin: 10px 0;
+          display: block;
+        }
+      }
+      span{
+        font-size: 14px;
+      }
+      ul{
+        padding-left: 1rem;
+        li{
+          font-size: 13px;
+        }
+      }
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: white;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 15px!important;
+      background-color: #cccccc;
+    }
+  }
+}
 
 @media (max-width: 575px) {
   .tourist__guide-heading, .main__book-page .book__page-heading, .visit .visit__title h2 {

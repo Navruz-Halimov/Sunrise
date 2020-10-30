@@ -878,75 +878,83 @@
                 </b-col>
             </b-row>
             <b-row class="offer-main-items">
-                <b-col class="offer-main__item order-md-1 order-lg-1 order-1 animate__animated animate__fadeInUp" md="6" lg="3" >
+              <b-col lg="6">
+                <b-row>
+                  <b-col class="offer-main__item" md="6" lg="6" >
                     <div class="offer-main__picture">
-                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-47.jpg" alt="" height="270px"></b-img>
+                      <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-47.jpg" alt="" height="270px"></b-img>
                     </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-2 order-lg-2 order-2 animate__animated animate__fadeInUp" md="6" lg="3" >
+                  </b-col>
+                  <b-col class="offer-main__item" md="6" lg="6" >
                     <div class="offer-main__text">
-                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
-                        <div class="offer-main__text-info">{{$t('offer_main.text_info')}}
-                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
-                            <span>19th March, 2021</span> -->
-                        </div>
-                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
+                      <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
+                      <div class="offer-main__text-info">{{$t('offer_main.text_info')}}
+                        <!-- <font-awesome-icon :icon="['fas', 'clock']" />
+                        <span>19th March, 2021</span> -->
+                      </div>
+                      <a @click.prevent="showModal" class="offer-main__link">{{$t('offer_main.text_link')}}</a>
                     </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-4 order-lg-3 order-3 animate__animated animate__fadeInUp" md="6" lg="3" >
-                    <div class="offer-main__picture">
-                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-46.jpg" alt="" width="270px" height="270px"></b-img>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-3 order-lg-4 order-4 animate__animated animate__fadeInUp" md="6" lg="3" >
-                    <div class="offer-main__text">
-                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
-                        <div class="offer-main__text-info">
-                                {{$t('offer_main.text_info')}}
-                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
-                            <span>19th March, 2021</span> -->
-                        </div>
-                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-6 order-lg-5 order-6 animate__animated animate__fadeInUp" md="6" lg="3" >
-                    <div class="offer-main__text">
-                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
-                        <div class="offer-main__text-info">
-                                {{$t('offer_main.text_info')}}
-                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
-                            <span>19th March, 2021</span> -->
-                        </div>
-                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-5 order-lg-6 order-5 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
-                    <div class="offer-main__picture">
-                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-43.jpg" alt="" width="270px" height="270px"></b-img>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-7 order-lg-7 order-8 animate__animated animate__fadeInUp" md="6" lg="3" >
-                    <div class="offer-main__text">
-                        <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
-                        <div class="offer-main__text-info">
-                                {{$t('offer_main.text_info')}}
-                            <!-- <font-awesome-icon :icon="['fas', 'clock']" />
-                            <span>19th March, 2021</span> -->
-                        </div>
-                        <nuxt-link to="/offer" class="offer-main__link">{{$t('offer_main.text_link')}}</nuxt-link>
-                    </div>
-                </b-col>
-                <b-col class="offer-main__item order-md-8 order-lg-8 order-7 offer-main__item-left animate__animated animate__fadeInUp" md="6" lg="3" >
-                    <div class="offer-main__picture">
-                        <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-42.jpg" alt="" width="270px" height="270px"></b-img>
-                    </div>
-                </b-col>
+                  </b-col>
+                </b-row>
+              </b-col>
+
+
+              <div v-if="offerModal" class="offer__modal" @click="hideModal">
+                <button @click="hideModal" type="button" class="close">
+                  <i></i>
+                  <i></i>
+                </button>
+                <div class="offer__text" @click.stop="">
+                  <div class="privacy">
+                    <h4>Sunrise Privacy Policy</h4>
+                    <span>1 Introduction</span>
+                    <p>We are committed to safeguarding the privacy of the personal information that we gather concerning our
+                      prospective, current and former employees (“you” or “employees”) for management, human resources and
+                      payroll purposes.</p>
+                    <p>As a Hyatt employee (or prospective employee), you understand and acknowledge that we collect, use and
+                      disclose your personal information in accordance with this Privacy Policy for Employees (this
+                      “Policy”).</p>
+                    <span>2 The Application of this Policy</span>
+                    <p>This Policy applies to employees’ personal information and to the use of that personal information in any
+                      form, whether oral, electronic and/or written. This Policy applies unless there is a specific
+                      country/region privacy policy for you based on your citizenship/residency or if the Hyatt Location (as
+                      defined below) is in such country/region.</p>
+                    <p>This Policy gives effect to Hyatt’s commitment to protect your personal information and has been adopted
+                      by all of the separate and distinct legal entities that manage, operate, franchise, own and/or provide
+                      services to the locations operating under or in connection with the Hyatt®”, Park Hyatt®, Miraval®,
+                      exhale®, Grand Hyatt®, Hyatt Regency®, Andaz®, Hyatt Centric®, The Unbound Collection by Hyatt®, Hyatt
+                      Place®, Hyatt House®, Hyatt Ziva, Hyatt Zilara or Hyatt Residence Club® brands around the world, including
+                      independently branded locations affiliated with Hyatt (individually, a “Hyatt Location”) and collectively,
+                      the “Hyatt Locations”). Those entities include Hyatt Hotels Corporation, its direct and indirect
+                      subsidiaries, and all of the separate and distinct legal entities that own the individual Hyatt Locations
+                      worldwide. References to “Hyatt”, “we” and “our” throughout this Policy, depending on the context,
+                      collectively refer to those separate and distinct legal entities, including the entity with which you have
+                      or may have an employment relationship.</p>
+                    <p>Your personal information will be processed by the entity with which you have or may have an employment
+                      relationship for the purposes set out in Section 4 below. Your personal information may be disclosed to
+                      the other entities listed above for human resources administration purposes.</p>
+                    <p>While this Policy is intended to describe the broadest range of our personal information processing
+                      activities globally, those processing activities may be more limited in some jurisdictions based on the
+                      restrictions of their laws. For example, the laws of a particular country may limit the types of personal
+                      information we can collect or the manner in which we process that personal information. In those
+                      instances, we adjust our internal policies and/or practices to reflect the requirements of local law.</p>
+                    <p>If you agree to this Policy you are, to the extent required under local law in some jurisdictions,
+                      granting your express and written consent to the processing of any personal information that you provide
+                      Hyatt that is considered to be Sensitive Personal Information (as described in Section 3) or is considered
+                      to be financial information.</p>
+                    <span>3 The Types of Personal Information We Process</span>
+                    <p>The term “personal information” in this Policy refers to information that identifies or is capable of
+                      identifying you as an individual. The types of personal information that we process (which may vary by
+                      jurisdiction based on applicable law and the nature of the employee’s position and duties) include:</p>
+                  </div>
+                </div>
+              </div>
             </b-row>
         </b-container>
     </div>
     <!-- finish offer-main -->
   </div>
-</template> 
+</template>
 
 <script>
   import Test from '../components/Test.vue'
@@ -963,6 +971,7 @@
         value2: [new Date()],
         value3: [new Date()],
         isShow: false,
+        offerModal: false,
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
@@ -1009,7 +1018,6 @@
           }
         },
         // finish slider room
-
         // start Feedbacks slider
         users_feedback: {
           slidesPerView: 1,
@@ -1044,7 +1052,26 @@
         } else {
           this.amenityText = 'Show More'
         }
+      },
+      showModal() {
+        this.offerModal = true
+        this.privacy = true
+      },
+      hideModal() {
+        this.offerModal = false
+      },
+      async getOffer() {
+        await this.$axios.get('menu/offers/')
+          .then((res) => {
+            console.log("Offer", res);
+          })
+          .catch((error) => {
+            console.log(error);
+          })
       }
+    },
+    created() {
+      this.getOffer();
     },
     head() {
       return {
