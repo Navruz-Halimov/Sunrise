@@ -90,8 +90,8 @@
             <b-col class="mb-sm-2 mb-md-2" cols="12" sm="12" md="4" lg="4">
               <div class="book__slide">
                 <swiper class="swiper book_img" :options="header__slider">
-                  <swiper-slide v-for="room of imageset" :key="room.id">
-                    <img :src="room.image" alt="///"/>
+                  <swiper-slide   v-for="image of imageset" :key="image.id">
+                    <img :src="$store.state.mediaURL + image.image" alt="booking-image"/>
                   </swiper-slide>
                   <div
                     class="swiper-button-prev book__prev"
@@ -102,7 +102,7 @@
                     slot="button-next"
                   ></div>
                 </swiper>
-                <div class="book__expand" @click.prevent="showModal(index)">
+                <div class="book__expand" @click.prevent="showModal(index.id)">
                   <font-awesome-icon
                     class="expand"
                     :icon="['fas', 'expand-arrows-alt']"
@@ -113,14 +113,14 @@
             <b-col cols="12" sm="7" md="4" lg="5">
               <div class="book__text">
                 <h4 v-html="room.description_1"></h4>
-                <p v-html="room.description_2"></p>
-                <a v-b-toggle.collapse-2 @click="showDetails()">
+                <p class="small_text" v-html="room.description_2"></p>
+                <a v-b-toggle.id @click="showDetails()">
                   {{ textDetails }}
                 </a>
-                <b-collapse id="collapse-2">
+                <b-collapse id="id">
                   <ul>
                     <h5>Удобства в номере</h5>
-                    <li v-html="room.description_1"></li>
+                    <li v-html="room.description_2"></li>
                   </ul>
                 </b-collapse>
               </div>
@@ -148,8 +148,8 @@
       </button>
       <div @click.stop="" class="modal__slide">
         <swiper class="swiper book_img" :options="header__slider">
-          <swiper-slide v-for="(image, index) of images" :key="index">
-            <img :src="require(`../assets/images/rooms/${image}`)" alt=""/>
+          <swiper-slide v-for="(image,index) of imageset" :key="index.id">
+            <img :src="$store.state.mediaURL + image.image" alt="booking-image"/>
           </swiper-slide>
           <div class="swiper-button-prev book__prev" slot="button-prev"></div>
           <div class="swiper-button-next book__next" slot="button-next"></div>
@@ -263,8 +263,9 @@ export default {
         this.amenityText = 'Show More'
       }
     },
-    showModal() {
+    showModal(id) {
       this.modals = true
+      this.id = id;
     },
     hideModal() {
       this.modals = false
@@ -292,9 +293,11 @@ export default {
       await this.$axios.get('rooms/')
         .then((res) => {
           this.rooms = res.data;
-          this.imageset = res.data.image_set;
-          console.log(res);
-          console.log(this.imageset);
+          res.data.forEach(item => {
+            item.image_set.forEach(image   => {
+              this.imageset.push(image);
+            })
+          })
         })
         .catch((error) => {
           console.log(error);
