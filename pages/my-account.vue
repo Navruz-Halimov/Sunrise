@@ -105,7 +105,7 @@
                   <div class="setting">
                     <b-col class="mt-5" lg="10">
                       <h3 class="mb-4">Change Personal Infomation</h3>
-                      <b-form>
+                      <b-form @submit.prevent="changeInfo">
                         <b-row>
                           <b-col
                             class="mt-2 pay__input"
@@ -121,8 +121,7 @@
                               <b-form-input
                                 type="text"
                                 id="username"
-                                placeholder="First Name"
-                                required
+                                v-model="$auth.user.firstname"
                               />
                             </b-form-group>
                           </b-col>
@@ -140,8 +139,7 @@
                               <b-form-input
                                 type="text"
                                 id="lastname"
-                                placeholder="Last Name"
-                                required
+                                v-model="$auth.user.lastname"
                               />
                             </b-form-group>
                           </b-col>
@@ -156,8 +154,7 @@
                               <b-form-input
                                 type="email"
                                 id="email"
-                                placeholder="user@gmail.com"
-                                required
+                                v-model="$auth.user.email"
                               />
                             </b-form-group>
                           </b-col>
@@ -172,8 +169,8 @@
                               <b-form-input
                                 type="tel"
                                 id="tel"
-                                placeholder="+00 000 0000 000"
-                                required
+                                disabled
+                                :value="$auth.user.phone_number"
                               />
                             </b-form-group>
                           </b-col>
@@ -184,15 +181,11 @@
                             md="6"
                             lg="6"
                           >
-                            <b-form-group
-                              label="Primary Address"
-                              label-for="address"
-                            >
+                         <b-form-group label="City" label-for="city">
                               <b-form-input
                                 type="text"
-                                id="address"
-                                placeholder="Address"
-                                required
+                                id="city"
+                                v-model="$auth.user.city"
                               />
                             </b-form-group>
                           </b-col>
@@ -210,8 +203,7 @@
                               <b-form-input
                                 type="text"
                                 id="country"
-                                placeholder="United Kingdom"
-                                required
+                                v-model="$auth.user.state"
                               />
                             </b-form-group>
                           </b-col>
@@ -222,16 +214,24 @@
                             md="6"
                             lg="6"
                           >
-                            <b-form-group label="City" label-for="city">
+                          </b-col>
+                          <b-col lg="6" />
+                           <b-col
+                            class="mt-2 pay__input"
+                            cols="12"
+                            sm="12"
+                            md="6"
+                            lg="6"
+                          >
+                         <b-form-group label="Zip Code" label-for="zipcode">
                               <b-form-input
                                 type="text"
-                                id="city"
+                                id="zipcode"
                                 placeholder="London"
-                                required
+                                v-model="this.$auth.user.zim_code"
                               />
                             </b-form-group>
                           </b-col>
-                          <b-col lg="6" />
                           <b-col
                             class="mt-2 pay__input"
                             cols="12"
@@ -432,6 +432,31 @@ export default {
             })
           }
         })
+    },
+      async changeInfo() {
+      await this.$axios
+        .patch("user/profile/", {
+          prefix:"Mr.",
+          firstname:this.$auth.user.firstname,
+          lastname:this.$auth.user.lastname,
+          email:this.$auth.user.email,
+          state:this.$auth.user.state,
+          city:this.$auth.user.city,
+          zim_code:this.$auth.user.zim_code
+        })
+        .then(res => {
+          this.$toast.success({
+            title: `${this.$t("toast.success")}`,
+            message: `${this.$t("toast.updateProfile")}`
+          });
+        })
+        .catch(err => {
+          console.log(err);
+          this.$toast.error({
+            title: `${this.$t("toast.loginError")}`,
+            message: `${this.$t("toast.updateProfileError")}`
+          });
+        });
     }
   }
 }
