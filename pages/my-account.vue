@@ -181,7 +181,7 @@
                             md="6"
                             lg="6"
                           >
-                         <b-form-group label="City" label-for="city">
+                        <b-form-group label="City" label-for="city">
                               <b-form-input
                                 type="text"
                                 id="city"
@@ -216,14 +216,14 @@
                           >
                           </b-col>
                           <b-col lg="6" />
-                           <b-col
+                          <b-col
                             class="mt-2 pay__input"
                             cols="12"
                             sm="12"
                             md="6"
                             lg="6"
                           >
-                         <b-form-group label="Zip Code" label-for="zipcode">
+                        <b-form-group label="Zip Code" label-for="zipcode">
                               <b-form-input
                                 type="text"
                                 id="zipcode"
@@ -238,11 +238,11 @@
                             sm="12"
                             md="6"
                             lg="6"
+                            style="padding-top: 28px"
                           >
-                            <hr />
-                            <b-button type="submit" style="transform: none"
-                              >Save changes</b-button
-                            >
+                            <b-button type="submit" style="transform: none">
+                              Save changes
+                            </b-button>
                           </b-col>
                         </b-row>
                       </b-form>
