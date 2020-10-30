@@ -118,7 +118,7 @@
               >
                 My account
               </b-dropdown-item>
-              <b-dropdown-item @click="logout()" v-if="loggedIn"
+              <b-dropdown-item @click="logout()" 
                 >Logout
               </b-dropdown-item>
             </b-nav-item-dropdown>

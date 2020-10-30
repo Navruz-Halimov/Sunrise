@@ -104,10 +104,11 @@
         }
       }
       button{
-        padding: 10px 50px;
+        padding: 8px 50px;
         margin-top: 20px;
         background-color: #FFB612;
         border: none;
+        width: 100%;
         &:focus{
           box-shadow: none;
           background-color: #FFB612;

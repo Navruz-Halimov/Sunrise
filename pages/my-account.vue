@@ -57,38 +57,47 @@
                     :readonly="false"
                     char="★"
                   />                 
-                  <b-form-group
-                    label="Your Reviews"
-                    label-for="reviews"
-                  >
-                    <b-form-input
-                      v-model="form.title"
-                      type="text"
-                      id="reviews"
-                      placeholder="Your Reviews"
-                      required
-                    />
-                  </b-form-group>
-                  <div class="form-group reviews__select">
-                    <label for="FormControl">Example select</label>
-                    <select class="form-control" id="FormControl">
-                      <option value="0" selected="selected" disabled>Trip type</option>
-                      <option value="1">Business</option>
-                      <option value="2">Family</option>
-                    </select>
-                  </div> 
+                  <b-col sm="12" md="6" lg="6" cols="12" class="p-0">
+                    <b-form-group
+                      label="Your Reviews title"
+                      label-for="reviews"
+                    >
+                      <b-form-input
+                        v-model="form.title"
+                        type="text"
+                        id="reviews"
+                        placeholder="Your Reviews title"
+                        required
+                      />
+                    </b-form-group>
+                  </b-col>
+                  <b-col sm="12" md="6" lg="6" cols="12" class="p-0">
+                    <div class="form-group reviews__select">
+                      <label for="FormControl">Example select</label>
+                      <select class="form-control" id="FormControl">
+                        <option value="0" selected="selected" disabled>Trip type</option>
+                        <option value="1">Business</option>
+                        <option value="2">Family</option>
+                      </select>
+                    </div>
+                  </b-col> 
                   <div class="textarea">
                     <!-- <h6 class="mb-3">Your Reviews</h6> -->
-                    <label for="textarea-rows">Comment:</label>
-                    <b-form-textarea
-                    v-model="form.comment"
-                      class="pay_input"
-                      id="textarea-rows"
-                      placeholder="Tall textarea"
-                      rows="8"
-                      no-resize
-                    ></b-form-textarea>
-                    <b-button type="submit">Submit</b-button>
+                    <b-col sm="12" md="6" lg="6" cols="12" class="p-0">
+                      <label for="textarea-rows">Reviews Comment:</label>
+                      <b-form-textarea
+                      v-model="form.comment"
+                        class="pay_input"
+                        id="textarea-rows"
+                        placeholder="Your Comment"
+                        rows="8"
+                        no-resize
+                      >
+                      </b-form-textarea>
+                    </b-col>
+                    <b-col sm="12" md="6" lg="6" cols="12" class="p-0">
+                      <b-button type="submit">Submit</b-button>
+                    </b-col>
                   </div>
                     </b-form>
                 </b-tab>

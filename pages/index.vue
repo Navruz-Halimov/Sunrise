@@ -963,6 +963,7 @@
         value2: [new Date()],
         value3: [new Date()],
         isShow: false,
+        sliders: [],
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
