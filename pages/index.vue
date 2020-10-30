@@ -2,46 +2,16 @@
   <div class="main__page">
     <div class="navbar__slider">
       <swiper class="swiper" :options="header__slider">
-        <swiper-slide
-          ><img src="../assets//images/3D/1.jpg" alt="image" />
+        <swiper-slide v-for="(slider, index) in sliders" :key="index">
+          <img :src="slider.image" alt="image" />
           <div class="swiper-caption">
-            <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
+            <h1 class="swiper-caption-heading">{{slider.title}}</h1>
             <p class="swiper-caption-text">
-              yeah man itis working I think don't pay attention to the typos
-              that I have typed
+              {{slider.description}}
             </p>
           </div>
         </swiper-slide>
-        <swiper-slide
-          ><img src="../assets/images/3D/1night.jpg" alt="image" />
-          <div class="swiper-caption">
-            <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
-            <p class="swiper-caption-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur laudantium error earum amet a qui.
-            </p>
-          </div>
-        </swiper-slide>
-        <swiper-slide
-          ><img src="../assets/images/3D/2.jpg" alt="image" />
-          <div class="swiper-caption">
-            <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
-            <p class="swiper-caption-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur laudantium error earum amet a qui.
-            </p>
-          </div>
-        </swiper-slide>
-        <swiper-slide
-          ><img src="../assets/images/3D/2night.jpg" alt="image" />
-          <div class="swiper-caption">
-            <h1 class="swiper-caption-heading">Lorem ipsum dolor sit amet.</h1>
-            <p class="swiper-caption-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur laudantium error earum amet a qui.
-            </p>
-          </div>
-        </swiper-slide>
+
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
       </swiper>
@@ -1036,6 +1006,12 @@
       }
     },
     methods: {
+      async getSliders() {
+        await this.$axios.get('/menu/images/').then((res) => {
+          this.sliders = res.data
+          console.log(this.sliders)
+        })
+      },
       notBeforeToday(date) {
         return date < new Date(new Date().setHours(0, 0, 0, 0))
       },
@@ -1069,6 +1045,9 @@
           }
         ]
       }
+    },
+    mounted() {
+      this.getSliders()
     }
   }
 </script>
