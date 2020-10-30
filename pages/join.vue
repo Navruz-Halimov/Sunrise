@@ -102,7 +102,7 @@
                     class="join__input"
                     type="password"
                     id="password"
-                    v-model="form.password"
+                    v-model="login.password"
                     required
                   />
                   <span
@@ -123,6 +123,10 @@
 export default {
   data() {
     return {
+      login: {
+        phone_number: this.$store.state.phone_number,
+        password: '',
+      },
       form: {
         gerder: '',
         name: '',
@@ -130,7 +134,7 @@ export default {
         email: '',
         country: '',
         city: '',
-        password: '',
+        zipcode: '',
       },
     }
   },
@@ -138,25 +142,21 @@ export default {
     async onSubmit() {
       await this.$axios
         .post('user/me/', {
-          prefix: this.gender,
-          firstname: this.name,
-          lastname: this.lastname,
+          prefix: 'Mr.',
+          firstname: this.form.name,
+          lastname: this.form.lastname,
           phone_number: this.$store.state.phone_number,
-          password: this.password,
-          email: this.email,
-          region: this.region,
-          state: this.country,
-          city: this.city,
-          zim_code: this.zipcode,
+          password: this.login.password,
+          email: this.form.email,
+          state: this.form.country,
+          city: this.form.city,
+          zim_code: this.form.zipcode,
           token: this.$store.state.token,
         })
         .then(async () => {
           try {
-            await this.$auth.loginWith('local', {
-              data: {
-                phone_number: this.$store.state.phone_number,
-                password: this.form.password,
-              },
+             await this.$auth.loginWith('local', {
+              data: this.login,
             })
             console.log(this.$auth.user)
 

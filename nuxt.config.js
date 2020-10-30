@@ -37,8 +37,10 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    '@nuxtjs/auth',
     // https://go.nuxtjs.dev/
-    ['@nuxtjs/axios',
+    [
+      '@nuxtjs/axios',
       { baseURL: "http://188.225.83.193/api/" },
     ],
 
@@ -88,6 +90,17 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: 'token/', method: 'post', propertyName: 'access' },
+          user: { url: 'user/me/', method: 'get', propertyName: false },
+          logout: false
+        }
+      },
+    },
+  },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   }
