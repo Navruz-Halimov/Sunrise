@@ -36,7 +36,7 @@
         <b-col lg="6" class="rooms__select-center">
           <swiper class="rooms__select-slider" :options="rooms__select">
             <swiper-slide v-for="room of imageset" :key="room.id">
-              <img :src="room.image" alt="" />
+              <img :src="$store.state.mediaURL+room.image" alt="" />
               <div class="rooms_price">
                 <i>{{ Math.floor(rooms.cost_per_day * 10359.88) }} $</i>
               </div>
@@ -148,8 +148,9 @@ export default {
       await this.$axios
         .get(`rooms/${this.$route.params.id}/`)
         .then((res) => {
-          this.rooms = res.data
-          this.imageset = res.data.image_set
+          this.rooms = res.data.room
+          this.imageset = res.data.room.image_set
+
           console.log(res)
           console.log(this.imageset)
         })

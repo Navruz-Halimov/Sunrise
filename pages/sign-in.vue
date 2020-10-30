@@ -14,7 +14,7 @@
             required.
           </p>
         </div>
-        <b-form class="sign__form">
+        <b-form class="sign__form"  @submit.prevent="login()">
           <b-row>
             <b-col
               class="sign__input"

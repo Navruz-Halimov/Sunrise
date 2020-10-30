@@ -50,6 +50,7 @@ const store = () => new Vuex.Store({
         async sendCode({ commit }, data) {
             await this.$axios.post('/user/code/check/', data)
                 .then(res => {
+                    console.log(res)
                     commit('setToken', res.data.token)
                     commit('setPhone_number', res.data.phone_number)
 

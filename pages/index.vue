@@ -336,7 +336,7 @@
           <h2 class="gallery__title-main">{{$t('gallery.title')}} </h2>
         </div>
       </b-row>
-      <Test :images="images" :count="8" />
+      <Test  :count="8" />
       <b-button
         class="btn-img my-4"
         :to="localePath('/gallery')"
@@ -971,7 +971,11 @@
         value2: [new Date()],
         value3: [new Date()],
         isShow: false,
+<<<<<<< HEAD
         offerModal: false,
+=======
+        sliders: [],
+>>>>>>> 59122ada2ab29d8fc9e8d35565259e12f015ac38
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
