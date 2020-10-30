@@ -336,7 +336,7 @@
           <h2 class="gallery__title-main">{{$t('gallery.title')}} </h2>
         </div>
       </b-row>
-      <Test :images="images" :count="8" />
+      <Test  :count="8" />
       <b-button
         class="btn-img my-4"
         :to="localePath('/gallery')"

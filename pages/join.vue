@@ -153,13 +153,10 @@ export default {
              await this.$auth.loginWith('local', {
               data: this.login
             })
-            console.log(this.$auth.user)
-
             this.$toast.success({
               title: `${this.$t('toast.success')}`,
               message: `${this.$t('toast.loginSuccessMessage')}`,
             })
-            // this.disable = false;
           } catch (err) {
             console.log(err)
             this.$toast.error({
@@ -173,9 +170,5 @@ export default {
         })
     },
   },
-  mounted() {
-    console.log(this.$store.state.token);
-    console.log(this.$store.state.phone_number);
-  }
 }
 </script>

@@ -71,7 +71,7 @@
                   </b-form-group>
                   <div class="form-group reviews__select">
                     <label for="FormControl">Example select</label>
-                    <select class="form-control" id="FormControl" v-model="form.trip_type">
+                    <select class="form-control" id="FormControl">
                       <option value="0" selected="selected" disabled>Trip type</option>
                       <option value="1">Business</option>
                       <option value="2">Family</option>
@@ -409,9 +409,20 @@ export default {
   methods:{
     async submitReview() {
       await this.$axios.post('reviews/create/',this.form)
-      .then({
-
-      })
+       .then(async () => {
+          try {
+            this.$toast.success({
+              title: `${this.$t('toast.success')}`,
+              message: `${this.$t('toast.loginSuccessMessage')}`,
+            })
+          } catch (err) {
+            console.log(err)
+            this.$toast.error({
+              title: `${this.$t('toast.loginError')}`,
+              message: `${this.$t('toast.loginErrorMessage')}`,
+            })
+          }
+        })
     }
   }
 }

@@ -24,6 +24,7 @@ export default {
     { src: '~/plugins/backToTop.js', ssr: false },
     { src: '~/plugins/datepicker.js', ssr: false },
     { src: '~/plugins/loader.js', ssr: false },
+    { src: "~/plugins/toast.js", ssr: false },
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
