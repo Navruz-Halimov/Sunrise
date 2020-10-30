@@ -160,6 +160,9 @@
       font-size: 14px;
       margin: 0;
     }
+    .small_text{
+      @include textWrapper(4);
+    }
     a {
       font-size: 13px;
       vertical-align: sub;
