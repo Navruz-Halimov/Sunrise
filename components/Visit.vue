@@ -8,7 +8,6 @@
         <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3"
                v-for="(image,index) of images" :key="index" >
           <div class="visit__card">
-<!--            <img :src="require(`../assets/images/rooms/${image.url}`)" alt=""/>-->
             <img :src="image.url" alt="">
             <div class="visit__text" @click="show(index)">
               <h6>{{image.title}}</h6>
@@ -32,7 +31,6 @@
       </button>
         <div class="modal__content">
             <div class="visit__img" @click.stop="">
-<!--              <img :src="require(`../assets/images/rooms/${images[id].url}`)" alt=""/>-->
               <img :src="images[id].url" alt="">
             </div>
             <div class="prev"
