@@ -16,14 +16,24 @@
             <b-nav-item :to="localePath('/rooms')">{{
               $t('navbar.rooms')
             }}</b-nav-item>
-            <b-nav-item :to="localePath('/events')">{{$t('navbar.events')}}</b-nav-item>
-            <b-nav-item :to="localePath('/gallery')">{{$t('navbar.gallery')}}</b-nav-item>
-            <b-nav-item :to="localePath('/amenties')">{{$t('navbar.amenties')}}</b-nav-item>
-            <b-nav-item :to="localePath('/attractions')"
-              >{{$t('navbar.nearby')}}</b-nav-item
-            >
-            <b-nav-item :to="localePath('/contact')">{{$t('navbar.contact')}}</b-nav-item>
-            <b-nav-item :to="localePath('/reviews')">{{$t('navbar.reviews')}}</b-nav-item>
+            <b-nav-item :to="localePath('/events')">{{
+              $t('navbar.events')
+            }}</b-nav-item>
+            <b-nav-item :to="localePath('/gallery')">{{
+              $t('navbar.gallery')
+            }}</b-nav-item>
+            <b-nav-item :to="localePath('/amenties')">{{
+              $t('navbar.amenties')
+            }}</b-nav-item>
+            <b-nav-item :to="localePath('/attractions')">{{
+              $t('navbar.nearby')
+            }}</b-nav-item>
+            <b-nav-item :to="localePath('/contact')">{{
+              $t('navbar.contact')
+            }}</b-nav-item>
+            <b-nav-item :to="localePath('/reviews')">{{
+              $t('navbar.reviews')
+            }}</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -53,39 +63,64 @@
                 :readonly="true"
                 char="★"
               />
-             {{$t('navbar.reviews')}}</nuxt-link
+              {{ $t('navbar.reviews') }}</nuxt-link
             >
           </div>
-          <b-button class="header__bottom-btn" :to="localePath('/booking')"> {{$t('navbar.book')}} </b-button>
+          <b-button class="header__bottom-btn" :to="localePath('/booking')">
+            {{ $t('navbar.book') }}
+          </b-button>
           <!-- Right aligned nav items -->
           <b-navbar-nav>
             <b-nav-item-dropdown text="Lang" right class="lang__list-wrapper">
               <template v-slot:button-content>
                 <span class="sign__header"
-                  >{{$t('navbar.lang')}}<font-awesome-icon :icon="['fas', 'chevron-down']"
+                  >{{ $t('navbar.lang')
+                  }}<font-awesome-icon :icon="['fas', 'chevron-down']"
                 /></span>
               </template>
-              <b-dropdown-item href="#" :to="switchLocalePath('en')"
-                >{{$t('navbar.eng')}}</b-dropdown-item
-              >
-              <b-dropdown-item href="#" :to="switchLocalePath('ru')"
-                >{{$t('navbar.ru')}}</b-dropdown-item
-              >
-              <b-dropdown-item href="#" :to="switchLocalePath('chn')"
-                >{{$t('navbar.chn')}}</b-dropdown-item
-              >
+              <b-dropdown-item href="#" :to="switchLocalePath('en')">{{
+                $t('navbar.eng')
+              }}</b-dropdown-item>
+              <b-dropdown-item href="#" :to="switchLocalePath('ru')">{{
+                $t('navbar.ru')
+              }}</b-dropdown-item>
+              <b-dropdown-item href="#" :to="switchLocalePath('chn')">{{
+                $t('navbar.chn')
+              }}</b-dropdown-item>
             </b-nav-item-dropdown>
 
             <b-nav-item-dropdown class="user__join">
               <!-- Using 'button-content' slot -->
               <template v-slot:button-content>
-                <span class="sign__header"
-                  ><font-awesome-icon :icon="['fas', 'user']" />{{$t('navbar.sign')}}
+                <span class="sign__header" v-if="!loggedIn"
+                  ><font-awesome-icon :icon="['fas', 'user']" />{{
+                    $t('navbar.sign')
+                  }}
+                  <font-awesome-icon :icon="['fas', 'chevron-down']"
+                /></span>
+                <span class="sign__header" v-if="loggedIn"
+                  ><font-awesome-icon :icon="['fas', 'user']" />My profile
                   <font-awesome-icon :icon="['fas', 'chevron-down']"
                 /></span>
               </template>
-              <b-dropdown-item :href="localePath('/sign-in')">{{$t('navbar.sign')}}</b-dropdown-item>
-              <b-dropdown-item :href="localePath('/reg')">{{$t('navbar.join')}}</b-dropdown-item>
+
+              <b-dropdown-item
+                :href="localePath('/sign-in')"
+                v-if="!loggedIn"
+                >{{ $t('navbar.sign') }}</b-dropdown-item
+              >
+              <b-dropdown-item :href="localePath('/reg')" v-if="!loggedIn">{{
+                $t('navbar.join')
+              }}</b-dropdown-item>
+              <b-dropdown-item
+                :href="localePath('/my-account')"
+                v-if="loggedIn"
+              >
+                My account
+              </b-dropdown-item>
+              <b-dropdown-item @click="logout()" v-if="loggedIn"
+                >Logout
+              </b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </div>
@@ -94,15 +129,25 @@
   </header>
 </template>
 <script>
+import { mapState } from 'vuex'
 export default {
   data() {
     return {}
   },
-  methods: {
-    // changeLanguage(lang){
-    //   this.$router.push(switchLocalePath(lang));
-    // },
-    mounted() {},
+  computed: {
+    ...mapState('auth', ['loggedIn', 'user']),
   },
+  methods: {
+    async logout() {
+      await this.$auth.logout()
+      this.$router.push(this.localePath('/'))
+      this.$toast.success({
+        title: 'Log out',
+        message: 'You have successfully logged out.',
+        color: '#17b978',
+      })
+    },
+  },
+  mounted() {},
 }
 </script>

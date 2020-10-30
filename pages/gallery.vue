@@ -6,17 +6,19 @@
           <h2>{{$t('navbar.gallery')}}</h2>
         </div>
       </b-row>
-      <Test :images="images" />
+      <Test />
     </b-container>
   </div>
 </template>
 <script>
-  import Test from '../components/Test.vue';
+
+import Test from '../components/Test.vue';
+
 export  default {
   name:'app',
-  comments: {
+  components: {
     Test,
   },
 }
-
 </script>
+

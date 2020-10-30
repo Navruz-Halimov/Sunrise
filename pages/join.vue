@@ -44,7 +44,7 @@
                     class="join__input"
                     type="text"
                     id="username"
-                    v-model="form.name"
+                    v-model="form.firstname"
                     required
                   />
                 </b-form-group>
@@ -75,7 +75,7 @@
                     class="join__input"
                     type="text"
                     id="zip"
-                    v-model="form.zipcode"
+                    v-model="form.zim_code"
                     required
                   />
                 </b-form-group>
@@ -84,7 +84,7 @@
                     class="join__input"
                     type="text"
                     id="country"
-                    v-model="form.country"
+                    v-model="form.state"
                     required
                   />
                 </b-form-group>
@@ -124,39 +124,34 @@ export default {
   data() {
     return {
       login: {
-        phone_number: this.$store.state.phone_number,
+        phone_number: "+998"+this.$store.state.phone_number,
         password: '',
       },
       form: {
-        gerder: '',
-        name: '',
+        prefix: 'Mr.',
+        phone_number: this.$store.state.phone_number,
+        token: this.$store.state.token,
+        firstname: '',
         lastname: '',
+        password: '',
         email: '',
-        country: '',
+        state: '',
         city: '',
-        zipcode: '',
+        zim_code: '',
       },
     }
   },
   methods: {
     async onSubmit() {
+      this.form.password = this.login.password;
+      console.log(this.form);
+      console.log(this.login);
       await this.$axios
-        .post('user/me/', {
-          prefix: 'Mr.',
-          firstname: this.form.name,
-          lastname: this.form.lastname,
-          phone_number: this.$store.state.phone_number,
-          password: this.login.password,
-          email: this.form.email,
-          state: this.form.country,
-          city: this.form.city,
-          zim_code: this.form.zipcode,
-          token: this.$store.state.token,
-        })
+        .post('user/me/', this.form)
         .then(async () => {
           try {
              await this.$auth.loginWith('local', {
-              data: this.login,
+              data: this.login
             })
             console.log(this.$auth.user)
 
@@ -178,5 +173,9 @@ export default {
         })
     },
   },
+  mounted() {
+    console.log(this.$store.state.token);
+    console.log(this.$store.state.phone_number);
+  }
 }
 </script>

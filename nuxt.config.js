@@ -23,7 +23,7 @@ export default {
     { src: '~/plugins/swiper.js', mode: 'client' },
     { src: '~/plugins/backToTop.js', ssr: false },
     { src: '~/plugins/datepicker.js', ssr: false },
-
+    { src: '~/plugins/loader.js', ssr: false },
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -93,9 +93,10 @@ export default {
   auth: {
     strategies: {
       local: {
+        _scheme: 'local',
         endpoints: {
           login: { url: 'token/', method: 'post', propertyName: 'access' },
-          user: { url: 'user/me/', method: 'get', propertyName: false },
+          user: { url: 'user/profile/', method: 'get', propertyName: false },
           logout: false
         }
       },

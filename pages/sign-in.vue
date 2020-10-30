@@ -14,7 +14,7 @@
             required.
           </p>
         </div>
-        <b-form class="sign__form">
+        <b-form class="sign__form"  @submit.prevent="login()">
           <b-row>
             <b-col
               class="sign__input"
@@ -95,16 +95,16 @@ export default {
         console.log(this.form)
         let res = await this.$auth.loginWith('local', { data: this.form })
         console.log(res)
-        this.$toast.success({
-          title: `${this.$t('toast.success')}`,
-          message: `${this.$t('toast.loginSuccessMessage')}`,
-        })
+        // this.$toast.success({
+        //   title: `${this.$t('toast.success')}`,
+        //   message: `${this.$t('toast.loginSuccessMessage')}`,
+        // })
       } catch (err) {
         console.log(err)
-        this.$toast.error({
-          title: `${this.$t('toast.loginError')}`,
-          message: `${this.$t('toast.loginErrorMessage')}`,
-        })
+        // this.$toast.error({
+        //   title: `${this.$t('toast.loginError')}`,
+        //   message: `${this.$t('toast.loginErrorMessage')}`,
+        // })
       }
     },
   },
