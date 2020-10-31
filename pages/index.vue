@@ -300,13 +300,13 @@
         </b-row>
       </div>
 
-      <Visit />
+      <visit />
       <b-row class="gallery">
         <div class="gallery__title">
           <h2 class="gallery__title-main">{{$t('gallery.title')}} </h2>
         </div>
       </b-row>
-      <Test  :count="8" />
+      <test  :count="8" />
       <b-button
         class="btn-img my-4"
         :to="localePath('/gallery')"
@@ -319,9 +319,9 @@
       <b-container class="swiper__wrapper">
         <h2 class="swiper__wrapper-title">{{$t('rooms.title')}}</h2>
         <swiper :options="swiper_card_rooms">
-          <swiper-slide 
-            class="swiper-card" 
-            v-for="(cardRoom, index) in cardRooms" 
+          <swiper-slide
+            class="swiper-card"
+            v-for="(cardRoom, index) in cardRooms"
             :key="index.id"
           >
             <!-- <nuxt-link to="/booking"> -->
