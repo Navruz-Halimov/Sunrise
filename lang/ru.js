@@ -193,6 +193,12 @@ export default {
         remember: 'Запомните меня',
         forgetPass: 'Забыл пароль',
         singBtn: 'ВОЙТИ'
-    },     
+    },    
+    regPage: {
+        number: 'Телефонный номер',
+        enterNumber: 'Введите номер телефона',
+        kod: 'Код',
+        btn: 'Следующий шаг',
+    } 
 
 }

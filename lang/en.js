@@ -195,5 +195,11 @@ export default {
         forgetPass: 'Forgot Password',
         singBtn: 'SIGN IN'
     },
+    regPage: {
+        number: 'Phone Number',
+        enterNumber: 'Enter phone number',
+        kod: 'Kod',
+        btn: 'Next step',
+    }
     
 }

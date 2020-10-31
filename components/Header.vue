@@ -118,8 +118,8 @@
               >
                 {{ $t('navbar.account') }} 
               </b-dropdown-item>
-              <b-dropdown-item @click="logout()" 
-                >{{ $t('navbar.logout') }}
+              <b-dropdown-item @click="logout()" v-if="loggedIn">
+                {{ $t('navbar.logout') }}
               </b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>

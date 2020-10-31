@@ -192,5 +192,11 @@ export default {
         remember: '记得我',
         forgetPass: '忘记密码',
         singBtn: '登入'
-    },              
+    },    
+    regPage: {
+        number: '电话号码',
+        enterNumber: '输入电话号码',
+        kod: '柯德',
+        btn: '下一步',
+    }          
 }
