@@ -878,21 +878,18 @@
                 </b-col>
             </b-row>
             <b-row class="offer-main-items">
-              <b-col lg="6">
+              <b-col v-for="(offer,index) of offers" :key="index.id" lg="6">
                 <b-row>
                   <b-col class="offer-main__item" md="6" lg="6" >
                     <div class="offer-main__picture">
-                      <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-47.jpg" alt="" height="270px"></b-img>
+                      <b-img :src="$store.state.mediaURL + offer.image" alt="" height="270px"></b-img>
                     </div>
                   </b-col>
                   <b-col class="offer-main__item" md="6" lg="6" >
                     <div class="offer-main__text">
-                      <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
-                      <div class="offer-main__text-info">{{$t('offer_main.text_info')}}
-                        <!-- <font-awesome-icon :icon="['fas', 'clock']" />
-                        <span>19th March, 2021</span> -->
-                      </div>
-                      <a @click.prevent="showModal" class="offer-main__link">{{$t('offer_main.text_link')}}</a>
+                      <div class="offer-main__text-title">{{ offer.title }}</div>
+                      <div class="offer-main__text-info">{{ offer.description }}</div>
+                      <a @click.prevent="showModal(index)" class="offer-main__link">{{$t('offer_main.text_link')}}</a>
                     </div>
                   </b-col>
                 </b-row>
@@ -906,46 +903,7 @@
                 </button>
                 <div class="offer__text" @click.stop="">
                   <div class="privacy">
-                    <h4>Sunrise Privacy Policy</h4>
-                    <span>1 Introduction</span>
-                    <p>We are committed to safeguarding the privacy of the personal information that we gather concerning our
-                      prospective, current and former employees (“you” or “employees”) for management, human resources and
-                      payroll purposes.</p>
-                    <p>As a Hyatt employee (or prospective employee), you understand and acknowledge that we collect, use and
-                      disclose your personal information in accordance with this Privacy Policy for Employees (this
-                      “Policy”).</p>
-                    <span>2 The Application of this Policy</span>
-                    <p>This Policy applies to employees’ personal information and to the use of that personal information in any
-                      form, whether oral, electronic and/or written. This Policy applies unless there is a specific
-                      country/region privacy policy for you based on your citizenship/residency or if the Hyatt Location (as
-                      defined below) is in such country/region.</p>
-                    <p>This Policy gives effect to Hyatt’s commitment to protect your personal information and has been adopted
-                      by all of the separate and distinct legal entities that manage, operate, franchise, own and/or provide
-                      services to the locations operating under or in connection with the Hyatt®”, Park Hyatt®, Miraval®,
-                      exhale®, Grand Hyatt®, Hyatt Regency®, Andaz®, Hyatt Centric®, The Unbound Collection by Hyatt®, Hyatt
-                      Place®, Hyatt House®, Hyatt Ziva, Hyatt Zilara or Hyatt Residence Club® brands around the world, including
-                      independently branded locations affiliated with Hyatt (individually, a “Hyatt Location”) and collectively,
-                      the “Hyatt Locations”). Those entities include Hyatt Hotels Corporation, its direct and indirect
-                      subsidiaries, and all of the separate and distinct legal entities that own the individual Hyatt Locations
-                      worldwide. References to “Hyatt”, “we” and “our” throughout this Policy, depending on the context,
-                      collectively refer to those separate and distinct legal entities, including the entity with which you have
-                      or may have an employment relationship.</p>
-                    <p>Your personal information will be processed by the entity with which you have or may have an employment
-                      relationship for the purposes set out in Section 4 below. Your personal information may be disclosed to
-                      the other entities listed above for human resources administration purposes.</p>
-                    <p>While this Policy is intended to describe the broadest range of our personal information processing
-                      activities globally, those processing activities may be more limited in some jurisdictions based on the
-                      restrictions of their laws. For example, the laws of a particular country may limit the types of personal
-                      information we can collect or the manner in which we process that personal information. In those
-                      instances, we adjust our internal policies and/or practices to reflect the requirements of local law.</p>
-                    <p>If you agree to this Policy you are, to the extent required under local law in some jurisdictions,
-                      granting your express and written consent to the processing of any personal information that you provide
-                      Hyatt that is considered to be Sensitive Personal Information (as described in Section 3) or is considered
-                      to be financial information.</p>
-                    <span>3 The Types of Personal Information We Process</span>
-                    <p>The term “personal information” in this Policy refers to information that identifies or is capable of
-                      identifying you as an individual. The types of personal information that we process (which may vary by
-                      jurisdiction based on applicable law and the nature of the employee’s position and duties) include:</p>
+                    <p>{{ offers[id].description }}</p>
                   </div>
                 </div>
               </div>
@@ -973,7 +931,8 @@
         isShow: false,
         offerModal: false,
         sliders: [],
-
+        offers: [],
+        id: 0,
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
@@ -1055,9 +1014,11 @@
           this.amenityText = 'Show More'
         }
       },
-      showModal() {
+      showModal(id) {
         this.offerModal = true
         this.privacy = true
+        this.id = id;
+        console.log(id);
       },
       hideModal() {
         this.offerModal = false
@@ -1065,7 +1026,8 @@
       async getOffer() {
         await this.$axios.get('menu/offers/')
           .then((res) => {
-            console.log("Offer", res);
+            this.offers = res.data;
+            console.log("Offer", this.offers);
           })
           .catch((error) => {
             console.log(error);

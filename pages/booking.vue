@@ -119,7 +119,7 @@
                 </a>
                 <b-collapse id="id">
                   <ul>
-                    <h5>Удобства в номере</h5>
+                    <h5></h5>
                     <div class="amenties_text" v-html="room.description_1"></div>
                   </ul>
                 </b-collapse>
