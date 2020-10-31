@@ -16,6 +16,8 @@ export default {
         ru:'Russian',
         chn:'Chinese',
         home:'Home',
+        logout: 'Logout',
+        account: 'My account'
     },
     attraction:{
         attraction:'Attractions',
@@ -35,7 +37,8 @@ export default {
         voc:'Vocation rental',
         motto:'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
         readmore:'Read more',
-        connect:'Connect with Sunrise'
+        connect:'Connect with Sunrise',
+        copyright: 'Copyright © 2020 All rights reserved.'
     },
     tourist: {
         heading: "Tourist guide",
@@ -170,6 +173,27 @@ export default {
         lawyererror: 'An error has occurred. Please try again',
         input: 'Please make sure your information is complete.',
         code: "You entered an incorrect code! Try again.",
+    },
+    review: {
+        title: 'Most recent traveler reviews'
+    },
+    footerModal: {
+        modal1: 'Privacy Policy',
+        modal2: 'Terms & Conditions',
+        modal3: 'Cookie Center',
+        modal4: 'Security & Safety',
+        modal5: 'Do Not Sell My Personal Information',
+    },
+    singInPage: {
+        title: 'Sign-in of Sunrise',
+        pageName: 'Sign-in',
+        pageNameSub: 'Please sign in by completing the information below. All fields are required.',
+        username: 'Membership # / Username',
+        forget: 'Forgot your membership number?',
+        password: 'Password',
+        remember: 'Remember Me',
+        forgetPass: 'Forgot Password',
+        singBtn: 'SIGN IN'
     },
     
 }

@@ -116,10 +116,10 @@
                 :href="localePath('/my-account')"
                 v-if="loggedIn"
               >
-                My account
+                {{ $t('navbar.account') }} 
               </b-dropdown-item>
               <b-dropdown-item @click="logout()" 
-                >Logout
+                >{{ $t('navbar.logout') }}
               </b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
