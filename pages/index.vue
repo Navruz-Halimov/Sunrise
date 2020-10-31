@@ -319,7 +319,12 @@
       <b-container class="swiper__wrapper">
         <h2 class="swiper__wrapper-title">{{$t('rooms.title')}}</h2>
         <swiper :options="swiper_card_rooms">
-          <swiper-slide class="swiper-card" v-for="(cardRoom, index) in cardRooms" :key="index.id">
+          <swiper-slide 
+            class="swiper-card" 
+            v-for="(cardRoom, index) in cardRooms" 
+            :key="index.id"
+            :to="localePath('/gallery')"
+          >
             <div class="swiper-card__img">
               <div class="swiper-card__cost">
                 {{cardRoom.cost_per_day}} $
