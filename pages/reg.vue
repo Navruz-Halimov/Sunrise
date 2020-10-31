@@ -4,19 +4,19 @@
       <div class="reg-bg-form">
         <form @submit.prevent="onSubmit" class="registration__form">
           <div class="phone__number">
-            <label for="phone">Phone Number</label>
+            <label for="phone">{{$t('regPage.number')}} </label>
             <div class="input__tel-wrapper">
               <input
                 v-model="data.phone_number"
                 type="tel"
                 id="phone"
                 required
-                placeholder="Enter phone number"
+                :placeholder="$t('regPage.enterNumber')"
               />
             </div>
           </div>
           <div class="password" v-if="showPasswordInput">
-            <label for="password__id"> Kod </label>
+            <label for="password__id"> {{$t('regPage.kod')}} </label>
             <input
               type="password"
               v-model="data.code"
@@ -26,9 +26,9 @@
             />
           </div>
           <div class="registration-submit-wrap">
-            <b-button type="submit" class="reg-bg-btn"
-              >Next step</b-button
-            >
+            <b-button type="submit" class="reg-bg-btn">
+              {{$t('regPage.btn')}}
+            </b-button>
           </div>
         </form>
       </div>

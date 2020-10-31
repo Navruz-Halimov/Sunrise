@@ -3,7 +3,7 @@
         <b-container>
             <b-row class="reviews-page__top">
                 <b-col cols="12">
-                    <h2 class="reviews-page__title">Most recent traveler reviews</h2>
+                    <h2 class="reviews-page__title">{{$t('review.title')}}</h2>
                 </b-col>
             </b-row>
             <div class="reviews-slider">

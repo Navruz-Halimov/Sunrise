@@ -85,7 +85,7 @@
           </b-row>
         </b-col>
         <b-col class="book_hr" cols="12" md="12"
-               v-for="(room,index) of rooms" :key="index.id" >
+              v-for="(room,index) of rooms" :key="index.id" >
           <b-row>
             <b-col class="mb-sm-2 mb-md-2" cols="12" sm="12" md="4" lg="4">
               <div class="book__slide">
