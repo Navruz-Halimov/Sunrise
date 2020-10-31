@@ -319,61 +319,67 @@
       <b-container class="swiper__wrapper">
         <h2 class="swiper__wrapper-title">{{$t('rooms.title')}}</h2>
         <swiper :options="swiper_card_rooms">
-          <swiper-slide class="swiper-card" v-for="(cardRoom, index) in cardRooms" :key="index.id">
-            <div class="swiper-card__img">
-              <div class="swiper-card__cost">
-                {{cardRoom.cost_per_day}} $
-              </div>
-              <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
-                <swiper-slide
-                  class="swiper__wrapper-mini_card"
-                  v-for="(image, index) in cardImages"
-                  :key="index.id"
-                >
-                  <b-img
-                    :src="$store.state.mediaURL + image.image"
-                    fluid
-                    alt="rooms"
-                  ></b-img>
-                </swiper-slide>
-                <div class="swiper-card__next-mini" slot="button-prev">
-                  <font-awesome-icon :icon="['fas', 'angle-left']"/>
+          <swiper-slide 
+            class="swiper-card" 
+            v-for="(cardRoom, index) in cardRooms" 
+            :key="index.id"
+          >
+            <!-- <nuxt-link to="/booking"> -->
+              <div class="swiper-card__img">
+                <div class="swiper-card__cost">
+                  {{cardRoom.cost_per_day}} $
                 </div>
-                <div class="swiper-card__prev-mini" slot="button-next">
-                  <font-awesome-icon :icon="['fas', 'angle-right']"/>
+                <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                  <swiper-slide
+                    class="swiper__wrapper-mini_card"
+                    v-for="(image, index) in cardImages"
+                    :key="index.id"
+                  >
+                    <b-img
+                      :src="$store.state.mediaURL + image.image"
+                      fluid
+                      alt="rooms"
+                    ></b-img>
+                  </swiper-slide>
+                  <div class="swiper-card__next-mini" slot="button-prev">
+                    <font-awesome-icon :icon="['fas', 'angle-left']"/>
+                  </div>
+                  <div class="swiper-card__prev-mini" slot="button-next">
+                    <font-awesome-icon :icon="['fas', 'angle-right']"/>
+                  </div>
+                </swiper>
+              </div>
+              <div class="swiper-card__statistics">
+                <div class="swiper-card__name-rooms">Sunrise</div>
+                <div class="swiper-card__size-rooms">
+                  <font-awesome-icon :icon="['fas', 'expand']"/>
+                  <span>size: 24.5 m²</span>
                 </div>
-              </swiper>
-            </div>
-            <div class="swiper-card__statistics">
-              <div class="swiper-card__name-rooms">Sunrise</div>
-              <div class="swiper-card__size-rooms">
-                <font-awesome-icon :icon="['fas', 'expand']"/>
-                <span>size: 24.5 m²</span>
+                <div class="swiper-card__guest-rooms">
+                  <font-awesome-icon :icon="['fas', 'user']"/>
+                  <span>max. guests: {{cardRoom.num_of_adults}} adults, {{cardRoom.num_of_children}} child</span>
+                </div>
+                <div class="swiper-card__desc" v-html="cardRoom.description_2">
+                  <!-- {{cardRoom.description_2}}  -->
+                </div>
+                <div class="swiper-card__services">
+                  <ul>
+                    <li>
+                      <font-awesome-icon :icon="['fas', 'wifi']"/>
+                    </li>
+                    <li>
+                      <font-awesome-icon :icon="['fas', 'coffee']"/>
+                    </li>
+                    <li>
+                      <font-awesome-icon :icon="['fas', 'blender']"/>
+                    </li>
+                    <li>
+                      <font-awesome-icon :icon="['fas', 'shower']"/>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="swiper-card__guest-rooms">
-                <font-awesome-icon :icon="['fas', 'user']"/>
-                <span>max. guests: {{cardRoom.num_of_adults}} adults, {{cardRoom.num_of_children}} child</span>
-              </div>
-              <div class="swiper-card__desc" v-html="cardRoom.description_2">
-                <!-- {{cardRoom.description_2}}  -->
-              </div>
-              <div class="swiper-card__services">
-                <ul>
-                  <li>
-                    <font-awesome-icon :icon="['fas', 'wifi']"/>
-                  </li>
-                  <li>
-                    <font-awesome-icon :icon="['fas', 'coffee']"/>
-                  </li>
-                  <li>
-                    <font-awesome-icon :icon="['fas', 'blender']"/>
-                  </li>
-                  <li>
-                    <font-awesome-icon :icon="['fas', 'shower']"/>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <!-- </nuxt-link> -->
           </swiper-slide>
           <swiper-slide class="swiper-card">
             <div class="swiper-card__img">
