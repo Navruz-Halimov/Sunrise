@@ -2,7 +2,7 @@
   <div class="main__page">
     <div class="navbar__slider">
       <swiper class="swiper" :options="header__slider">
-        <swiper-slide v-for="(slider, index) in sliders" :key="index">
+        <swiper-slide v-for="(slider, index) in sliders" :key="index.id">
           <img :src="slider.image" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">{{slider.title}}</h1>
@@ -319,34 +319,19 @@
       <b-container class="swiper__wrapper">
         <h2 class="swiper__wrapper-title">{{$t('rooms.title')}}</h2>
         <swiper :options="swiper_card_rooms">
-          <swiper-slide class="swiper-card">
+          <swiper-slide class="swiper-card" v-for="(cardRoom, index) in cardRooms" :key="index.id">
             <div class="swiper-card__img">
-              <div class="swiper-card__cost">100$</div>
+              <div class="swiper-card__cost">
+                {{cardRoom.cost_per_day}} $
+              </div>
               <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
-                <swiper-slide class="swiper__wrapper-mini_card">
+                <swiper-slide 
+                  class="swiper__wrapper-mini_card" 
+                  v-for="(image, index) in cardImages"
+                  :key="index.id"
+                >
                   <b-img
-                    src="../assets/images/rooms/photo_2020-10-12_16-15-30.jpg"
-                    fluid
-                    alt="rooms"
-                  ></b-img>
-                </swiper-slide>
-                <swiper-slide>
-                  <b-img
-                    src="../assets/images/rooms/photo_2020-10-12_16-15-39.jpg"
-                    fluid
-                    alt="rooms"
-                  ></b-img>
-                </swiper-slide>
-                <swiper-slide>
-                  <b-img
-                    src="../assets/images/rooms/photo_2020-10-12_16-15-47.jpg"
-                    fluid
-                    alt="rooms"
-                  ></b-img>
-                </swiper-slide>
-                <swiper-slide>
-                  <b-img
-                    src="../assets/images/rooms/photo_2020-10-12_16-15-51.jpg"
+                    :src="$store.state.mediaURL + image.image"
                     fluid
                     alt="rooms"
                   ></b-img>
@@ -358,7 +343,7 @@
                   <font-awesome-icon :icon="['fas', 'angle-right']"/>
                 </div>
               </swiper>
-            </div>
+            </div>  
             <div class="swiper-card__statistics">
               <div class="swiper-card__name-rooms">Sunrise</div>
               <div class="swiper-card__size-rooms">
@@ -367,11 +352,10 @@
               </div>
               <div class="swiper-card__guest-rooms">
                 <font-awesome-icon :icon="['fas', 'user']"/>
-                <span>max. guests: 3 adults, 1 child</span>
+                <span>max. guests: {{cardRoom.num_of_adults}} adults, {{cardRoom.num_of_children}} child</span>
               </div>
-              <div class="swiper-card__desc">
-                With our Standard Guest Room, you will have everything you need
-                for a comfortable stay and a good night's sleep.
+              <div class="swiper-card__desc" v-html="cardRoom.description_2">
+                <!-- {{cardRoom.description_2}}  -->
               </div>
               <div class="swiper-card__services">
                 <ul>
@@ -697,7 +681,7 @@
           <b-col md="12">
             <h2 class="users-feedbacks__title">{{$t('feedbacks.title')}}</h2>
             <swiper :options="users_feedback">
-              <swiper-slide class="users-feedbacks__card">
+              <swiper-slide class="users-feedbacks__card" v-for="(feedback, index) in feedbacks" :key="index.id">
                 <div class="users-feedbacks__card-img">
                   <b-img
                     src="../assets/images/person_1.jpg"
@@ -711,122 +695,9 @@
                     class="card-icon"
                   />
                   <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
+                    {{feedback.comment}}
                   </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="users-feedbacks__card">
-                <div class="users-feedbacks__card-img">
-                  <b-img
-                    src="../assets/images/person_1.jpg"
-                    rounded="circle"
-                    alt="person"
-                  ></b-img>
-                </div>
-                <div class="users-feedbacks__card-info">
-                  <font-awesome-icon
-                    :icon="['fas', 'quote-left']"
-                    class="card-icon"
-                  />
-                  <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="users-feedbacks__card">
-                <div class="users-feedbacks__card-img">
-                  <b-img
-                    src="../assets/images/person_1.jpg"
-                    rounded="circle"
-                    alt="person"
-                  ></b-img>
-                </div>
-                <div class="users-feedbacks__card-info">
-                  <font-awesome-icon
-                    :icon="['fas', 'quote-left']"
-                    class="card-icon"
-                  />
-                  <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="users-feedbacks__card">
-                <div class="users-feedbacks__card-img">
-                  <b-img
-                    src="../assets/images/person_1.jpg"
-                    rounded="circle"
-                    alt="person"
-                  ></b-img>
-                </div>
-                <div class="users-feedbacks__card-info">
-                  <font-awesome-icon
-                    :icon="['fas', 'quote-left']"
-                    class="card-icon"
-                  />
-                  <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="users-feedbacks__card">
-                <div class="users-feedbacks__card-img">
-                  <b-img
-                    src="../assets/images/person_1.jpg"
-                    rounded="circle"
-                    alt="person"
-                  ></b-img>
-                </div>
-                <div class="users-feedbacks__card-info">
-                  <font-awesome-icon
-                    :icon="['fas', 'quote-left']"
-                    class="card-icon"
-                  />
-                  <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="users-feedbacks__card">
-                <div class="users-feedbacks__card-img">
-                  <b-img
-                    src="../assets/images/person_1.jpg"
-                    rounded="circle"
-                    alt="person"
-                  ></b-img>
-                </div>
-                <div class="users-feedbacks__card-info">
-                  <font-awesome-icon
-                    :icon="['fas', 'quote-left']"
-                    class="card-icon"
-                  />
-                  <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
+                  <div class="users-feedbacks__card-name">{{feedback.user.firstname}} {{feedback.user.lastname}} </div>
                 </div>
               </swiper-slide>
             </swiper>
@@ -943,7 +814,9 @@
         isShow: false,
         offerModal: false,
         sliders: [],
-
+        cardRooms: [],
+        cardImages: [],
+        feedbacks: [],
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
@@ -1015,6 +888,21 @@
       }
     },
     methods: {
+      async getFeedbacks() {
+        await this.$axios.get('reviews/list/').then((res) => {
+          this.feedbacks = res.data.results
+        })
+      },
+      async getCardRooms() {
+        await this.$axios.get('rooms/').then((res) => {
+          this.cardRooms = res.data;
+          res.data.forEach(item => {
+            item.image_set.forEach(image   => {
+              this.cardImages.push(image);
+            })
+          })
+        })
+      },
       async getSliders() {
         await this.$axios.get('/menu/images/').then((res) => {
           this.sliders = res.data
@@ -1075,7 +963,9 @@
       }
     },
     mounted() {
-      this.getSliders()
+      this.getSliders(),
+      this.getCardRooms(),
+      this.getFeedbacks()
     }
   }
 </script>
