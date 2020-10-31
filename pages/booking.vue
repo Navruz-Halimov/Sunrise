@@ -90,7 +90,7 @@
             <b-col class="mb-sm-2 mb-md-2" cols="12" sm="12" md="4" lg="4">
               <div class="book__slide">
                 <swiper class="swiper book_img" :options="header__slider">
-                  <swiper-slide   v-for="image of imageset" :key="image.id">
+                  <swiper-slide   v-for="image of imageSet" :key="image.id">
                     <img :src="$store.state.mediaURL + image.image" alt="booking-image"/>
                   </swiper-slide>
                   <div
@@ -148,7 +148,7 @@
       </button>
       <div @click.stop="" class="modal__slide">
         <swiper class="swiper book_img" :options="header__slider">
-          <swiper-slide v-for="(image,index) of imageset" :key="index.id">
+          <swiper-slide v-for="(image,index) of imageSet" :key="index.id">
             <img :src="$store.state.mediaURL + image.image" alt="booking-image"/>
           </swiper-slide>
           <div class="swiper-button-prev book__prev" slot="button-prev"></div>
@@ -227,7 +227,7 @@ export default {
   data() {
     return {
       rooms: [],
-      imageset: [],
+      imageSet: [],
       header__slider: {
         centeredSlides: true,
         spaceBetween: 30,
@@ -289,13 +289,23 @@ export default {
         this.joinModal = false
       }
     },
+    async getCost() {
+      await this.$axios.get('http://www.cbu.uz/oz/arkhiv-kursov-valyut/json/')
+        .then((cost) => {
+          // console.log('Cost-', cost)
+        })
+        .catch(err => {
+          console.log(err)
+        })
+    },
     async getRooms() {
       await this.$axios.get('rooms/')
         .then((res) => {
           this.rooms = res.data;
+          console.log(res);
           res.data.forEach(item => {
             item.image_set.forEach(image   => {
-              this.imageset.push(image);
+              this.imageSet.push(image);
             })
           })
         })
@@ -307,6 +317,7 @@ export default {
   computed: {},
   created() {
     this.getRooms();
+    this.getCost();
   }
 }
 </script>
