@@ -56,7 +56,7 @@
                 </b-row>
             </b-container>
         </div>
-        <div class="contact-page-btn">
+        <!-- <div class="contact-page-btn">
             <b-container>
                 <b-row>
                     <b-col cols="12">
@@ -73,7 +73,7 @@
                     <b-form inline class="contact-page-btn__form" :class="{directionToggle:isActive}">
                         <b-col lg="3" class="p-0">
                             <b-form-group>
-                                <!-- <label for="input" class=""></label> -->
+                                
                                 <b-input 
                                     id="input" 
                                     :placeholder="$t('contact.inp')" 
@@ -103,7 +103,7 @@
                     </b-form>
                 </b-row>
             </b-container>
-        </div>
+        </div> -->
 
     </div>
 </template>
