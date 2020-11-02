@@ -5,7 +5,7 @@
         <b-col class="book__header" cols="12" md="12">
           <b-row>
             <b-col cols="12" sm="8" md="6" lg="4">
-              <img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-279.jpg" alt=""/>
+              <img src="../assets/images/3D/1.jpg" alt="Sunrise hotel"/>
             </b-col>
             <b-col cols="12" sm="4" md="6" lg="4">
               <div class="pt-2">
@@ -91,7 +91,7 @@
               <div class="book__slide">
                 <swiper class="swiper book_img" :options="header__slider">
                   <swiper-slide   v-for="image of imageSet" :key="image.id">
-                    <img :src="$store.state.mediaURL + image.image" alt="booking-image"/>
+                    <img :src="$store.state.mediaURL + image.image" alt="Sunrise hotel"/>
                   </swiper-slide>
                   <div
                     class="swiper-button-prev book__prev"
@@ -127,7 +127,7 @@
             </b-col>
             <b-col cols="12" sm="5" md="4" lg="3">
               <div class="book__price">
-                <h2>{{ Math.floor(room.cost_per_day * 10359.88) }} UZS</h2>
+                <h2>{{ Math.round(room.cost_per_day * getCost) }} UZS</h2>
                 <span>Сред. за ночь (UZS)</span>
                 <button
                   @click="showPriceModal()"
@@ -149,7 +149,7 @@
       <div @click.stop="" class="modal__slide">
         <swiper class="swiper book_img" :options="header__slider">
           <swiper-slide v-for="(image,index) of imageSet" :key="index.id">
-            <img :src="$store.state.mediaURL + image.image" alt="booking-image"/>
+            <img :src="$store.state.mediaURL + image.image" alt="Sunrise hotel"/>
           </swiper-slide>
           <div class="swiper-button-prev book__prev" slot="button-prev"></div>
           <div class="swiper-button-next book__next" slot="button-next"></div>
@@ -222,12 +222,15 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
+
 export default {
   name: 'Range',
   data() {
     return {
       rooms: [],
       imageSet: [],
+      cost: '',
       header__slider: {
         centeredSlides: true,
         spaceBetween: 30,
@@ -289,20 +292,10 @@ export default {
         this.joinModal = false
       }
     },
-    async getCost() {
-      await this.$axios.get('http://www.cbu.uz/oz/arkhiv-kursov-valyut/json/')
-        .then((cost) => {
-          // console.log('Cost-', cost)
-        })
-        .catch(err => {
-          console.log(err)
-        })
-    },
     async getRooms() {
       await this.$axios.get('rooms/')
         .then((res) => {
           this.rooms = res.data;
-          console.log(res);
           res.data.forEach(item => {
             item.image_set.forEach(image   => {
               this.imageSet.push(image);
@@ -314,10 +307,16 @@ export default {
         })
     },
   },
-  computed: {},
+  mounted(){
+    this.$store.dispatch('getCost');
+  },
+  computed: {
+    ... mapGetters({
+      getCost: 'getCost'
+    })
+  },
   created() {
     this.getRooms();
-    this.getCost();
   }
 }
 </script>
