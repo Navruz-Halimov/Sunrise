@@ -27,7 +27,7 @@
                   <select
                     id="select"
                     class="adults__capacity"
-                    v-model="form.prefix"
+                    
                   >
                     <option value="0" selected disabled>Select...</option>
                     <option value="1">Mr.</option>
@@ -111,6 +111,8 @@
                   >
                 </b-form-group>
                 <b-button type="submit">JOIN</b-button>
+                <span>{{$store.state.token}}</span>
+                <span>{{$store.state.phone_number}}</span>
               </b-col>
             </b-row>
           </b-form>
@@ -128,7 +130,7 @@ export default {
         password: '',
       },
       form: {
-        prefix: '',
+        prefix: 'Mr.',
         phone_number: this.$store.state.phone_number,
         token: this.$store.state.token,
         firstname: '',

@@ -1,4 +1,3 @@
-import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import Vue from 'vue';
 import Vuex from 'vuex';
 Vue.use(Vuex);
@@ -48,6 +47,8 @@ const store = () => new Vuex.Store({
                     console.log(res)
                     commit('setToken', res.data.token)
                     commit('setPhone_number', res.data.phone_number)
+                    console.log(res.data)
+
 
                 })
                 .catch(err => console.log(err))
