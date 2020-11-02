@@ -127,7 +127,7 @@
             </b-col>
             <b-col cols="12" sm="5" md="4" lg="3">
               <div class="book__price">
-                <h2>{{ Math.floor(room.cost_per_day * 10359.88) }} UZS</h2>
+                <h2>{{ Math.round(room.cost_per_day * getCost) }} UZS</h2>
                 <span>Сред. за ночь (UZS)</span>
                 <button
                   @click="showPriceModal()"
@@ -222,12 +222,15 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex';
+
 export default {
   name: 'Range',
   data() {
     return {
       rooms: [],
       imageSet: [],
+      cost: '',
       header__slider: {
         centeredSlides: true,
         spaceBetween: 30,
@@ -289,20 +292,10 @@ export default {
         this.joinModal = false
       }
     },
-    async getCost() {
-      await this.$axios.get('http://www.cbu.uz/oz/arkhiv-kursov-valyut/json/')
-        .then((cost) => {
-          // console.log('Cost-', cost)
-        })
-        .catch(err => {
-          console.log(err)
-        })
-    },
     async getRooms() {
       await this.$axios.get('rooms/')
         .then((res) => {
           this.rooms = res.data;
-          console.log(res);
           res.data.forEach(item => {
             item.image_set.forEach(image   => {
               this.imageSet.push(image);
@@ -314,10 +307,16 @@ export default {
         })
     },
   },
-  computed: {},
+  mounted(){
+    this.$store.dispatch('getCost');
+  },
+  computed: {
+    ... mapGetters({
+      getCost: 'getCost'
+    })
+  },
   created() {
     this.getRooms();
-    this.getCost();
   }
 }
 </script>

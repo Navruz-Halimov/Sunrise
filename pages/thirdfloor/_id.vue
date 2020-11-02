@@ -38,7 +38,7 @@
             <swiper-slide v-for="room of imageset" :key="room.id"
               ><img :src="room.image" alt="" />
               <div class="rooms_price">
-                <i>{{ Math.floor(rooms.cost_per_day * 10359.88) }} $</i>
+                <i>{{ Math.round(rooms.cost_per_day * getCost) }} $</i>
               </div>
             </swiper-slide>
             <div class="swiper-button-prev" slot="button-prev"></div>
@@ -158,12 +158,14 @@ export default {
         })
     },
   },
-  computed:{
-
-  },
-
   mounted() {
+    this.$store.dispatch('getCost');
     this.getSingleRoom()
+  },
+  computed:{
+    ... mapGetters({
+      getCost: 'getCost'
+    })
   },
 }
 </script>
