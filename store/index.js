@@ -20,9 +20,7 @@ const store = () => new Vuex.Store({
     }
     },
     mutations: {
-        setGallery(state, payload) {
-            state.gallery = payload;
-        },
+
         setToken(state, token) {
             state.token = token;
         },
@@ -37,16 +35,7 @@ const store = () => new Vuex.Store({
         }
     },
     actions: {
-        async getNews({ commit }) {
-            await this.$axios.get('/gallery/list/')
-                .then(res => {
-                    console.log(res)
-                    commit('setGallery', res.data.results);
-                })
-                .catch(err => {
-                    console.log(err);
-                })
-        },
+
         async getCode({ commit }, data) {
             await this.$axios.post('/user/code/send/', { phone_number: data })
                 .then(res => {

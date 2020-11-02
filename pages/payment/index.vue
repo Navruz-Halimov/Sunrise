@@ -1,8 +1,8 @@
 <template>
-  <div class="payment py-5">
+  <div class="payment pay__details py-5">
     <b-container>
       <b-row>
-        <b-col class="book__header" cols="12" md="12">
+        <b-col class="book__header mb-5" cols="12" md="12">
           <b-row>
             <b-col cols="12" sm="6" md="6" lg="3">
               <img src="../../assets/images/rooms/ABDUMANNONRAKHIMOVV-279.jpg" alt="">
@@ -38,132 +38,36 @@
             </b-col>
           </b-row>
         </b-col>
-        <b-col class="payment__content" lg="12">
-          <h5>Complete Your Reservation</h5>
-          <h6>Sign-In <span>(Optional)</span></h6>
+        <b-col lg="12">
+          <h5>Almost there!</h5>
+          <p>Enter your payment details to complete your reservation.</p>
           <b-form class="sign__form mt-4">
+            <h6>Secure Credit Card Payment</h6>
             <b-row>
-              <b-col class="pay__input" cols="12" sm="12" md="6" lg="4">
-                <b-form-group
-                  label="World of Sunrise # or Username"
-                  label-for="username">
-                  <b-form-input type="text" id="username" required/>
-                </b-form-group>
-                <b-form-group
-                  label="Password"
-                  label-for="password">
-                  <b-form-input type="password" id="password" required/>
-                </b-form-group>
+              <b-col class="payment-credit-card-input has-error mt-3" md="6" lg="4">
+                <label for="card" style="font-size: 13px;">Card Number and Expiration Date</label>
+                <div class="pay-controls mb-3">
+                  <img src="https://www.hyatt.com/hds/images/1.4.0/global/core/payments/generic.svg" alt="Unknown Card">
+                  <b-form-input type="text" id="card" placeholder="Card number" class="pay-control-number "/>
+                  <b-form-input type="text" placeholder="MM/YY" class="pay-control-date "/>
+                </div>
                 <b-form-group>
-                  <b-form-checkbox-group class="d-flex justify-content-between">
-                    <b-form-checkbox>Remember Me</b-form-checkbox>
-                    <a href="#" class="mt-0">Forgot Password</a>
+                  <b-form-checkbox-group>
+                    <b-form-checkbox>Save this card for future use</b-form-checkbox>
+                  </b-form-checkbox-group>
+                </b-form-group>
+              </b-col>
+              <b-col lg="12">
+                <b-form-group>
+                  <b-form-checkbox-group>
+                    <b-form-checkbox>I accept the cancellation policy. I have read and acknowledge the use of my
+                      personal information in accordance with the
+                    </b-form-checkbox>
                   </b-form-checkbox-group>
                 </b-form-group>
               </b-col>
               <b-col class="pay__input" cols="12" sm="12" md="6" lg="4">
-                <b-form-group
-                  label="Last Name"
-                  label-for="name">
-                  <b-form-input type="text" id="name" required/>
-                </b-form-group>
-                <b-button type="submit">SIGN IN</b-button>
-              </b-col>
-            </b-row>
-          </b-form>
-          <h5>Get ready for your next stay.</h5>
-          <p>When you book direct on hyatt.com, you’re getting our best rate guaranteed.</p>
-          <span>All fields are required.</span>
-          <b-form class="join__form mt-3">
-            <b-row>
-              <b-col class="pay__input" cols="12" sm="12" md="12" lg="2">
-                <b-form-group
-                  label="Prefix"
-                  label-for="select">
-                  <select id="select" class="adults__capacity">
-                    <option value="0" selected disabled>Select...</option>
-                    <option value="1">Mr.</option>
-                    <option value="2">Dr.</option>
-                    <option value="3">Mrs.</option>
-                    <option value="4">Miss</option>
-                    <option value="5">Ms.</option>
-                  </select>
-                </b-form-group>
-              </b-col>
-              <b-col class="pay__input" cols="12" sm="12" md="12" lg="4">
-                <b-form-group
-                  label="Given / First Name"
-                  label-for="username">
-                  <b-form-input type="text" id="username" required/>
-                </b-form-group>
-              </b-col>
-              <b-col class="pay__input" cols="12" sm="12" md="12" lg="4">
-                <b-form-group
-                  label="Surname / Last Name"
-                  label-for="name">
-                  <b-form-input type="text" id="name" required/>
-                </b-form-group>
-              </b-col>
-              <b-col class="pay__input" cols="12" sm="12" md="12" lg="6">
-                <b-form-group
-                  label="Email"
-                  label-for="email">
-                  <b-form-input type="email" id="email" required/>
-                </b-form-group>
-              </b-col>
-              <b-col lg="6"/>
-              <b-col class="pay__input" cols="12" sm="12" md="12" lg="4">
-                <b-form-group
-                  label="Phone Number"
-                  label-for="num">
-                  <b-form-input type="number" id="num" required/>
-                </b-form-group>
-              </b-col>
-              <b-col lg="6"/>
-              <b-col class="pay__input" cols="12" sm="12" md="12" lg="6">
-                <b-form-group
-                  label="Country / Region"
-                  label-for="country">
-                  <b-form-input type="text" id="country" required/>
-                </b-form-group>
-                <b-form-group
-                  label="Address"
-                  label-for="address">
-                  <b-form-input type="text" id="address" required/>
-                </b-form-group>
-                <b-form-group
-                  label="City"
-                  label-for="city">
-                  <b-form-input type="text" id="city" required/>
-                </b-form-group>
-              </b-col>
-              <b-col lg="6"/>
-              <b-col class="pay__input" cols="12" sm="12" md="12" lg="3">
-                <b-form-group
-                  label="City"
-                  label-for="city">
-                  <b-form-input type="text" id="city" required/>
-                </b-form-group>
-              </b-col>
-              <b-col class="pay__input" cols="12" sm="12" md="12" lg="3">
-                <b-form-group
-                  label="ZIP Code"
-                  label-for="zip">
-                  <b-form-input type="text" id="zip" required/>
-                </b-form-group>
-              </b-col>
-              <b-col lg="12">
-                <h5>Join World of Sunrise.</h5>
-                <p>Join World of Sunrise to earn free nights (no blackout dates!), member rates, room upgrades, waived
-                  resort fees, and more.</p>
-              </b-col>
-              <b-col class="pay__input" cols="12" sm="12" md="12" lg="4">
-                <b-form-group
-                  label="Password"
-                  label-for="password">
-                  <b-form-input type="password" id="password" required/>
-                </b-form-group>
-                <b-button type="submit">Proceed to Payment</b-button>
+                <b-button type="submit" style="transform: none">SIGN IN</b-button>
               </b-col>
             </b-row>
           </b-form>
