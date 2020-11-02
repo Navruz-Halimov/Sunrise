@@ -5,7 +5,6 @@ Vue.use(Vuex);
 
 const store = () => new Vuex.Store({
     state: {
-        gallery:[],
         mediaURL: 'http://188.225.83.193/',
         phone_number: "",
         token: "",

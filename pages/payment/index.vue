@@ -41,7 +41,8 @@
         <b-col lg="12">
           <h5>Almost there!</h5>
           <p>Enter your payment details to complete your reservation.</p>
-          <b-form class="sign__form mt-4">
+          <Payment />
+          <!-- <b-form class="sign__form mt-4">
             <h6>Secure Credit Card Payment</h6>
             <b-row>
               <b-col class="payment-credit-card-input has-error mt-3" md="6" lg="4">
@@ -69,15 +70,20 @@
               <b-col class="pay__input" cols="12" sm="12" md="6" lg="4">
                 <b-button type="submit" style="transform: none">SIGN IN</b-button>
               </b-col>
+              
             </b-row>
-          </b-form>
+          </b-form> -->
         </b-col>
       </b-row>
     </b-container>
   </div>
 </template>
 <script>
+//  import Payment from '../components/Payment.vue'
   export default {
+    components:{
+      // Payment
+    },
     data() {
       return {
         textDetails: 'Show stay breakdown'
