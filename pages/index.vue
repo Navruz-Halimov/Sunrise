@@ -938,6 +938,11 @@
     },
     data() {
       return {
+        form:{
+          start_date: "2020-10-24",
+          end_date: "2020-10-27",
+          room: 1, 
+        },
         value2: [new Date()],
         value3: [new Date()],
         isShow: false,
@@ -1046,7 +1051,15 @@
           .catch((error) => {
             console.log(error);
           })
-      }
+      },
+      async sendData() {
+            await this.$axios.post('reservation/create/', this.form)
+                .then(res => {
+                  console.log(res)
+                  console.log("asdsadsa")
+                })
+                .catch(err => console.log(err))
+        },
     },
     created() {
       this.getOffer();

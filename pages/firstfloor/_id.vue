@@ -36,7 +36,7 @@
         <b-col lg="6" class="rooms__select-center">
           <swiper class="rooms__select-slider" :options="rooms__select">
             <swiper-slide v-for="room of imageset" :key="room.id">
-              <img :src="$store.state.mediaURL+room.image" alt="" />
+              <img :src="$store.state.mediaURL + room.image" alt="" />
               <div class="rooms_price">
                 <i>{{ Math.floor(rooms.cost_per_day * 10359.88) }} $</i>
               </div>
@@ -48,12 +48,12 @@
         </b-col>
         <b-col lg="3" class="rooms__select-right">
           <div class="floor__left-wrapper">
-            <form class="booking__form" method="" action="POST">
+            <form class="booking__form">
               <section class="order__part">
                 <b-row>
                   <div class="col-lg-12 order__part-item">
                     <date-picker
-                      v-model="value2"
+                      v-model="start_date"
                       value-type="format"
                       format="YYYY-MM-DD"
                       :placeholder="$t('booking.arrival')"
@@ -63,7 +63,7 @@
                   </div>
                   <div class="col-lg-12 order__part-item">
                     <date-picker
-                      v-model="value3"
+                      v-model="end_date"
                       value-type="format"
                       format="YYYY-MM-DD"
                       :placeholder="$t('booking.departure')"
@@ -101,13 +101,17 @@
             </form>
             <p class="floor__text">First floor rooms</p>
             <b-pagination-nav
-              number-of-pages="10"
+              number-of-pages="19"
+              base-url=""
               hide-goto-end-buttons
               pills
-              limit="10"
+              limit="19"
+              v-model="currentPage"
+              :total-rows="rows"
+              :per-page="perPage"
               class="room__inner-pagination"
             ></b-pagination-nav>
-            <b-button class="floor__btn" pill :to="localePath('/payment')"
+            <b-button class="floor__btn" pill @click="submitForm()"
               >Select room</b-button
             >
           </div>
@@ -123,8 +127,12 @@ export default {
     return {
       rooms: [],
       imageset: [],
-      value2: [new Date()],
-      value3: [new Date()],
+      room_num:"",
+      start_date: '',
+      end_date: '',
+      rows: 19,
+      perPage: 11,
+      currentPage: 1,
       isActive: false,
       rooms__select: {
         centeredSlides: true,
@@ -141,18 +149,36 @@ export default {
     }
   },
   methods: {
+    // async change() {
+    //   await router.push({ name:`/firstfloor/${this.page}` })
+    // },
     notBeforeToday(date) {
       return date < new Date(new Date().setHours(0, 0, 0, 0))
+    },
+    submitForm() {
+      console.log(this.value2 + ' = ' + this.value3)
+      this.$axios
+        .post('reservation/create/',{
+             start_date:this.start_date,
+             end_date:this.end_date,
+             room:this.room_num
+        })
+        .then((res) => {
+          console.log(res)
+        })
+        .catch((err) => {
+          console.log(err)
+        })
     },
     async getRoom() {
       await this.$axios
         .get(`rooms/${this.$route.params.id}/`)
         .then((res) => {
+          console.log(this.date)
           this.rooms = res.data.room
+          this.room_num=res.data.room.room_num
+          console.log("bu room number" + this.room_num)
           this.imageset = res.data.room.image_set
-
-          console.log(res)
-          console.log(this.imageset)
         })
         .catch((err) => {
           console.log(err)
@@ -161,7 +187,7 @@ export default {
   },
   computed: {},
   created() {
-    this.getRoom();
+    this.getRoom()
   },
 }
 </script>
