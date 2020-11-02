@@ -2,7 +2,7 @@
   <div class="main__page">
     <div class="navbar__slider">
       <swiper class="swiper" :options="header__slider">
-        <swiper-slide v-for="(slider, index) in sliders" :key="index">
+        <swiper-slide v-for="(slider, index) in sliders" :key="index.id">
           <img :src="slider.image" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">{{slider.title}}</h1>
@@ -300,13 +300,13 @@
         </b-row>
       </div>
 
-      <Visit />
+      <visit />
       <b-row class="gallery">
         <div class="gallery__title">
           <h2 class="gallery__title-main">{{$t('gallery.title')}} </h2>
         </div>
       </b-row>
-      <Test  :count="8" />
+      <test  :count="8" />
       <b-button
         class="btn-img my-4"
         :to="localePath('/gallery')"
@@ -319,77 +319,67 @@
       <b-container class="swiper__wrapper">
         <h2 class="swiper__wrapper-title">{{$t('rooms.title')}}</h2>
         <swiper :options="swiper_card_rooms">
-          <swiper-slide class="swiper-card">
-            <div class="swiper-card__img">
-              <div class="swiper-card__cost">100$</div>
-              <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
-                <swiper-slide class="swiper__wrapper-mini_card">
-                  <b-img
-                    src="../assets/images/rooms/photo_2020-10-12_16-15-30.jpg"
-                    fluid
-                    alt="rooms"
-                  ></b-img>
-                </swiper-slide>
-                <swiper-slide>
-                  <b-img
-                    src="../assets/images/rooms/photo_2020-10-12_16-15-39.jpg"
-                    fluid
-                    alt="rooms"
-                  ></b-img>
-                </swiper-slide>
-                <swiper-slide>
-                  <b-img
-                    src="../assets/images/rooms/photo_2020-10-12_16-15-47.jpg"
-                    fluid
-                    alt="rooms"
-                  ></b-img>
-                </swiper-slide>
-                <swiper-slide>
-                  <b-img
-                    src="../assets/images/rooms/photo_2020-10-12_16-15-51.jpg"
-                    fluid
-                    alt="rooms"
-                  ></b-img>
-                </swiper-slide>
-                <div class="swiper-card__next-mini" slot="button-prev">
-                  <font-awesome-icon :icon="['fas', 'angle-left']"/>
+          <swiper-slide
+            class="swiper-card"
+            v-for="(cardRoom, index) in cardRooms"
+            :key="index.id"
+          >
+            <!-- <nuxt-link to="/booking"> -->
+              <div class="swiper-card__img">
+                <div class="swiper-card__cost">
+                  {{cardRoom.cost_per_day}} $
                 </div>
-                <div class="swiper-card__prev-mini" slot="button-next">
-                  <font-awesome-icon :icon="['fas', 'angle-right']"/>
+                <swiper :options="slider_card_mini" class="swiper__wrapper-mini">
+                  <swiper-slide
+                    class="swiper__wrapper-mini_card"
+                    v-for="(image, index) in cardImages"
+                    :key="index.id"
+                  >
+                    <b-img
+                      :src="$store.state.mediaURL + image.image"
+                      fluid
+                      alt="rooms"
+                    ></b-img>
+                  </swiper-slide>
+                  <div class="swiper-card__next-mini" slot="button-prev">
+                    <font-awesome-icon :icon="['fas', 'angle-left']"/>
+                  </div>
+                  <div class="swiper-card__prev-mini" slot="button-next">
+                    <font-awesome-icon :icon="['fas', 'angle-right']"/>
+                  </div>
+                </swiper>
+              </div>
+              <div class="swiper-card__statistics">
+                <div class="swiper-card__name-rooms">Sunrise</div>
+                <div class="swiper-card__size-rooms">
+                  <font-awesome-icon :icon="['fas', 'expand']"/>
+                  <span>size: 24.5 m²</span>
                 </div>
-              </swiper>
-            </div>
-            <div class="swiper-card__statistics">
-              <div class="swiper-card__name-rooms">Sunrise</div>
-              <div class="swiper-card__size-rooms">
-                <font-awesome-icon :icon="['fas', 'expand']"/>
-                <span>size: 24.5 m²</span>
+                <div class="swiper-card__guest-rooms">
+                  <font-awesome-icon :icon="['fas', 'user']"/>
+                  <span>max. guests: {{cardRoom.num_of_adults}} adults, {{cardRoom.num_of_children}} child</span>
+                </div>
+                <div class="swiper-card__desc" v-html="cardRoom.description_2">
+                  <!-- {{cardRoom.description_2}}  -->
+                </div>
+                <div class="swiper-card__services">
+                  <ul>
+                    <li>
+                      <font-awesome-icon :icon="['fas', 'wifi']"/>
+                    </li>
+                    <li>
+                      <font-awesome-icon :icon="['fas', 'coffee']"/>
+                    </li>
+                    <li>
+                      <font-awesome-icon :icon="['fas', 'blender']"/>
+                    </li>
+                    <li>
+                      <font-awesome-icon :icon="['fas', 'shower']"/>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="swiper-card__guest-rooms">
-                <font-awesome-icon :icon="['fas', 'user']"/>
-                <span>max. guests: 3 adults, 1 child</span>
-              </div>
-              <div class="swiper-card__desc">
-                With our Standard Guest Room, you will have everything you need
-                for a comfortable stay and a good night's sleep.
-              </div>
-              <div class="swiper-card__services">
-                <ul>
-                  <li>
-                    <font-awesome-icon :icon="['fas', 'wifi']"/>
-                  </li>
-                  <li>
-                    <font-awesome-icon :icon="['fas', 'coffee']"/>
-                  </li>
-                  <li>
-                    <font-awesome-icon :icon="['fas', 'blender']"/>
-                  </li>
-                  <li>
-                    <font-awesome-icon :icon="['fas', 'shower']"/>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <!-- </nuxt-link> -->
           </swiper-slide>
           <swiper-slide class="swiper-card">
             <div class="swiper-card__img">
@@ -697,7 +687,7 @@
           <b-col md="12">
             <h2 class="users-feedbacks__title">{{$t('feedbacks.title')}}</h2>
             <swiper :options="users_feedback">
-              <swiper-slide class="users-feedbacks__card">
+              <swiper-slide class="users-feedbacks__card" v-for="(feedback, index) in feedbacks" :key="index.id">
                 <div class="users-feedbacks__card-img">
                   <b-img
                     src="../assets/images/person_1.jpg"
@@ -711,122 +701,9 @@
                     class="card-icon"
                   />
                   <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
+                    {{feedback.comment}}
                   </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="users-feedbacks__card">
-                <div class="users-feedbacks__card-img">
-                  <b-img
-                    src="../assets/images/person_1.jpg"
-                    rounded="circle"
-                    alt="person"
-                  ></b-img>
-                </div>
-                <div class="users-feedbacks__card-info">
-                  <font-awesome-icon
-                    :icon="['fas', 'quote-left']"
-                    class="card-icon"
-                  />
-                  <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="users-feedbacks__card">
-                <div class="users-feedbacks__card-img">
-                  <b-img
-                    src="../assets/images/person_1.jpg"
-                    rounded="circle"
-                    alt="person"
-                  ></b-img>
-                </div>
-                <div class="users-feedbacks__card-info">
-                  <font-awesome-icon
-                    :icon="['fas', 'quote-left']"
-                    class="card-icon"
-                  />
-                  <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="users-feedbacks__card">
-                <div class="users-feedbacks__card-img">
-                  <b-img
-                    src="../assets/images/person_1.jpg"
-                    rounded="circle"
-                    alt="person"
-                  ></b-img>
-                </div>
-                <div class="users-feedbacks__card-info">
-                  <font-awesome-icon
-                    :icon="['fas', 'quote-left']"
-                    class="card-icon"
-                  />
-                  <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="users-feedbacks__card">
-                <div class="users-feedbacks__card-img">
-                  <b-img
-                    src="../assets/images/person_1.jpg"
-                    rounded="circle"
-                    alt="person"
-                  ></b-img>
-                </div>
-                <div class="users-feedbacks__card-info">
-                  <font-awesome-icon
-                    :icon="['fas', 'quote-left']"
-                    class="card-icon"
-                  />
-                  <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="users-feedbacks__card">
-                <div class="users-feedbacks__card-img">
-                  <b-img
-                    src="../assets/images/person_1.jpg"
-                    rounded="circle"
-                    alt="person"
-                  ></b-img>
-                </div>
-                <div class="users-feedbacks__card-info">
-                  <font-awesome-icon
-                    :icon="['fas', 'quote-left']"
-                    class="card-icon"
-                  />
-                  <div class="users-feedbacks__card-text">
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </div>
-                  <div class="users-feedbacks__card-name">Rodel Golez</div>
-                  <div class="users-feedbacks__card-career">Businessman</div>
+                  <div class="users-feedbacks__card-name">{{feedback.user.firstname}} {{feedback.user.lastname}} </div>
                 </div>
               </swiper-slide>
             </swiper>
@@ -848,21 +725,18 @@
                 </b-col>
             </b-row>
             <b-row class="offer-main-items">
-              <b-col lg="6">
+              <b-col v-for="(offer,index) of offers" :key="index.id" lg="6">
                 <b-row>
                   <b-col class="offer-main__item" md="6" lg="6" >
                     <div class="offer-main__picture">
-                      <b-img src="../assets/images/rooms/photo_2020-10-12_16-15-47.jpg" alt="" height="270px"></b-img>
+                      <b-img :src="$store.state.mediaURL + offer.image" alt="" height="270px"></b-img>
                     </div>
                   </b-col>
                   <b-col class="offer-main__item" md="6" lg="6" >
                     <div class="offer-main__text">
-                      <div class="offer-main__text-title">{{$t('offer_main.text_title')}}</div>
-                      <div class="offer-main__text-info">{{$t('offer_main.text_info')}}
-                        <!-- <font-awesome-icon :icon="['fas', 'clock']" />
-                        <span>19th March, 2021</span> -->
-                      </div>
-                      <a @click.prevent="showModal" class="offer-main__link">{{$t('offer_main.text_link')}}</a>
+                      <div class="offer-main__text-title">{{ offer.title }}</div>
+                      <div class="offer-main__text-info">{{ offer.description }}</div>
+                      <a @click.prevent="showModal(index)" class="offer-main__link">{{$t('offer_main.text_link')}}</a>
                     </div>
                   </b-col>
                 </b-row>
@@ -876,46 +750,7 @@
                 </button>
                 <div class="offer__text" @click.stop="">
                   <div class="privacy">
-                    <h4>Sunrise Privacy Policy</h4>
-                    <span>1 Introduction</span>
-                    <p>We are committed to safeguarding the privacy of the personal information that we gather concerning our
-                      prospective, current and former employees (“you” or “employees”) for management, human resources and
-                      payroll purposes.</p>
-                    <p>As a Hyatt employee (or prospective employee), you understand and acknowledge that we collect, use and
-                      disclose your personal information in accordance with this Privacy Policy for Employees (this
-                      “Policy”).</p>
-                    <span>2 The Application of this Policy</span>
-                    <p>This Policy applies to employees’ personal information and to the use of that personal information in any
-                      form, whether oral, electronic and/or written. This Policy applies unless there is a specific
-                      country/region privacy policy for you based on your citizenship/residency or if the Hyatt Location (as
-                      defined below) is in such country/region.</p>
-                    <p>This Policy gives effect to Hyatt’s commitment to protect your personal information and has been adopted
-                      by all of the separate and distinct legal entities that manage, operate, franchise, own and/or provide
-                      services to the locations operating under or in connection with the Hyatt®”, Park Hyatt®, Miraval®,
-                      exhale®, Grand Hyatt®, Hyatt Regency®, Andaz®, Hyatt Centric®, The Unbound Collection by Hyatt®, Hyatt
-                      Place®, Hyatt House®, Hyatt Ziva, Hyatt Zilara or Hyatt Residence Club® brands around the world, including
-                      independently branded locations affiliated with Hyatt (individually, a “Hyatt Location”) and collectively,
-                      the “Hyatt Locations”). Those entities include Hyatt Hotels Corporation, its direct and indirect
-                      subsidiaries, and all of the separate and distinct legal entities that own the individual Hyatt Locations
-                      worldwide. References to “Hyatt”, “we” and “our” throughout this Policy, depending on the context,
-                      collectively refer to those separate and distinct legal entities, including the entity with which you have
-                      or may have an employment relationship.</p>
-                    <p>Your personal information will be processed by the entity with which you have or may have an employment
-                      relationship for the purposes set out in Section 4 below. Your personal information may be disclosed to
-                      the other entities listed above for human resources administration purposes.</p>
-                    <p>While this Policy is intended to describe the broadest range of our personal information processing
-                      activities globally, those processing activities may be more limited in some jurisdictions based on the
-                      restrictions of their laws. For example, the laws of a particular country may limit the types of personal
-                      information we can collect or the manner in which we process that personal information. In those
-                      instances, we adjust our internal policies and/or practices to reflect the requirements of local law.</p>
-                    <p>If you agree to this Policy you are, to the extent required under local law in some jurisdictions,
-                      granting your express and written consent to the processing of any personal information that you provide
-                      Hyatt that is considered to be Sensitive Personal Information (as described in Section 3) or is considered
-                      to be financial information.</p>
-                    <span>3 The Types of Personal Information We Process</span>
-                    <p>The term “personal information” in this Policy refers to information that identifies or is capable of
-                      identifying you as an individual. The types of personal information that we process (which may vary by
-                      jurisdiction based on applicable law and the nature of the employee’s position and duties) include:</p>
+                    <p>{{ offers[id].description }}</p>
                   </div>
                 </div>
               </div>
@@ -948,7 +783,11 @@
         isShow: false,
         offerModal: false,
         sliders: [],
-
+        offers: [],
+        id: 0,
+        cardRooms: [],
+        cardImages: [],
+        feedbacks: [],
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
@@ -1020,6 +859,21 @@
       }
     },
     methods: {
+      async getFeedbacks() {
+        await this.$axios.get('reviews/list/').then((res) => {
+          this.feedbacks = res.data.results
+        })
+      },
+      async getCardRooms() {
+        await this.$axios.get('rooms/').then((res) => {
+          this.cardRooms = res.data;
+          res.data.forEach(item => {
+            item.image_set.forEach(image   => {
+              this.cardImages.push(image);
+            })
+          })
+        })
+      },
       async getSliders() {
         await this.$axios.get('/menu/images/').then((res) => {
           this.sliders = res.data
@@ -1036,9 +890,11 @@
           this.amenityText = 'Show More'
         }
       },
-      showModal() {
+      showModal(id) {
         this.offerModal = true
         this.privacy = true
+        this.id = id;
+        console.log(id);
       },
       hideModal() {
         this.offerModal = false
@@ -1046,7 +902,8 @@
       async getOffer() {
         await this.$axios.get('menu/offers/')
           .then((res) => {
-            console.log("Offer", res);
+            this.offers = res.data;
+            console.log("Offer", this.offers);
           })
           .catch((error) => {
             console.log(error);
@@ -1088,7 +945,9 @@
       }
     },
     mounted() {
-      this.getSliders()
+      this.getSliders(),
+      this.getCardRooms(),
+      this.getFeedbacks()
     }
   }
 </script>

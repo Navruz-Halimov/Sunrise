@@ -27,37 +27,30 @@
           lg="3"
         >
           <div class="photo" @click.prevent="show(index)">
-            <img
-              class="photo__img"
-              :src="gallereyid.image"
-              alt="gallery image"
-            />
+            <img class="photo__img" :src="gallereyid.image" alt="gallery image" />
           </div>
         </b-col>
       </b-row>
     </b-container>
 
-    <div class="modals" v-if="visible">
-      <button type="button" @click.stop="hide" class="close">
+    <div class="modals" v-if="visible" @click="hide">
+      <button type="button" @click="hide" class="close">
         <i></i>
         <i></i>
       </button>
-      <swiper class="swiper modals__content" :options="visit__slider">
-        <swiper-slide
-          v-for="(gallereyid, index) of gallery"
-          :key="index"
-          class="modals__img"
-        >
-          <img :src="gallereyid.image" alt="" />
-        </swiper-slide>
-        <div class="swiper-button-prev book__prev" slot="button-prev"></div>
-        <div class="swiper-button-next book__next" slot="button-next"></div>
-      </swiper>
+      <div class="modals__content" @click.stop="">
+        <swiper class="swiper modals__img" :options="visit__slider">
+          <swiper-slide>
+            <img :src="gallery[id].image" alt="" />
+          </swiper-slide>
+          <div class="swiper-button-prev prev" slot="button-prev"></div>
+          <div class="swiper-button-next next" slot="button-next"></div>
+        </swiper>
+      </div>
     </div>
   </div>
 </template>
 <script>
-import { mapGetters } from 'vuex'
 export default {
   props: ['count'],
   data() {
@@ -76,7 +69,6 @@ export default {
         },
       },
       visible: false,
-      index: 0,
       id: 0,
     }
   },
@@ -91,10 +83,10 @@ export default {
     show(id) {
       this.visible = true
       this.id = id
+      console.log(id);
     },
     hide() {
       this.visible = false
-      this.id = 0
     },
   },
   computed: {},
@@ -129,7 +121,7 @@ height: 100vh;
       position: relative;
       display: block;
       height: 100%;
-      width: 100%;  
+      width: 100%;
     }
 
     .atom-spinner .spinner-circle {

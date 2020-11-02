@@ -92,11 +92,11 @@
       <b-row class="footer__end mt-5">
         <b-col class="p-0" cols="12" lg="12">
           <ul>
-            <li><a @click.prevent="showModal('privacy')" href="#">Privacy Policy</a> |</li>
-            <li><a @click.prevent="showModal('terms')" href="#">Terms & Conditions</a> |</li>
-            <li><a @click.prevent="showModal('cookie')" href="#">Cookie Center</a> |</li>
-            <li><a @click.prevent="showModal('security')" href="#">Security & Safety</a> |</li>
-            <li><a @click.prevent="showModal('information')" href="#">Do Not Sell My Personal Information</a> |</li>
+            <li><a @click.prevent="showModal('privacy')" href="#">{{$t('footerModal.modal1')}}</a> |</li>
+            <li><a @click.prevent="showModal('terms')" href="#">{{$t('footerModal.modal2')}}</a> |</li>
+            <li><a @click.prevent="showModal('cookie')" href="#">{{$t('footerModal.modal3')}}</a> |</li>
+            <li><a @click.prevent="showModal('security')" href="#">{{$t('footerModal.modal4')}}</a> |</li>
+            <li><a @click.prevent="showModal('information')" href="#">{{$t('footerModal.modal5')}}</a> |</li>
             <li><a>Copyright © 2020 All rights reserved.</a></li>
           </ul>
         </b-col>

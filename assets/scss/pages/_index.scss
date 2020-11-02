@@ -62,7 +62,12 @@
   }
 }
 .offer-main-items{
-  border: 1px solid red;
+  .offer-main__item{
+    .offer-main__picture{
+    }
+    .offer-main__text{
+    }
+  }
   .offer__modal{
     @extend %modal-style;
     .offer__text{

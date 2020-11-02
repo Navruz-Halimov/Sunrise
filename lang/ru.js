@@ -8,14 +8,16 @@ export default {
         nearby: 'Достопримечательности',
         contact: 'Связаться с нами',
         reviews: 'Отзывы',
-        book: 'Забронируйте сейчас',
-        lang: 'язык',
-        sign: 'войти',
-        join:'присоединиться',
-        eng: 'английский',
-        ru: 'русский',
-        chn: 'китайский',
+        book: 'Забронируй',
+        lang: 'Язык',
+        sign: 'Войти',
+        join:'Присоединиться',
+        eng: 'Английский',
+        ru: 'Русский',
+        chn: 'Китайский',
         home: 'Главная',
+        logout: 'Выйти',
+        account: 'Мой аккаунт'
     },
     attraction: {
         attraction: 'Достопримечательности',
@@ -35,7 +37,8 @@ export default {
         voc: 'Аренда на отпуск',
         motto: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
         readmore: 'Подробнее',
-        connect: 'Связаться с Sunrise'
+        connect: 'Связаться с Sunrise',
+        copyright: 'Copyright © 2020 Все права защищены.'
     },
     tourist: {
         heading: "Справочник туриста",
@@ -109,16 +112,16 @@ export default {
         children_title: "Дети",
         arrival: "Дата прибытия",
         departure:"Дата отбытия",
-        choose_title: "Выберите комнату",
+        choose_title: "Выберите",
         choose_room1: "Стандарт",
-        choose_room2: "Стандартный семейный",
-        choose_room3: "Делюкс двухместный",
+        choose_room2: "Семейный",
+        choose_room3: "Двухместный",
         choose_room4: "Стандарт",
-        btn_text: "Забронируйте сейчас"
+        btn_text: "Забронируй"
     },
     gallery: {
         title: "Галерея",
-        btn: "Для большего"
+        btn: "Больше"
     },
     rooms: {
         title: "Номера"
@@ -142,7 +145,7 @@ export default {
         features_item6: "Полиграфические услуги",
         features_item7: "Прием",
         features_item8: "Индивидуальный климат-контроль помещения",
-        multimedia_title: "Пакеты встреч",
+        multimedia_title: "Комнаты для встречи",
         banner_small: "Достигайте каждой цели с помощью Sunrise Meetings",
         banner_title: "Откройте для себя Sunrise Meetings",
         banner_text: "Наша преданная своему делу команда, внимание к деталям и превосходное оснащение в различных направлениях по всему миру обеспечивают успех ваших встреч и мероприятий.",
@@ -170,5 +173,32 @@ export default {
         input: 'Пожалуйста, убедитесь, что ваша информация полная.',
         code: "Вы ввели неправильный код! Повторите попытку.",
     },
+    review: {
+        title: 'Последние отзывы путешественников'
+    },
+    footerModal: {
+        modal1: 'Политика конфиденциальности',
+        modal2: 'Условия',
+        modal3: 'Центр cookie-файлов',
+        modal4: 'Безопасность и охрана',
+        modal5: 'Я запрещаю продавать свою личную информацию',
+    },   
+    singInPage: {
+        title: 'Вход в Sunrise',
+        pageName: 'Войти',
+        pageNameSub: 'Пожалуйста, войдите, заполнив информацию ниже. Все поля обязательны для заполнения.',
+        username: 'Членство # / Имя пользователя',
+        forget: 'Забыли свой номер участника?',
+        password: 'Пароль',
+        remember: 'Запомните меня',
+        forgetPass: 'Забыл пароль',
+        singBtn: 'ВОЙТИ'
+    },    
+    regPage: {
+        number: 'Телефонный номер',
+        enterNumber: 'Введите номер телефона',
+        kod: 'Код',
+        btn: 'Следующий шаг',
+    } 
 
 }

@@ -16,6 +16,8 @@ export default {
         ru: '俄语',
         chn: '中文',
         home: '家',
+        logout: '登出',
+        account: '我的帐户'
     },
     attraction: {
         attraction: '吸引力',
@@ -35,6 +37,7 @@ export default {
         motto: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.',
         readmore: '阅读更多',
         connect: '与日出联系',
+        copyright: '版权所有©2020，保留所有权.'
     },
     tourist: {
         heading: "导游",
@@ -168,5 +171,32 @@ export default {
         lawyererror: '发生了错误. 请再试一次',
         input: '请确保您的信息完整.',
         code: "您输入了错误的密码！再试一次.",
-    },                
+    },       
+    review: {
+        title: '最近的旅客评论'
+    },
+    footerModal: {
+        modal1: '隐私政策',
+        modal2: '条款及细则',
+        modal3: '饼干中心',
+        modal4: '保安与安全',
+        modal5: '不要出售我的个人信息',
+    },   
+    singInPage: {
+        title: '登录日出',
+        pageName: '登入',
+        pageNameSub: '请通过填写以下信息登. 各个领域都需要.',
+        username: '会员编号/用户名',
+        forget: '忘记会员号码了吗？',
+        password: '密码',
+        remember: '记得我',
+        forgetPass: '忘记密码',
+        singBtn: '登入'
+    },    
+    regPage: {
+        number: '电话号码',
+        enterNumber: '输入电话号码',
+        kod: '柯德',
+        btn: '下一步',
+    }          
 }

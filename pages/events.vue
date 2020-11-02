@@ -97,7 +97,7 @@
                   <span>{{ $t('events.features_item2') }}</span>
                 </li>
                 <li class="event-page__features-item">
-                  <font-awesome-icon :icon="['fas', 'hammer']" />
+                  <font-awesome-icon :icon="['fas', 'utensils']" />
                   <span>{{ $t('events.features_item3') }}</span>
                 </li>
                 <li class="event-page__features-item">
