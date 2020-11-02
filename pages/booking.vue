@@ -5,7 +5,7 @@
         <b-col class="book__header" cols="12" md="12">
           <b-row>
             <b-col cols="12" sm="8" md="6" lg="4">
-              <img src="../assets/images/rooms/ABDUMANNONRAKHIMOVV-279.jpg" alt=""/>
+              <img src="../assets/images/3D/1.jpg" alt="Sunrise hotel"/>
             </b-col>
             <b-col cols="12" sm="4" md="6" lg="4">
               <div class="pt-2">
@@ -91,7 +91,7 @@
               <div class="book__slide">
                 <swiper class="swiper book_img" :options="header__slider">
                   <swiper-slide   v-for="image of imageSet" :key="image.id">
-                    <img :src="$store.state.mediaURL + image.image" alt="booking-image"/>
+                    <img :src="$store.state.mediaURL + image.image" alt="Sunrise hotel"/>
                   </swiper-slide>
                   <div
                     class="swiper-button-prev book__prev"
@@ -149,7 +149,7 @@
       <div @click.stop="" class="modal__slide">
         <swiper class="swiper book_img" :options="header__slider">
           <swiper-slide v-for="(image,index) of imageSet" :key="index.id">
-            <img :src="$store.state.mediaURL + image.image" alt="booking-image"/>
+            <img :src="$store.state.mediaURL + image.image" alt="Sunrise hotel"/>
           </swiper-slide>
           <div class="swiper-button-prev book__prev" slot="button-prev"></div>
           <div class="swiper-button-next book__next" slot="button-next"></div>
