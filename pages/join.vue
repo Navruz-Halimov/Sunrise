@@ -27,7 +27,7 @@
                   <select
                     id="select"
                     class="adults__capacity"
-                    v-model="form.gender"
+                    v-model="form.prefix"
                   >
                     <option value="0" selected disabled>Select...</option>
                     <option value="1">Mr.</option>
@@ -75,7 +75,7 @@
                     class="join__input"
                     type="text"
                     id="zip"
-                    v-model="form.zim_code"
+                    v-model="form.zip_code"
                     required
                   />
                 </b-form-group>
@@ -128,16 +128,16 @@ export default {
         password: '',
       },
       form: {
-        prefix: 'Mr.',
+        prefix: '',
         phone_number: this.$store.state.phone_number,
         token: this.$store.state.token,
         firstname: '',
         lastname: '',
-        password: '',
+        password:'',
         email: '',
         state: '',
         city: '',
-        zim_code: '',
+        zip_code: '',
       },
     }
   },
