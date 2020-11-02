@@ -85,12 +85,12 @@
           </b-row>
         </b-col>
         <b-col class="book_hr" cols="12" md="12"
-              v-for="(room,index) of rooms" :key="index.id" >
+              v-for="(room,index) of rooms" :key="index" >
           <b-row>
             <b-col class="mb-sm-2 mb-md-2" cols="12" sm="12" md="4" lg="4">
               <div class="book__slide">
                 <swiper class="swiper book_img" :options="header__slider">
-                  <swiper-slide   v-for="image of imageSet" :key="image.id">
+                  <swiper-slide   v-for="image of room.image_set" :key="image.id">
                     <img :src="$store.state.mediaURL + image.image" alt="Sunrise hotel"/>
                   </swiper-slide>
                   <div
@@ -102,7 +102,7 @@
                     slot="button-next"
                   ></div>
                 </swiper>
-                <div class="book__expand" @click.prevent="showModal(index.id)">
+                <div class="book__expand" @click.prevent="showModal(index)">
                   <font-awesome-icon
                     class="expand"
                     :icon="['fas', 'expand-arrows-alt']"
@@ -114,12 +114,11 @@
               <div class="book__text">
                 <h4></h4>
                 <p class="small_text" v-html="room.description_2"></p>
-                <a v-b-toggle.id @click="showDetails()">
+                <a v-b-toggle.textId @click="showDetails(index)">
                   {{ textDetails }}
                 </a>
-                <b-collapse id="id">
+                <b-collapse id="textId">
                   <ul>
-                    <h5></h5>
                     <div class="amenties_text" v-html="room.description_1"></div>
                   </ul>
                 </b-collapse>
@@ -148,8 +147,10 @@
       </button>
       <div @click.stop="" class="modal__slide">
         <swiper class="swiper book_img" :options="header__slider">
-          <swiper-slide v-for="(image,index) of imageSet" :key="index.id">
-            <img :src="$store.state.mediaURL + image.image" alt="Sunrise hotel"/>
+          <swiper-slide v-for="(room,index) of rooms" :key="index">
+            <div v-for="image of room.image_set" :key="image">
+              <img :src="$store.state.mediaURL + image.image" alt="Sunrise hotel"/>
+            </div>
           </swiper-slide>
           <div class="swiper-button-prev book__prev" slot="button-prev"></div>
           <div class="swiper-button-next book__next" slot="button-next"></div>
@@ -200,19 +201,12 @@
             label-for="username"
           >
             <b-form-input type="text" id="username" required />
-            <a href="#">Forgot your membership number?</a>
           </b-form-group>
           <b-form-group label="Last Name:" label-for="name">
             <b-form-input type="text" id="name" required />
           </b-form-group>
           <b-form-group label="Password" label-for="password">
             <b-form-input type="password" id="password" required />
-          </b-form-group>
-          <b-form-group>
-            <b-form-checkbox-group class="d-flex justify-content-between">
-              <b-form-checkbox>Remember Me</b-form-checkbox>
-              <a href="#" class="mt-0">Forgot Password</a>
-            </b-form-checkbox-group>
           </b-form-group>
           <b-button type="submit">Submit</b-button>
         </b-form>
@@ -229,7 +223,6 @@ export default {
   data() {
     return {
       rooms: [],
-      imageSet: [],
       cost: '',
       header__slider: {
         centeredSlides: true,
@@ -249,14 +242,16 @@ export default {
       signModal: false,
       index: 0,
       id: 0,
+      textId: 0
     }
   },
   methods: {
-    showDetails() {
-      if (this.textDetails === 'More Details') {
-        this.textDetails = 'Less Details'
+    showDetails(textId) {
+      console.log(textId);
+      if (textId === this.textDetails) {
+        this.textDetails = 'Less Details';
       } else {
-        this.textDetails = 'More Details'
+        this.textDetails = 'More Details';
       }
     },
     amenityShow() {
@@ -296,11 +291,7 @@ export default {
       await this.$axios.get('rooms/')
         .then((res) => {
           this.rooms = res.data;
-          res.data.forEach(item => {
-            item.image_set.forEach(image   => {
-              this.imageSet.push(image);
-            })
-          })
+          console.log(res);
         })
         .catch((error) => {
           console.log(error);
