@@ -2,7 +2,7 @@
   <div class="main__page">
     <div class="navbar__slider">
       <swiper class="swiper" :options="header__slider">
-        <swiper-slide v-for="(slider, index) in sliders" :key="index.id">
+        <swiper-slide v-for="(slider, index) in sliders" :key="index.id" >
           <img :src="slider.image" alt="image" />
           <div class="swiper-caption">
             <h1 class="swiper-caption-heading">{{slider.title}}</h1>
@@ -516,9 +516,9 @@
         swiper_card_rooms: {
           slidesPerView: 1,
           spaceBetween: 30,
-          autoplay: {
-            delay: 4000
-          },
+          // autoplay: {
+          //   delay: 4000
+          // },
           navigation: {
             nextEl: '.swiper-card__next',
             prevEl: '.swiper-card__prev'
@@ -537,9 +537,9 @@
         slider_card_mini: {
           slidesPerView: 1,
           spaceBetween: 0,
-          autoplay: {
-            delay: 4000
-          },
+          // autoplay: {
+          //   delay: 4000
+          // },
           navigation: {
             nextEl: '.swiper-card__next-mini',
             prevEl: '.swiper-card__prev-mini'
