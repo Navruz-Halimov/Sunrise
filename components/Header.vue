@@ -71,20 +71,23 @@
           </b-button>
           <!-- Right aligned nav items -->
           <b-navbar-nav>
-              <button @click="dropIt" class="btn lang__list-wrapper">
-                <span  class="sign__header">
-                  {{ $t('navbar.lang')}}<font-awesome-icon :icon="['fas', 'chevron-down']"/>
-                </span>
-                <transition name="slide">
-                  <ul class="list" v-if="isDropped">
-                    <li>English</li>
-                    <li>Russian</li>
-                    <li>China</li>
-                  </ul>
-                </transition>
-              </button>
 
-
+            <b-nav-item-dropdown text="Lang" right class="lang__list-wrapper">
+              <template v-slot:button-content>
+                <span class="sign__header"
+                >{{$t('navbar.lang')}}<font-awesome-icon :icon="['fas', 'chevron-down']"
+                /></span>
+              </template>
+              <b-dropdown-item href="#" :to="switchLocalePath('en')"
+              >{{$t('navbar.eng')}}</b-dropdown-item
+              >
+              <b-dropdown-item href="#" :to="switchLocalePath('ru')"
+              >{{$t('navbar.ru')}}</b-dropdown-item
+              >
+              <b-dropdown-item href="#" :to="switchLocalePath('chn')"
+              >{{$t('navbar.chn')}}</b-dropdown-item
+              >
+            </b-nav-item-dropdown>
 
             <b-nav-item-dropdown class="user__join">
               <!-- Using 'button-content' slot -->
@@ -120,6 +123,7 @@
               </b-dropdown-item>
             </b-nav-item-dropdown>
 
+
           </b-navbar-nav>
         </div>
       </b-container>
@@ -130,17 +134,12 @@
 import { mapState } from 'vuex'
 export default {
   data() {
-    return {
-      isDropped: false
-    }
+    return {}
   },
   computed: {
     ...mapState('auth', ['loggedIn', 'user']),
   },
   methods: {
-    dropIt() {
-      this.isDropped = !this.isDropped
-    },
     async logout() {
       await this.$auth.logout()
       this.$router.push(this.localePath('/'))
@@ -154,28 +153,3 @@ export default {
   mounted() {},
 }
 </script>
-<style lang="scss">
-  .lang__list-wrapper{
-    position: relative!important;
-    border: 2px solid #FFB612;
-  }
-  .list{
-    position: absolute;
-    top: 35px;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    transform-origin: top;
-    transition: transform .4s ease-in-out;
-    z-index: 9999;
-  li{
-    padding: 10px;
-    background: white;
-  }
-  }
-  .slide-enter, .slide-leave-to{
-    transform: scaleY(0);
-  }
-</style>
