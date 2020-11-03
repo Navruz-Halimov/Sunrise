@@ -157,7 +157,17 @@ export default {
 <style lang="scss">
   .lang__list-wrapper{
     position: relative!important;
-    border: 2px solid #FFB612;
+    border: 1px solid #FFB612;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all .3s ease;
+    &:hover{
+      color: white;
+      background-color: #FFB612;
+    }
+    &:focus{
+      box-shadow: none;
+    }
   }
   .list{
     position: absolute;
