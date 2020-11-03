@@ -20,7 +20,7 @@
             </b-col>
             <b-col class="p-0" lg="4">
               <div class="total">
-                <h6>Total Cash Per Room <b>51,543,000.00 UZS</b></h6>
+                <h6>Total Cash Per Room <b>{{  }}</b></h6>
                 <b-collapse id="total" class="mt-2">
                   <ul>
                     <li><span>Sat, Oct 10</span><span>1,494,000.00 UZS</span></li>
@@ -55,29 +55,22 @@
     },
     data() {
       return {
-        textDetails: 'Show stay breakdown'
+        textDetails: 'Show stay breakdown',
+        info: [],
       }
     },
     methods: {
       showDetails() {
         if (this.textDetails === 'Show stay breakdown') {
-          this.textDetails = 'Hide stay breakdown'
+          this.textDetails = 'Hide stay breakdown';
         } else {
-          this.textDetails = 'Show stay breakdown'
+          this.textDetails = 'Show stay breakdown';
         }
       },
-      async getInfo() {
-        await this.$axios.post('reservation/create/')
-          .then((res) => {
-            console.log(res)
-          })
-          .catch(err => {
-            console.log(err);
-          })
-      }
     },
+    mounted() {},
     created() {
-      this.getInfo();
+      // this.getInfo();
     }
   }
 </script>
