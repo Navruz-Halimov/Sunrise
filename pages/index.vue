@@ -323,7 +323,7 @@
             class="swiper-card"
             v-for="(cardRoom, index) in cardRooms.slice(0, 6)"
             :key="index.id"
-          > 
+          >
             <!-- <nuxt-link to="/booking"> -->
               <div class="swiper-card__img">
                 <div class="swiper-card__cost">
@@ -462,6 +462,7 @@
                 </button>
                 <div class="offer__text" @click.stop="">
                   <div class="privacy">
+                    <img :src="$store.state.mediaURL+ offers[id].image" alt="Sunrise hotel">
                     <p>{{ offers[id].description }}</p>
                   </div>
                 </div>
@@ -488,7 +489,7 @@
         form:{
           start_date: "2020-10-24",
           end_date: "2020-10-27",
-          room: 1, 
+          room: 1,
         },
         value2: [new Date()],
         value3: [new Date()],
@@ -631,7 +632,7 @@
             .catch(err => console.log(err))
       },
       hideClide() {
-                
+
       }
     },
     created() {

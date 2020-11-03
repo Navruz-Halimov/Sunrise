@@ -77,36 +77,13 @@
       overflow: scroll;
       padding: 2rem 3rem;
       box-shadow: 0px 2px 8px -3px #cccccc;
-      h4{
-        font-size: 18px;
-      }
-      h6{
-        font-size: 15px;
-        display: flex;
-        justify-content: space-between;
-        b{
-          color: #007bff;
-          font-size: 14px;
-        }
-      }
       p{
-        font-size: 13px;
+        font-size: 16px;
         margin: 1rem 0;
-        display: block;
-        span{
-          font-size: 13px;
-          margin: 10px 0;
-          display: block;
-        }
       }
-      span{
-        font-size: 14px;
-      }
-      ul{
-        padding-left: 1rem;
-        li{
-          font-size: 13px;
-        }
+      img{
+        width: 300px;
+        height: 200px;
       }
     }
     ::-webkit-scrollbar {

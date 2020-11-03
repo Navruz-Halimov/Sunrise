@@ -165,7 +165,7 @@ export default {
              room:this.room_num
         })
         .then((res) => {
-          console.log(res)
+          console.log("Reservation",res)
         })
         .catch((err) => {
           console.log(err)

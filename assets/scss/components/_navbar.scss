@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.8);
   .navbar__brand {
     display: block;
     img {
@@ -122,9 +122,8 @@
       width: 40px;
       height: 40px;
       box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.13);
-      border: 1px solid #e7e7e7;
+      border: 1px solid #FFB612;
       border-radius: 50%;
-      background-color: #fff;
       &::after {
         font-size: 22px !important;
         color: #ffb612;
@@ -163,7 +162,7 @@
       .swiper-caption-heading {
         font-size: 25px;
       }
-    
+
       .swiper-caption-text {
         font-size: 14px;
       }
@@ -356,7 +355,7 @@
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }
-  
+
 
   .header__bottom .lang__list-wrapper {
     margin-right: 20px;
@@ -383,7 +382,7 @@
 
   .main__page .swiper-caption-heading {
     font-size: 30px !important;
-  } 
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -406,7 +405,7 @@
   }
   .main__page .swiper-caption-heading {
     font-size: 35px !important;
-  } 
+  }
   .main__page .swiper-wrapper .swiper-slide .swiper-caption-text {
     font-size: 16px;
   }
@@ -414,13 +413,13 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  
+
   .main__page .swiper-container {
     height: 500px !important;
   }
   .main__page .swiper-caption-heading {
     font-size: 40px !important;
-  } 
+  }
   .main__page .swiper-wrapper .swiper-slide .swiper-caption {
     max-width: 640px;
   }
@@ -441,7 +440,7 @@
   }
   .main__page .swiper-wrapper .swiper-slide .swiper-caption {
     max-width: 900px;
-  } 
+  }
 
 }
 

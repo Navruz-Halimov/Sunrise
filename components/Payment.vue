@@ -399,17 +399,16 @@ body {
 
 .card-form {
   max-width: 570px;
-  margin: auto;
+  margin: 5rem auto;
   width: 100%;
-
   @media screen and (max-width: 576px) {
     margin: 0 auto;
   }
 
   &__inner {
     background: #fff;
-    // box-shadow: 3px 13px 30px 0px rgba(21, 34, 67, 0.2);
-    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    box-shadow: 3px 13px 30px 0px rgba(21, 34, 67, 0.2);
+    /*box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);*/
     border-radius: 10px;
     padding: 35px;
     padding-top: 180px;
@@ -477,7 +476,7 @@ body {
   &__button {
     width: 100%;
     height: 55px;
-    background: #2364d2;
+    background: #FFB612;
     border: none;
     border-radius: 5px;
     font-size: 22px;
@@ -910,7 +909,7 @@ body {
 
     &:hover,
     &:focus {
-      border-color: #3d9cff;
+      border-color: #FFB612;
     }
 
     &:focus {
