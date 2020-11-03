@@ -18,7 +18,7 @@
           <b-row>
             <b-col md="4">
               <ul class="outdoor__list">
-                <div class="outdoor__item-wrap" v-for="(index,amentyid) in amenties.slice(0,4)" :key="amentyid">
+                <div class="outdoor__item-wrap" v-for="(index,amentyid) in amenties.slice(0,3)" :key="amentyid">
                   <div class="outdoor__item-container">
                     <img :src="index.icon" alt="" />
                     <span class="outdoor__item-heading">{{index.title}}</span>
@@ -30,7 +30,7 @@
             </b-col>
             <b-col md="4">
                <ul class="outdoor__list">
-                <div class="outdoor__item-wrap" v-for="(index,amentyid) in amenties.slice(4,8)" :key="amentyid">
+                <div class="outdoor__item-wrap" v-for="(index,amentyid) in amenties.slice(3,6)" :key="amentyid">
                   <div class="outdoor__item-container">
                     <img :src="index.icon" alt="" />
                     <span class="outdoor__item-heading">{{index.title}}</span>
@@ -41,7 +41,7 @@
             </b-col>
             <b-col md="4">
            <ul class="outdoor__list">
-                <div class="outdoor__item-wrap" v-for="(index,amentyid) in amenties.slice(8,12)" :key="amentyid">
+                <div class="outdoor__item-wrap" v-for="(index,amentyid) in amenties.slice(6,9)" :key="amentyid">
                   <div class="outdoor__item-container">
                     <img :src="index.icon" alt="" />
                     <span class="outdoor__item-heading">{{index.title}}</span>
