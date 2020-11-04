@@ -89,22 +89,11 @@
         <b-row>
           <b-col cols="12" lg="5">
             <ul class="guide__list">
-              <li class="guide__item">
+              <li class="guide__item" v-for="(guide, index) in guides" :key="index">
                 <nuxt-link :to="localePath('/guide')" class="guide__link">
-                  {{$t('tourist.link1')}}
+                  {{guide.title_ru}}
                 </nuxt-link
                 >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link2')}}
-                </nuxt-link
-                >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link">
-                  {{$t('tourist.link3')}}
-                </nuxt-link>
               </li>
               <li class="guide__item">
                 <nuxt-link to="" class="guide__link"
@@ -501,6 +490,7 @@
         cardRooms: [],
         cardImages: [],
         feedbacks: [],
+        guides: [],
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
@@ -572,6 +562,12 @@
       }
     },
     methods: {
+      async getGuides() {
+        await this.$axios.get('menu/guide/').then((res) => {
+          this.guides = res.data
+          console.log('guieds', this.guides)
+        })
+      },
       async getFeedbacks() {
         await this.$axios.get('reviews/list/').then((res) => {
           this.feedbacks = res.data.results
@@ -662,6 +658,7 @@
       }
     },
     mounted() {
+      this.getGuides(),
       this.getSliders(),
       this.getCardRooms(),
       this.getFeedbacks()
