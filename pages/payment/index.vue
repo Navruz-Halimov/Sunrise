@@ -48,12 +48,20 @@
   </div>
 </template>
 <script>
-  export default {
-    components:{},
+import Payment from '../../components/Payment'
+   export default {
+    props: {
+      type: Array,
+      default() {
+        return [];
+      }
+    },
+    components:{
+      Payment
+    },
     data() {
       return {
         textDetails: 'Show stay breakdown',
-        info: [],
       }
     },
     methods: {
@@ -65,9 +73,10 @@
         }
       },
     },
-    mounted() {},
+    mounted() {
+      console.log('Props', this.props);
+    },
     created() {
-      // this.getInfo();
     }
   }
 </script>
