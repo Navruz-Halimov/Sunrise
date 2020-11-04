@@ -2,7 +2,7 @@
   <header class="header">
     <b-container>
       <b-navbar toggleable="lg">
-        <b-navbar-brand to="/" class="navbar__brand">
+        <b-navbar-brand @click="activate(0)" :class="{ active : active_el === 0 }" to="/" class="navbar__brand">
           <img src="../assets/images/logo.png" alt="main logo" />
         </b-navbar-brand>
 
@@ -10,30 +10,14 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="header__navbar">
-            <b-nav-item :to="localePath('/offer')">
-              {{ $t('navbar.offer') }}</b-nav-item
-            >
-            <b-nav-item :to="localePath('/rooms')">{{
-              $t('navbar.rooms')
-            }}</b-nav-item>
-            <b-nav-item :to="localePath('/events')">{{
-              $t('navbar.events')
-            }}</b-nav-item>
-            <b-nav-item :to="localePath('/gallery')">{{
-              $t('navbar.gallery')
-            }}</b-nav-item>
-            <b-nav-item :to="localePath('/amenties')">{{
-              $t('navbar.amenties')
-            }}</b-nav-item>
-            <b-nav-item :to="localePath('/attractions')">{{
-              $t('navbar.nearby')
-            }}</b-nav-item>
-            <b-nav-item :to="localePath('/contact')">{{
-              $t('navbar.contact')
-            }}</b-nav-item>
-            <b-nav-item :to="localePath('/reviews')">{{
-              $t('navbar.reviews')
-            }}</b-nav-item>
+            <b-nav-item @click="activate(1)" :class="{ activeLinkOne : active_el === 1 }"  :to="localePath('/offer')">{{ $t('navbar.offer') }}</b-nav-item>
+            <b-nav-item @click="activate(2)" :class="{ activeLinkTwo : active_el === 2 }" :to="localePath('/rooms')">{{ $t('navbar.rooms') }}</b-nav-item>
+            <b-nav-item @click="activate(3)" :class="{ activeLinkThree : active_el === 3 }" :to="localePath('/events')">{{ $t('navbar.events') }}</b-nav-item>
+            <b-nav-item @click="activate(4)" :class="{ activeLinkFour : active_el === 4 }" :to="localePath('/gallery')">{{ $t('navbar.gallery') }}</b-nav-item>
+            <b-nav-item @click="activate(5)" :class="{ activeLinkFive : active_el === 5 }" :to="localePath('/amenties')">{{ $t('navbar.amenties') }}</b-nav-item>
+            <b-nav-item @click="activate(6)" :class="{ activeLinkSix : active_el === 6 }" :to="localePath('/attractions')">{{ $t('navbar.nearby') }}</b-nav-item>
+            <b-nav-item @click="activate(7)" :class="{ activeLinkSeven : active_el === 7 }" :to="localePath('/contact')">{{ $t('navbar.contact') }}</b-nav-item>
+            <b-nav-item @click="activate(8)" :class="{ activeLinkEight : active_el === 8 }" :to="localePath('/reviews')">{{ $t('navbar.reviews') }}</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -71,22 +55,22 @@
           </b-button>
           <!-- Right aligned nav items -->
           <b-navbar-nav>
+
             <b-nav-item-dropdown text="Lang" right class="lang__list-wrapper">
               <template v-slot:button-content>
                 <span class="sign__header"
-                  >{{ $t('navbar.lang')
-                  }}<font-awesome-icon :icon="['fas', 'chevron-down']"
+                >{{$t('navbar.lang')}}<font-awesome-icon :icon="['fas', 'chevron-down']"
                 /></span>
               </template>
-              <b-dropdown-item href="#" :to="switchLocalePath('en')">{{
-                $t('navbar.eng')
-              }}</b-dropdown-item>
-              <b-dropdown-item href="#" :to="switchLocalePath('ru')">{{
-                $t('navbar.ru')
-              }}</b-dropdown-item>
-              <b-dropdown-item href="#" :to="switchLocalePath('chn')">{{
-                $t('navbar.chn')
-              }}</b-dropdown-item>
+              <b-dropdown-item href="#" :to="switchLocalePath('en')"
+              >{{$t('navbar.eng')}}</b-dropdown-item
+              >
+              <b-dropdown-item href="#" :to="switchLocalePath('ru')"
+              >{{$t('navbar.ru')}}</b-dropdown-item
+              >
+              <b-dropdown-item href="#" :to="switchLocalePath('chn')"
+              >{{$t('navbar.chn')}}</b-dropdown-item
+              >
             </b-nav-item-dropdown>
 
             <b-nav-item-dropdown class="user__join">
@@ -116,12 +100,14 @@
                 :href="localePath('/my-account')"
                 v-if="loggedIn"
               >
-                {{ $t('navbar.account') }} 
+                {{ $t('navbar.account') }}
               </b-dropdown-item>
               <b-dropdown-item @click="logout()" v-if="loggedIn">
                 {{ $t('navbar.logout') }}
               </b-dropdown-item>
             </b-nav-item-dropdown>
+
+
           </b-navbar-nav>
         </div>
       </b-container>
@@ -130,24 +116,55 @@
 </template>
 <script>
 import { mapState } from 'vuex'
-export default {
-  data() {
-    return {}
-  },
-  computed: {
-    ...mapState('auth', ['loggedIn', 'user']),
-  },
-  methods: {
-    async logout() {
-      await this.$auth.logout()
-      this.$router.push(this.localePath('/'))
-      this.$toast.success({
-        title: 'Log out',
-        message: 'You have successfully logged out.',
-        color: '#17b978',
-      })
+  export default {
+    data() {
+      return {
+        active_el: 0
+      }
     },
-  },
-  mounted() {},
+    computed: {
+      ...mapState('auth', ['loggedIn', 'user']),
+    },
+    methods: {
+      activate:function(el){
+        this.active_el = el;
+      },
+      async logout() {
+        await this.$auth.logout()
+        this.$router.push(this.localePath('/'))
+        this.$toast.success({
+          title: 'Log out',
+          message: 'You have successfully logged out.',
+          color: '#17b978',
+        })
+      },
+    },
+    mounted() {},
 }
 </script>
+<style lang="scss">
+  .activeLinkOne{
+    background-color: rgba(255, 105, 7, 0.4);
+  }
+  .activeLinkTwo{
+    background-color: rgba(2, 176, 228, 0.4);
+  }
+  .activeLinkThree{
+    background-color: rgba(255, 193, 70, 1);
+  }
+  .activeLinkFour{
+    background-color: rgba(0, 0, 238, 0.4);
+  }
+  .activeLinkFive{
+    background-color: rgba(155, 89, 182, 0.4);
+  }
+  .activeLinkSix{
+    background-color: #fda4a0;
+  }
+  .activeLinkSeven{
+    background-color: rgba(255, 206, 64, 0.4);
+  }
+  .activeLinkEight{
+    background-color: rgba(165, 217, 202, 1);
+  }
+</style>

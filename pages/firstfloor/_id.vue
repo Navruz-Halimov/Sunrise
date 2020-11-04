@@ -38,7 +38,7 @@
             <swiper-slide v-for="room of imageset" :key="room.id">
               <img :src="$store.state.mediaURL + room.image" alt="" />
               <div class="rooms_price">
-                <i>{{ Math.floor(rooms.cost_per_day * 10359.88) }} $</i>
+                <i>{{ Math.round(rooms.cost_per_day * getCost) }} $</i>
               </div>
             </swiper-slide>
             <div class="swiper-button-prev" slot="button-prev"></div>
@@ -122,6 +122,7 @@
 </template>
 
 <script>
+  import {mapGetters} from 'vuex';
 export default {
   data() {
     return {
@@ -164,7 +165,8 @@ export default {
              room:this.room_num
         })
         .then((res) => {
-          console.log(res)
+            this.$store.commit('setDate',res.data);
+            console.log("data", this.$store.state.date)
         })
         .catch((err) => {
           console.log(err)
@@ -185,7 +187,14 @@ export default {
         })
     },
   },
-  computed: {},
+  mounted(){
+    this.$store.dispatch('getCost');
+  },
+  computed: {
+    ... mapGetters({
+      getCost: 'getCost'
+    })
+  },
   created() {
     this.getRoom()
   },

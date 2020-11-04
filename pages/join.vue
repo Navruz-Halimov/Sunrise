@@ -27,7 +27,7 @@
                   <select
                     id="select"
                     class="adults__capacity"
-                    v-model="form.gender"
+                    
                   >
                     <option value="0" selected disabled>Select...</option>
                     <option value="1">Mr.</option>
@@ -75,7 +75,7 @@
                     class="join__input"
                     type="text"
                     id="zip"
-                    v-model="form.zim_code"
+                    v-model="form.zip_code"
                     required
                   />
                 </b-form-group>
@@ -111,6 +111,8 @@
                   >
                 </b-form-group>
                 <b-button type="submit">JOIN</b-button>
+                <span>{{$store.state.token}}</span>
+                <span>{{$store.state.phone_number}}</span>
               </b-col>
             </b-row>
           </b-form>
@@ -133,11 +135,11 @@ export default {
         token: this.$store.state.token,
         firstname: '',
         lastname: '',
-        password: '',
+        password:'',
         email: '',
         state: '',
         city: '',
-        zim_code: '',
+        zip_code: '',
       },
     }
   },

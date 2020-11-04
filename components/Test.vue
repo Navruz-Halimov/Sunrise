@@ -83,7 +83,6 @@ export default {
     show(id) {
       this.visible = true
       this.id = id
-      console.log(id);
     },
     hide() {
       this.visible = false
