@@ -48,7 +48,43 @@
       }
     }
   }
-
+  .tabs{
+    .nav{
+      .nav-item{
+        .nav-link{
+          &:hover{
+            color: #FFB612;
+            border-color: transparent;
+            border-bottom-color: #dee2e6;
+          }
+        }
+        .active{
+          border-color: transparent;
+          border-bottom-color: #dee2e6;
+        }
+      }
+    }
+    .uz__card{
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      .custom-control{
+        width: 120px;
+        height: 80px;
+        display: inline-block;
+        margin: 0 10px;
+        .custom-control-label{
+          img{
+            width: 100%;
+            object-fit: cover;
+          }
+          &:before, &:after{
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
   }
 
 // Responsive

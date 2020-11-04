@@ -41,30 +41,56 @@
         <b-col lg="12">
           <h5>Almost there!</h5>
           <p>Enter your payment details to complete your reservation.</p>
-          <Payment />
+          <div>
+            <b-tabs content-class="mt-3">
+              <b-tab title="" active>
+              </b-tab>
+              <b-tab title="Visa Card">
+                <visa />
+              </b-tab>
+              <b-tab title="Master Card">
+                <master />
+              </b-tab>
+              <b-tab title="Uz Card" active>
+                <div class="uz__card">
+                  <b-form-group>
+                    <b-form-radio  name="some-radios">
+                      <img @click="formCard(1)" src="https://docs.click.uz/wp-content/themes/click_help/assets/images/logo.png" alt="">
+                    </b-form-radio>
+                    <b-form-radio name="some-radios">
+                      <img @click="formCard(2)" src="https://hopshop.uz/images/image_page/3a2a03488ceb.png?1601266356239" alt="">
+                    </b-form-radio>
+                  </b-form-group>
+                </div>
+                <div class="mt-3 text-center">Selected: <strong>{{ selected }}</strong></div>
+              </b-tab>
+            </b-tabs>
+          </div>
         </b-col>
       </b-row>
     </b-container>
   </div>
 </template>
 <script>
-import Payment from '../../components/Payment'
+  import Visa from '../../components/Visa';
+  import Master from '../../components/Master'
    export default {
-    props: {
-      type: Array,
-      default() {
-        return [];
-      }
-    },
     components:{
-      Payment
+      Visa,
+      Master
     },
     data() {
       return {
         textDetails: 'Show stay breakdown',
+        selected: '',
+        id: 0,
       }
     },
     methods: {
+      formCard(id) {
+        console.log(id);
+        this.selected = `${id}`;
+      },
       showDetails() {
         if (this.textDetails === 'Show stay breakdown') {
           this.textDetails = 'Hide stay breakdown';
