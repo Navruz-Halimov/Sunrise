@@ -48,11 +48,8 @@
   </div>
 </template>
 <script>
-//  import Payment from '../components/Payment.vue'
   export default {
-    components:{
-      // Payment
-    },
+    components:{},
     data() {
       return {
         textDetails: 'Show stay breakdown',
