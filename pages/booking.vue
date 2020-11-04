@@ -114,10 +114,10 @@
               <div class="book__text">
                 <h4></h4>
                 <p class="small_text" v-html="room.description_2"></p>
-                <a v-b-toggle.textId @click="showDetails(index)">
+                <a v-b-toggle="'collapse' + index" @click="showDetails(index)">
                   {{ textDetails }}
                 </a>
-                <b-collapse id="textId">
+                <b-collapse :id="'collapse' + index">
                   <ul>
                     <div class="amenties_text" v-html="room.description_1"></div>
                   </ul>
@@ -242,17 +242,11 @@ export default {
       signModal: false,
       index: 0,
       id: 0,
-      textId: 0
     }
   },
   methods: {
-    showDetails(textId) {
-      console.log(textId);
-      if (textId === this.textDetails) {
-        this.textDetails = 'Less Details';
-      } else {
-        this.textDetails = 'More Details';
-      }
+    showDetails(index) {
+      this.index = index;
     },
     amenityShow() {
       if (this.amenityText === 'Show More') {
@@ -291,7 +285,6 @@ export default {
       await this.$axios.get('rooms/')
         .then((res) => {
           this.rooms = res.data;
-          console.log(res);
         })
         .catch((error) => {
           console.log(error);
