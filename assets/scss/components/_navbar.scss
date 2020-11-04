@@ -230,9 +230,11 @@
     line-height: 23px;
 
     &:focus,
-    &:hover {
-      border: 1px solid transparent;
-      background-color: #ffb612;
+    &:hover,
+    &:active {
+      border: 1px solid #ffb612 !important;
+      background-color: #ffb612 !important;
+      box-shadow: none !important;  
     }
   }
   .lang__list-wrapper {
