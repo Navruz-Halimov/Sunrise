@@ -4,19 +4,29 @@
       <b-row>
         <b-col lg="4">
           <div class="logo">
-            <nuxt-link to="/" class="footer__logo"><img src="../assets/images/logo.png" alt=""></nuxt-link>
-            <a href="tel:998 71 289 56 66" class="footer__phone-link"
-            >
-              <font-awesome-icon :icon="['fas', 'phone']"/>
-              8 71 289 56 66</a
-            >
+            <nuxt-link to="/" class="footer__logo">
+              <img src="../assets/images/logo.png" alt=""></nuxt-link>
+              <div class="footer__phone">
+                <a href="tel:998 99 829 26 66 " class="footer__phone-link">
+                  <font-awesome-icon :icon="['fas', 'phone']"/>
+                  +998 99 829 26 66 
+                </a>
+                <a href="tel:998 71 289 62 22" class="footer__phone-link tel">
+                  <!-- <font-awesome-icon :icon="['fas', 'phone']" /> -->
+                  +998 71 289 62 22 
+                </a>
+                <a href="tel:998 71 289 56 66" class="footer__phone-link tel">
+                  <!-- <font-awesome-icon :icon="['fas', 'phone']" /> -->
+                  +998 71 289 56 66 
+                </a>
+              </div>
             <div class="footer__address">
               <font-awesome-icon :icon="['fas', 'map-marker']"/>
-              1 Mirzo Ulug'bek shoh ko'chasi, Тошкент
+              Yashnobad district, 1 Mirzo Ulug'bek Str., Tashkent city
             </div>
-            <nuxt-link class="footer__email" to="mailto:info@yourdomain.com">
+            <nuxt-link class="footer__email" to="mailto:Sunrise-hotel@mail.ru">
               <font-awesome-icon :icon="['fas', 'envelope']"/>
-              info@yourdomain.com
+              Sunrise-hotel@mail.ru
             </nuxt-link>
           </div>
         </b-col>
