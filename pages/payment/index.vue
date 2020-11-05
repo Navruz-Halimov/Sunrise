@@ -43,26 +43,55 @@
           <p>Enter your payment details to complete your reservation.</p>
           <div>
             <b-tabs content-class="mt-3">
-              <b-tab title="" active>
-              </b-tab>
               <b-tab title="Visa Card">
                 <visa />
               </b-tab>
               <b-tab title="Master Card">
                 <master />
               </b-tab>
-              <b-tab title="Uz Card" active>
+              <b-tab title="Uz Card">
                 <div class="uz__card">
                   <b-form-group>
                     <b-form-radio  name="some-radios">
-                      <img @click="formCard(1)" src="https://docs.click.uz/wp-content/themes/click_help/assets/images/logo.png" alt="">
+                      <img @click="formCard('click')" src="https://docs.click.uz/wp-content/themes/click_help/assets/images/logo.png" alt="">
                     </b-form-radio>
                     <b-form-radio name="some-radios">
-                      <img @click="formCard(2)" src="https://hopshop.uz/images/image_page/3a2a03488ceb.png?1601266356239" alt="">
+                      <img @click="formCard('payme')" src="https://hopshop.uz/images/image_page/3a2a03488ceb.png?1601266356239" alt="">
                     </b-form-radio>
                   </b-form-group>
                 </div>
-                <div class="mt-3 text-center">Selected: <strong>{{ selected }}</strong></div>
+                <div v-if="click">
+                  <b-form class="pay_form">
+                    <b-row>
+                      <b-col lg="4" offset-lg="4">
+                        <b-form-group label="Card number" label-for="click-number" >
+                          <b-form-input class="pay__input" id="click-number" type="text" required placeholder="#### #### #### ####"></b-form-input>
+                        </b-form-group>
+                        <b-form-group label="Expiration Date" label-for="click-date" >
+                          <b-form-input style="width: 32%;" class="pay__input" id="click-date" type="text" required placeholder="MM / YY"></b-form-input>
+                        </b-form-group>
+
+                        <b-button type="submit" variant="primary">Submit</b-button>
+                      </b-col>
+                    </b-row>
+                  </b-form>
+                </div>
+                <div v-if="payme">
+                  <b-form class="pay_form">
+                    <b-row>
+                      <b-col lg="4" offset-lg="4">
+                        <b-form-group label="Card number" label-for="payme-number" >
+                          <b-form-input class="pay__input" id="payme-number" type="text" required placeholder="#### #### #### ####"></b-form-input>
+                        </b-form-group>
+                        <b-form-group label="Expiration Date" label-for="payme-date" >
+                          <b-form-input style="width: 32%;" class="pay__input" id="payme-date" type="text" required placeholder="MM / YY"></b-form-input>
+                        </b-form-group>
+
+                        <b-button type="submit" variant="info">Submit</b-button>
+                      </b-col>
+                    </b-row>
+                  </b-form>
+                </div>
               </b-tab>
             </b-tabs>
           </div>
@@ -82,14 +111,21 @@
     data() {
       return {
         textDetails: 'Show stay breakdown',
-        selected: '',
+        click: false,
+        payme: false,
         id: 0,
       }
     },
     methods: {
       formCard(id) {
         console.log(id);
-        this.selected = `${id}`;
+        if (id === 'click') {
+          this.click = true;
+          this.payme = false;
+        } else {
+          this.payme = true;
+          this.click = false;
+        }
       },
       showDetails() {
         if (this.textDetails === 'Show stay breakdown') {
@@ -99,10 +135,7 @@
         }
       },
     },
-    mounted() {
-      console.log('Props', this.props);
-    },
-    created() {
-    }
+    mounted() {},
+    created() {}
   }
 </script>

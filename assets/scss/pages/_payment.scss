@@ -59,6 +59,7 @@
           }
         }
         .active{
+          color: #FFB612;
           border-color: transparent;
           border-bottom-color: #dee2e6;
         }
@@ -81,6 +82,22 @@
           &:before, &:after{
             top: 10px;
           }
+        }
+      }
+    }
+    .pay_form{
+      label{
+        font-size: 15px;
+      }
+      button{
+        padding: 8px 25px;
+      }
+      .pay__input{
+        padding: 20px;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 8px rgba(225, 225, 225, 0.75);
+        &:focus{
+          border: 1px solid #FFB612;
         }
       }
     }
