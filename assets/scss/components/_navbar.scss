@@ -8,8 +8,8 @@
     display: block;
     img {
       display: block;
-      width: 88px;
-      height: 65px;
+      width: 100px;
+      height: 80px;
       object-fit: cover;
     }
   }
@@ -239,7 +239,7 @@
     &:active {
       border: 1px solid #ffb612 !important;
       background-color: #ffb612 !important;
-      box-shadow: none !important;  
+      box-shadow: none !important;
     }
   }
   .lang__list-wrapper {
