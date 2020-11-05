@@ -10,8 +10,8 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="header__navbar">
-            <b-nav-item @click="activate(1)" :class="{ activeLinkOne : active_el === 1 }"  :to="localePath('/offer')">{{ $t('navbar.offer') }}</b-nav-item>
             <b-nav-item @click="activate(2)" :class="{ activeLinkTwo : active_el === 2 }" :to="localePath('/rooms')">{{ $t('navbar.rooms') }}</b-nav-item>
+            <b-nav-item @click="activate(1)" :class="{ activeLinkOne : active_el === 1 }"  :to="localePath('/offer')">{{ $t('navbar.offer') }}</b-nav-item>
             <b-nav-item @click="activate(3)" :class="{ activeLinkThree : active_el === 3 }" :to="localePath('/events')">{{ $t('navbar.events') }}</b-nav-item>
             <b-nav-item @click="activate(4)" :class="{ activeLinkFour : active_el === 4 }" :to="localePath('/gallery')">{{ $t('navbar.gallery') }}</b-nav-item>
             <b-nav-item @click="activate(5)" :class="{ activeLinkFive : active_el === 5 }" :to="localePath('/amenties')">{{ $t('navbar.amenties') }}</b-nav-item>
@@ -26,14 +26,24 @@
       <b-container>
         <div class="header__bottom-content">
           <div class="header__bottom-info d-none d-lg-block">
-            <a href="https://goo.gl/maps/RwzLKT38CgkVRXbKA" class="address">
-              <font-awesome-icon :icon="['fas', 'map-marker-alt']" /> 1 Mirzo
-              Ulug'bek shoh ko'chasi, Toshkent</a
-            >
-            <a href="tel:998 71 289 56 66" class="tel">
-              <font-awesome-icon :icon="['fas', 'phone']" />998 71 289 56 66
-              99</a
-            >
+            <a target="_blank" href="https://www.google.com/maps/place/Sunrise+Hotel/@41.3122697,69.311872,280m/data=!3m1!1e3!4m16!1m7!3m6!1s0x38aef521dcca0a25:0x8bc9343b19c86cb5!2zMSBNaXJ6byBVbHVnJ2JlayBzaG9oIGtvJ2NoYXNpLCDQotC-0YjQutC10L3Rgg!3b1!8m2!3d41.3093809!4d69.3109875!3m7!1s0x38aef5131ebd9013:0x4183b783c23f57eb!5m2!4m1!1i2!8m2!3d41.3122697!4d69.3129668" class="address">
+              <font-awesome-icon :icon="['fas', 'map-marker-alt']" /> 
+              Yashnobad district, 1 Mirzo Ulug'bek Str., Tashkent city
+            </a>
+            <div class="header__phone">
+              <a href="tel:998 99 829 26 66" class="tel">
+              <font-awesome-icon :icon="['fas', 'phone']" />
+                +998 99 829 26 66 
+              </a>&emsp; 
+              <a href="tel:998 71 289 62 22" class="tel">
+                <!-- <font-awesome-icon :icon="['fas', 'phone']" /> -->
+                +998 71 289 62 22 
+              </a>&emsp;
+              <a href="tel:998 71 289 56 66" class="tel">
+                <!-- <font-awesome-icon :icon="['fas', 'phone']" /> -->
+                +998 71 289 56 66 
+              </a>&emsp; 
+            </div>
             <nuxt-link to="" class="review">
               <vue-stars
                 class="lawyer-profile__star"
@@ -62,15 +72,18 @@
                 >{{$t('navbar.lang')}}<font-awesome-icon :icon="['fas', 'chevron-down']"
                 /></span>
               </template>
-              <b-dropdown-item href="#" :to="switchLocalePath('en')"
-              >{{$t('navbar.eng')}}</b-dropdown-item
-              >
-              <b-dropdown-item href="#" :to="switchLocalePath('ru')"
-              >{{$t('navbar.ru')}}</b-dropdown-item
-              >
-              <b-dropdown-item href="#" :to="switchLocalePath('chn')"
-              >{{$t('navbar.chn')}}</b-dropdown-item
-              >
+              <b-dropdown-item href="#" :to="switchLocalePath('en')">
+                <b-img src="../assets/images/lang/united-states.svg" alt="eng"></b-img>
+                {{$t('navbar.eng')}}
+              </b-dropdown-item>
+              <b-dropdown-item href="#" :to="switchLocalePath('ru')">
+                <b-img src="../assets/images/lang/russia.svg" alt="ru"></b-img>
+                {{$t('navbar.ru')}}
+              </b-dropdown-item>
+              <b-dropdown-item href="#" :to="switchLocalePath('chn')">
+                <b-img src="../assets/images/lang/china.svg" alt="chn"></b-img>
+                {{$t('navbar.chn')}}
+              </b-dropdown-item>
             </b-nav-item-dropdown>
 
             <b-nav-item-dropdown class="user__join">

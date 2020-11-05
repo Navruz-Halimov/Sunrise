@@ -34,7 +34,7 @@
                   required
                   v-model="form.phone_number"
                 />
-                <a href="#">{{$t('singInPage.forget')}}</a>
+                <!-- <a href="#">{{$t('singInPage.forget')}}</a> -->
               </b-form-group>
               <b-form-group 
                 :label="$t('singInPage.password')" 
@@ -48,8 +48,8 @@
               </b-form-group>
               <b-form-group>
                 <b-form-checkbox-group class="d-flex justify-content-between">
-                  <b-form-checkbox>{{$t('singInPage.remember')}}</b-form-checkbox>
-                  <a href="#" class="mt-0">{{$t('singInPage.forgetPass')}}</a>
+                  <!-- <b-form-checkbox>{{$t('singInPage.remember')}}</b-form-checkbox> -->
+                  <!-- <a href="#" class="mt-0">{{$t('singInPage.forgetPass')}}</a> -->
                 </b-form-checkbox-group>
               </b-form-group>
               <b-button type="submit">{{$t('singInPage.singBtn')}}</b-button>
