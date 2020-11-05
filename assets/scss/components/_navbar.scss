@@ -16,6 +16,11 @@
   .navbar{
     padding-top: 0 !important;
   }
+  .header__phone {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .header__navbar {
     justify-content: center;
     width: 100%;
@@ -271,6 +276,13 @@
         color: #000;
         border-radius: 5px;
         font-size: 14px;
+
+        img {
+          width: 20px;
+          margin-top: -2px;
+          margin-right: 5px;
+        }
+
         &:hover {
           background-color: #f4f4f4;
         }
@@ -382,7 +394,7 @@
   }
 
   .header__bottom .lang__list-wrapper .dropdown-menu-right .dropdown-item {
-    padding: 4px 24px;
+    padding: 4px 24px 4px 19px;
     text-align: left !important;
   }
 
