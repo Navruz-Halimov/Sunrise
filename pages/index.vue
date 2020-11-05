@@ -451,7 +451,6 @@
                 </button>
                 <div class="offer__text" @click.stop="">
                   <div class="privacy">
-                    <img :src="$store.state.mediaURL+ offers[id].image" alt="Sunrise hotel">
                     <p>{{ offers[id].description }}</p>
                   </div>
                 </div>

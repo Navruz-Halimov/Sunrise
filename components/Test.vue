@@ -40,8 +40,8 @@
       </button>
       <div class="modals__content" @click.stop="">
         <swiper class="swiper modals__img" :options="visit__slider">
-          <swiper-slide>
-            <img :src="gallery[id].image" alt="" />
+          <swiper-slide v-for="image in gallery" :key="image.id">
+            <img :src="image.image" alt="" />
           </swiper-slide>
           <div class="swiper-button-prev prev" slot="button-prev"></div>
           <div class="swiper-button-next next" slot="button-next"></div>

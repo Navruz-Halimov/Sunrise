@@ -166,7 +166,7 @@ export default {
         })
         .then((res) => {
             this.$store.commit('setDate',res.data);
-            console.log("data", this.$store.state.date)
+            console.log("Data", this.$store.state.date);
         })
         .catch((err) => {
           console.log(err)
