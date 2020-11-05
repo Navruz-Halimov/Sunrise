@@ -52,7 +52,7 @@
         <div class="contact-page-map">
             <b-container>
                 <b-row>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.529769699248!2d69.28462621479527!3d41.34083750684368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b534175ed31%3A0x52a8f9d9414a2ad8!2z0KLQsNGI0LrQtdC90YLRgdC60LjQuSDQo9C90LjQstC10YDRgdC40YLQtdGCINCY0L3RhNC-0YDQvNCw0YbQuNC-0L3QvdGL0YUg0KLQtdGF0L3QvtC70L7Qs9C40Lk!5e0!3m2!1sru!2s!4v1601553961275!5m2!1sru!2s" width="100%" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="contact__map"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.8432406957127!2d69.31077811479419!3d41.312273708612345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5131ebd9013%3A0x4183b783c23f57eb!2sSunrise%20Hotel!5e0!3m2!1suz!2s!4v1604575351872!5m2!1suz!2s" width="100%" height="360" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="contact__map"></iframe>
                 </b-row>
             </b-container>
         </div>
