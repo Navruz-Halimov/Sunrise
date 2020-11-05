@@ -127,7 +127,7 @@
         this.id = 0;
       },
       hasNext() {
-        return this.id + 1 < this.images.length;
+        return this.id + 1 < this.visitImages.length;
       },
       hasPrev() {
         return this.id - 1 >= 0;
