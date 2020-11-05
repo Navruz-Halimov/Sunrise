@@ -27,6 +27,12 @@
       font-size: 14px;
       white-space: nowrap;
     }
+    .nav-link--active-1{
+      background-color: rgba(255, 105, 7, 0.4);
+    }
+    .nav-link--active-2{
+      background-color: rgba(2, 176, 228, 0.4);
+    }
     .nav-item:nth-child(1) {
       border-bottom: 1px solid #ff6907;
       .nav-link {
@@ -109,6 +115,7 @@
     padding: 0 !important;
   }
 }
+
 .sign__header {
   font-size: 14px;
   color: white !important;

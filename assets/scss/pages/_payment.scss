@@ -48,7 +48,60 @@
       }
     }
   }
-
+  .tabs{
+    .nav{
+      .nav-item{
+        .nav-link{
+          &:hover{
+            color: #FFB612;
+            border-color: transparent;
+            border-bottom-color: #dee2e6;
+          }
+        }
+        .active{
+          color: #FFB612;
+          border-color: transparent;
+          border-bottom-color: #dee2e6;
+        }
+      }
+    }
+    .uz__card{
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      .custom-control{
+        width: 120px;
+        height: 80px;
+        display: inline-block;
+        margin: 0 10px;
+        .custom-control-label{
+          img{
+            width: 100%;
+            object-fit: cover;
+          }
+          &:before, &:after{
+            top: 10px;
+          }
+        }
+      }
+    }
+    .pay_form{
+      label{
+        font-size: 15px;
+      }
+      button{
+        padding: 8px 25px;
+      }
+      .pay__input{
+        padding: 20px;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 8px rgba(225, 225, 225, 0.75);
+        &:focus{
+          border: 1px solid #FFB612;
+        }
+      }
+    }
+  }
   }
 
 // Responsive

@@ -8,6 +8,7 @@ const store = () => new Vuex.Store({
         phone_number: "",
         token: "",
         dollar: '',
+        date: [],
     },
     getters: {
     getGallery(state){
@@ -15,7 +16,7 @@ const store = () => new Vuex.Store({
     },
     getCost(state) {
       return state.dollar;
-    }
+    },
     },
     mutations: {
 
@@ -30,6 +31,9 @@ const store = () => new Vuex.Store({
         },
         setCost(state, dollar) {
           state.dollar = dollar;
+        },
+        setDate(state, date){
+          state.date = date;
         }
     },
     actions: {

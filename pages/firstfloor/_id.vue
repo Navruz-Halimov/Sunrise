@@ -165,7 +165,8 @@ export default {
              room:this.room_num
         })
         .then((res) => {
-          console.log("Reservation",res)
+            this.$store.commit('setDate',res.data);
+            console.log("Data", this.$store.state.date);
         })
         .catch((err) => {
           console.log(err)
