@@ -33,6 +33,7 @@
     transition: box-shadow .7s ease;
     .card-img-top{
       height: 250px;
+      object-fit: cover;
     }
     .card-body{
       padding: 20px 15px;
@@ -47,7 +48,6 @@
       .card-text{
         font-size: 14px;
         display: flex;
-        word-break: break-all;
         a{
           text-decoration: none;
           display: block;
