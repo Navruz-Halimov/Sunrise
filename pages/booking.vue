@@ -5,7 +5,7 @@
         <b-col class="book__header" cols="12" md="12">
           <b-row>
             <b-col cols="12" sm="8" md="6" lg="4">
-              <img src="../assets/images/3D/1.jpg" alt="Sunrise hotel"/>
+              <img src="../assets/images/3D/1.jpg" alt="Sunrise hotel" />
             </b-col>
             <b-col cols="12" sm="4" md="6" lg="4">
               <div class="pt-2">
@@ -84,14 +84,22 @@
             </b-col>
           </b-row>
         </b-col>
-        <b-col class="book_hr" cols="12" md="12"
-              v-for="(room,index) of rooms" :key="index" >
+        <b-col
+          class="book_hr"
+          cols="12"
+          md="12"
+          v-for="(room, index) of rooms"
+          :key="index"
+        >
           <b-row>
             <b-col class="mb-sm-2 mb-md-2" cols="12" sm="12" md="4" lg="4">
               <div class="book__slide">
                 <swiper class="swiper book_img" :options="header__slider">
-                  <swiper-slide   v-for="image of room.image_set" :key="image.id">
-                    <img :src="$store.state.mediaURL + image.image" alt="Sunrise hotel"/>
+                  <swiper-slide v-for="image of room.image_set" :key="image.id">
+                    <img
+                      :src="$store.state.mediaURL + image.image"
+                      alt="Sunrise hotel"
+                    />
                   </swiper-slide>
                   <div
                     class="swiper-button-prev book__prev"
@@ -119,7 +127,10 @@
                 </a>
                 <b-collapse id="textId">
                   <ul>
-                    <div class="amenties_text" v-html="room.description_1"></div>
+                    <div
+                      class="amenties_text"
+                      v-html="room.description_1"
+                    ></div>
                   </ul>
                 </b-collapse>
               </div>
@@ -129,9 +140,19 @@
                 <h2>{{ Math.round(room.cost_per_day * getCost) }} UZS</h2>
                 <span>Сред. за ночь (UZS)</span>
                 <button
+                  v-if="loggedIn"
                   @click="showPriceModal()"
                   class="btn book__btn book__btn--btn"
-                  type="button">
+                  type="button"
+                >
+                  Selecta
+                </button>
+                <button
+                  v-if="!loggedIn"
+                  :href="localePath('/payment')"
+                  class="btn book__btn book__btn--btn"
+                  type="button"
+                >
                   Select
                 </button>
               </div>
@@ -147,9 +168,12 @@
       </button>
       <div @click.stop="" class="modal__slide">
         <swiper class="swiper book_img" :options="header__slider">
-          <swiper-slide v-for="(room,index) of rooms" :key="index">
+          <swiper-slide v-for="(room, index) of rooms" :key="index">
             <div v-for="image of room.image_set" :key="image">
-              <img :src="$store.state.mediaURL + image.image" alt="Sunrise hotel"/>
+              <img
+                :src="$store.state.mediaURL + image.image"
+                alt="Sunrise hotel"
+              />
             </div>
           </swiper-slide>
           <div class="swiper-button-prev book__prev" slot="button-prev"></div>
@@ -216,7 +240,7 @@
 </template>
 
 <script>
-import {mapGetters} from 'vuex';
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'Range',
@@ -242,16 +266,16 @@ export default {
       signModal: false,
       index: 0,
       id: 0,
-      textId: 0
+      textId: 0,
     }
   },
   methods: {
     showDetails(textId) {
-      console.log(textId);
+      console.log(textId)
       if (textId === this.textDetails) {
-        this.textDetails = 'Less Details';
+        this.textDetails = 'Less Details'
       } else {
-        this.textDetails = 'More Details';
+        this.textDetails = 'More Details'
       }
     },
     amenityShow() {
@@ -263,7 +287,7 @@ export default {
     },
     showModal(id) {
       this.modals = true
-      this.id = id;
+      this.id = id
     },
     hideModal() {
       this.modals = false
@@ -288,26 +312,27 @@ export default {
       }
     },
     async getRooms() {
-      await this.$axios.get('rooms/')
+      await this.$axios
+        .get('rooms/')
         .then((res) => {
-          this.rooms = res.data;
-          console.log(res);
+          this.rooms = res.data
+          console.log(res)
         })
         .catch((error) => {
-          console.log(error);
+          console.log(error)
         })
     },
   },
-  mounted(){
-    this.$store.dispatch('getCost');
+  mounted() {
+    this.$store.dispatch('getCost')
   },
   computed: {
-    ... mapGetters({
-      getCost: 'getCost'
-    })
+    ...mapGetters({
+      getCost: 'getCost',
+    }),
   },
   created() {
-    this.getRooms();
-  }
+    this.getRooms()
+  },
 }
 </script>
