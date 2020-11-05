@@ -22,6 +22,13 @@
             </div>
           </div>
         </b-col>
+        <b-col lg="12">
+          <b-button
+            class="btn-img my-4"
+            :to="localePath('/attractions')" >
+            {{$t('gallery.btn')}}
+          </b-button>
+        </b-col>
       </b-row>
     </b-container>
     <div class="visit__modal" v-if="visible" @click.stop="hide">
