@@ -27,7 +27,7 @@
                   <select
                     id="select"
                     class="adults__capacity"
-                    
+                    v-model="form.prefix"
                   >
                     <option value="0" selected disabled>Select...</option>
                     <option value="1">Mr.</option>
@@ -130,7 +130,7 @@ export default {
         password: '',
       },
       form: {
-        prefix: 'Mr.',
+        prefix: '',
         phone_number: this.$store.state.phone_number,
         token: this.$store.state.token,
         firstname: '',
