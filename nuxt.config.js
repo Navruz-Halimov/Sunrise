@@ -9,7 +9,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
-    ]
+    ],
+    script: [
+      {
+        src: 'https://code.jivosite.com/widget/uLYP8Ws96H'
+      }
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
