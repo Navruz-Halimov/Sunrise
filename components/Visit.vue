@@ -6,18 +6,18 @@
           <h2>{{$t('visit.title')}}</h2>
         </b-col>
         <b-col cols="10" offset="1" sm="6" offset-sm="0" md="6" lg="3"
-               v-for="(image,index) of images" :key="index" >
+               v-for="(image,index) of visitImages" :key="index" >
           <div class="visit__card">
             <img :src="image.url" alt="">
             <div class="visit__text" @click="show(index)">
               <h6>{{image.title}}</h6>
               <span class="like" @click.stop="">
-                <button type="button" @click="likeBtn(image.id)">
-                <svg v-bind:class="{ 'like__icon--active': image.id === likeID }" class="like__icon" viewBox="0 0 18 15" fill="currentColor" width="21" height="21">
-                  <path fill="currentColor" d="M9,15c-0.1,0-0.2,0-0.3-0.1c-0.2-0.2-6-3.9-7.8-7C0,6.3-0.3,4.5,0.3,3C0.8,1.7,1.7,0.7,3,0.3	C5.3-0.5,7.7,0.7,9,2.4c1.4-1.9,4-2.9,6.1-2.1c1.2,0.5,2.2,1.4,2.6,2.6c0.6,1.5,0.3,3.3-0.6,5c-1.8,3.3-7.5,6.8-7.8,7	C9.2,15,9.1,15,9,15z"></path>
-                </svg>
-                </button>
-                <i>{{counter}}</i>
+<!--                <button type="button" @click.once="likeBtn(image.id)">-->
+<!--                <svg :class="{ 'like__icon&#45;&#45;active': image.id === likeID }" class="like__icon" viewBox="0 0 18 15" fill="currentColor" width="21" height="21">-->
+<!--                  <path fill="currentColor" d="M9,15c-0.1,0-0.2,0-0.3-0.1c-0.2-0.2-6-3.9-7.8-7C0,6.3-0.3,4.5,0.3,3C0.8,1.7,1.7,0.7,3,0.3	C5.3-0.5,7.7,0.7,9,2.4c1.4-1.9,4-2.9,6.1-2.1c1.2,0.5,2.2,1.4,2.6,2.6c0.6,1.5,0.3,3.3-0.6,5c-1.8,3.3-7.5,6.8-7.8,7	C9.2,15,9.1,15,9,15z"></path>-->
+<!--                </svg>-->
+<!--                </button>-->
+<!--                <i>{{}}</i>-->
               </span>
             </div>
           </div>
@@ -31,7 +31,7 @@
       </button>
         <div class="modal__content">
             <div class="visit__img" @click.stop="">
-              <img :src="images[id].url" alt="">
+              <img :src="visitImages[id].url" alt="">
             </div>
             <div class="prev"
                  @click.stop="prev"
@@ -57,39 +57,59 @@
   export default {
     data() {
       return {
-        images: [
+        visitImages: [
           {
             url: 'https://c1.wallpaperflare.com/preview/504/886/429/tashkent-2017-uzbekistan-middle-asia.jpg',
-            title: '',
+            title: 'Martyrs\' Memorial Square',
             id: 1
           },
           {
-            url: 'https://images.unsplash.com/photo-1580217442567-daaff0cf13ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-            title: '',
+            url: 'https://images.unsplash.com/photo-1567883975623-613f78c2ebc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+            title: 'Charvoq',
             id: 2
           },
           {
             url: 'https://c0.wallpaperflare.com/preview/472/671/649/samarqand-uzbekistan-registan-ensemble-ruins.jpg',
-            title: '',
+            title: 'Samarkand',
             id: 3
           },
           {
             url: 'https://c1.wallpaperflare.com/preview/264/590/560/tashkent-independence-square-monument-water-games.jpg',
-            title: '',
+            title: 'Independence Square',
             id: 4
+          },
+          {
+            url: 'https://media.gettyimages.com/photos/amir-timur-square-seen-from-above-picture-id505629331?k=6&m=505629331&s=612x612&w=0&h=IkjlKwJbQ-GX17eLrmwHHR6TULy6UklUbJaNmkYq5GA=',
+            title: 'Amir Temur Square',
+            id: 5
+          },
+          {
+            url: 'https://media.gettyimages.com/photos/fayzobod-khanaka-also-known-as-fayzabad-khanaka-bukhara-uzbekistan-picture-id850909904?k=6&m=850909904&s=612x612&w=0&h=VS1jAW0-IVDW-WRjxrYxZeYJ70CeOb4jwXxD5iE7u_g=',
+            title: 'Bukhara',
+            id: 6
+          },
+          {
+            url: 'https://media.gettyimages.com/photos/khiva-sunset-twilight-uzbekistan-old-town-islam-khoja-minaret-xiva-picture-id1188560326?k=6&m=1188560326&s=612x612&w=0&h=nSH6aTTW50EZ9EHrAjiq6vnf2q715qisO4wstT-5llg=',
+            title: 'Xiva',
+            id: 7
+          },
+          {
+            url: 'https://media.gettyimages.com/photos/alisher-navoi-metro-station-in-tashkent-uzbekistan-picture-id1184024108?k=6&m=1184024108&s=612x612&w=0&h=bNdjCThmpM4aBvgxhvDscXZM-gTp1ji-BlarEcAR7B4=',
+            title: 'Alisher Navoi',
+            id: 8
           },
         ],
         id: 0,
         index: 0,
         visible: false,
         likeID: null,
-        counter: 0
+        counter: 0,
       }
     },
     methods: {
       likeBtn(id) {
-        this.likeID = id;
-        // this.counter++;
+        // this.likeID = id;
+        // Math.floor(Math.random() * 100)
       },
       show(id) {
         this.visible = true;
