@@ -89,22 +89,11 @@
         <b-row>
           <b-col cols="12" lg="5">
             <ul class="guide__list">
-              <li class="guide__item">
-                <nuxt-link :to="localePath('/guide')" class="guide__link">
-                  {{$t('tourist.link1')}}
+              <li class="guide__item" v-for="(guide, index) in guides" :key="index">
+                <nuxt-link :to="localePath('guide/')" class="guide__link">
+                  {{guide.title_ru}}
                 </nuxt-link
                 >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link2')}}
-                </nuxt-link
-                >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link">
-                  {{$t('tourist.link3')}}
-                </nuxt-link>
               </li>
               <li class="guide__item">
                 <nuxt-link to="" class="guide__link"
@@ -500,6 +489,7 @@
         cardRooms: [],
         cardImages: [],
         feedbacks: [],
+        guides: [],
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
@@ -571,6 +561,12 @@
       }
     },
     methods: {
+      async getGuides() {
+        await this.$axios.get('menu/guide/?lang=ru').then((res) => {
+          this.guides = res.data
+          console.log('guieds', this.guides)
+        })
+      },
       async getFeedbacks() {
         await this.$axios.get('reviews/list/').then((res) => {
           this.feedbacks = res.data.results
@@ -590,7 +586,7 @@
       async getSliders() {
         await this.$axios.get('/menu/images/').then((res) => {
           this.sliders = res.data
-          console.log(this.sliders)
+          // console.log(this.sliders)
         })
       },
       notBeforeToday(date) {
@@ -661,6 +657,7 @@
       }
     },
     mounted() {
+      this.getGuides(),
       this.getSliders(),
       this.getCardRooms(),
       this.getFeedbacks()
