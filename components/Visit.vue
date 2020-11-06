@@ -1,6 +1,7 @@
 <template>
   <div class="visit">
     <b-container>
+      <h1>{{ attractions }}</h1>
       <b-row>
         <b-col class="visit__title" lg="12">
           <h2>{{$t('visit.title')}}</h2>
@@ -62,6 +63,12 @@
 </template>
 <script>
   export default {
+    props: {
+      attractions: {
+        type: Array,
+        default: () => [],
+      },
+    },
     data() {
       return {
         visitImages: [

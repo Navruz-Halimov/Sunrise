@@ -1,6 +1,7 @@
 <template>
   <div class="rooms__select">
     <b-container>
+      <p>{{$store.state.data}}</p>
       <b-row>
         <b-col lg="3" class="rooms__select-left">
           <ul class="rooms__select-amenties">
@@ -53,7 +54,7 @@
                 <b-row>
                   <div class="col-lg-12 order__part-item">
                     <date-picker
-                      v-model="start_date"
+                      v-model="form.start_date"
                       value-type="format"
                       format="YYYY-MM-DD"
                       :placeholder="$t('booking.arrival')"
@@ -63,7 +64,7 @@
                   </div>
                   <div class="col-lg-12 order__part-item">
                     <date-picker
-                      v-model="end_date"
+                      v-model="form.end_date"
                       value-type="format"
                       format="YYYY-MM-DD"
                       :placeholder="$t('booking.departure')"
@@ -111,9 +112,8 @@
               :per-page="perPage"
               class="room__inner-pagination"
             ></b-pagination-nav>
-            <b-button class="floor__btn" pill @click="submitForm()"
-              >Select room</b-button
-            >
+<!--            :to="localePath('/payment')"-->
+            <b-button  class="floor__btn" pill @click="submitForm()">Select room</b-button>
           </div>
         </b-col>
       </b-row>
@@ -128,9 +128,11 @@ export default {
     return {
       rooms: [],
       imageset: [],
-      room_num:"",
-      start_date: '',
-      end_date: '',
+      form: {
+        start_date: '',
+        end_date: '',
+        room:"",
+      },
       rows: 19,
       perPage: 11,
       currentPage: 1,
@@ -157,20 +159,8 @@ export default {
       return date < new Date(new Date().setHours(0, 0, 0, 0))
     },
     submitForm() {
-      console.log(this.value2 + ' = ' + this.value3)
-      this.$axios
-        .post('reservation/create/',{
-             start_date:this.start_date,
-             end_date:this.end_date,
-             room:this.room_num
-        })
-        .then((res) => {
-            this.$store.commit('setDate',res.data);
-            console.log("Data", this.$store.state.date);
-        })
-        .catch((err) => {
-          console.log(err)
-        })
+      this.$store.dispatch('bookRoom', this.form)
+      this.$router.push(this.localePath({name: "payment"}))
     },
     async getRoom() {
       await this.$axios
@@ -178,8 +168,8 @@ export default {
         .then((res) => {
           console.log(this.date)
           this.rooms = res.data.room
-          this.room_num=res.data.room.room_num
-          console.log("bu room number" + this.room_num)
+          this.form.room=res.data.room.room_num
+          console.log("bu room number" + this.room)
           this.imageset = res.data.room.image_set
         })
         .catch((err) => {
