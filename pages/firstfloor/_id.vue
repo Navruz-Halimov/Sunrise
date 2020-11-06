@@ -1,7 +1,6 @@
 <template>
   <div class="rooms__select">
     <b-container>
-      <p>{{$store.state.data}}</p>
       <b-row>
         <b-col lg="3" class="rooms__select-left">
           <ul class="rooms__select-amenties">
