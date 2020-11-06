@@ -1,7 +1,6 @@
 <template>
   <div class="visit">
     <b-container>
-      <h1>{{ attractions }}</h1>
       <b-row>
         <b-col class="visit__title" lg="12">
           <h2>{{$t('visit.title')}}</h2>
@@ -63,19 +62,13 @@
 </template>
 <script>
   export default {
-    props: {
-      attractions: {
-        type: Array,
-        default: () => [],
-      },
-    },
     data() {
       return {
         visitImages: [
           {
             url: 'https://c1.wallpaperflare.com/preview/504/886/429/tashkent-2017-uzbekistan-middle-asia.jpg',
             title: 'Martyrs\' Memorial Square',
-            id: 1
+            id: 1,
           },
           {
             url: 'https://images.unsplash.com/photo-1567883975623-613f78c2ebc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
