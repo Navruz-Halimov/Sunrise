@@ -1,12 +1,12 @@
 export default {
     navbar: {
-        offer: 'Предлагает',
-        rooms: 'Номера',
+        offer: 'Акции',
+        rooms: 'Отель',
         events: 'События',
         gallery: 'Галерея',
-        amenties: 'Удобства',
+        facilities: 'Услуги',
         nearby: 'Достопримечательности',
-        contact: 'Связаться с нами',
+        contact: 'Контакты',
         reviews: 'Отзывы',
         book: 'Забронируй',
         lang: 'Язык',
@@ -54,7 +54,7 @@ export default {
         link10: "Общение за рубежом",
         link11: "Словарь путешествий",
         link12: "ТОП-10 в мире туризма",
-    },    
+    },
     amenties: {
         heading: "Удобства",
         amenties_1: "Бесплатный доступ в Интернет",
@@ -62,7 +62,7 @@ export default {
         amenties_3: "Обслуживание номеров",
         amenties_4: "Фитнес-центр",
         amenties_5: "Бассейн",
-        amenties_6: "Spa", 
+        amenties_6: "Spa",
         amenties_7: "Цифровой ключ",
         amenties_8: "Цифровая регистрация",
         amenties_9: "Бизнес-услуги",
@@ -81,8 +81,8 @@ export default {
         title1_text8: "24-часовой тренажерный зал StayFit ™",
 
         mini_title2: "СЕРВИСЫ",
-        title2_text1: "Спа-процедуры", 
-        title2_text2: "Услуги прачечной и химчистки", 
+        title2_text1: "Спа-процедуры",
+        title2_text2: "Услуги прачечной и химчистки",
 
         mini_title3: "УДОБСТВА В НОМЕРЕ",
         title3_text1: "Бесплатный Wi-Fi",
@@ -99,7 +99,7 @@ export default {
         title5_text1: "Успокаивающий тропический душ",
         title5_text2: "Отдельная ванна",
         btnMore: "Показать все",
-        btnLess: "Скрыть"        
+        btnLess: "Скрыть"
     },
     offer_main: {
         title: "Новости и предложения",
@@ -182,7 +182,7 @@ export default {
         modal3: 'Центр cookie-файлов',
         modal4: 'Безопасность и охрана',
         modal5: 'Я запрещаю продавать свою личную информацию',
-    },   
+    },
     singInPage: {
         title: 'Вход в Sunrise',
         pageName: 'Войти',
@@ -193,12 +193,12 @@ export default {
         remember: 'Запомните меня',
         forgetPass: 'Забыл пароль',
         singBtn: 'ВОЙТИ'
-    },    
+    },
     regPage: {
         number: 'Телефонный номер',
         enterNumber: 'Введите номер телефона',
         kod: 'Код',
         btn: 'Следующий шаг',
-    } 
+    }
 
 }

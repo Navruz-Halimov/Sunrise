@@ -1,12 +1,12 @@
 export default {
     navbar: {
         offer: '提供',
-        rooms: '房间',
+        rooms: '旅館',
         events: '大事记',
         gallery: '画廊',
-        amenties: '便利设施',
+        facilities: '設備',
         nearby: '附近景点',
-        contact: '联系',
+        contact: '聯絡人',
         reviews: '评论',
         book: '现在预订',
         lang: '语言',
@@ -61,7 +61,7 @@ export default {
         amenties_3: "客房服务",
         amenties_4: "健身中心",
         amenties_5: "泳池",
-        amenties_6: "温泉", 
+        amenties_6: "温泉",
         amenties_7: "数字钥匙",
         amenties_8: "数字签到",
         amenties_9: "商业服务",
@@ -80,8 +80,8 @@ export default {
         title1_text8: "24小时StayFit™体育馆",
 
         mini_title2: "服务",
-        title2_text1: "一系列的水疗护理", 
-        title2_text2: "洗衣和干洗服务", 
+        title2_text1: "一系列的水疗护理",
+        title2_text2: "洗衣和干洗服务",
 
         mini_title3: "客房设施",
         title3_text1: "免费Wi-Fi",
@@ -98,7 +98,7 @@ export default {
         title5_text1: "舒缓步入式淋浴",
         title5_text2: "独立浴缸",
         btnMore: "显示更多",
-        btnLess: "显示较少"       
+        btnLess: "显示较少"
     },
     offer_main: {
         title: "新闻与要约",
@@ -124,7 +124,7 @@ export default {
     },
     rooms: {
         title: "房间数"
-    },    
+    },
     feedbacks: {
         title: "满意的客户和反馈"
     },
@@ -171,7 +171,7 @@ export default {
         lawyererror: '发生了错误. 请再试一次',
         input: '请确保您的信息完整.',
         code: "您输入了错误的密码！再试一次.",
-    },       
+    },
     review: {
         title: '最近的旅客评论'
     },
@@ -181,7 +181,7 @@ export default {
         modal3: '饼干中心',
         modal4: '保安与安全',
         modal5: '不要出售我的个人信息',
-    },   
+    },
     singInPage: {
         title: '登录日出',
         pageName: '登入',
@@ -192,11 +192,11 @@ export default {
         remember: '记得我',
         forgetPass: '忘记密码',
         singBtn: '登入'
-    },    
+    },
     regPage: {
         number: '电话号码',
         enterNumber: '输入电话号码',
         kod: '柯德',
         btn: '下一步',
-    }          
+    }
 }

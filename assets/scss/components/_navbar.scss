@@ -4,21 +4,19 @@
 
 .header {
   background-color: rgba(0, 0, 0, 0.8);
-  .navbar__brand {
-    display: block;
-    img {
-      display: block;
-      width: 100px;
-      height: 80px;
-      object-fit: cover;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid #ffb612;
+  .header__logo{
+    width: 230px;
+    height: auto;
+    img{
+      width: 100%;
+      height: 100%;
     }
-  }
-  .navbar{
-    padding-top: 0 !important;
   }
   .header__phone {
     display: flex;
-    justify-content: space-between;
   }
 
   .header__navbar {
@@ -129,7 +127,6 @@
    margin-right: 8px;
   }
 }
-
 .main__page {
   .swiper-container {
     height: 350px;
@@ -187,18 +184,9 @@
 }
 
 
-
-
-
-
 //header__bottom
 .header__bottom {
-  border-bottom:1px solid #ffb612;
-  background-color: rgba(0, 0, 0, 0.1);
-  &:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-
-  }
+  //background-color: rgba(0, 0, 0, 0.1);
   &-content {
     display: flex;
     align-items: center;
@@ -210,7 +198,7 @@
     font-size: 14px;
     a {
       color: #fff;
-      display: block;
+      display: inline-block;
       padding-top: 4px;
       padding-bottom: 4px;
       svg {
@@ -224,15 +212,16 @@
     }
   }
   &-btn {
-    background-color: #ffb612;
-    padding-left: 0px;  //25
-    padding-right: 0px; //25
     display: block;
-    border: 1px solid transparent;
-    margin-bottom: 14px;
-    font-size: 14px;
     width: 130px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
     line-height: 23px;
+    margin-bottom: 14px;
+    border-radius: 30px;
+    border: 1px solid #FFB612;
+    background-color: transparent;
 
     &:focus,
     &:hover,
@@ -242,10 +231,13 @@
       box-shadow: none !important;
     }
   }
+  .navbar-nav {
+    align-items: center;
+    flex-direction: column;
+  }
   .lang__list-wrapper {
-    // margin-right: 20px;
-    text-align: center;
     width: 130px;
+    text-align: center;
     & > a {
       border: 1px solid #ffb612;
       padding-left: 15px !important;
@@ -295,10 +287,6 @@
         // background-image: url('../../images/down-arrow.svg');
       }
     }
-  }
-  .navbar-nav {
-    align-items: center;
-    flex-direction: column;
   }
   span + .dropdown-menu {
     left: -40px !important;

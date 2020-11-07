@@ -1,12 +1,12 @@
 export default {
     navbar:{
         offer:'Offer',
-        rooms:'Rooms',
+        rooms:'Hotel',
         events:'Events',
         gallery:'Gallery',
-        amenties:'Amenties',
+        facilities:'Facilities',
         nearby:'Nearby Attraction',
-        contact:'Contact',
+        contact:'Contacts',
         reviews:'Reviews',
         book:'Book now',
         lang:'Lang',
@@ -62,7 +62,7 @@ export default {
         amenties_3: "Room Service",
         amenties_4: "Fitness Center",
         amenties_5: "Pool",
-        amenties_6: "Spa", 
+        amenties_6: "Spa",
         amenties_7: "Digital Key",
         amenties_8: "Digital Check-In",
         amenties_9: "Business Services",
@@ -81,8 +81,8 @@ export default {
         title1_text8: "24-hour StayFit™ Gym",
 
         mini_title2: "SERVICES",
-        title2_text1: "A range of spa treatments", 
-        title2_text2: "Laundry and dry cleaning services", 
+        title2_text1: "A range of spa treatments",
+        title2_text2: "Laundry and dry cleaning services",
 
         mini_title3: "ROOM AMENITIES",
         title3_text1: "Complimentary Wi-Fi",
@@ -106,7 +106,7 @@ export default {
         title: "News & Offer",
         text_title: "Change of Seasons. Change of Scenery.",
         text_info: "Whatever new view you choose, Sunrise is back with up to 4x points and double nights toward tier status through January 4, 2021.",
-        text_link: "Read More" 
+        text_link: "Read More"
     },
     booking: {
         adults_title: "Adults",
@@ -201,5 +201,5 @@ export default {
         kod: 'Kod',
         btn: 'Next step',
     }
-    
+
 }

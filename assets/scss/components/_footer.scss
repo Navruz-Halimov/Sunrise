@@ -43,9 +43,10 @@
   }
 
   &__phone {
+    display: flex;
+    justify-content: space-between;
     .tel {
       margin: 5px 0;
-      margin-left: 29px;
     }
   }
 
@@ -100,7 +101,7 @@
       }
     }
   }
-  
+
   .social__networks {
     &-heading {
       color: white;
@@ -284,7 +285,7 @@
       }
     }
   }
-  
+
   .footer__modal{
     .footer__text{
       width: 80%;
@@ -298,12 +299,12 @@
     margin-top: 25px;
     font-size: 20px;
   }
- 
+
   .footer__motto-heading {
-    margin-top: 25px;    
+    margin-top: 25px;
     margin-bottom: 10px;
     font-size: 20px;
-  } 
+  }
 
   .footer .social__networks-heading {
     font-size: 20px;
@@ -334,9 +335,9 @@
   }
 
   .footer__motto-heading {
-    margin-top: 25px;    
+    margin-top: 25px;
     margin-bottom: 10px;
-  }  
+  }
 }
 
 @media (max-width: 380px) {
@@ -369,7 +370,7 @@
   }
 
   .footer__motto-heading {
-    margin-top: 25px;    
+    margin-top: 25px;
     margin-bottom: 10px;
   }
 }
