@@ -74,15 +74,15 @@
               </template>
               <b-dropdown-item href="#" :to="switchLocalePath('en')">
                 <b-img src="../assets/images/lang/united-states.svg" alt="eng"></b-img>
-                {{$t('navbar.eng')}}
+                 English
               </b-dropdown-item>
               <b-dropdown-item href="#" :to="switchLocalePath('ru')">
                 <b-img src="../assets/images/lang/russia.svg" alt="ru"></b-img>
-                {{$t('navbar.ru')}}
+                 Русский
               </b-dropdown-item>
               <b-dropdown-item href="#" :to="switchLocalePath('chn')">
                 <b-img src="../assets/images/lang/china.svg" alt="chn"></b-img>
-                {{$t('navbar.chn')}}
+                中文
               </b-dropdown-item>
             </b-nav-item-dropdown>
 
