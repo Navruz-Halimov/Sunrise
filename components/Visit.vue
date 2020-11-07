@@ -68,7 +68,7 @@
           {
             url: 'https://c1.wallpaperflare.com/preview/504/886/429/tashkent-2017-uzbekistan-middle-asia.jpg',
             title: 'Martyrs\' Memorial Square',
-            id: 1
+            id: 1,
           },
           {
             url: 'https://images.unsplash.com/photo-1567883975623-613f78c2ebc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
@@ -127,7 +127,7 @@
         this.id = 0;
       },
       hasNext() {
-        return this.id + 1 < this.images.length;
+        return this.id + 1 < this.visitImages.length;
       },
       hasPrev() {
         return this.id - 1 >= 0;

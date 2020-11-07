@@ -8,7 +8,7 @@ const store = () => new Vuex.Store({
         phone_number: "",
         token: "",
         dollar: '',
-        date: [],
+        data: "",
     },
     getters: {
     getGallery(state){
@@ -19,7 +19,9 @@ const store = () => new Vuex.Store({
     },
     },
     mutations: {
-
+        setData(state, data){
+          state.data = data
+        },
         setToken(state, token) {
             state.token = token;
         },
@@ -37,7 +39,6 @@ const store = () => new Vuex.Store({
         }
     },
     actions: {
-
         async getCode({ commit }, data) {
             await this.$axios.post('/user/code/send/', { phone_number: data })
                 .then(res => {
@@ -53,7 +54,6 @@ const store = () => new Vuex.Store({
                     commit('setPhone_number', res.data.phone_number)
                     console.log(res.data)
 
-
                 })
                 .catch(err => console.log(err))
         },
@@ -66,6 +66,16 @@ const store = () => new Vuex.Store({
             console.log(err)
           })
       },
+
+      async bookRoom({commit}, form){
+          await this.$axios.post('reservation/create/', form )
+            .then(res => {
+              commit('setData', res.data)
+            })
+            .catch(err =>
+            console.log(err)
+            )
+      }
     },
 })
 

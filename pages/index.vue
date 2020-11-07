@@ -426,7 +426,7 @@
                 </b-col>
             </b-row>
             <b-row class="offer-main-items">
-              <b-col v-for="(offer,index) of offers" :key="index.id" lg="6">
+              <b-col v-for="(offer,index) of offers" :key="index.id" md="12" lg="6">
                 <b-row>
                   <b-col class="offer-main__item" md="6" lg="6" >
                     <div class="offer-main__picture">

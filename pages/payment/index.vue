@@ -5,35 +5,23 @@
         <b-col class="book__header mb-5" cols="12" md="12">
           <b-row>
             <b-col cols="12" sm="6" md="6" lg="3">
-              <img src="../../assets/images/rooms/ABDUMANNONRAKHIMOVV-279.jpg" alt="">
+              <img src="../../assets/images/3D/1night.jpg" alt="">
             </b-col>
             <b-col cols="12" sm="6" md="6" lg="4">
               <div class="pt-1">
                 <h3>Sunrise Tashkent</h3>
                 <p>
-                  <span>Sat, Oct 10, 2020 - Mon, Nov 9, 2020</span>
-                  <span>King Rooms</span>
-                  <span>1 Room,  1 Guest</span>
-                  <span>Member Rate</span>
+                  <span>Mon, {{ info.start_day }} - Mon, {{ info.end_day }}</span>
+                  <span>Room type: {{ info.room_type }}</span>
+                  <span>Total day: {{ info.total_days }}</span>
                 </p>
               </div>
             </b-col>
             <b-col class="p-0" lg="4">
               <div class="total">
-                <h6>Total Cash Per Room <b>{{  }}</b></h6>
-                <b-collapse id="total" class="mt-2">
-                  <ul>
-                    <li><span>Sat, Oct 10</span><span>1,494,000.00 UZS</span></li>
-                    <li><span>Sat, Oct 10</span><span>1,494,000.00 UZS</span></li>
-                    <li><span>Sat, Oct 10</span><span>1,494,000.00 UZS</span></li>
-                    <li><span>Sat, Oct 10</span><span>1,494,000.00 UZS</span></li>
-                  </ul>
-                </b-collapse>
-                <p><span>Subtotal</span><span>44,820,000.00 UZS</span></p>
-                <p><span>Taxes & Fees</span><span>6,723,000.00 UZS</span></p>
-                <a v-b-toggle.total @click="showDetails()">
-                  {{textDetails}}
-                </a>
+                <h6>Total Cash Per Room <b>{{ Math.round(info.total_price * getCost) }} UZS</b></h6>
+                <p><span>Real price:</span><span>{{ Math.round(info.real_price * getCost) }} UZS</span></p>
+                <p><span>Discount:</span><span>{{ info.discount }}%</span></p>
               </div>
             </b-col>
           </b-row>
@@ -83,6 +71,7 @@
                         <b-form-group label="Card number" label-for="payme-number" >
                           <b-form-input class="pay__input" id="payme-number" type="text" required placeholder="#### #### #### ####"></b-form-input>
                         </b-form-group>
+
                         <b-form-group label="Expiration Date" label-for="payme-date" >
                           <b-form-input style="width: 32%;" class="pay__input" id="payme-date" type="text" required placeholder="MM / YY"></b-form-input>
                         </b-form-group>
@@ -103,6 +92,7 @@
 <script>
   import Visa from '../../components/Visa';
   import Master from '../../components/Master'
+  import {mapGetters} from 'vuex';
    export default {
     components:{
       Visa,
@@ -110,7 +100,7 @@
     },
     data() {
       return {
-        textDetails: 'Show stay breakdown',
+        info: [],
         click: false,
         payme: false,
         id: 0,
@@ -118,7 +108,6 @@
     },
     methods: {
       formCard(id) {
-        console.log(id);
         if (id === 'click') {
           this.click = true;
           this.payme = false;
@@ -127,15 +116,16 @@
           this.click = false;
         }
       },
-      showDetails() {
-        if (this.textDetails === 'Show stay breakdown') {
-          this.textDetails = 'Hide stay breakdown';
-        } else {
-          this.textDetails = 'Show stay breakdown';
-        }
-      },
     },
-    mounted() {},
+    mounted() {
+      this.info = this.$store.state.data;
+      this.$store.dispatch('getCost');
+    },
+     computed: {
+       ... mapGetters({
+         getCost: 'getCost'
+       })
+     },
     created() {}
   }
 </script>
