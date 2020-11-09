@@ -2,6 +2,21 @@
   <section class="house choshtepa rooms">
     <!-- 360 link -->
     <div class="house-main house-main__floor">
+      <div class="left__block">
+        <div class="left__block-btn block-1">
+          Restaurant 
+          <img src="../assets/images/rooms/cutlery.svg" alt="" />
+        </div>
+        <div class="left__block-btn block-3">
+          Conference rooms
+          <img src="../assets/images/rooms/teacher.svg" alt="" />
+        </div>
+        <div class="left__block-btn block-2">
+          Spa
+          <img src="../assets/images/rooms/lotus.svg" alt="" />
+        </div>
+        
+      </div>
       <img src="../assets/images/3D/2.jpg" alt="sunrise hotel" />
       <div class="house-popup" :class="{ visible: visible }">
         <span class="house-popup__number" id="floor">{{ this.floor }}</span>
