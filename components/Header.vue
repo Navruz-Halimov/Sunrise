@@ -86,21 +86,20 @@
 
             <b-navbar-nav>
               <b-button class="header__bottom-btn" :to="localePath('/booking')">{{ $t('navbar.book') }}</b-button>
-              <b-nav-item-dropdown text="Lang" right class="lang__list-wrapper">
+              <b-nav-item-dropdown :text="isActive" right class="lang__list-wrapper">
                 <template v-slot:button-content>
-                              <span class="sign__header"
-                              >{{$t('navbar.lang')}}<font-awesome-icon :icon="['fas', 'chevron-down']"
-                              /></span>
+                      <img class="lang__img" :src="require(`@/assets/images/lang/${src}`)" alt="eng" >
+<!--                      <span style="vertical-align: middle;">{{ isActive }}</span>-->
                 </template>
-                <b-dropdown-item href="#" :to="switchLocalePath('en')">
+                <b-dropdown-item @click="selectLang('En','united-states.svg')" href="#" :to="switchLocalePath('en')">
                   <b-img src="../assets/images/lang/united-states.svg" alt="eng"></b-img>
-                  English
+                  En
                 </b-dropdown-item>
-                <b-dropdown-item href="#" :to="switchLocalePath('ru')">
+                <b-dropdown-item @click="selectLang('Ру','russia.svg')" href="#" :to="switchLocalePath('ru')">
                   <b-img src="../assets/images/lang/russia.svg" alt="ru"></b-img>
-                  Русский
+                  Ру
                 </b-dropdown-item>
-                <b-dropdown-item href="#" :to="switchLocalePath('chn')">
+                <b-dropdown-item @click="selectLang('中文','china.svg')" href="#" :to="switchLocalePath('chn')">
                   <b-img src="../assets/images/lang/china.svg" alt="chn"></b-img>
                   中文
                 </b-dropdown-item>
@@ -117,13 +116,27 @@ import { mapState } from 'vuex'
   export default {
     data() {
       return {
-        active_el: 0
+        active_el: 0,
+        isActive: 'En',
+        src: 'united-states.svg',
       }
     },
     computed: {
       ...mapState('auth', ['loggedIn', 'user']),
     },
     methods: {
+      selectLang(text,src) {
+        if (text === 'En') {
+          this.isActive = text;
+          this.src = src;
+        } else if (text === 'Ру') {
+          this.isActive = text;
+          this.src = 'russia.svg';
+        } else {
+          this.isActive = '中文';
+          this.src = 'china.svg';
+        }
+      },
       activate:function(el){
         this.active_el = el;
       },
