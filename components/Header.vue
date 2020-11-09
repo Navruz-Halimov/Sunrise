@@ -18,6 +18,35 @@
             <b-nav-item @click="activate(6)" :class="{ activeLinkSix : active_el === 6 }" :to="localePath('/attractions')">{{ $t('navbar.nearby') }}</b-nav-item>
             <b-nav-item @click="activate(7)" :class="{ activeLinkSeven : active_el === 7 }" :to="localePath('/contact')">{{ $t('navbar.contact') }}</b-nav-item>
             <b-nav-item @click="activate(8)" :class="{ activeLinkEight : active_el === 8 }" :to="localePath('/reviews')">{{ $t('navbar.reviews') }}</b-nav-item>
+            <b-nav-item-dropdown class="user__join">
+              <!-- Using 'button-content' slot -->
+              <template v-slot:button-content>
+                <span class="sign__header" v-if="!loggedIn">
+                  <font-awesome-icon :icon="['fas', 'user']" />{{$t('navbar.sign')}}
+                  <font-awesome-icon :icon="['fas', 'chevron-down']"/></span>
+                <span class="sign__header" v-if="loggedIn">
+                    <font-awesome-icon :icon="['fas', 'user']" />My profile
+                  <font-awesome-icon :icon="['fas', 'chevron-down']"/></span>
+              </template>
+
+              <b-dropdown-item
+                :href="localePath('/sign-in')"
+                v-if="!loggedIn"
+              >{{ $t('navbar.sign') }}</b-dropdown-item
+              >
+              <b-dropdown-item :href="localePath('/reg')" v-if="!loggedIn">{{
+                $t('navbar.join')
+                }}</b-dropdown-item>
+              <b-dropdown-item
+                :href="localePath('/my-account')"
+                v-if="loggedIn"
+              >
+                {{ $t('navbar.account') }}
+              </b-dropdown-item>
+              <b-dropdown-item @click="logout()" v-if="loggedIn">
+                {{ $t('navbar.logout') }}
+              </b-dropdown-item>
+            </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -55,9 +84,8 @@
               >
             </div>
 
-            <b-button class="header__bottom-btn" :to="localePath('/booking')">{{ $t('navbar.book') }}</b-button>
-
             <b-navbar-nav>
+              <b-button class="header__bottom-btn" :to="localePath('/booking')">{{ $t('navbar.book') }}</b-button>
               <b-nav-item-dropdown text="Lang" right class="lang__list-wrapper">
                 <template v-slot:button-content>
                               <span class="sign__header"
@@ -75,39 +103,6 @@
                 <b-dropdown-item href="#" :to="switchLocalePath('chn')">
                   <b-img src="../assets/images/lang/china.svg" alt="chn"></b-img>
                   中文
-                </b-dropdown-item>
-              </b-nav-item-dropdown>
-              <b-nav-item-dropdown class="user__join">
-                <!-- Using 'button-content' slot -->
-                <template v-slot:button-content>
-                <span class="sign__header" v-if="!loggedIn"
-                ><font-awesome-icon :icon="['fas', 'user']" />{{
-                    $t('navbar.sign')
-                  }}
-                  <font-awesome-icon :icon="['fas', 'chevron-down']"
-                  /></span>
-                  <span class="sign__header" v-if="loggedIn"
-                  ><font-awesome-icon :icon="['fas', 'user']" />My profile
-                  <font-awesome-icon :icon="['fas', 'chevron-down']"
-                  /></span>
-                </template>
-
-                <b-dropdown-item
-                  :href="localePath('/sign-in')"
-                  v-if="!loggedIn"
-                >{{ $t('navbar.sign') }}</b-dropdown-item
-                >
-                <b-dropdown-item :href="localePath('/reg')" v-if="!loggedIn">{{
-                  $t('navbar.join')
-                  }}</b-dropdown-item>
-                <b-dropdown-item
-                  :href="localePath('/my-account')"
-                  v-if="loggedIn"
-                >
-                  {{ $t('navbar.account') }}
-                </b-dropdown-item>
-                <b-dropdown-item @click="logout()" v-if="loggedIn">
-                  {{ $t('navbar.logout') }}
                 </b-dropdown-item>
               </b-nav-item-dropdown>
             </b-navbar-nav>
