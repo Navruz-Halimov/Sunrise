@@ -68,6 +68,9 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background: url("/_nuxt/assets/images/rooms/2.jpg");
+    background-size: cover;
+    background-position: center;
   }
   .house-main img {
     position: absolute;
@@ -129,6 +132,8 @@
     &-btn {
       padding: 10px;
       border-radius: 5px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
       background-color: #ffb612;
       margin-bottom: 10px;
       transform: translateX(-80%);
@@ -136,6 +141,8 @@
       color: #fff;
       position: relative;
       font-size: 14px;
+      display: block;
+      text-decoration: none;
       img {
         width: 20px;
         position: absolute;
@@ -148,16 +155,22 @@
         padding-left: 15px;
         width: 160px;
         transform: translateX(-77%);
+        background-color: RGB(66,103,178);
 
         img {
           left: 88%;
         }
       }
 
+      &:nth-child(2) {
+        background: RGB(0,198,255);
+      }
+
       &:nth-child(3) {
         width: 120px;
         transform: translateX(-70%);
         padding-left: 15px;
+        background-color: RGB(225,48,108);
         
         img {
           left: 85%;
