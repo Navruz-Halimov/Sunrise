@@ -279,12 +279,16 @@
   .lang__list-wrapper {
     width: 130px;
     text-align: center;
+    .lang__img{
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
+    .nav-link{
+      padding: 5px!important;
+    }
     & > a {
       border: 1px solid #ffb612;
-      padding-left: 15px !important;
-      padding-right: 15px !important;
-      padding-top: 5px !important;
-      padding-bottom: 4px !important;
       border-radius: 30px;
       color: white !important;
       transition: all 0.3s ease;
@@ -292,10 +296,6 @@
       height: 37px;
       &:focus {
         outline: none;
-      }
-      &:hover {
-        background-color: #ffb612;
-        border: 1px solid #ffb612;
       }
     }
     .dropdown-menu-right {
@@ -377,7 +377,7 @@
 
 
   .header__bottom .lang__list-wrapper {
-    width: 115px;
+    width: 80px;
   }
 
   .header__bottom .lang__list-wrapper .dropdown-menu-right {
@@ -467,7 +467,7 @@
 @media (min-width: 1200px) {
 }
 
-// 
+//
 
 // hoji
 
