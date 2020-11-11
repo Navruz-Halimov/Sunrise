@@ -10,7 +10,7 @@
                 <b-container>
                     <div class="reviews-slider__item" 
                         v-for="(review, index) in reviews" 
-                        :key="index"
+                        :key="index.id"
                     >
                         <div class="reviews-slider__card">
                             <b-container>
@@ -76,30 +76,30 @@
                                                 </ul>
                                             </div>
                                             <div class="reviews-slider__info-client" :class="{autoheight:isActive}">
-                                                <b-collapse id="collapse">
+                                                <b-collapse :id="'collapse' + index">
                                                     <b-card> 
                                                        {{review.comment}}
                                                     </b-card>
                                                 </b-collapse>
                                                 <b-button 
-                                                    v-b-toggle.collapse 
+                                                    v-b-toggle="'collapse' + index"
                                                     class="reviews-slider__info-btn" 
                                                     variant="outline-light"
                                                     @click="isActive = !isActive"
                                                     v-if="isActive === false"
                                                 >
-                                                    Read more  
-                                                    <font-awesome-icon :icon="['fas', 'angle-down']" />
+                                                    <!-- Read more   -->
+                                                    <!-- <font-awesome-icon :icon="['fas', 'angle-down']" /> -->
                                                 </b-button>
                                                 <b-button 
-                                                    v-b-toggle.collapse
+                                                    v-b-toggle="'collapse' + index"
                                                     class="reviews-slider__info-btn" 
                                                     variant="outline-light"
                                                     v-else
                                                     @click="isActive = !isActive"
                                                 >
-                                                    Read less
-                                                    <font-awesome-icon :icon="['fas', 'angle-up']" />
+                                                    <!-- Read less -->
+                                                    <!-- <font-awesome-icon :icon="['fas', 'angle-up']" /> -->
                                                 </b-button>
                                                 
                                             </div>
@@ -112,30 +112,30 @@
                                                         
                                                     </li>
                                                     <li class="reviews-slider__info-hotel-text" :class="{autoheight:isActive1}">
-                                                        <b-collapse id="collapse1">
+                                                        <b-collapse :id="'collapse1' + index">
                                                             <b-card> 
                                                                 {{review.response}}
                                                             </b-card>
                                                         </b-collapse>
                                                         <b-button 
-                                                            v-b-toggle.collapse1
+                                                            v-b-toggle="'collapse1' + index"
                                                             class="reviews-slider__info-btn" 
                                                             variant="outline-light"
                                                             @click="isActive1 = !isActive1"
                                                             v-if="isActive1 === false"
                                                         >
-                                                            Read more  
-                                                            <font-awesome-icon :icon="['fas', 'angle-down']" />
+                                                            <!-- Read more  
+                                                            <font-awesome-icon :icon="['fas', 'angle-down']" /> -->
                                                         </b-button>
                                                         <b-button 
-                                                            v-b-toggle.collapse1
+                                                            v-b-toggle="'collapse1' + index"
                                                             class="reviews-slider__info-btn" 
                                                             variant="outline-light"
                                                             v-else
                                                             @click="isActive1 = !isActive1"
                                                         >
-                                                            Read less
-                                                            <font-awesome-icon :icon="['fas', 'angle-up']" />
+                                                            <!-- Read less
+                                                            <font-awesome-icon :icon="['fas', 'angle-up']" /> -->
                                                         </b-button>
                                                         
                                                     </li>
