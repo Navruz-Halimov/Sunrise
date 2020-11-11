@@ -9,7 +9,7 @@
         v-for="(offer, index) of offers"
         :key="index.id"
       >
-        
+
         <b-col md="5">
           <div class="offer-page__img">
             <b-img :src="offer.image" :alt="offer.title"></b-img>
@@ -27,8 +27,8 @@
               <b-link href="/" class="offer-page__link">Register Now</b-link>
             </div>
             <div class="offer-page__text">
-              <span v-b-toggle.collapse> TERMS AND CONDITIONS </span>
-              <b-collapse id="collapse">
+              <span v-b-toggle="'collapse' + index" > TERMS AND CONDITIONS </span>
+              <b-collapse :id="'collapse' + index">
                 <b-card v-html="offer.description_2"> </b-card>
               </b-collapse>
             </div>
