@@ -10,8 +10,8 @@
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="header__navbar">
-            <b-nav-item @click="activate(2)" :class="{ activeLinkTwo : active_el === 2 }" :to="localePath('/rooms')">{{ $t('navbar.rooms') }}</b-nav-item>
-            <b-nav-item @click="activate(1)" :class="{ activeLinkOne : active_el === 1 }"  :to="localePath('/offer')">{{ $t('navbar.offer') }}</b-nav-item>
+            <b-nav-item @click="activate(1)" :class="{ activeLinkTwo : active_el === 1 }" :to="localePath('/rooms')">{{ $t('navbar.rooms') }}</b-nav-item>
+            <b-nav-item @click="activate(2)" :class="{ activeLinkOne : active_el === 2 }"  :to="localePath('/offer')">{{ $t('navbar.offer') }}</b-nav-item>
             <b-nav-item @click="activate(3)" :class="{ activeLinkThree : active_el === 3 }" :to="localePath('/events')">{{ $t('navbar.events') }}</b-nav-item>
             <b-nav-item @click="activate(4)" :class="{ activeLinkFour : active_el === 4 }" :to="localePath('/gallery')">{{ $t('navbar.gallery') }}</b-nav-item>
             <b-nav-item @click="activate(5)" :class="{ activeLinkFive : active_el === 5 }" :to="localePath('/amenties')">{{ $t('navbar.facilities') }}</b-nav-item>
@@ -155,10 +155,10 @@ import { mapState } from 'vuex'
 </script>
 <style lang="scss">
   .activeLinkOne{
-    background-color: rgba(255, 105, 7, 0.4);
+    background-color: rgba(2, 176, 228, 0.4);
   }
   .activeLinkTwo{
-    background-color: rgba(2, 176, 228, 0.4);
+    background-color: rgba(255, 105, 7, 0.4);
   }
   .activeLinkThree{
     background-color: rgba(255, 193, 70, 1);
