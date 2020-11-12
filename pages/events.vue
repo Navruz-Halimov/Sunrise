@@ -89,35 +89,42 @@
                 class="event-page__features-list d-flex justufy-content-between"
               >
                 <li class="event-page__features-item">
-                  <font-awesome-icon :icon="['fas', 'handshake']" />
+                  <!-- <font-awesome-icon :icon="['fas', 'handshake']" /> -->
+                  <img src="../assets/images/icons/teacher.svg" alt="">
                   <span>{{ $t('events.features_item1') }}</span>
                 </li>
                 <li class="event-page__features-item">
-                  <font-awesome-icon :icon="['fas', 'users']" />
+                  <!-- <font-awesome-icon :icon="['fas', 'users']" /> -->
+                  <img src="../assets/images/event/audience.svg" alt="">
                   <span>{{ $t('events.features_item2') }}</span>
                 </li>
                 <li class="event-page__features-item">
-                  <font-awesome-icon :icon="['fas', 'utensils']" />
+                  <!-- <font-awesome-icon :icon="['fas', 'utensils']" /> -->
+                  <img src="../assets/images/event/waiter.svg" alt="">
                   <span>{{ $t('events.features_item3') }}</span>
                 </li>
                 <li class="event-page__features-item">
-                  <font-awesome-icon :icon="['fas', 'wifi']" />
+                  <!-- <font-awesome-icon :icon="['fas', 'wifi']" /> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{ $t('events.features_item4') }}</span>
                 </li>
                 <li class="event-page__features-item">
-                  <font-awesome-icon :icon="['fas', 'parking']" />
+                  <img src="../assets/images/event/parked-car.svg" alt="">
                   <span>{{ $t('events.features_item5') }}</span>
                 </li>
                 <li class="event-page__features-item">
-                  <font-awesome-icon :icon="['fas', 'print']" />
+                  <!-- <font-awesome-icon :icon="['fas', 'print']" /> -->
+                  <img src="../assets/images/event/printer-hand-drawn-tool.svg" alt="">
                   <span>{{ $t('events.features_item6') }}</span>
                 </li>
                 <li class="event-page__features-item">
-                  <font-awesome-icon :icon="['fas', 'chalkboard-teacher']" />
+                  <!-- <font-awesome-icon :icon="['fas', 'chalkboard-teacher']" /> -->
+                  <img src="../assets/images/event/information-desk.svg" alt="">
                   <span>{{ $t('events.features_item7') }}</span>
                 </li>
                 <li class="event-page__features-item">
-                  <font-awesome-icon :icon="['fas', 'thermometer-quarter']" />
+                  <!-- <font-awesome-icon :icon="['fas', 'thermometer-quarter']" /> -->
+                  <img src="../assets/images/event/thermometer.svg" alt="">
                   <span>{{ $t('events.features_item8') }}</span>
                 </li>
               </ul>
@@ -235,28 +242,13 @@
               </div>
               <ul class="event-page__footer-social">
                 <li class="event-page__footer-social-item">
-                  <a href="/">
+                  <a href="https://www.facebook.com/Sunrise-Hotel-101061888495268/" target="_blank">
                     <font-awesome-icon :icon="['fab', 'facebook-f']" />
                   </a>
                 </li>
                 <li class="event-page__footer-social-item">
-                  <a href="/">
+                  <a href="https://instagram.com/sunrisehotel.uz?igshid=zivqu3fedcly" target="_blank">
                     <font-awesome-icon :icon="['fab', 'instagram']" />
-                  </a>
-                </li>
-                <li class="event-page__footer-social-item">
-                  <a href="/">
-                    <font-awesome-icon :icon="['fab', 'linkedin-in']" />
-                  </a>
-                </li>
-                <li class="event-page__footer-social-item">
-                  <a href="/">
-                    <font-awesome-icon :icon="['fab', 'twitter']" />
-                  </a>
-                </li>
-                <li class="event-page__footer-social-item">
-                  <a href="/">
-                    <font-awesome-icon :icon="['fab', 'youtube']" />
                   </a>
                 </li>
                 <li class="event-page__footer-social-item">

@@ -72,6 +72,15 @@
                     <a href="tel:998 71 289 56 66" class="tel">
                       +998 71 289 56 66
                     </a>&emsp;
+                    <a href="https://www.facebook.com/Sunrise-Hotel-101061888495268/" target="_blank" class="header__social">
+                      <font-awesome-icon :icon="['fab', 'facebook']" />
+                    </a>
+                    <a href="https://instagram.com/sunrisehotel.uz?igshid=zivqu3fedcly" target="_blank" class="header__social">
+                      <font-awesome-icon :icon="['fab', 'instagram']" />
+                    </a>
+                    <a href="#" class="header__social">
+                      <font-awesome-icon :icon="['fab', 'telegram']" />
+                    </a>
                   </div>
                   <nuxt-link to="" class="review">
                     <vue-stars

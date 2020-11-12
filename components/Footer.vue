@@ -75,20 +75,20 @@
           <h4 class="social__networks-heading">{{$t('footer.connect')}}</h4>
           <ul class="social__networks">
             <li class="social__networks-item">
-              <a href="#" class="facebook"></a>
+              <a href="https://www.facebook.com/Sunrise-Hotel-101061888495268/" class="facebook" target="_blank"></a>
             </li>
             <li class="social__networks-item">
-              <a href="#" class="instagram"></a>
+              <a href="https://instagram.com/sunrisehotel.uz?igshid=zivqu3fedcly" class="instagram" target="_blank"></a>
             </li>
-            <li class="social__networks-item">
+            <!-- <li class="social__networks-item">
               <a href="#" class="linkedin"></a>
-            </li>
-            <li class="social__networks-item">
+            </li> -->
+            <!-- <li class="social__networks-item">
               <a href="#" class="twitter"></a>
-            </li>
-            <li class="social__networks-item">
+            </li> -->
+            <!-- <li class="social__networks-item">
               <a href="#" class="youtube"></a>
-            </li>
+            </li> -->
             <li class="social__networks-item">
               <a href="#" class="telegram"></a>
             </li>

@@ -30,10 +30,9 @@
 
 body {
   background-color: #000;
-
+  // main page
   .order__part {
     background-color: #2f2d2d;
-    // #f96b2a
   }
 
   .tourist__guide-heading,
@@ -53,23 +52,111 @@ body {
   .offer-main__title h2,
   .offer-main__text-info,
   .offer-main__text-title {
-    color: #f96b2a;
+    color: #ffb612;
   }
-
   .tourist__guide .guide__list .guide__item .guide__link {
-    color: #f96b2a;
+    color: #ffb612;
   }
-
   .swiper-card-rooms .swiper-card__statistics {
-    background-color: #2f2d2d;
+    background-color: #000;
     border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+    max-width: 233px;
   }
   .users-feedbacks {
     background: #000;
   }
-
+  .swiper-pagination-bullet {
+    background: #fff;
+  }
   .users-feedbacks__card,
   .offer-main__text {
     background-color: #2f2d2d;
   }
+
+  // offer page
+  .offer-page, .offer-page__title {
+    color: #ffb612;
+  }
+
+  .offer-page__text .card {
+    p {
+      background: #000;
+      margin: 0;
+    }
+  }
+
+  // events
+  .event-page__collapse .card-body {
+    background: #000;
+    color: #ffb612;
+  }
+  .event-page__collapse:before {
+    background: linear-gradient(0deg, rgba(255, 180, 18, 1) 0%, rgba(255, 180, 18, 0) 100%);
+
+  }
+  .event-page__contact {
+    background: #2f2d2d;
+  }
+  .event-page__contact-title, .event-page__contact-email a, .event-page__features-title, 
+  .event-page__features-item span, .event-page__multimedia-subtitle, 
+  .event-page__multimedia-heading, .event-page__footer-title {
+    color: #ffb612;
+  }
+  .event-page__footer {
+    background: #000;
+  }
+
+  //amenties 
+  .amenties, .amenties__header, .amenties__header li {
+    color: #ffb612;
+  }
+  // attraction
+  .attractions .cards .card-body {
+    background: #2f2d2d;
+    color: #ffb612;
+  }
+
+  // contant 
+  .contact-page-details__cards {
+    background: #2f2d2d;
+    color: #ffb612;
+    a {
+      color: #ffb612;
+    }
+  }
+  .contact-page-info__title, .contact-page-info {
+    color: #ffb612;
+  }
+
+  // reviews
+  .reviews-page .reviews-slider__card,
+  .reviews-page .reviews-slider__info-client .card-body,
+  .reviews-page .reviews-slider__info-hotel-text .card-body {
+    background: #2f2d2d;
+    color: #ffb612;
+  }
+  .reviews-page .reviews-slider__info-client .collapse:not(.show):before,
+  .reviews-page .reviews-slider__info-hotel-text .collapse:not(.show):before {
+    background: linear-gradient(0deg, rgba(255, 180, 18, 1) 0%, rgba(255, 180, 18, 0) 100%);
+  }
+
+  // booking 
+  .book__page .book_hr {
+    background: #2f2d2d;
+    color: #ffb612;
+    padding: 20px 10px;
+  }
+  .book__page .book__header {
+    color: #ffb612;
+  }
+  // sign-in
+  .sign__wrapper .sign__content {
+    color: #ffb612;
+  }
+
+
+  
 }

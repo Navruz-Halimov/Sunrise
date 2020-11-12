@@ -12,6 +12,14 @@ body .header {
   border-bottom: 1px solid #ffb612;
   flex-direction: column;
 
+  &__social {
+    svg {
+      width: 25px !important;
+      height: 25px;
+
+    }
+  }
+
   .header__logo {
     width: 200px;
     height: auto;

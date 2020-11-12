@@ -337,16 +337,18 @@
     min-height: 150px;
     text-align: left;
     margin-bottom: 50px;
-
+    padding: 4px;
+    background-color: #ffb612;
+    border: 1px solid #ffb612;
+    
     a {
       text-decoration: none;
     }
 
     &:hover {
-      border-color: #e8ebed;
       box-shadow: none;
       color: #2d2d2d;
-      border: 1px solid #e8ebed;
+      // border: 1px solid #e8ebed;
     }
 
     &__img {
