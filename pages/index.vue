@@ -77,86 +77,7 @@
         </section>
       </form>
     </b-container>
-    <div class="tourist__guide">
-      <b-container>
-        <h1 class="tourist__guide-heading">
-          <font-awesome-icon
-            class="info__circle"
-            :icon="['fas', 'info-circle']"
-          />
-          {{$t('tourist.heading')}}
-        </h1>
-        <b-row>
-          <b-col cols="12" lg="5">
-            <ul class="guide__list">
-              <li class="guide__item" v-for="(guide, index) in guides" :key="index">
-                <nuxt-link :to="localePath('guide/')" class="guide__link">
-                  {{guide.title_ru}}
-                </nuxt-link
-                >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link4')}}
-                </nuxt-link
-                >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link">
-                  {{$t('tourist.link5')}}
-                </nuxt-link>
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link6')}}
-                </nuxt-link
-                >
-              </li>
-            </ul>
-          </b-col>
-          <b-col cols="12" offset="0" lg="5" offset-lg="2">
-            <ul class="guide__list">
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link">
-                  {{$t('tourist.link7')}}
-                </nuxt-link
-                >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link8')}}
-                </nuxt-link
-                >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link9')}}
-                </nuxt-link
-                >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link10')}}
-                </nuxt-link
-                >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link11')}}
-                </nuxt-link
-                >
-              </li>
-              <li class="guide__item">
-                <nuxt-link to="" class="guide__link"
-                >{{$t('tourist.link12')}}
-                </nuxt-link
-                >
-              </li>
-            </ul>
-          </b-col>
-        </b-row>
-      </b-container>
-    </div>
+    <guide />
     <b-container>
       <div class="main__book-page">
         <b-row class="book__page">
@@ -463,14 +384,16 @@
 </template>
 
 <script>
-  import Test from '../components/Test.vue'
-  import Visit from '../components/Visit.vue'
+  import Test from '../components/Test.vue';
+  import Visit from '../components/Visit.vue';
+  import Guide from '../components/Guide';
   export default {
     name: 'Range',
     title: 'Sunrise hotel in Tashkent',
-    comments: {
+    components: {
       Test,
-      Visit
+      Visit,
+      Guide,
     },
     data() {
       return {
@@ -489,7 +412,6 @@
         cardRooms: [],
         cardImages: [],
         feedbacks: [],
-        guides: [],
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
@@ -561,12 +483,6 @@
       }
     },
     methods: {
-      async getGuides() {
-        await this.$axios.get('menu/guide/?lang=ru').then((res) => {
-          this.guides = res.data
-          console.log('guieds', this.guides)
-        })
-      },
       async getFeedbacks() {
         await this.$axios.get('reviews/list/').then((res) => {
           this.feedbacks = res.data.results
@@ -612,7 +528,6 @@
         await this.$axios.get('menu/offers/')
           .then((res) => {
             this.offers = res.data;
-            console.log("Offer", this.offers);
           })
           .catch((error) => {
             console.log(error);
@@ -626,9 +541,6 @@
             })
             .catch(err => console.log(err))
       },
-      hideClide() {
-
-      }
     },
     created() {
       this.getOffer();
@@ -657,7 +569,6 @@
       }
     },
     mounted() {
-      this.getGuides(),
       this.getSliders(),
       this.getCardRooms(),
       this.getFeedbacks()

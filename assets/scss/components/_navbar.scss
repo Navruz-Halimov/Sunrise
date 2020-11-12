@@ -26,7 +26,6 @@
     border-radius: 30px;
     transition: all 0.3s ease;
     margin-left: 6rem;
-    margin-top: 1rem;
     .dropdown-menu {
       left: -9px !important;
       border-color: rgba(0, 0, 0, 0.8);
@@ -481,6 +480,9 @@
     }
     .navbar{
       justify-content: flex-end;
+    }
+    .user__join{
+      margin-top: 1rem;
     }
     .header__bottom{
       .navbar-nav{
