@@ -163,10 +163,10 @@ import { mapState } from 'vuex'
 </script>
 <style lang="scss">
   .activeLinkOne{
-    background-color: rgba(255, 105, 7, 0.4);
+    background-color: rgba(2, 176, 228, 0.4);
   }
   .activeLinkTwo{
-    background-color: rgba(2, 176, 228, 0.4);
+    background-color: rgba(255, 105, 7, 0.4);
   }
   .activeLinkThree{
     background-color: rgba(255, 193, 70, 1);
