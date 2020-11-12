@@ -1,13 +1,13 @@
 <template>
   <div>
-    <Guide />
+    <guide />
   </div>
 </template>
 <script>
   import Guide from '../../components/Guide';
   export default {
-    comments: {
-      Guide
+    components: {
+      Guide,
     },
     data() {
       return {

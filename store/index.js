@@ -9,6 +9,7 @@ const store = () => new Vuex.Store({
         token: "",
         dollar: '',
         data: "",
+        guides: []
     },
     getters: {
     getGallery(state){
@@ -17,6 +18,9 @@ const store = () => new Vuex.Store({
     getCost(state) {
       return state.dollar;
     },
+    getGuides(state) {
+      return state.guides;
+    }
     },
     mutations: {
         setData(state, data){
@@ -36,6 +40,9 @@ const store = () => new Vuex.Store({
         },
         setDate(state, date){
           state.date = date;
+        },
+        setGuides(state, guide) {
+          state.guides = guide;
         }
     },
     actions: {
@@ -66,8 +73,7 @@ const store = () => new Vuex.Store({
             console.log(err)
           })
       },
-
-      async bookRoom({commit}, form){
+        async bookRoom({commit}, form){
           await this.$axios.post('reservation/create/', form )
             .then(res => {
               commit('setData', res.data)
@@ -75,6 +81,15 @@ const store = () => new Vuex.Store({
             .catch(err =>
             console.log(err)
             )
+      },
+        async getGuides({commit}) {
+          await this.$axios.get('menu/guide/?lang=ru')
+            .then((res) => {
+              commit('setGuides', res.data);
+            })
+            .catch(err => {
+              console.log(err)
+            })
       }
     },
 })
