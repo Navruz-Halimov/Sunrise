@@ -27,3 +27,49 @@
 @import 'pages/offer';
 @import 'pages/payment';
 @import "pages/my-account";
+
+body {
+  background-color: #000;
+
+  .order__part {
+    background-color: #2f2d2d;
+    // #f96b2a
+  }
+
+  .tourist__guide-heading,
+  .main__book-page .book__page-heading,
+  .book__page .book__header .header__content .amenity span,
+  .book__page .book__header .header__content button,
+  .book__page .book__header .header__content .main-amenity,
+  .visit .visit__title h2,
+  .gallery .gallery__title .gallery__title-main,
+  .swiper-card-rooms .swiper__wrapper-title,
+  .swiper-card-rooms .swiper-card__name-rooms,
+  .swiper-card-rooms .swiper-card__statistics,
+  .swiper-card-rooms .swiper-card__desc,
+  .users-feedbacks__title,
+  .users-feedbacks__card-text,
+  .users-feedbacks__card-name,
+  .offer-main__title h2,
+  .offer-main__text-info,
+  .offer-main__text-title {
+    color: #f96b2a;
+  }
+
+  .tourist__guide .guide__list .guide__item .guide__link {
+    color: #f96b2a;
+  }
+
+  .swiper-card-rooms .swiper-card__statistics {
+    background-color: #2f2d2d;
+    border-radius: 10px;
+  }
+  .users-feedbacks {
+    background: #000;
+  }
+
+  .users-feedbacks__card,
+  .offer-main__text {
+    background-color: #2f2d2d;
+  }
+}

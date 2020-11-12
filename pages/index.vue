@@ -169,56 +169,69 @@
                   <span>{{$t('amenties.amenties_1')}}</span>
                 </b-col>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/cutlery.svg" alt="">
+                  <!-- <img src="../assets/images/icons/cutlery.svg" alt=""> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{$t('amenties.amenties_2')}}</span>
                 </b-col>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/serving-dish.svg" alt="">
+                  <!-- <img src="../assets/images/icons/serving-dish.svg" alt=""> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{$t('amenties.amenties_3')}}</span>
                 </b-col>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/weight.svg" alt="">
+                  <!-- <img src="../assets/images/icons/weight.svg" alt=""> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{$t('amenties.amenties_4')}}</span>
                 </b-col>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/swimming-pool.svg" alt="">
+                  <!-- <img src="../assets/images/icons/swimming-pool.svg" alt=""> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{$t('amenties.amenties_5')}}</span>
                 </b-col>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/lotus.svg" alt="">
+                  <!-- <img src="../assets/images/icons/lotus.svg" alt=""> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{$t('amenties.amenties_6')}}</span>
                 </b-col>
               </b-row>
               <b-row>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/key.svg" alt="">
+                  <!-- <img src="../assets/images/icons/key.svg" alt=""> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{$t('amenties.amenties_7')}}</span>
                 </b-col>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/clock.svg" alt="">
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
+                  <!-- <img src="../assets/images/icons/clock.svg" alt=""> -->
+
                   <span>{{$t('amenties.amenties_8')}}</span>
                 </b-col>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/printer.svg" alt="">
+                  <!-- <img src="../assets/images/icons/printer.svg" alt=""> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{$t('amenties.amenties_9')}}</span>
                 </b-col>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/hanger-line.svg" alt="">
+                  <!-- <img src="../assets/images/icons/hanger-line.svg" alt=""> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{$t('amenties.amenties_10')}}</span>
                 </b-col>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/concierge.svg" alt="">
+                  <!-- <img src="../assets/images/icons/concierge.svg" alt=""> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{$t('amenties.amenties_11')}}</span>
                 </b-col>
                 <b-col class="amenity" cols="4" sm="4" md="2">
-                  <img src="../assets/images/icons/teacher.svg" alt="">
+                  <!-- <img src="../assets/images/icons/teacher.svg" alt=""> -->
+                  <img src="../assets/images/amenties/wifi.svg" alt="">
                   <span>{{$t('amenties.amenties_12')}}</span>
                 </b-col>
               </b-row>
               <b-collapse id="amenity" class="mt-2">
                 <b-row>
                   <b-col class="my-4 main-amenity" lg="4">
-                    <img src="../assets/images/icons/hotel.svg" alt="img">
+                    <!-- <img src="../assets/images/icons/hotel.svg" alt="img"> -->
+                    <img src="../assets/images/amenties/wifi.svg" alt="">
                     <h6>{{$t('amenties.mini_title1')}}</h6>
                     <p>
                       <span>{{$t('amenties.title1_text1')}}</span>
@@ -232,7 +245,8 @@
                     </p>
                   </b-col>
                   <b-col class="my-4 main-amenity" lg="4">
-                    <img src="../assets/images/icons/concierge.svg" alt="img">
+                    <!-- <img src="../assets/images/icons/concierge.svg" alt="img"> -->
+                    <img src="../assets/images/amenties/wifi.svg" alt="">
                     <h6>{{$t('amenties.mini_title2')}}</h6>
                     <p>
                       <span>{{$t('amenties.title2_text1')}}</span>
@@ -240,7 +254,8 @@
                     </p>
                   </b-col>
                   <b-col class="my-4 main-amenity" lg="4">
-                    <img src="../assets/images/icons/door.svg" alt="img">
+                    <!-- <img src="../assets/images/icons/door.svg" alt="img"> -->
+                    <img src="../assets/images/amenties/wifi.svg" alt="">
                     <h6>{{$t('amenties.mini_title3')}}</h6>
                     <p>
                       <span>{{$t('amenties.title3_text1')}}</span>
@@ -250,7 +265,8 @@
                     </p>
                   </b-col>
                   <b-col class="my-4 main-amenity" lg="4">
-                    <img src="../assets/images/icons/double-door.svg" alt="img">
+                    <!-- <img src="../assets/images/icons/double-door.svg" alt="img"> -->
+                    <img src="../assets/images/amenties/wifi.svg" alt="">
                     <h6>{{$t('amenties.mini_title4')}}</h6>
                     <p>
                       <span>{{$t('amenties.title4_text1')}}</span>
@@ -259,7 +275,8 @@
                     </p>
                   </b-col>
                   <b-col class="my-4 main-amenity" lg="4">
-                    <img src="../assets/images/icons/bathtub.svg" alt="img">
+                    <!-- <img src="../assets/images/icons/bathtub.svg" alt="img"> -->
+                    <img src="../assets/images/amenties/wifi.svg" alt="">
                     <h6>{{$t('amenties.mini_title5')}}</h6>
                     <p>
                       <span>{{$t('amenties.title5_text1')}}</span>
