@@ -13,7 +13,7 @@
           <ul class="guide__list">
             <li class="guide__item" v-for="(guide, index) in getGuides" :key="index.id">
               <nuxt-link :to="localePath('/guide/'+guide.id)" class="guide__link">
-                {{guide.title_ru}}
+                <span v-html="`${guide.title_}`+`${$i18n.locale}`"></span>
               </nuxt-link>
             </li>
           </ul>

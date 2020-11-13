@@ -9,7 +9,8 @@ const store = () => new Vuex.Store({
         token: "",
         dollar: '',
         data: "",
-        guides: []
+        guides: [],
+        lang: ''
     },
     getters: {
     getGallery(state){
@@ -43,6 +44,9 @@ const store = () => new Vuex.Store({
         },
         setGuides(state, guide) {
           state.guides = guide;
+        },
+        setLang(state, lang) {
+          state.lang = lang;
         }
     },
     actions: {
@@ -82,10 +86,11 @@ const store = () => new Vuex.Store({
             console.log(err)
             )
       },
-        async getGuides({commit}) {
-          await this.$axios.get('menu/guide/?lang=ru')
+        async getGuides({commit, state}) {
+          await this.$axios.get(`menu/guide/?lang=${this.$i18n.locale}`)
             .then((res) => {
               commit('setGuides', res.data);
+              console.log('EN',res);
             })
             .catch(err => {
               console.log(err)
