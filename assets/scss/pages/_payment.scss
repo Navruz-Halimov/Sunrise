@@ -73,11 +73,47 @@
       }
     }
     .pay_form{
-      label{
-        font-size: 15px;
+      p{
+        text-align: center;
+        svg{
+          color: #FFB612;
+          cursor: pointer;
+        }
       }
-      button{
-        padding: 8px 25px;
+      .col-lg-6{
+        margin: 0 auto;
+      }
+      .cart{
+        width: 450px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: #F0F0F0;
+        label{
+          font-size: 15px;
+        }
+        .d-flex{
+          align-items: center;
+          justify-content: space-around;
+          img{
+            width: 100px;
+            height: 45px;
+          }
+          span{
+            font-size: 13px;
+            margin-left: 5px;
+            margin-bottom: 0;
+            display: block;
+          }
+          input{
+            width: 100px;
+            margin-bottom: 0;
+          }
+          p{
+            font-size: 20px;
+            margin-bottom: 0;
+          }
+        }
       }
       .pay__input{
         padding: 20px;
@@ -86,6 +122,13 @@
         &:focus{
           border: 1px solid #FFB612;
         }
+      }
+      .btn{
+        border: none;
+        margin: 1rem auto;
+        padding: 5px 30px;
+        display: block;
+        background-color: #FFB612;
       }
     }
   }

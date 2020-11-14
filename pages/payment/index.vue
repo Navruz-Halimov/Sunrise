@@ -32,12 +32,12 @@
           <div>
             <b-tabs content-class="mt-3">
               <b-tab title="Visa Card">
-                <visa />
+<!--                <visa />-->
               </b-tab>
               <b-tab title="Master Card">
-                <master />
+<!--                <master />-->
               </b-tab>
-              <b-tab title="Uz Card">
+              <b-tab title="Uz Card" active>
                 <div class="uz__card">
                   <b-form-group>
                     <b-form-radio  name="some-radios">
@@ -51,32 +51,46 @@
                 <div v-if="click">
                   <b-form class="pay_form">
                     <b-row>
-                      <b-col lg="4" offset-lg="4">
-                        <b-form-group label="Card number" label-for="click-number" >
-                          <b-form-input class="pay__input" id="click-number" type="text" required placeholder="#### #### #### ####"></b-form-input>
-                        </b-form-group>
-                        <b-form-group label="Expiration Date" label-for="click-date" >
-                          <b-form-input style="width: 32%;" class="pay__input" id="click-date" type="text" required placeholder="MM / YY"></b-form-input>
-                        </b-form-group>
 
-                        <b-button type="submit" variant="primary">Submit</b-button>
-                      </b-col>
                     </b-row>
                   </b-form>
                 </div>
                 <div v-if="payme">
                   <b-form class="pay_form">
                     <b-row>
-                      <b-col lg="4" offset-lg="4">
-                        <b-form-group label="Card number" label-for="payme-number" >
-                          <b-form-input class="pay__input" id="payme-number" type="text" required placeholder="#### #### #### ####"></b-form-input>
-                        </b-form-group>
-
-                        <b-form-group label="Expiration Date" label-for="payme-date" >
-                          <b-form-input style="width: 32%;" class="pay__input" id="payme-date" type="text" required placeholder="MM / YY"></b-form-input>
-                        </b-form-group>
-
-                        <b-button type="submit" variant="info">Submit</b-button>
+                      <b-col lg="6">
+                        <p >
+                          Lorem ipsum dolor sit.
+                          <font-awesome-icon id="tooltip-target-1" :icon="['fas', 'question-circle']" />
+                          <b-tooltip  placement="bottom" target="tooltip-target-1" triggers="hover">
+                            I am tooltip <b>component</b> content!
+                          </b-tooltip>
+                        </p>
+                        <div class="cart">
+                          <b-form-group label='Card number' label-for="card_number">
+                            <b-form-input v-model="form.card_number" class="pay__input" type="text" id="card_number" required />
+                          </b-form-group>
+                          <div class="d-flex">
+                            <div>
+                              <span>Powered by</span>
+                              <img src="https://hopshop.uz/images/image_page/3a2a03488ceb.png?1601266356239" alt="">
+                            </div>
+                            <p>Expired date</p>
+                            <b-form-group label='month / year' label-for="expire">
+                              <b-form-input v-model="form.expire" class="pay__input" type="text" id="expire" required />
+                            </b-form-group>
+                          </div>
+                        </div>
+                        <b-form-checkbox
+                          class="mt-1 text-center"
+                          id="checkbox-1"
+                          name="checkbox-1"
+                          value="accepted" >
+                          Remember card
+                          <font-awesome-icon :icon="['fas', 'question-circle']" />
+                        </b-form-checkbox>
+                        <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <b-button @click="payForm()" class="btn" type="submit">Сontinue</b-button @click="payForm()">
                       </b-col>
                     </b-row>
                   </b-form>
@@ -104,9 +118,16 @@
         click: false,
         payme: false,
         id: 0,
+        form: {
+          card_number: '',
+          expire: '',
+        }
       }
     },
     methods: {
+      payForm() {
+        this.$store.dispatch('paymentForm', this.form)
+      },
       formCard(id) {
         if (id === 'click') {
           this.click = true;

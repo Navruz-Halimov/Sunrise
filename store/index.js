@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import form from 'bootstrap-vue/esm/mixins/form'
 Vue.use(Vuex);
 
 const store = () => new Vuex.Store({
@@ -81,12 +82,22 @@ const store = () => new Vuex.Store({
           await this.$axios.post('reservation/create/', form )
             .then(res => {
               commit('setData', res.data)
+              console.log('res',res);
             })
             .catch(err =>
             console.log(err)
             )
       },
-        async getGuides({commit, state}) {
+      async paymentForm({commit}) {
+        await this.$axios.post('payme/makepayment/', form)
+          .then((res) => {
+            console.log('Payme', res);
+          })
+          .catch((error) => {
+            console.log(error);
+          })
+      },
+        async getGuides({commit}) {
           await this.$axios.get(`menu/guide/?lang=${this.$i18n.locale}`)
             .then((res) => {
               commit('setGuides', res.data);
