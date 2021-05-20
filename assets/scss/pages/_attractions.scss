@@ -1,19 +1,18 @@
-
 // Attractions style //
 
-.attractions{
+.attractions {
   margin: 3rem 0;
-  .attractions__title{
+  .attractions__title {
     width: 100%;
     text-align: center;
     padding: 20px;
     color: #444444;
     font-size: 25px;
-    h2{
-      color: #FFB612;
+    h2 {
+      // color: #FFB612;
       font-size: 25px;
-      &:after{
-        content: "";
+      &:after {
+        content: '';
         border-top: 1px solid;
         display: block;
         width: 20%;
@@ -21,51 +20,53 @@
       }
     }
   }
-  .attractions__map{
+  .attractions__map {
     width: 90%;
     height: 400px;
     margin: auto;
   }
-  .cards{
+  .cards {
     height: 100%;
     border: none;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.06), 0 0 15px rgba(0, 0, 0, 0.1);
-    transition: box-shadow .7s ease;
-    .card-img-top{
+    transition: box-shadow 0.7s ease;
+    .card-img-top {
       height: 250px;
       object-fit: cover;
     }
-    .card-body{
+    .card-body {
       padding: 20px 15px;
-      span{
+      span {
         font-size: 13.5px;
         text-transform: uppercase;
       }
-      h4{
+      h4 {
         font-size: 19px;
         min-height: 44px;
       }
-      .card-text{
+      .card-text {
         font-size: 14px;
         display: flex;
-        a{
+        a {
           text-decoration: none;
           display: block;
-          &:hover{color: #FFB612}
+          &:hover {
+            color: #ffb612;
+          }
         }
-        .att-icons{
-          color: #FFB612;
+        .att-icons {
+          color: #ffb612;
           font-size: 20px;
           margin-right: 10px;
         }
       }
     }
-    &:hover{
+    &:hover {
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.28), 0 0 1px rgba(0, 0, 0, 0.24);
     }
   }
-  article{
-    max-width: 100%!important;
+  article {
+    max-width: 100% !important;
   }
 }
 

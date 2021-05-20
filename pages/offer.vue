@@ -47,19 +47,46 @@
 export default {
   data() {
     return {
-      offers: [],
+      offers: [
+       { image:require('../assets/images/3D/news/1.jpg'),
+        title:"Tashkent Room is the perfect",
+        description_1:"Tashkent Room is the perfect",
+        description_2:"With 115 sq.m, the Tashkent Room is the perfect solution for holding small and medium-sized meetings, events and receptions. Flexible enough to be set up in banquet, reception, boardroom, theatre, schoolroom and u-shaped styles the Tashkent Room hosts anywhere from 20 to 120 guests. Named after the warm  capital city of Uzbekistan  the room offers natural daylight and  features warm, elegant decor and spacious layouts."
+        },
+           { image:require('../assets/images/3D/news/2.jpg'),
+        title:"Tashkent Room is the perfect",
+        description_1:"Tashkent Room is the perfect",
+        description_2:"With 115 sq.m, the Tashkent Room is the perfect solution for holding small and medium-sized meetings, events and receptions. Flexible enough to be set up in banquet, reception, boardroom, theatre, schoolroom and u-shaped styles the Tashkent Room hosts anywhere from 20 to 120 guests. Named after the warm  capital city of Uzbekistan  the room offers natural daylight and  features warm, elegant decor and spacious layouts."
+        },
+           { image:require('../assets/images/3D/news/1night.jpg'),
+        title:"Tashkent Room is the perfect",
+        description_1:"Tashkent Room is the perfect",
+        description_2:"With 115 sq.m, the Tashkent Room is the perfect solution for holding small and medium-sized meetings, events and receptions. Flexible enough to be set up in banquet, reception, boardroom, theatre, schoolroom and u-shaped styles the Tashkent Room hosts anywhere from 20 to 120 guests. Named after the warm  capital city of Uzbekistan  the room offers natural daylight and  features warm, elegant decor and spacious layouts."
+        },
+           { image:require('../assets/images/3D/news/2night.jpg'),
+        title:"Tashkent Room is the perfect",
+        description_1:"Tashkent Room is the perfect",
+        description_2:"With 115 sq.m, the Tashkent Room is the perfect solution for holding small and medium-sized meetings, events and receptions. Flexible enough to be set up in banquet, reception, boardroom, theatre, schoolroom and u-shaped styles the Tashkent Room hosts anywhere from 20 to 120 guests. Named after the warm  capital city of Uzbekistan  the room offers natural daylight and  features warm, elegant decor and spacious layouts."
+        },
+           { image:require('../assets/images/3D/news/1.jpg'),
+        title:"Tashkent Room is the perfect",
+        description_1:"Tashkent Room is the perfect",
+        description_2:"With 115 sq.m, the Tashkent Room is the perfect solution for holding small and medium-sized meetings, events and receptions. Flexible enough to be set up in banquet, reception, boardroom, theatre, schoolroom and u-shaped styles the Tashkent Room hosts anywhere from 20 to 120 guests. Named after the warm  capital city of Uzbekistan  the room offers natural daylight and  features warm, elegant decor and spacious layouts."
+        },
+
+      ],
     }
   },
   methods: {
-    async getOffer() {
-      await this.$axios.get('offers/list/').then((res) => {
-        this.offers = res.data.results
-        console.log(this.offer)
-      })
-    },
+    // async getOffer() {
+    //   await this.$axios.get('offers/list/').then((res) => {
+    //     this.offers = res.data.results
+    //     console.log(this.offer)
+    //   })
+    // },
   },
   mounted() {
-    this.getOffer()
+    // this.getOffer()
   },
 }
 </script>

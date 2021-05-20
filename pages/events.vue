@@ -288,21 +288,23 @@
 export default {
   data() {
     return {
-      events: [],
+      events: [
+        {title:"Thrilling Stay in Central Tashkent"}
+      ],
       isActive: false,
       isActive1: false,
     }
   },
   methods: {
-    async getEvents() {
-      await this.$axios.get('events/').then((res) => {
-        console.log(res)
-        this.events = res.data
-      })
-    },
+    // async getEvents() {
+    //   await this.$axios.get('events/').then((res) => {
+    //     console.log(res)
+    //     this.events = res.data
+    //   })
+    // },
   },
   mounted() {
-    this.getEvents()
+    // this.getEvents()
   },
 }
 </script>

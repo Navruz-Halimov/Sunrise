@@ -248,7 +248,7 @@
                     :key="index.id"
                   >
                     <b-img
-                      :src="$store.state.mediaURL + image.image"
+                      :src="image.image"
                       fluid
                       alt="rooms"
                     ></b-img>
@@ -353,7 +353,7 @@
                 <b-row>
                   <b-col class="offer-main__item" md="6" lg="6" >
                     <div class="offer-main__picture">
-                      <b-img :src="$store.state.mediaURL + offer.image" alt="" height="270px"></b-img>
+                      <b-img :src="offer.img" alt="" height="270px"></b-img>
                     </div>
                   </b-col>
                   <b-col class="offer-main__item" md="6" lg="6" >
@@ -408,12 +408,184 @@
         value3: [new Date()],
         isShow: false,
         offerModal: false,
-        sliders: [],
-        offers: [],
+        sliders: [
+          {
+            title:"Luxury Tashkent Hotel for Business and Leisure",
+            image:require('../assets/images/3D/news/1.jpg'),
+            description:"Sunrise  Tashkent offers the quintessential location for both business and leisure travelers. Make yourself at home in your spacious guestroom, dine in one of our four restaurants and bars, hold a board meeting or an exclusive event and don’t forget to relax in our pool and spa area. Here, you’ll find that productivity and relaxation are constants during your time in Tashkent."
+          },
+           {
+            title:"Thrilling Stay in Central Tashkent",
+            image:require('../assets/images/3D/news/1night.jpg'),
+            description:"Near Metro with easy access to Tashkent International Airport"
+          },
+           {
+            title:"Rooms with a View",
+            image:require('../assets/images/3D/news/2.jpg'),
+            description:"Spacious guest rooms with views and amenities to ensure comfort throughout your stay"
+          },
+          {
+            title:"An Array of Flavors.Taste our variety of local and international flavors",
+            image:require('../assets/images/3D/news/2night.jpg'),
+            description:"Retreat to one of our well-appointed guestrooms, outfitted for ultimate comfort, safety, and tranquility with features that include free WiFi, air conditioning, mini-bar, flat-screen HDTV with dozens of satellite channels, and in-room safe, or upgrade to our Executive Rooms and Suites which boast ultimate luxury with expanded space, breathtaking views, and a host of thoughtful extras. Begin each day by feasting on our bountiful breakfast buffet, entertain clients for lunch or dinner in our onsite Café Opera, celebrate with a nightcap, or savor the views of Tashkent from an Executive Room or Suite and take advantage of 24-hour room service."
+          },
+        ],
+        offers: [
+          {
+            img:require('../assets/images/rooms/4.jpg'),
+            title:"FEATURED AMENITIES",
+            description:"Near Metro with easy access to Tashkent International Airport"
+          },
+            {
+            img:require('../assets/images/rooms/5.jpg'),
+            title:"Tashkent is a TOP Hotel",
+            description:"Welcoming and helpful staff, clean rooms. We did not eat at the hotel. They have ATM that gives $ and local cash, also exchange point, they had good rates. "
+          },
+            {
+            img:require('../assets/images/rooms/6.jpg'),
+            title:" impressions about your stay",
+            description:"The Hotel  in Tashkent is a TOP Hotel, with excellent service, competente staffs in all fields of the hotel, inclusive management. It can be best recommended."
+          },
+            {
+            img:require('../assets/images/rooms/7.jpg'),
+            title:" Business Center and NBU",
+            description:"The Hotel  in Tashkent is a TOP Hotel, with excellent service, competente staffs in all fields of the hotel, inclusive management. It can be best recommended."
+          },
+        ],
         id: 0,
-        cardRooms: [],
-        cardImages: [],
-        feedbacks: [],
+        cardRooms: [
+          {
+            cost_per_day:125
+          },
+          {
+            cost_per_day:125
+          },
+          {
+            cost_per_day:125
+          },
+          {
+            cost_per_day:125
+          },
+          {
+            cost_per_day:125
+          },
+          {
+            cost_per_day:125
+          },
+          {
+            cost_per_day:125
+          },
+          {
+            cost_per_day:125
+          },
+          {
+            cost_per_day:125
+          }
+        ],
+        cardImages: [
+                  {
+          id:1,
+          image:require('../assets/images/rooms/1.jpg')
+        },
+        {
+          id:2,
+          image:require('../assets/images/rooms/2.jpg')
+        },
+         {
+           id:3,
+          image:require('../assets/images/rooms/3.jpg')
+        },
+         {
+           id:4,
+          image:require('../assets/images/rooms/4.jpg')
+        },
+         {
+           id:5,
+          image:require('../assets/images/rooms/5.jpg')
+        },
+         {
+           id:6,
+          image:require('../assets/images/rooms/6.jpg')
+        },
+         {
+           id:7,
+          image:require('../assets/images/rooms/7.jpg')
+        },
+         {
+           id:8,
+          image:require('../assets/images/rooms/8.jpg')
+        },
+          {
+           id:9,
+          image:require('../assets/images/rooms/9.jpg')
+        },
+          {
+           id:10,
+          image:require('../assets/images/rooms/10.jpg')
+        },
+          {
+           id:11,
+          image:require('../assets/images/rooms/11.jpg')
+        },
+          {
+           id:12,
+          image:require('../assets/images/rooms/12.jpg')
+        },  {
+           id:13,
+          image:require('../assets/images/rooms/13.jpg')
+        },
+          {
+           id:14,
+          image:require('../assets/images/rooms/14.jpg')
+        },
+          {
+           id:15,
+          image:require('../assets/images/rooms/15.jpg')
+        },
+          {
+           id:16,
+          image:require('../assets/images/rooms/16.jpg')
+        },
+          {
+           id:17,
+          image:require('../assets/images/rooms/17.jpg')
+        },
+          {
+           id:18,
+          image:require('../assets/images/rooms/18.jpg')
+        },  
+        {
+           id:19,
+          image:require('../assets/images/rooms/19.jpg')
+        },
+        {
+           id:20,
+          image:require('../assets/images/rooms/20.jpg')
+        },
+        ],
+        feedbacks: [
+          {
+            comment:"Amazing hotel right in the heart of Tashkent, ideal for business or vacationing with easy access to all locations. ",
+            user:{
+              firstname:"Apysib",
+              lastname:"Tailor"
+            },
+          },
+            {
+            comment:"Amazing hotel right in the heart of Tashkent, ideal for business or vacationing with easy access to all locations. ",
+            user:{
+              firstname:"Apysib",
+              lastname:"Tailor"
+            },
+          }
+          ,  {
+            comment:"Amazing hotel right in the heart of Tashkent, ideal for business or vacationing with easy access to all locations.",
+            user:{
+              firstname:"Apysib",
+              lastname:"Tailor"
+            },
+          }
+        ],
         header__slider: {
           centeredSlides: true,
           spaceBetween: 30,
@@ -485,28 +657,28 @@
       }
     },
     methods: {
-      async getFeedbacks() {
-        await this.$axios.get('reviews/list/').then((res) => {
-          this.feedbacks = res.data.results
-        })
-      },
-      async getCardRooms() {
-        await this.$axios.get('rooms/').then((res) => {
-          this.cardRooms = res.data;
-          // console.log('card', this.cardRooms)
-          res.data.forEach(item => {
-            item.image_set.forEach(image   => {
-              this.cardImages.push(image);
-            })
-          })
-        })
-      },
-      async getSliders() {
-        await this.$axios.get('/menu/images/').then((res) => {
-          this.sliders = res.data
-          // console.log(this.sliders)
-        })
-      },
+      // async getFeedbacks() {
+      //   await this.$axios.get('reviews/list/').then((res) => {
+      //     this.feedbacks = res.data.results
+      //   })
+      // },
+      // async getCardRooms() {
+      //   await this.$axios.get('rooms/').then((res) => {
+      //     this.cardRooms = res.data;
+      //     // console.log('card', this.cardRooms)
+      //     res.data.forEach(item => {
+      //       item.image_set.forEach(image   => {
+      //         this.cardImages.push(image);
+      //       })
+      //     })
+      //   })
+      // },
+      // async getSliders() {
+      //   await this.$axios.get('/menu/images/').then((res) => {
+      //     this.sliders = res.data
+      //     // console.log(this.sliders)
+      //   })
+      // },
       notBeforeToday(date) {
         return date < new Date(new Date().setHours(0, 0, 0, 0))
       },
@@ -526,26 +698,26 @@
       hideModal() {
         this.offerModal = false
       },
-      async getOffer() {
-        await this.$axios.get('menu/offers/')
-          .then((res) => {
-            this.offers = res.data;
-          })
-          .catch((error) => {
-            console.log(error);
-          })
-      },
-      async sendData() {
-        await this.$axios.post('reservation/create/', this.form)
-            .then(res => {
-              console.log(res)
-              console.log("asdsadsa")
-            })
-            .catch(err => console.log(err))
-      },
+      // async getOffer() {
+      //   await this.$axios.get('menu/offers/')
+      //     .then((res) => {
+      //       this.offers = res.data;
+      //     })
+      //     .catch((error) => {
+      //       console.log(error);
+      //     })
+      // },
+      // async sendData() {
+      //   await this.$axios.post('reservation/create/', this.form)
+      //       .then(res => {
+      //         console.log(res)
+      //         console.log("asdsadsa")
+      //       })
+      //       .catch(err => console.log(err))
+      // },
     },
     created() {
-      this.getOffer();
+      // this.getOffer();
     },
     head() {
       return {
@@ -571,9 +743,9 @@
       }
     },
     mounted() {
-      this.getSliders(),
-      this.getCardRooms(),
-      this.getFeedbacks()
+      // this.getSliders(),
+      // this.getCardRooms(),
+      // this.getFeedbacks()
     }
   }
 </script>

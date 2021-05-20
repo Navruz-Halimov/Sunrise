@@ -158,7 +158,68 @@
   export default {
     data() {
         return {
-            reviews: [],
+            reviews: [
+             {
+                user:{
+                firstname:'Apysib',
+                lastname:"Apysib",
+                state:"Dubai, United Arab Emirates"
+             },
+             title:"A place to visit and stay while in Tashkent",
+             comment:"Amazing hotel right in the heart of Tashkent, ideal for business or vacationing with easy access to all locations. Ideal for families as well as they have great pool facilities. Amazing service from staff right from Robiya in Guest Relation and Ildar from Sales and all the staff are very courteous and accommodative. The breakfast buffet is good and has great variety and the restaurant by the pool has excellent service and food. Check-in and check-out was smooth and comfortable with a helpful front desk staff. It has everything a small family could ask for. Loved the views from the suite. Overall a wonderful experience that we enjoyed on our first trip to Tashkent. Kudos to the Management for running such a great team of service Professionals. We will certainly be back.Thank you RB Tashkent!!!",
+             created_at:"2019-06-11",
+             trip_type:"Family",
+             response:"RobiyaOrifjonova, Guest relations agent at Radisson Blu Hotel, Tashkent, responded to this review 2019-06-13 Dear Apysib, Thank you so much for taking the time to review us on TripAdvisor regarding your stay in our hotel. We sincerely do hope that your stay was both enjoyable and delightful. We are glad that our staff lasted an excellent impression. Every member of our team strives to provide 100% Guest Satisfaction to each our guest. It is a honor for us to read such kind of reviews as we always try to make our guests feel, like they are at home far away from home! Taking this opportunity, we would like to thank you for your comment regarding our breakfast as well. We sincerely do hope that we will have the chance to see you again in our hotel and assist you with the highest standard of quality service. Looking forward to seeing you in our hotel. Sincerely, Robiya Orifjonova Guest relations agent"
+             },
+             {
+                user:{
+                firstname:'Apysib',
+                lastname:"Apysib",
+                state:"Dubai, United Arab Emirates"
+             },
+             title:"A place to visit and stay while in Tashkent",
+             comment:"Amazing hotel right in the heart of Tashkent, ideal for business or vacationing with easy access to all locations. Ideal for families as well as they have great pool facilities. Amazing service from staff right from Robiya in Guest Relation and Ildar from Sales and all the staff are very courteous and accommodative. The breakfast buffet is good and has great variety and the restaurant by the pool has excellent service and food. Check-in and check-out was smooth and comfortable with a helpful front desk staff. It has everything a small family could ask for. Loved the views from the suite. Overall a wonderful experience that we enjoyed on our first trip to Tashkent. Kudos to the Management for running such a great team of service Professionals. We will certainly be back.Thank you RB Tashkent!!!",
+             created_at:"2019-06-11",
+             trip_type:"Family",
+             response:"RobiyaOrifjonova, Guest relations agent at Radisson Blu Hotel, Tashkent, responded to this review 2019-06-13 Dear Apysib, Thank you so much for taking the time to review us on TripAdvisor regarding your stay in our hotel. We sincerely do hope that your stay was both enjoyable and delightful. We are glad that our staff lasted an excellent impression. Every member of our team strives to provide 100% Guest Satisfaction to each our guest. It is a honor for us to read such kind of reviews as we always try to make our guests feel, like they are at home far away from home! Taking this opportunity, we would like to thank you for your comment regarding our breakfast as well. We sincerely do hope that we will have the chance to see you again in our hotel and assist you with the highest standard of quality service. Looking forward to seeing you in our hotel. Sincerely, Robiya Orifjonova Guest relations agent"
+             },
+             {
+                user:{
+                firstname:'Apysib',
+                lastname:"Apysib",
+                state:"Dubai, United Arab Emirates"
+             },
+             title:"A place to visit and stay while in Tashkent",
+             comment:"Amazing hotel right in the heart of Tashkent, ideal for business or vacationing with easy access to all locations. Ideal for families as well as they have great pool facilities. Amazing service from staff right from Robiya in Guest Relation and Ildar from Sales and all the staff are very courteous and accommodative. The breakfast buffet is good and has great variety and the restaurant by the pool has excellent service and food. Check-in and check-out was smooth and comfortable with a helpful front desk staff. It has everything a small family could ask for. Loved the views from the suite. Overall a wonderful experience that we enjoyed on our first trip to Tashkent. Kudos to the Management for running such a great team of service Professionals. We will certainly be back.Thank you RB Tashkent!!!",
+             created_at:"2019-06-11",
+             trip_type:"Family",
+             response:"RobiyaOrifjonova, Guest relations agent at Radisson Blu Hotel, Tashkent, responded to this review 2019-06-13 Dear Apysib, Thank you so much for taking the time to review us on TripAdvisor regarding your stay in our hotel. We sincerely do hope that your stay was both enjoyable and delightful. We are glad that our staff lasted an excellent impression. Every member of our team strives to provide 100% Guest Satisfaction to each our guest. It is a honor for us to read such kind of reviews as we always try to make our guests feel, like they are at home far away from home! Taking this opportunity, we would like to thank you for your comment regarding our breakfast as well. We sincerely do hope that we will have the chance to see you again in our hotel and assist you with the highest standard of quality service. Looking forward to seeing you in our hotel. Sincerely, Robiya Orifjonova Guest relations agent"
+             },
+             {
+                user:{
+                firstname:'Apysib',
+                lastname:"Apysib",
+                state:"Dubai, United Arab Emirates"
+             },
+             title:"A place to visit and stay while in Tashkent",
+             comment:"Amazing hotel right in the heart of Tashkent, ideal for business or vacationing with easy access to all locations. Ideal for families as well as they have great pool facilities. Amazing service from staff right from Robiya in Guest Relation and Ildar from Sales and all the staff are very courteous and accommodative. The breakfast buffet is good and has great variety and the restaurant by the pool has excellent service and food. Check-in and check-out was smooth and comfortable with a helpful front desk staff. It has everything a small family could ask for. Loved the views from the suite. Overall a wonderful experience that we enjoyed on our first trip to Tashkent. Kudos to the Management for running such a great team of service Professionals. We will certainly be back.Thank you RB Tashkent!!!",
+             created_at:"2019-06-11",
+             trip_type:"Family",
+             response:"RobiyaOrifjonova, Guest relations agent at Radisson Blu Hotel, Tashkent, responded to this review 2019-06-13 Dear Apysib, Thank you so much for taking the time to review us on TripAdvisor regarding your stay in our hotel. We sincerely do hope that your stay was both enjoyable and delightful. We are glad that our staff lasted an excellent impression. Every member of our team strives to provide 100% Guest Satisfaction to each our guest. It is a honor for us to read such kind of reviews as we always try to make our guests feel, like they are at home far away from home! Taking this opportunity, we would like to thank you for your comment regarding our breakfast as well. We sincerely do hope that we will have the chance to see you again in our hotel and assist you with the highest standard of quality service. Looking forward to seeing you in our hotel. Sincerely, Robiya Orifjonova Guest relations agent"
+             },
+             {
+                user:{
+                firstname:'Apysib',
+                lastname:"Apysib",
+                state:"Dubai, United Arab Emirates"
+             },
+             title:"A place to visit and stay while in Tashkent",
+             comment:"Amazing hotel right in the heart of Tashkent, ideal for business or vacationing with easy access to all locations. Ideal for families as well as they have great pool facilities. Amazing service from staff right from Robiya in Guest Relation and Ildar from Sales and all the staff are very courteous and accommodative. The breakfast buffet is good and has great variety and the restaurant by the pool has excellent service and food. Check-in and check-out was smooth and comfortable with a helpful front desk staff. It has everything a small family could ask for. Loved the views from the suite. Overall a wonderful experience that we enjoyed on our first trip to Tashkent. Kudos to the Management for running such a great team of service Professionals. We will certainly be back.Thank you RB Tashkent!!!",
+             created_at:"2019-06-11",
+             trip_type:"Family",
+             response:"RobiyaOrifjonova, Guest relations agent at Radisson Blu Hotel, Tashkent, responded to this review 2019-06-13 Dear Apysib, Thank you so much for taking the time to review us on TripAdvisor regarding your stay in our hotel. We sincerely do hope that your stay was both enjoyable and delightful. We are glad that our staff lasted an excellent impression. Every member of our team strives to provide 100% Guest Satisfaction to each our guest. It is a honor for us to read such kind of reviews as we always try to make our guests feel, like they are at home far away from home! Taking this opportunity, we would like to thank you for your comment regarding our breakfast as well. We sincerely do hope that we will have the chance to see you again in our hotel and assist you with the highest standard of quality service. Looking forward to seeing you in our hotel. Sincerely, Robiya Orifjonova Guest relations agent"
+             },
+            ],
             isActive: false,
             isActive1: false,
             isActive2: false,
@@ -173,16 +234,16 @@
         }
     },
     methods: {
-        async getReviews() {
-            await this.$axios.get('reviews/list/').then((res) => {
-                this.reviews = res.data.results
-                console.log(this.reviews)
-            })
+        // async getReviews() {
+        //     await this.$axios.get('reviews/list/').then((res) => {
+        //         this.reviews = res.data.results
+        //         console.log(this.reviews)
+        //     })
             
-        }
+        // }
     },
     mounted() {
-        this.getReviews()
+        // this.getReviews()
     },
 }
 </script>

@@ -97,7 +97,7 @@
                 <swiper class="swiper book_img" :options="header__slider">
                   <swiper-slide v-for="image of room.image_set" :key="image.id">
                     <img
-                      :src="$store.state.mediaURL + image.image"
+                      :src="image.image"
                       alt="Sunrise hotel"
                     />
                   </swiper-slide>
@@ -171,7 +171,7 @@
           <swiper-slide v-for="(room, index) of rooms" :key="index">
             <div v-for="image of room.image_set" :key="image">
               <img
-                :src="$store.state.mediaURL + image.image"
+                :src="image.image"
                 alt="Sunrise hotel"
               />
             </div>
@@ -246,7 +246,67 @@ export default {
   name: 'Range',
   data() {
     return {
-      rooms: [],
+      rooms: [
+       { 
+         image_set: [
+             { id:1,
+              image:require('../assets/images/rooms/10.jpg')
+             },
+             { id:2,
+              image:require('../assets/images/rooms/15.jpg')
+             },
+             { id:3,
+              image:require('../assets/images/rooms/14.jpg')
+             },
+              { id:4,
+              image:require('../assets/images/rooms/16.jpg')
+             },
+         ],
+         description_2:"nice",
+         description_1:"Lux",
+         cost_per_day:"123",
+
+       },
+            { 
+         image_set: [
+             { id:1,
+              image:require('../assets/images/rooms/20.jpg')
+             },
+             { id:2,
+              image:require('../assets/images/rooms/11.jpg')
+             },
+             { id:3,
+              image:require('../assets/images/rooms/13.jpg')
+             },
+              { id:4,
+              image:require('../assets/images/rooms/15.jpg')
+             },
+         ],
+         description_2:"Ordinary",
+         description_1:"comfortable",
+         cost_per_day:"123",
+       },
+            { 
+         image_set: [
+             { id:1,
+              image:require('../assets/images/rooms/14.jpg')
+             },
+             { id:2,
+              image:require('../assets/images/rooms/13.jpg')
+             },
+             { id:3,
+              image:require('../assets/images/rooms/11.jpg')
+             },
+              { id:4,
+              image:require('../assets/images/rooms/12.jpg')
+             },
+         ],
+         description_2:"Elegant",
+         description_1:"Super Dupper",
+         cost_per_day:"123",
+
+       },
+      ],
       cost: '',
       header__slider: {
         centeredSlides: true,
@@ -317,15 +377,15 @@ export default {
     },
   },
   mounted() {
-    this.$store.dispatch('getCost')
+    // this.$store.dispatch('getCost')
   },
   computed: {
     ...mapGetters({
-      getCost: 'getCost',
+      // getCost: 'getCost',
     }),
   },
   created() {
-    this.getRooms()
+    // this.getRooms()
   },
 }
 </script>

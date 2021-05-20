@@ -1,6 +1,6 @@
 <template>
   <div class="gallery">
-    <div class="spinner__wrapper" v-if="loader">
+    <div class="spinner__wrapper" v-if="false">
     <div class="atom-spinner" >
       <div class="spinner-inner">
         <div class="spinner-line"></div>
@@ -55,7 +55,87 @@ export default {
   props: ['count'],
   data() {
     return {
-      gallery: [],
+      gallery: [
+        {
+          id:1,
+          image:require('../assets/images/rooms/1.jpg')
+        },
+        {
+          id:2,
+          image:require('../assets/images/rooms/2.jpg')
+        },
+         {
+           id:3,
+          image:require('../assets/images/rooms/3.jpg')
+        },
+         {
+           id:4,
+          image:require('../assets/images/rooms/4.jpg')
+        },
+         {
+           id:5,
+          image:require('../assets/images/rooms/5.jpg')
+        },
+         {
+           id:6,
+          image:require('../assets/images/rooms/6.jpg')
+        },
+         {
+           id:7,
+          image:require('../assets/images/rooms/7.jpg')
+        },
+         {
+           id:8,
+          image:require('../assets/images/rooms/8.jpg')
+        },
+          {
+           id:9,
+          image:require('../assets/images/rooms/9.jpg')
+        },
+          {
+           id:10,
+          image:require('../assets/images/rooms/10.jpg')
+        },
+          {
+           id:11,
+          image:require('../assets/images/rooms/11.jpg')
+        },
+          {
+           id:12,
+          image:require('../assets/images/rooms/12.jpg')
+        },  {
+           id:13,
+          image:require('../assets/images/rooms/13.jpg')
+        },
+          {
+           id:14,
+          image:require('../assets/images/rooms/14.jpg')
+        },
+          {
+           id:15,
+          image:require('../assets/images/rooms/15.jpg')
+        },
+          {
+           id:16,
+          image:require('../assets/images/rooms/16.jpg')
+        },
+          {
+           id:17,
+          image:require('../assets/images/rooms/17.jpg')
+        },
+          {
+           id:18,
+          image:require('../assets/images/rooms/18.jpg')
+        },  
+        {
+           id:19,
+          image:require('../assets/images/rooms/19.jpg')
+        },
+        {
+           id:20,
+          image:require('../assets/images/rooms/20.jpg')
+        },
+      ],
       loader: true,
       visit__slider: {
         centeredSlides: true,
@@ -73,13 +153,13 @@ export default {
     }
   },
   methods: {
-    async getGallery() {
-      await this.$axios.get('/gallery/list/')
-      .then((res) => {
-        this.gallery = res.data
-        this.loader = false;
-      })
-    },
+    // async getGallery() {
+    //   await this.$axios.get('/gallery/list/')
+    //   .then((res) => {
+    //     this.gallery = res.data
+    //     this.loader = false;
+    //   })
+    // },
     show(id) {
       this.visible = true
       this.id = id
@@ -90,9 +170,9 @@ export default {
   },
   computed: {},
   created() {},
-  mounted() {
-    this.getGallery()
-  },
+  // mounted() {
+  //   this.getGallery()
+  // },
 }
 </script>
 

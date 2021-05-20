@@ -51,7 +51,7 @@
                 <nuxt-link :to="localePath('/gallery')">{{$t('navbar.gallery')}}</nuxt-link>
               </li>
               <li class="footer__item">
-                <nuxt-link :to="localePath('/amenties')">{{$t('navbar.amenties')}}</nuxt-link>
+                <nuxt-link :to="localePath('/amenties')">{{$t('navbar.facilities')}}</nuxt-link>
               </li>
               <li class="footer__item">
                 <nuxt-link :to="localePath('/attractions')">{{$t('navbar.nearby')}}</nuxt-link>

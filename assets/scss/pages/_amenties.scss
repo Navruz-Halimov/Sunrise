@@ -4,7 +4,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
     position: relative;
-    color: #ffb612;
+    // color: #ffb612;
     font-size: 25px;
 
     &::after {
@@ -46,14 +46,14 @@
   .outdoor__list {
     margin-top: 20px;
     margin-bottom: 20px;
-   
+
     .outdoor__item-wrap {
       margin-bottom: 10px;
-      &-list{
+      &-list {
         font-size: 15px;
         color: rgb(68, 68, 68);
       }
-      ul{
+      ul {
         margin: 0;
         padding: 0;
       }

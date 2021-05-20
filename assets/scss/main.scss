@@ -8,8 +8,8 @@
 @import 'components/navbar';
 @import 'components/footer';
 @import 'components/booking';
-@import "components/visit";
-@import "components/guide";
+@import 'components/visit';
+@import 'components/guide';
 // Pages
 @import 'pages/gallery';
 @import 'pages/attractions';
@@ -20,66 +20,39 @@
 @import 'pages/reviews';
 @import 'pages/index';
 @import 'pages/rooms';
-@import "pages/sign-in";
-@import "pages/join";
+@import 'pages/sign-in';
+@import 'pages/join';
 @import 'pages/rooms__select';
 @import 'pages/floor';
 @import 'pages/offer';
 @import 'pages/payment';
-@import "pages/my-account";
+@import 'pages/my-account';
 
 body {
-  background-color: #000;
+  background-color: #fff;
   // main page
   .order__part {
-    background-color: #2f2d2d;
+    background-color: #fff;
   }
 
-  .tourist__guide-heading,
-  .main__book-page .book__page-heading,
-  .book__page .book__header .header__content .amenity span,
-  .book__page .book__header .header__content button,
-  .book__page .book__header .header__content .main-amenity,
-  .visit .visit__title h2,
-  .gallery .gallery__title .gallery__title-main,
-  .swiper-card-rooms .swiper__wrapper-title,
-  .swiper-card-rooms .swiper-card__name-rooms,
-  .swiper-card-rooms .swiper-card__statistics,
-  .swiper-card-rooms .swiper-card__desc,
-  .users-feedbacks__title,
-  .users-feedbacks__card-text,
-  .users-feedbacks__card-name,
-  .offer-main__title h2,
-  .offer-main__text-info,
-  .offer-main__text-title {
-    color: #ffb612;
-  }
-  .tourist__guide .guide__list .guide__item .guide__link {
-    color: #ffb612;
-  }
   .swiper-card-rooms .swiper-card__statistics {
-    background-color: #000;
+    background-color: #fff;
     border-radius: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     width: 100%;
     max-width: 233px;
   }
-  .users-feedbacks {
-    background: #000;
-  }
+  // .users-feedbacks {
+  //   background: #000;
+  // }
   .swiper-pagination-bullet {
     background: #fff;
   }
-  .users-feedbacks__card,
-  .offer-main__text {
-    background-color: #2f2d2d;
-  }
-
-  // offer page
-  .offer-page, .offer-page__title {
-    color: #ffb612;
-  }
+  // .users-feedbacks__card,
+  // .offer-main__text {
+  //   background-color: #2f2d2d;
+  // }
 
   .offer-page__text .card {
     p {
@@ -90,73 +63,29 @@ body {
 
   // events
   .event-page__collapse .card-body {
-    background: #000;
-    color: #ffb612;
+    // background: #000;
+    // color: #ffb612;
+    color: #000;
   }
   .event-page__collapse:before {
-    background: linear-gradient(0deg, rgba(255, 180, 18, 1) 0%, rgba(255, 180, 18, 0) 100%);
-
-  }
-  .event-page__contact {
-    background: #2f2d2d;
-  }
-  .event-page__contact-title, .event-page__contact-email a, .event-page__features-title, 
-  .event-page__features-item span, .event-page__multimedia-subtitle, 
-  .event-page__multimedia-heading, .event-page__footer-title {
-    color: #ffb612;
-  }
-  .event-page__footer {
-    background: #000;
+    background: linear-gradient(
+      0deg,
+      rgb(245, 245, 244) 0%,
+      rgba(218, 218, 216, 0) 100%
+    );
   }
 
-  //amenties 
-  .amenties, .amenties__header, .amenties__header li {
-    color: #ffb612;
-  }
-  // attraction
-  .attractions .cards .card-body {
-    background: #2f2d2d;
-    color: #ffb612;
-  }
-
-  // contant 
-  .contact-page-details__cards {
-    background: #2f2d2d;
-    color: #ffb612;
-    a {
-      color: #ffb612;
-    }
-  }
-  .contact-page-info__title, .contact-page-info {
-    color: #ffb612;
-  }
-
-  // reviews
-  .reviews-page .reviews-slider__card,
-  .reviews-page .reviews-slider__info-client .card-body,
-  .reviews-page .reviews-slider__info-hotel-text .card-body {
-    background: #2f2d2d;
-    color: #ffb612;
-  }
   .reviews-page .reviews-slider__info-client .collapse:not(.show):before,
   .reviews-page .reviews-slider__info-hotel-text .collapse:not(.show):before {
-    background: linear-gradient(0deg, rgba(255, 180, 18, 1) 0%, rgba(255, 180, 18, 0) 100%);
+    background: linear-gradient(
+      0deg,
+      rgb(255, 255, 253) 0%,
+      rgba(230, 230, 228, 0) 100%
+    );
   }
 
-  // booking 
+  // booking
   .book__page .book_hr {
-    background: #2f2d2d;
-    color: #ffb612;
     padding: 20px 10px;
   }
-  .book__page .book__header {
-    color: #ffb612;
-  }
-  // sign-in
-  .sign__wrapper .sign__content {
-    color: #ffb612;
-  }
-
-
-  
 }
